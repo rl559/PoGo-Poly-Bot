@@ -35,10 +35,10 @@ var raidBosses = require('./data/raidboss.json'),
 	},
 	gmAPI = new GoogleMapsAPI(publicConfig),
 	twitterKeys = {
-		consumer_key : "PHrHIJvl6xSVyviMEqJ2If8Bs",
-		consumer_secret : "COKmLSdRj4cgeQH165B00VWhWy1zK0KQZtcmerfBbZ1vyhZQRc",
-		token : "961341668-M8sUTB8PLOUiPndUxHUlZcXTz02tfhYSbZjBeWHO",
-		token_secret : "4uz0G871MGQEtrEesSoW4kjo14Gy4mGk56zvm6siz3zJb"
+		consumer_key : "poyJARVI2vqGmfyaEIabWXlmm",
+		consumer_secret : "LxqjoxmofSTWsbScn7wUNxd7DKDjNJ6bjFvf9CPrUEHhcTGO9f",
+		token : "288824671-XwJxXH5n9eNmXwbffb5oXP99USx3rysrxj2Ypo38",
+		token_secret : "lfZ6lD3Ju5CfykIRMPLaMAnUHrbpbXl3d8yg0ynAsYR9K"
 	},
 	Twitter = new TwitterStream(twitterKeys, false),
 	twitterUsers = [ 2839430431 , 849344094681870336, 961341668 ],
