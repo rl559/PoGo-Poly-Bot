@@ -1,0 +1,134 @@
+{
+	"croconaw": {
+		"level": "Level 1",
+		"image": "http://www.serebii.net/pokemongo/pokemon/159.png"
+	},
+	"quilava": {
+		"level": "Level 1",
+		"image": "http://www.serebii.net/pokemongo/pokemon/156.png"
+	},
+	"bayleef": {
+		"level": "Level 1",
+		"image": "http://www.serebii.net/pokemongo/pokemon/153.png"
+	},
+	"magikarp": {
+		"level": "Level 1",
+		"image": "http://www.serebii.net/pokemongo/pokemon/129.png"
+	},
+	"exeggutor": {
+		"level": "Level 2",
+		"image": "http://www.serebii.net/pokemongo/pokemon/103.png"
+	},
+	"muk": {
+		"level": "Level 2",
+		"image": "http://www.serebii.net/pokemongo/pokemon/089.png"
+	},
+	"magmar": {
+		"level": "Level 2",
+		"image": "http://www.serebii.net/pokemongo/pokemon/126.png"
+	},
+	"elektabuzz": {
+		"level": "Level 2",
+		"image": "http://www.serebii.net/pokemongo/pokemon/125.png"
+	},
+	"weezing": {
+		"level": "Level 2",
+		"image": "http://www.serebii.net/pokemongo/pokemon/110.png"
+	},
+	"vaporeon": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/134.png"
+	},
+	"jolteon": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/135.png"
+	},
+	"flareon": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/136.png"
+	},
+	"machamp": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/068.png"
+	},
+	"alakazam": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/065.png"
+	},
+	"arcanine": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/059.png"
+	},
+	"gengar": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/094.png"
+	},
+	"tyranitar": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/248.png"
+	},
+	"snorlax": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/143.png"
+	},
+	"rhydon": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/112.png"
+	},
+	"charizard": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/006.png"
+	},
+	"lapras": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/131.png"
+	},
+	"venusaur": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/003.png"
+	},
+	"blastoise": {
+		"level": "Level 4",
+		"image": "http://www.serebii.net/pokemongo/pokemon/009.png"
+	},
+	"mewtwo": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/150.png"
+	},
+	"mew": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/151.png"
+	},
+	"ho-oh": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/250.png"
+	},
+	"lugia": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/249.png"
+	},
+	"articuno": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/144.png"
+	},
+	"zapdos": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/145.png"
+	},
+	"moltres": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/146.png"
+	},
+	"suicune": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/245.png"
+	},
+	"raikou": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/243.png"
+	},
+	"entei": {
+		"level": "Level 5",
+		"image": "http://www.serebii.net/pokemongo/pokemon/244.png"
+	}
+}

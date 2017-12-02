@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+*.jpg binary -delta
+*.png binary -delta
+*.gif binary -delta
+*.psd binary -delta
+*.pdf binary -delta
+*.zip binary -delta
+*.exe binary -delta
+*.sw binary -delta
+*.swf binary -delta
+*.fla binary -delta
+*.pkg binary -delta
+*.dmg binary -delta
+*.zip binary -delta
+*.mp3 binary -delta
+*.mp4 binary -delta
+*.wav binary -delta
