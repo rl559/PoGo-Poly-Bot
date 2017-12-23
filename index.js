@@ -104,7 +104,7 @@ client.on("guildMemberAdd", (member) => {
   Happy Hunting, hope you catch 'em all.`);
 
 	//if( member.guild.name == 'square bot test' ){
-	let role = member.guild.roles.find("name", 'Raidrz');
+	let role = member.guild.roles.find("name", 'Member');
 	//console.log(member.guild.roles.find("name", 'Raidrz'));
 	member.addRole(role).catch(console.error);
 	//}
