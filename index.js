@@ -21,9 +21,12 @@ const Discord = require("discord.js"),
 	thanksPattern = new RegExp(/\bthanks\b|\bthank\b|\bthank\b \byou\b|\bthank\b \bu\b|\bthx\b|\bthxs\b/i),
 	graciasPattern = new RegExp(/\bgracias\b/i),
 	adminPattern = new RegExp(/admin|bot|mod/i),
-	teamPattern = new RegExp(/instinct|mystic|valor/i),
-	raidrzPattern = new RegExp(/raider|raidrs|raiders|raiderz|raidrz/i),
+	teamPattern = new RegExp(/instinct|Instinct|mystic|Mystic|valor|Valor/i),
 	cityPattern = new RegExp(/boca|coral_springs|coconut_creek|davie|deerfield|ft_lauderdale|hollywood|margate|north_lauderdale|parkland|pompano|plantation|sunrise|tamarac/);
+
+function cap(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 var raidBosses = require('./data/raidboss.json'),
 	publicConfig = {
@@ -377,14 +380,14 @@ client.on("message", (message) => {
 		let rolesFoundNames = [];
 		roles.forEach(function (item, index) {
 			let theRole = item.trim();
-			if( teamPattern.test(theRole) || raidrzPattern.test(theRole) ){
-				theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
-			}else{
-				theRole = item.toLowerCase().replace(' ', '_').trim();
-			}
+			//if( teamPattern.test(theRole) ){
+			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
+			//}else{
+				theRole = cap(item.toLowerCase().replace(' ', '_').trim());
+			//}
 			let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
 			let isAdmin = adminPattern.test(theRole);
-			if (role !== null && role !== 'undifined' && isAdmin === false) {
+			if (role !== null && role !== 'undefined' && isAdmin === false) {
 				rolesFound.push(role);
 				rolesFoundNames.push(theRole);
 			}
@@ -408,17 +411,19 @@ client.on("message", (message) => {
 		let rolesFoundNames = [];
 		roles.forEach(function (item, index) {
 			let theRole = item.trim();
-			if( teamPattern.test(theRole) || raidrzPattern.test(theRole) ){
-				theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
-			}else{
-				theRole = item.toLowerCase().replace(' ', '_').trim();
-			}
-			if (teamPattern.test(theRole) && raidrzPattern.test(theRole) === false) {
+			//if( teamPattern.test(theRole) || raidrzPattern.test(theRole) ){
+			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
+			//}else{
+				theRole = cap(item.toLowerCase().replace(' ', '_').trim());
+				
+				
+			//}
+			/*if (teamPattern.test(theRole) && raidrzPattern.test(theRole) === false) {
 				theRole = theRole + " Raidrz";
-			}
+			}*/
 			let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
 			let isAdmin = adminPattern.test(theRole);
-			if (role !== null && role !== 'undifined' && isAdmin === false) {
+			if (role !== null && role !== 'undefined' && isAdmin === false) {
 				rolesFound.push(role);
 				rolesFoundNames.push(theRole);
 			}
