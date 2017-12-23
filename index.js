@@ -338,8 +338,10 @@ client.on("message", (message) => {
 		message.guild.fetchMembers();
 		let pattern = prefix + "userinfo";
 		let userID = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
-		let userIDlen = userID.length-1;
-		userID = userID.substring(3,userIDlen);
+		//let userIDlen = userID.length-1;
+		//userID = userID.substring(2,userIDlen);
+		userID = userID.replace(/[!@&\/\\#,+()$~%.'":*?<>{}]/g,'');
+		
 		if( channelName == 'commands' && userID ){
 			message.guild.fetchMember(userID, true)
 			.then((member)=>{
@@ -350,13 +352,13 @@ client.on("message", (message) => {
 				message.channel.send(`${message.author} here is the user info you are looking for`, {
 					"embed": {
 						"color": 3447003,
-						"title": member.displayName + '('+ member.nickname +')',
+						"title": member.displayName,
 						"thumbnail": {
 							"url": member.user.avatarURL
 						},
 						"fields": [{
 							"name": "Created At",
-							"value": member.joinedAt,
+							"value": member.joinedAt.toString(),
 							"inline": true
 						}]
 					}
