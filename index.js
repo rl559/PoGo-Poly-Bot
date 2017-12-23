@@ -335,10 +335,13 @@ client.on("message", (message) => {
 	 * USERINFO Command 341205742868496385
 	 */
 	if (message.content.startsWith(prefix + "userinfo")) {
+		message.guild.fetchMembers();
 		let pattern = prefix + "userinfo";
 		let userID = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
+		let userIDlen = userID.length-1;
+		userID = userID.substring(3,userIDlen);
 		if( channelName == 'roundtable' && userID ){
-			message.guild.fetchMember(userID, false)
+			message.guild.fetchMember(userID, true)
 			.then((member)=>{
 				//console.log(member);
 				//console.log(member.user);
