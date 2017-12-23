@@ -52,7 +52,7 @@ client.login("Mzk0MTMyNTcyNzYzODQ4NzA1.DSAKTA.d2r7QnChHAAcLD7mqXeYczsK4Mo");
 
 client.on("ready", () => {
 	console.log("I am ready!");
-	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
+	client.setInterval( everyHour, 60000 );//3600000 1800000 1200000 900000 60000
 });
 
 Twitter.stream('statuses/filter', {
@@ -130,12 +130,10 @@ function everyHour(){
 	//console.log(currentTime.hour());
 	if( currentTime.hour() <= 23 && currentTime.hour() >= 6 ){
 		client.guilds.forEach((item, index)=>{
-			console.log(item);
-			console.log(index);
 			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0) {//newUsers.size > 10
 				//console.log('its pass 9');
 				const userlist = newUsers[index].map(u => u.toString()).join(" ");
-				item.channels.get("general").send("Welcome our new members!\n" + userlist);
+				item.channels.find('name', 'announcements').send("Welcome our new members!\n" + userlist);
 				newUsers[index].clear();
 			}
 
