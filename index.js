@@ -258,7 +258,7 @@ client.on("message", (message) => {
 	
 	if (message.author.bot) return;
 	
-	if( message.isMentioned(message.guild.members.get("339590026973282304")) ){
+	if( message.isMentioned(message.guild.members.get("394132572763848705")) ){
 	   let response = '';
 	   if( helloPattern.test(message.content) ){
 			response = `Hi! ${message.author} if you are having trouble try using the \`.help\` command or contacting an admin while I learn how to do more helpful things.`;
