@@ -130,12 +130,12 @@ function everyHour(){
 	//console.log(currentTime.hour());
 	if( currentTime.hour() <= 23 && currentTime.hour() >= 6 ){
 		client.guilds.forEach((item, index)=>{
-			//console.log(item);
-			//console.log(index);
+			console.log(item);
+			console.log(index);
 			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0) {//newUsers.size > 10
 				//console.log('its pass 9');
 				const userlist = newUsers[index].map(u => u.toString()).join(" ");
-				item.channels.get(index).send("Welcome our new members!\n" + userlist);
+				item.channels.get("general").send("Welcome our new members!\n" + userlist);
 				newUsers[index].clear();
 			}
 
