@@ -52,7 +52,7 @@ client.login("Mzk0MTMyNTcyNzYzODQ4NzA1.DSAKTA.d2r7QnChHAAcLD7mqXeYczsK4Mo");
 
 client.on("ready", () => {
 	console.log("I am ready!");
-	client.setInterval( everyHour, 60000 );//3600000 1800000 1200000 900000 60000
+	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
 });
 
 Twitter.stream('statuses/filter', {
