@@ -340,7 +340,7 @@ client.on("message", (message) => {
 		let userID = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
 		let userIDlen = userID.length-1;
 		userID = userID.substring(3,userIDlen);
-		if( channelName == 'roundtable' && userID ){
+		if( channelName == 'commands' && userID ){
 			message.guild.fetchMember(userID, true)
 			.then((member)=>{
 				//console.log(member);
