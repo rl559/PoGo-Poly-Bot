@@ -19,24 +19,27 @@ const Discord = require("discord.js"),
 	AddressObj = new Address(),
 	PokedexCmd = require("./classes/PokedexCmd.js"),
 	PokedexObj = new PokedexCmd(),
+	Invite = require("./classes/Invite.js"),
+	InviteObj = new Invite(),
+	TAddDel = require("./classes/TAddDel.js"),
+	TAddDelObj = new TAddDel(),
+	Userinfo = require("./classes/Userinfo.js"),
+	UserinfoObj = new Userinfo(),
+	Help = require("./classes/Help.js"),
+	HelpObj = new Help(),
+	Callme = require("./classes/Callme.js"),
+	CallmeObj = new Callme(),
 	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	helloPattern = new RegExp(/\bhi\b|\bhello\b|\bgreetings\b|\bhey\b/i),
 	holaPattern = new RegExp(/\bhola\b/i),
 	thanksPattern = new RegExp(/\bthanks\b|\bthank\b|\bthank\b \byou\b|\bthank\b \bu\b|\bthx\b|\bthxs\b/i),
 	graciasPattern = new RegExp(/\bgracias\b/i),
-	adminPattern = new RegExp(/admin|bot|mod/i),
-	//teamPattern = new RegExp(/instinct|Instinct|mystic|Mystic|valor|Valor/i),
 	raid1Pattern = new RegExp(/L1|level 1|L1|T1|tier 1|Tier 1/i),
 	raid2Pattern = new RegExp(/L2|level 2|L2|tier 2|Tier 2|T2/i),
 	raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
 	raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
 	raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
-	//cityPattern = new RegExp(/boca|coral_springs|coconut_creek|davie|deerfield|ft_lauderdale|hollywood|margate|north_lauderdale|parkland|pompano|plantation|sunrise|tamarac/);
 	raidChannelPattern = new RegExp(/raids/);
-
-function cap(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 var raidBosses = require('./data/raidboss.json'),
 twitterKeys = {
@@ -72,26 +75,15 @@ Twitter.on('data', function (obj) {
     let tweet = JSON.parse(obj),
 		messageContent = '';
 	if(typeof tweet.user !== 'undefined' && tweet.user !== null){
-		//console.log(tweet);
-		//console.log(tweet.user.screen_name);
-		//console.log( tweet.user.id );
-		//console.log(twitterUsers.includes( tweet.user.id ));
 		if( twitterUsers.includes( tweet.user.id ) ){
-			//console.log( tweet );
-			//https://twitter.com/TheSquareMedia/status/899313829099819008
 
 			messageContent = `@everyone BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
 			client.guilds.forEach((item, index)=>{
-				//console.log(item);
-				//console.log(index);
 				let announcements = '';
 				announcements = item.channels.find('name', 'announcements');
-				if ( announcements /*&& !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz')*/ ) {
+				if ( announcements ) {
 					announcements.send( messageContent );
-				}/*else if( !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz') ){
-					item.channels.get(index).send( messageContent );
-				}*/
-
+				}
 			});
 		}
 	}
@@ -113,11 +105,8 @@ client.on("guildMemberAdd", (member) => {
   8. Under no circumstances should you cause drama or fight with other members. If you need to talk, create a private group chat and talk it out there.
   Happy Hunting, hope you catch 'em all.`);
 
-	//if( member.guild.name == 'square bot test' ){
 	let role = member.guild.roles.find("name", 'Member');
-	//console.log(member.guild.roles.find("name", 'Raidrz'));
 	member.addRole(role).catch(console.error);
-	//}
 	
 	
   if (!newUsers[guild.id]){
@@ -137,11 +126,9 @@ function everyHour(){
 	let currentDate = Moment().tz('America/New_York').format('YYYY-MM-DD HH:MM:SS');
 	let currentDateString = Moment().tz('America/New_York').format( 'YYYY-MM-DD');
 	let currentTime = Moment().tz('America/New_York');
-	//console.log(currentTime.hour());
 	if( currentTime.hour() <= 23 && currentTime.hour() >= 6 ){
 		client.guilds.forEach((item, index)=>{
-			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0) {//newUsers.size > 10
-				//console.log('its pass 9');
+			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0) {
 				const userlist = newUsers[index].map(u => u.toString()).join(" ");
 				item.channels.find('name', 'announcements').send("Welcome our new members!\n" + userlist);
 				newUsers[index].clear();
@@ -193,7 +180,6 @@ client.on("message", (message) => {
 		currentTime = Moment().tz('America/New_York');
 	
 	if( message.system && message.type === 'PINS_ADD' && raidChannelPattern.test(channelName) && message.author.username === 'PoGoPolyBot' ){
-		//console.log( message );
 		message.delete();
 	}
 	
@@ -230,7 +216,6 @@ client.on("message", (message) => {
 				if( raidBoss ){
 						let raidBossMention = message.guild.roles.find('name', raidLevel),
 						raidChannel = '';
-					//roleToMention = (roleToMention) ? '<@&' + roleToMention.id + '>' : '';
 					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
 					raidChannel = message.guild.channels.find('name', 'raids');
 					if ( raidChannel ) {
@@ -288,248 +273,46 @@ client.on("message", (message) => {
 	 * CALLME
 	 */
 	if (message.content.startsWith(prefix + "callme")) {
-		let pattern = prefix + "callme";
-		let nickname = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
-		message.guild.member(message.author).setNickname(nickname).then((member) =>{
-			message.channel.send(`${message.author} from now on we will call you ${nickname}`);
-		}).catch((error)=>{
-			if(error){
-					console.log(error);
-			}
-			message.channel.send(`${message.author} uh oh! something went wrong i couldn't change your nickname plase try again!`);
-		});
-		
+		CallmeObj.display(prefix, message);
 	}
 	
 	/*
 	 * HELP
 	 */
 	if (message.content.startsWith(prefix + "help")) {
-		let pattern = prefix + "help",
-			helpType = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().toLocaleLowerCase(),
-			channelVal = '\n\n__**Channels**__\n\n**#general** this is for general talk. No raid coordination allowed. \n**#announcements** this is were we let you know the news about the game and our server. \n**#info** this contains general useful info for Poly PoGo players. \n**#rules** you can brush up on server ettiquette here. \n**#raids** this is used for communicating about and preparing for raids. \n**#sightings** this is where you\'ll find people posting about rare sightings \n**#commands** this is were all bot commands are freely allowed.',
-			commandVal = '\n\n__**Commands**__\n\n**.address** this command retrieves the top result from GMaps. usage: `.address mullins park coral springs`\n**.callme** this command changes your nickname on our server. usage: `.callme PoGoPolyBot`\n**.help** this is how you got here!\n**.tadd** this allows you to receive @ notifications from specific tiers of raids. usage: `.tadd T5` \n**.tdel** this removes you from receiving tier raid notifications. usage: `.tdel T5`\n**.invite** this command creates an invite you can send your friends. \n**.pokedex** this command retrieves a pokemon entry from the pokedex. usage: `.pokedex bulbasaur`\n**.userinfo** this command retrieves user info on a queried user.  usage: `.userinfo @username`',
-			//rolesVal = '\n\n__**Roles**__\n\n**Team Roles**\nthis roles change the color of your nickname to your team\'s color.\n\nMystic Raidrz\nValor Raidrz\nInstinct Raidrz\n\n**TIP:** you can enter just the team name the bot will recognize the appripiate role.\n\n**City Roles**\nthis roles send you a notification when the bot recognizes a raid image posted in a city you want to raid in.\n\nboca\ncoral_springs\ncoconut_creek\ndavie\ndeerfield\nft_lauderdale\nhollywood\nmargate\nnorth_lauderdale\nparkland\npompano\nplantation\nsunrise\ntamarac\n\n**TIP:** you can enter the city roles without the underscore and in lower or uppercase just keep in mind the name needs to be exact so `ft lauderdale` will work `fort lauderdale` won\'t,',
-			raidsVal = '\n\n__**Raids**__\n\nBased on our current field research Raids start at 6AM and end at 8PM, you may find active raids after 8PM, but no new ones will popup after 8PM',
-			helpContent = '',
-			helpTypeMessage = 'everything';
-		switch(helpType){
-			case 'channels':
-				helpContent = channelVal;
-				helpTypeMessage = helpType;
-				break;
-			case 'commands':
-				helpContent = commandVal;
-				helpTypeMessage = helpType;
-				break;
-			/*case 'roles':
-				helpContent = rolesVal;
-				helpTypeMessage = helpType;
-				break;*/
-			case 'raids':
-				helpContent = raidsVal;
-				helpTypeMessage = helpType;
-				break;
-		}
-		if( helpType != '' && helpTypeMessage !== 'everything' ){
-			message.channel.send(`${message.author} Looks like you need help with ${helpTypeMessage}. Here is some helpful information.${helpContent}`);
-		}
-		else if (helpTypeMessage === 'everything')
-		{
-			message.channel.send(`${message.author} Looks like you need help with the help command. Type \`.help commands\` for help with commands or \`.help channels\` for help with channels or \`.help raids\` for help with raids.`);
-		}
-		else{
-			message.channel.send(`${message.author} it's ok. I am here to help. I just need you to be more specific. What do you need help with? Type \`.help commands\` for help with commands or \`.help channels\` for help with channels or \`.help raids\` for help with raids.`);
-		}
-		
+		HelpObj.display(prefix, message);
 	}
+	
 	/*
 	 * test Command
 	 */
 	 if (message.content.startsWith(prefix + "test")) {
-		 /*console.log(twitterUsers);
-		 twitterUsers.forEach(function (key) {
-			 console.log(key);
-		 });*/
+		 //Put stuff here to test.
 	 }
 	
-	
 	/*
-	 * USERINFO Command 341205742868496385
+	 * USERINFO Command
 	 */
 	if (message.content.startsWith(prefix + "userinfo")) {
-		message.guild.fetchMembers();
-		let pattern = prefix + "userinfo";
-		let userID = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
-		//let userIDlen = userID.length-1;
-		//userID = userID.substring(2,userIDlen);
-		userID = userID.replace(/[!@&\/\\#,+()$~%.'":*?<>{}]/g,'');
-		
-		if( channelName == 'commands' && userID ){
-			message.guild.fetchMember(userID, true)
-			.then((member)=>{
-				//console.log(member);
-				//console.log(member.user);
-				let userMeta = message.guild.members.get(userID);
-				//console.log(userMeta);
-				message.channel.send(`${message.author} here is the user info you are looking for`, {
-					"embed": {
-						"color": 3447003,
-						"title": member.displayName,
-						"thumbnail": {
-							"url": member.user.avatarURL
-						},
-						"fields": [{
-							"name": "Created At",
-							"value": member.joinedAt.toString(),
-							"inline": true
-						}]
-					}
-				});
-			})
-			.catch((error)=>{
-				if(error){
-					console.log(error);
-				}
-			});
-			
-		}
+		UserinfoObj.display(prefix, message, channelName);
 	}
 	
 	/*
 	 *  tadd - tdel Command
 	 */
 	if (message.content.startsWith(prefix + "tdel")) {
-		let pattern = prefix + "tdel";
-		let roles = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().split(",");
-		let rolesFound = [];
-		let rolesFoundNames = [];
-		roles.forEach(function (item, index) {
-			let theRole = item.trim();
-			//if( teamPattern.test(theRole) ){
-			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
-			//}else{
-			if(raid1Pattern.test(theRole))
-			{
-				theRole = "T1";
-			}
-			if(raid2Pattern.test(theRole))
-			{
-				theRole = "T2";
-			}
-			if(raid3Pattern.test(theRole))
-			{
-				theRole = "T3";
-			}
-			if(raid4Pattern.test(theRole))
-			{
-				theRole = "T4";
-			}
-			if(raid5Pattern.test(theRole))
-			{
-				theRole = "T5";
-			}
-				//theRole = cap(item.toLowerCase().replace(' ', '_').trim());
-			//}
-			let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
-			let isAdmin = adminPattern.test(theRole);
-			if (role !== null && role !== 'undefined' && isAdmin === false) {
-				rolesFound.push(role);
-				rolesFoundNames.push(theRole);
-			}
-		});
-		message.member.removeRoles(rolesFound).then(member => {
-			let rolesAdded = rolesFoundNames.join();
-			if (rolesAdded.length > 0) {
-				message.channel.send(`${message.author} I removed this role(s) for you ${rolesAdded}`);
-			} else {
-				message.channel.send(`${message.author} I could't remove any role(s) for you, either you've already remove it or you enter the wrong role name.`);
-			}
-		}).catch(error => {
-			if (error) {
-				message.channel.send(`${message.author} oops I'm having hiccups please try again in a few seconds.`);
-			}
-		});
+		
+		TAddDelObj.tdel(prefix, message);
+		
 	} else if (message.content.startsWith(prefix + "tadd")) {
-		let pattern = prefix + "tadd";
-		let roles = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().split(",");
-		let rolesFound = [];
-		let rolesFoundNames = [];
-		roles.forEach(function (item, index) {
-			let theRole = item.trim();
-			//if( teamPattern.test(theRole) || raidrzPattern.test(theRole) ){
-			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
-			//}else{
-				//theRole = cap(item.toLowerCase().replace(' ', '_').trim());
-				if(raid1Pattern.test(theRole))
-				{
-					theRole = "T1";
-				}
-				if(raid2Pattern.test(theRole))
-				{
-					theRole = "T2";
-				}
-				if(raid3Pattern.test(theRole))
-				{
-					theRole = "T3";
-				}
-				if(raid4Pattern.test(theRole))
-				{
-					theRole = "T4";
-				}
-				if(raid5Pattern.test(theRole))
-				{
-					theRole = "T5";
-				}
-				
-				
-			//}
-			/*if (teamPattern.test(theRole) && raidrzPattern.test(theRole) === false) {
-				theRole = theRole + " Raidrz";
-			}*/
-			let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
-			let isAdmin = adminPattern.test(theRole);
-			if (role !== null && role !== 'undefined' && isAdmin === false) {
-				rolesFound.push(role);
-				rolesFoundNames.push(theRole);
-			}
-		});
-		message.member.addRoles(rolesFound).then(member => {
-			let rolesAdded = rolesFoundNames.join();
-			if (rolesAdded.length > 0) {
-				message.channel.send(`${message.author} I added this role(s) for you ${rolesAdded}`);
-			} else {
-				message.channel.send(`${message.author} I could't add any role(s) for you, either you are already part of them or you enter the wrong role name.`);
-			}
-		}).catch(error => {
-			if (error) {
-				message.channel.send(`${message.author} oops I'm having hiccups please try again in a few seconds.`);
-			}
-		});
+		TAddDelObj.tadd(prefix, message);
 	}
 	
-	/*
-	 *  CHECK SCREENSHOT
-	 */
-
-
 	/*
 	 * INVITE COMMAND
 	 */
 	if (message.content.startsWith(prefix + "invite")) {
-		var inviteOptions = {
-			temporary: true,
-			maxAge: 86400,
-			maxUses: 0
-		};
-		message.channel.createInvite(inviteOptions)
-			.then((invite) => {
-				message.channel.send(`${message.author} i have created an invite link to share with new friends here you go: ${invite.url}`);
-			})
-			.catch((err) => {
-				console.log(err);
-				message.channel.send(`Oh no! ${message.author} something went wrong. Sorry i couldn't get you an invite link, please try again later.`);
-			});
+		InviteObj.genInvite(message);
 	}
 
 	/*
@@ -545,7 +328,7 @@ client.on("message", (message) => {
 		AddressObj.display(message, prefix, GMapsObj);
 		}
 	
-	if ( message.attachments.keyArray().length >= 1 && raidChannelPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {//&& ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) || (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') ) )
+	if ( message.attachments.keyArray().length >= 1 && raidChannelPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {
 
 		message.attachments.forEach(function (item, index) {
 			//console.log(item);
