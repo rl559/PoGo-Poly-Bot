@@ -55,7 +55,7 @@ twitterKeys = {
 	//793557083094446084 = https://twitter.com/sleepy_sealion
 	//575930104 = https://twitter.com/metaphorminute
 	
-	twitterUsers = [ '2839430431' , '849344094681870336', '837025539315621888', '96879107', '793557083094446084', '575930104'],
+	twitterUsers = [ '2839430431' , '849344094681870336', '837025539315621888', '96879107', '793557083094446084'], //
 	timesAnHour = 0;
 
 
@@ -80,10 +80,9 @@ Twitter.on('data', function (obj) {
 		messageContent = '';
 		//console.log(tweet);
 	if(typeof tweet.user !== 'undefined' && tweet.user !== null){
-		console.log("first if triggered");
 		console.log(tweet.user.id_str);
 		if( twitterUsers.includes( tweet.user.id_str ) ){
-			console.log("second if triggered");
+			console.log("User matches followed users");
 			messageContent = `@everyone BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
 			client.guilds.forEach((item, index)=>{
 				let announcements = '';
