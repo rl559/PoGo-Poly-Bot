@@ -21,7 +21,12 @@ const Discord = require("discord.js"),
 	thanksPattern = new RegExp(/\bthanks\b|\bthank\b|\bthank\b \byou\b|\bthank\b \bu\b|\bthx\b|\bthxs\b/i),
 	graciasPattern = new RegExp(/\bgracias\b/i),
 	adminPattern = new RegExp(/admin|bot|mod/i),
-	teamPattern = new RegExp(/instinct|Instinct|mystic|Mystic|valor|Valor/i),
+	//teamPattern = new RegExp(/instinct|Instinct|mystic|Mystic|valor|Valor/i),
+	raid1Pattern = new RegExp(/L1|level 1|L1|T1|tier 1|Tier 1/i),
+	raid2Pattern = new RegExp(/L2|level 2|L2|tier 2|Tier 2|T2/i),
+	raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
+	raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
+	raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
 	cityPattern = new RegExp(/boca|coral_springs|coconut_creek|davie|deerfield|ft_lauderdale|hollywood|margate|north_lauderdale|parkland|pompano|plantation|sunrise|tamarac/);
 
 function cap(string) {
@@ -374,10 +379,10 @@ client.on("message", (message) => {
 	}
 	
 	/*
-	 *  IAM - IAMNOT Command
+	 *  tadd - tdel Command
 	 */
-	if (message.content.startsWith(prefix + "iamnot")) {
-		let pattern = prefix + "iamnot";
+	if (message.content.startsWith(prefix + "tdel")) {
+		let pattern = prefix + "tdel";
 		let roles = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().split(",");
 		let rolesFound = [];
 		let rolesFoundNames = [];
@@ -386,7 +391,27 @@ client.on("message", (message) => {
 			//if( teamPattern.test(theRole) ){
 			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
 			//}else{
-				theRole = cap(item.toLowerCase().replace(' ', '_').trim());
+			if(raid1Pattern.test(theRole))
+			{
+				theRole = "T1";
+			}
+			if(raid2Pattern.test(theRole))
+			{
+				theRole = "T2";
+			}
+			if(raid3Pattern.test(theRole))
+			{
+				theRole = "T3";
+			}
+			if(raid4Pattern.test(theRole))
+			{
+				theRole = "T4";
+			}
+			if(raid5Pattern.test(theRole))
+			{
+				theRole = "T5";
+			}
+				//theRole = cap(item.toLowerCase().replace(' ', '_').trim());
 			//}
 			let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
 			let isAdmin = adminPattern.test(theRole);
@@ -407,8 +432,8 @@ client.on("message", (message) => {
 				message.channel.send(`${message.author} oops I'm having hiccups please try again in a few seconds.`);
 			}
 		});
-	} else if (message.content.startsWith(prefix + "iam")) {
-		let pattern = prefix + "iam";
+	} else if (message.content.startsWith(prefix + "tadd")) {
+		let pattern = prefix + "tadd";
 		let roles = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().split(",");
 		let rolesFound = [];
 		let rolesFoundNames = [];
@@ -417,7 +442,27 @@ client.on("message", (message) => {
 			//if( teamPattern.test(theRole) || raidrzPattern.test(theRole) ){
 			//	theRole = item.replace(/[_-]/g, ' ').replace(raidrzPattern, 'raidrz').trim().replace(/\b\w/g, l => l.toUpperCase());
 			//}else{
-				theRole = cap(item.toLowerCase().replace(' ', '_').trim());
+				//theRole = cap(item.toLowerCase().replace(' ', '_').trim());
+				if(raid1Pattern.test(theRole))
+				{
+					theRole = "T1";
+				}
+				if(raid2Pattern.test(theRole))
+				{
+					theRole = "T2";
+				}
+				if(raid3Pattern.test(theRole))
+				{
+					theRole = "T3";
+				}
+				if(raid4Pattern.test(theRole))
+				{
+					theRole = "T4";
+				}
+				if(raid5Pattern.test(theRole))
+				{
+					theRole = "T5";
+				}
 				
 				
 			//}
@@ -444,6 +489,7 @@ client.on("message", (message) => {
 			}
 		});
 	}
+	
 	/*
 	 *  CHECK SCREENSHOT
 	 */
