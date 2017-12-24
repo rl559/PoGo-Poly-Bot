@@ -205,7 +205,7 @@ client.on("message", (message) => {
 			let coordinates = message.embeds[0].url;
 			coordinates = coordinates.replace( 'https://GymHuntr.com/#', '');
 
-			let cityChannelName = GMapsObj.getCityChannelName();
+			let cityChannelName = GMapsObj.getCityChannelName(coordinates);
 			if( cityChannelName === 'fort_lauderdale' ){
 				cityChannelName = 'ft_lauderdale';			
 			}
