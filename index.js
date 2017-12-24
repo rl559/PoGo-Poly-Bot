@@ -639,86 +639,32 @@ client.on("message", (message) => {
 			query = query + ", Florida";	
 		}
 		//console.log(query);
-		let placeSearchTextParams = {
-			"query": query,
-			"location": '26.272368, -80.250188',
-			"radius": '9.656064003688153'
-		};
-		gmAPI.placeSearchText(placeSearchTextParams, function (err, result) {
-			if (result.results[0] && err === null) {
-				let mapUrl = encodeURI('https://www.google.com/maps/place/' + result.results[0].formatted_address);
-				if (result.results[0].name) {
-					let mapImageParams = {
-						"center": result.results[0].formatted_address,
-						"zoom": 15,
-						"size": '500x300',
-						"maptype": 'roadmap',
-						"markers": [{
-							"location": result.results[0].formatted_address,
-							"label": result.results[0].name,
-							"color": 'red',
-							"shadow": true
-						}],
-						"style": [{
-							"feature": 'road',
-							"element": 'all',
-							"rules": {
-								"hue": '0x00ff00'
+		
+		var that = this;
+		let addressResult = GMapsObj.getAddress(query, function displayAddress(mapUrl, formatAddress, mapImage)
+		{
+						if(mapUrl !== '')
+						{
+						message.channel.send(`${message.author} here is your address ${formatAddress}`, {
+							"embed": {
+								"color": 3447003,
+								"title": query,
+								"url": mapUrl,
+								"description": "click on the title to go to google maps.",
+								"image": {
+									"url": mapImage
+								},
 							}
-						}]
-					};
-					let mapImage = gmAPI.staticMap(mapImageParams);
-					message.channel.send(`${message.author} here is your address ${result.results[0].formatted_address}`, {
-						"embed": {
-							"color": 3447003,
-							"title": result.results[0].name,
-							"url": mapUrl,
-							"description": "click on the title to go to google maps.",
-							"image": {
-								"url": mapImage
-							},
-						}
-					});
-				} else {
-					let mapImageParams = {
-						"center": result.results[0].formatted_address,
-						"zoom": 15,
-						"size": '500x300',
-						"maptype": 'roadmap',
-						"markers": [{
-							"location": result.results[0].formatted_address,
-							"label": result.results[0].formatted_address,
-							"color": 'red',
-							"shadow": true
-						}],
-						"style": [{
-							"feature": 'road',
-							"element": 'all',
-							"rules": {
-								"hue": '0x00ff00'
-							}
-						}]
-					};
-					let mapImage = gmAPI.staticMap(mapImageParams);
-					message.channel.send(`${message.author} here is your address ${result.results[0].formatted_address}`, {
-						"embed": {
-							"color": 3447003,
-							"title": query,
-							"url": mapUrl,
-							"description": "click on the title to go to google maps.",
-							"image": {
-								"url": mapImage
-							},
-						}
-					});
+						});
+					}
+
+
+	 			else {
+					message.channel.send(`${message.author} couldn't find what you where looking for`);
 				}
-
-
-			} else {
-				message.channel.send(`${message.author} couldn't find what you where looking for`);
-			}
 		});
-	}
+		console.log(addressResult);
+		}
 	
 	if ( message.attachments.keyArray().length >= 1 && raidChannelPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {//&& ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) || (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') ) )
 
