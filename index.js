@@ -53,7 +53,11 @@ var raidBosses = require('./data/raidboss.json'),
 	//2839430431 = https://twitter.com/PokemonGoApp
 	//849344094681870336 = https://twitter.com/NianticHelp
 	//961341668 = https://twitter.com/TheSquareMedia  REMOVED THIS ONE, don't need it
-	twitterUsers = [ 2839430431 , 849344094681870336 ],
+	//837025539315621888 = https://twitter.com/Pokemon_Newz
+	//96879107 = https://twitter.com/Pokemon
+	//793557083094446084 = https://twitter.com/sleepy_sealion
+	
+	twitterUsers = [ 2839430431 , 849344094681870336, 837025539315621888, 96879107, 793557083094446084],
 	timesAnHour = 0;
 
 
