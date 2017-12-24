@@ -9090,8 +9090,222 @@
 		"power": 130
 		}
 	},
-	"evolveTo": "lombre",
-	"evolveFrom": "",
+	"evolveTo": "",
+	"evolveFrom": "lombre",
 	"fleeRate": 0.06
+	},
+	"seedot": {
+	"id": 273,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 25,
+	"name": "Seedot",
+	"img": "https://www.serebii.net/pokemongo/pokemon/273.png",
+	"stats": {
+		"stamina": 80,
+		"attack": 71,
+		"defense": 86
+	},
+	"maxCP": 526,
+	"type": ["grass"],
+	"weaknesses": {
+		"bug": 1.4,
+		"flying": 1.4,
+		"poison": 1.4,
+		"fire": 1.4,
+		"ice": 1.4
+	},
+	"quickMoves": {
+		"quick-attack": {
+			"power": 8
+		},
+		"bullet-seed": {
+			"power": 8
+		}
+	},
+	"chargeMoves": {
+		"grass-knot": {
+			"power": 90
+		},
+		"foul-play": {
+			"power": 70
+		},
+		"energy-ball": {
+		"power": 90
+		}
+	},
+	"evolveTo": "nuzleaf",
+	"evolveFrom": "",
+	"fleeRate": 0.2
+	},
+	"nuzleaf": {
+	"id": 274,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 100,
+	"name": "Nuzleaf",
+	"img": "https://www.serebii.net/pokemongo/pokemon/274.png",
+	"stats": {
+		"stamina": 140,
+		"attack": 134,
+		"defense": 78
+	},
+	"maxCP": 1117,
+	"type": ["grass", "dark"],
+	"weaknesses": {
+		"bug": 1.96,
+		"flying": 1.4,
+		"poison": 1.4,
+		"fire": 1.4,
+		"ice": 1.4,
+		"fighting": 1.4,
+		"fairy": 1.4
+	},
+	"quickMoves": {
+		"razor-leaf": {
+			"power": 13
+		},
+		"feint-attack": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"grass-knot": {
+			"power": 90
+		},
+		"foul-play": {
+			"power": 70
+		},
+		"leaf-blade": {
+		"power": 70
+		}
+	},
+	"evolveTo": "shiftry",
+	"evolveFrom": "seedot",
+	"fleeRate": 0.09
+	},
+	"shiftry": {
+	"id": 275,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 0,
+	"name": "Nuzleaf",
+	"img": "https://www.serebii.net/pokemongo/pokemon/275.png",
+	"stats": {
+		"stamina": 180,
+		"attack": 200,
+		"defense": 121
+	},
+	"maxCP": 2186,
+	"type": ["grass", "dark"],
+	"weaknesses": {
+		"bug": 1.96,
+		"flying": 1.4,
+		"poison": 1.4,
+		"fire": 1.4,
+		"ice": 1.4,
+		"fighting": 1.4,
+		"fairy": 1.4
+	},
+	"quickMoves": {
+		"razor-leaf": {
+			"power": 13
+		},
+		"feint-attack": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"hurricane": {
+			"power": 110
+		},
+		"foul-play": {
+			"power": 70
+		},
+		"leaf-blade": {
+		"power": 70
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "nuzleaf",
+	"fleeRate": 0.06
+	},
+	"taillow": {
+	"id": 276,
+	"egg": 0,
+	"buddy": 1,
+	"candy": 50,
+	"name": "Taillow",
+	"img": "https://www.serebii.net/pokemongo/pokemon/276.png",
+	"stats": {
+		"stamina": 80,
+		"attack": 106,
+		"defense": 61
+	},
+	"maxCP": 642,
+	"type": ["flying", "normal"],
+	"weaknesses": {
+		"electric": 1.4,
+		"rock": 1.4,
+		"ice": 1.4
+	},
+	"quickMoves": {
+		"quick-attack": {
+			"power": 8
+		},
+		"peck": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"aerial-ace": {
+			"power": 55
+		}
+	},
+	"evolveTo": "swellow",
+	"evolveFrom": "",
+	"fleeRate": 0.2
+	},
+	"swellow": {
+	"id": 277,
+	"egg": 0,
+	"buddy": 1,
+	"candy": 0,
+	"name": "Swellow",
+	"img": "https://www.serebii.net/pokemongo/pokemon/277.png",
+	"stats": {
+		"stamina": 12,
+		"attack": 185,
+		"defense": 130
+	},
+	"maxCP": 1747,
+	"type": ["flying", "normal"],
+	"weaknesses": {
+		"electric": 1.4,
+		"rock": 1.4,
+		"ice": 1.4
+	},
+	"quickMoves": {
+		"steel-wing": {
+			"power": 11
+		},
+		"wing-attack": {
+			"power": 8
+		}
+	},
+	"chargeMoves": {
+		"aerial-ace": {
+			"power": 55
+		},
+		"brave-bird": {
+			"power": 90
+		},
+		"sky-attack": {
+			"power": 70
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "taillow",
+	"fleeRate": 0.07
 	}
 }
