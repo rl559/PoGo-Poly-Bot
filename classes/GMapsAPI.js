@@ -89,7 +89,6 @@ getAddress(queryIn, displayAddress)
     mapImage = gmAPI.staticMap(mapImageParams);
     formatAddress = result.results[0].formatted_address;
   }
-  console.log([mapUrl, formatAddress, mapImage]);
   displayAddress(mapUrl, formatAddress, mapImage);
 }
 else{displayAddress('','','')}

@@ -4,7 +4,6 @@ const Discord = require("discord.js"),
 	client = new Discord.Client(),
 	TwitterStream = require('twitter-stream-api'),
 	newUsers = [],
-	pokedex = require('./pokedex.js'),
 	request = require('request').defaults({
 		encoding: null
 	}),
@@ -16,6 +15,10 @@ const Discord = require("discord.js"),
 	Jimp = require("jimp"),
 	GMapsAPI = require("./classes/GMapsAPI.js"),
 	GMapsObj = new GMapsAPI(),
+	Address = require("./classes/Address.js"),
+	AddressObj = new Address(),
+	PokedexCmd = require("./classes/PokedexCmd.js"),
+	PokedexObj = new PokedexCmd(),
 	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	helloPattern = new RegExp(/\bhi\b|\bhello\b|\bgreetings\b|\bhey\b/i),
 	holaPattern = new RegExp(/\bhola\b/i),
@@ -533,137 +536,13 @@ client.on("message", (message) => {
 	 * POKEDEX COMMAND
 	 */
 	if (message.content.startsWith(prefix + "pokedex")) {
-		var pattern = prefix + "pokedex";
-		var query = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().toLowerCase();
-		var pokemon = pokedex(query);
-		var typeValue = '';
-		var weaknessValue = '';
-		var quickMoves = '';
-		var chargedMoves = '';
-		var statsValue = '';
-		
-		//console.log( pokemon );
-		if (typeof pokemon === 'undefined' || pokemon === null ) {
-			message.channel.send(`${message.author} I couldn't find a pokedex entry for ${query}`);
-		} else {
-			function getEmoji(name) {
-				var emojiId = '';
-				message.guild.emojis.forEach(function (item, index) {
-					if (item.name === name) {
-						emojiId = item.id;
-					}
-				});
-
-				return emojiId;
-			}
-
-			pokemon.type.forEach(function (item, index) {
-				var emojiId = getEmoji('type' + item);
-				//console.log(emojiId);
-				typeValue += '<:type' + item + ':' + emojiId + '> ';
-			});
-			Object.keys(pokemon.weaknesses).forEach(function (key) {
-				var itemValue = key.toLocaleLowerCase();
-				var amount = pokemon.weaknesses[key];
-				var emojiId = getEmoji('type' + itemValue);
-				//console.log(emojiId);
-				weaknessValue += '<:type' + itemValue + ':' + emojiId + '> (' + amount + ')';
-			});
-			Object.keys(pokemon.chargeMoves).forEach(function (key) {
-				chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": Attack - " + pokemon.chargeMoves[key].power;
-				if (pokemon.chargeMoves[key].dps !== null && typeof pokemon.chargeMoves[key].dps !== 'undefined') {
-					chargedMoves += " | DPS " + pokemon.chargeMoves[key].dps + "\n";
-				} else {
-					chargedMoves += "\n";
-				}
-			});
-
-			Object.keys(pokemon.quickMoves).forEach(function (key) {
-				quickMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": Attack - " + pokemon.quickMoves[key].power;
-				if (pokemon.quickMoves[key].dps !== null && typeof pokemon.quickMoves[key].dps !== 'undefined') {
-					quickMoves += " | DPS " + pokemon.quickMoves[key].dps + "\n";
-				} else {
-					quickMoves += "\n";
-				}
-			});
-
-			Object.keys(pokemon.stats).forEach(function (key) {
-				statsValue += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": " + pokemon.stats[key] + "\n";
-			});
-			message.channel.send(`${message.author} here is your pokedex result for ${query}`, {
-				"embed": {
-					"color": 3447003,
-					"title": `**${pokemon.id}** ` + pokemon.name,
-					"thumbnail": {
-						"url": pokemon.img
-					},
-					"fields": [{
-						"name": "Type(s)",
-						"value": typeValue,
-						"inline": true
-					}, {
-						"name": "Weaknesse(s)",
-						"value": weaknessValue,
-						"inline": true
-					}, {
-						"name": "Stats",
-						"value": statsValue,
-						"inline": true
-					}, {
-						"name": "MaxCP",
-						"value": pokemon.maxCP,
-						"inline": true
-					}, {
-						"name": "Charged Move(s)",
-						"value": chargedMoves,
-						"inline": true
-					}, {
-						"name": "Quick Move(s)",
-						"value": quickMoves,
-						"inline": true
-					}]
-				}
-			});
-		}
+		PokedexObj.display(prefix, message);
 	}
 	/*
 	 * ADDRESS COMMAND
 	 */
 	if (message.content.startsWith(prefix + "address")) {
-		let pattern = prefix + "address";
-		let query = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim();
-		if( !(/broward/i).test(query) ){
-			query = query + " Broward";
-		}
-		if( !(/fl|florida/i).test(query) ){
-			query = query + ", Florida";	
-		}
-		//console.log(query);
-		
-		var that = this;
-		let addressResult = GMapsObj.getAddress(query, function displayAddress(mapUrl, formatAddress, mapImage)
-		{
-						if(mapUrl !== '')
-						{
-						message.channel.send(`${message.author} here is your address ${formatAddress}`, {
-							"embed": {
-								"color": 3447003,
-								"title": query,
-								"url": mapUrl,
-								"description": "click on the title to go to google maps.",
-								"image": {
-									"url": mapImage
-								},
-							}
-						});
-					}
-
-
-	 			else {
-					message.channel.send(`${message.author} couldn't find what you where looking for`);
-				}
-		});
-		console.log(addressResult);
+		AddressObj.display(message, prefix, GMapsObj);
 		}
 	
 	if ( message.attachments.keyArray().length >= 1 && raidChannelPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {//&& ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) || (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') ) )
@@ -811,15 +690,7 @@ client.on("message", (message) => {
 			});
 		});
 	}
-	
-	if (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') {
-		//client.emit("guildMemberAdd", message.guild.members.get("297918949214126081"));339590026973282304 
-		//var channelRole = message.channel.server.roles.get('name', channelName);       339590026973282304
-		//let role = member.guild.roles.find("name", 'Raidrz');
-		//member.addRole(role).catch(console.error);
-		
-		//message.pin();
-	}
+
 });
 
 function androidTimer( message, nameResults, gymResults, timerResults, androidTimeResults, ssTakenDate, channelName, attachment, img, androidTimeImage, androidTimeW, imgWidth, imgHeight ){
