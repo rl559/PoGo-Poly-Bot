@@ -15,7 +15,7 @@ const Discord = require("discord.js"),
 	Exif = require("simple-exiftool"),
 	textract = require("textract"),
 	Jimp = require("jimp"),
-	ghbLevelPattern = new RegExp(/Level 4|Level 5/i),
+	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	helloPattern = new RegExp(/\bhi\b|\bhello\b|\bgreetings\b|\bhey\b/i),
 	holaPattern = new RegExp(/\bhola\b/i),
 	thanksPattern = new RegExp(/\bthanks\b|\bthank\b|\bthank\b \byou\b|\bthank\b \bu\b|\bthx\b|\bthxs\b/i),
@@ -199,6 +199,12 @@ client.on("message", (message) => {
 	
 	if( message.author.username == 'GymHuntrBot' ){
 		if( message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)){
+			let raidLevel = '';
+			if(raid1Pattern.test(message.embeds[0].title)) raidLevel = 'T1';
+			if(raid2Pattern.test(message.embeds[0].title)) raidLevel = 'T2';
+			if(raid3Pattern.test(message.embeds[0].title)) raidLevel = 'T3';
+			if(raid4Pattern.test(message.embeds[0].title)) raidLevel = 'T4';
+			if(raid5Pattern.test(message.embeds[0].title)) raidLevel = 'T5';
 			let coordinates = message.embeds[0].url;
 			coordinates = coordinates.replace( 'https://GymHuntr.com/#', '');
 			let reverseGeocodeParams = {
@@ -213,6 +219,7 @@ client.on("message", (message) => {
 				//console.log(message.embeds);
 				let content = message.embeds[0].description.split('\n'),
 					raidBoss = content[1],
+					raidBossLvl = raidLevel;
 					raidBossImg = message.embeds[0].thumbnail.url,
 					ssTakenDate = new Date(message.createdTimestamp),
 					gymResults = content[0],
@@ -228,15 +235,14 @@ client.on("message", (message) => {
 					endedTime = moment(ssTakenDate).add({ hours: timerArr[0], minutes: timerArr[1], seconds: timerArr[2] }).tz('America/New_York').format("h:mm:ss A");
 				}
 				if( raidBoss ){
-					//to change, to only tier notifications
-					let roleToMention = message.guild.roles.find('name', cityChannelName),
-						raidBossMention = message.guild.roles.find('name', raidBoss),
+					//let roleToMention = message.guild.roles.find('name', cityChannelName),
+						let raidBossMention = message.guild.roles.find('name', raidLevel),
 						raidChannel = '';
-					roleToMention = (roleToMention) ? '<@&' + roleToMention.id + '>' : '';
+					//roleToMention = (roleToMention) ? '<@&' + roleToMention.id + '>' : '';
 					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
 					raidChannel = message.guild.channels.find('name', 'raids');
 					if ( raidChannel ) {
-						raidChannel.send(`${roleToMention} Gymhuntr has found a ${raidBossMention} Raid`, {
+						raidChannel.send(`Gymhuntr has found a ${raidBossMention} Raid`, {
 							"embed": {
 								"color": 3447003,
 								"title": 'Raid Posted!',
