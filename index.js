@@ -54,7 +54,7 @@ twitterKeys = {
 	//96879107 = https://twitter.com/Pokemon
 	//793557083094446084 = https://twitter.com/sleepy_sealion
 	
-	twitterUsers = [ 2839430431 , 849344094681870336, 837025539315621888, 96879107, 793557083094446084],
+	twitterUsers = [ '2839430431' , '849344094681870336', '837025539315621888', '96879107', '793557083094446084'],
 	timesAnHour = 0;
 
 
@@ -65,7 +65,7 @@ client.on("ready", () => {
 	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
 });
 
-Twitter.stream('statuses/filter', {
+Twitter.stream('site', {
 	follow: twitterUsers
 });
 
