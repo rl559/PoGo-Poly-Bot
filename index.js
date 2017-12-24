@@ -27,7 +27,8 @@ const Discord = require("discord.js"),
 	raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
 	raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
 	raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
-	cityPattern = new RegExp(/boca|coral_springs|coconut_creek|davie|deerfield|ft_lauderdale|hollywood|margate|north_lauderdale|parkland|pompano|plantation|sunrise|tamarac/);
+	//cityPattern = new RegExp(/boca|coral_springs|coconut_creek|davie|deerfield|ft_lauderdale|hollywood|margate|north_lauderdale|parkland|pompano|plantation|sunrise|tamarac/);
+	raidChannelPattern = new RegExp(/raids/);
 
 function cap(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -147,11 +148,11 @@ function everyHour(){
 			}
 
 			/*
-			 * Clear pinned messages on city channels.
+			 * Clear pinned messages on raid channels. (only 1 right now)
 			 */
 			
 				item.channels.forEach((item, index)=>{
-					if( cityPattern.test( item.name ) ){
+					if( raidChannelPattern.test( item.name ) ){
 						item.fetchPinnedMessages()
 						.then((pinnedMessages)=>{
 							if( pinnedMessages.size > 0){
@@ -191,7 +192,7 @@ client.on("message", (message) => {
 		channelName = message.channel.name,
 		currentTime = Moment().tz('America/New_York');
 	
-	if( message.system && message.type === 'PINS_ADD' && cityPattern.test(channelName) && message.author.username === 'PoGoPolyBot' ){
+	if( message.system && message.type === 'PINS_ADD' && raidChannelPattern.test(channelName) && message.author.username === 'PoGoPolyBot' ){
 		//console.log( message );
 		message.delete();
 	}
@@ -227,14 +228,15 @@ client.on("message", (message) => {
 					endedTime = moment(ssTakenDate).add({ hours: timerArr[0], minutes: timerArr[1], seconds: timerArr[2] }).tz('America/New_York').format("h:mm:ss A");
 				}
 				if( raidBoss ){
+					//to change, to only tier notifications
 					let roleToMention = message.guild.roles.find('name', cityChannelName),
 						raidBossMention = message.guild.roles.find('name', raidBoss),
-						cityChannel = '';
+						raidChannel = '';
 					roleToMention = (roleToMention) ? '<@&' + roleToMention.id + '>' : '';
 					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
-					cityChannel = message.guild.channels.find('name', cityChannelName);
-					if ( cityChannel ) {
-						cityChannel.send(`${roleToMention} Gymhuntr has found a ${raidBossMention} Raid`, {
+					raidChannel = message.guild.channels.find('name', 'raids');
+					if ( raidChannel ) {
+						raidChannel.send(`${roleToMention} Gymhuntr has found a ${raidBossMention} Raid`, {
 							"embed": {
 								"color": 3447003,
 								"title": 'Raid Posted!',
@@ -725,7 +727,7 @@ client.on("message", (message) => {
 		});
 	}
 	
-	if ( message.attachments.keyArray().length >= 1 && cityPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {//&& ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) || (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') ) )
+	if ( message.attachments.keyArray().length >= 1 && raidChannelPattern.test(channelName) && ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) ) ) {//&& ( ( currentTime.hour() <= 21 && currentTime.hour() >= 6 ) || (typeof message.guild !== 'undefined' && typeof message.guild.name !== 'undefined' && message.guild.name === 'square bot test') ) )
 
 		message.attachments.forEach(function (item, index) {
 			//console.log(item);
