@@ -77,11 +77,11 @@ Twitter.on('data', function (obj) {
 				//console.log(index);
 				let announcements = '';
 				announcements = item.channels.find('name', 'announcements');
-				if ( announcements && !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz') ) {
+				if ( announcements /*&& !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz')*/ ) {
 					announcements.send( messageContent );
-				}else if( !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz') ){
+				}/*else if( !(tweet.user.screen_name === 'TheSquareMedia' && item.name === 'CS Raidrz') ){
 					item.channels.get(index).send( messageContent );
-				}
+				}*/
 
 			});
 		}
