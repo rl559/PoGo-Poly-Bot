@@ -5,7 +5,6 @@ const Discord = require("discord.js"),
 	TwitterStream = require('twitter-stream-api'),
 	newUsers = [],
 	pokedex = require('./pokedex.js'),
-	GoogleMapsAPI = require('googlemaps'),
 	request = require('request').defaults({
 		encoding: null
 	}),
@@ -15,6 +14,8 @@ const Discord = require("discord.js"),
 	Exif = require("simple-exiftool"),
 	textract = require("textract"),
 	Jimp = require("jimp"),
+	GMapsAPI = require("./classes/GMapsAPI.js"),
+	GMapsObj = new GMapsAPI(),
 	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	helloPattern = new RegExp(/\bhi\b|\bhello\b|\bgreetings\b|\bhey\b/i),
 	holaPattern = new RegExp(/\bhola\b/i),
@@ -35,20 +36,12 @@ function cap(string) {
 }
 
 var raidBosses = require('./data/raidboss.json'),
-	publicConfig = {
-		key: 'AIzaSyCYtlcX6HByoHsNAIcSOpTpRLffPai-i7g',
-		stagger_time: 1000, // for elevationPath
-		encode_polylines: false,
-		secure: true, // use https
-		//proxy:              'http://127.0.0.1:9999' // optional, set a proxy for HTTP requests
-	},
-	gmAPI = new GoogleMapsAPI(publicConfig),
-	twitterKeys = {
-		consumer_key : "poyJARVI2vqGmfyaEIabWXlmm",
-		consumer_secret : "LxqjoxmofSTWsbScn7wUNxd7DKDjNJ6bjFvf9CPrUEHhcTGO9f",
-		token : "288824671-XwJxXH5n9eNmXwbffb5oXP99USx3rysrxj2Ypo38",
-		token_secret : "lfZ6lD3Ju5CfykIRMPLaMAnUHrbpbXl3d8yg0ynAsYR9K"
-	},
+twitterKeys = {
+	consumer_key : "poyJARVI2vqGmfyaEIabWXlmm",
+	consumer_secret : "LxqjoxmofSTWsbScn7wUNxd7DKDjNJ6bjFvf9CPrUEHhcTGO9f",
+	token : "288824671-XwJxXH5n9eNmXwbffb5oXP99USx3rysrxj2Ypo38",
+	token_secret : "lfZ6lD3Ju5CfykIRMPLaMAnUHrbpbXl3d8yg0ynAsYR9K"
+},
 	Twitter = new TwitterStream(twitterKeys, false),
 	//2839430431 = https://twitter.com/PokemonGoApp
 	//849344094681870336 = https://twitter.com/NianticHelp
@@ -211,16 +204,12 @@ client.on("message", (message) => {
 			if(raid5Pattern.test(message.embeds[0].title)) raidLevel = 'T5';
 			let coordinates = message.embeds[0].url;
 			coordinates = coordinates.replace( 'https://GymHuntr.com/#', '');
-			let reverseGeocodeParams = {
-				  "latlng":        coordinates,
-				  "result_type":   "locality",
-				  "language":      "en",
-				  "location_type": "APPROXIMATE"
-				};
-			gmAPI.reverseGeocode(reverseGeocodeParams, function(err, result){
-				//console.log(result.results[0].address_components[0].short_name);
-				let cityChannelName = result.results[0].address_components[0].short_name.toLowerCase().replace( ' ', '_' );
-				//console.log(message.embeds);
+
+			let cityChannelName = GMapsObj.getCityChannelName();
+			if( cityChannelName === 'fort_lauderdale' ){
+				cityChannelName = 'ft_lauderdale';			
+			}
+
 				let content = message.embeds[0].description.split('\n'),
 					raidBoss = content[1],
 					raidBossLvl = raidLevel;
@@ -231,15 +220,11 @@ client.on("message", (message) => {
 					endedTime = '',
 					timerArr = {};
 				console.log(content);
-				if( cityChannelName === 'fort_lauderdale' ){
-					cityChannelName = 'ft_lauderdale';			
-				}
 				if (timerResults !== '') {
 					timerArr = timerResults.split(':');
 					endedTime = moment(ssTakenDate).add({ hours: timerArr[0], minutes: timerArr[1], seconds: timerArr[2] }).tz('America/New_York').format("h:mm:ss A");
 				}
 				if( raidBoss ){
-					//let roleToMention = message.guild.roles.find('name', cityChannelName),
 						let raidBossMention = message.guild.roles.find('name', raidLevel),
 						raidChannel = '';
 					//roleToMention = (roleToMention) ? '<@&' + roleToMention.id + '>' : '';
@@ -272,8 +257,6 @@ client.on("message", (message) => {
 						});
 					}
 				}
-				
-			});
 		}
 	}
 	
