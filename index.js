@@ -29,11 +29,9 @@ const Discord = require("discord.js"),
 	HelpObj = new Help(),
 	Callme = require("./classes/Callme.js"),
 	CallmeObj = new Callme(),
+	BotContact = require("./classes/BotContact.js"),
+	BotContactObj = new BotContact(),
 	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
-	helloPattern = new RegExp(/\bhi\b|\bhello\b|\bgreetings\b|\bhey\b/i),
-	holaPattern = new RegExp(/\bhola\b/i),
-	thanksPattern = new RegExp(/\bthanks\b|\bthank\b|\bthank\b \byou\b|\bthank\b \bu\b|\bthx\b|\bthxs\b/i),
-	graciasPattern = new RegExp(/\bgracias\b/i),
 	raid1Pattern = new RegExp(/L1|level 1|L1|T1|tier 1|Tier 1/i),
 	raid2Pattern = new RegExp(/L2|level 2|L2|tier 2|Tier 2|T2/i),
 	raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
@@ -251,22 +249,7 @@ client.on("message", (message) => {
 	if (message.author.bot) return;
 	
 	if( message.isMentioned(message.guild.members.get("394132572763848705")) ){
-	   let response = '';
-	   if( helloPattern.test(message.content) ){
-			response = `Hi! ${message.author} if you are having trouble try using the \`.help\` command or contacting an admin while I learn how to do more helpful things.`;
-		}else if( holaPattern.test(message.content) ){
-			response = `Hola ${message.author} un gusto ayudarte, si estas teniendo algun problema usa el \`.help\` command o contacta a un admin mientras yo aprendo como hacer mas cosas para ayudarte.`;
-		}else if( thanksPattern.test(message.content) ){
-			response = `You're Welcome! ${message.author} glad to help, if you are having trouble try using the \`.help\` command or contacting an admin while I learn how to do more helpful things.`;
-		}else if( graciasPattern.test(message.content) ){
-			response = `De nada! ${message.author} un gusto ayudarte, si estas teniendo algun problema usa el \`.help\` command o contacta a un admin mientras yo aprendo como hacer mas cosas para ayudarte.`;
-		}else{
-			response = `Wattup? ${message.author} if you are having trouble try using the \`.help\` command or contacting an admin while I learn how to do more helpful things.`;
-		}
-	
-		if( response ){
-			message.channel.send(response);
-		}
+		BotContactObj.display(message);
 	}
 	
 	/*
@@ -301,9 +284,7 @@ client.on("message", (message) => {
 	 *  tadd - tdel Command
 	 */
 	if (message.content.startsWith(prefix + "tdel")) {
-		
 		TAddDelObj.tdel(prefix, message);
-		
 	} else if (message.content.startsWith(prefix + "tadd")) {
 		TAddDelObj.tadd(prefix, message);
 	}
