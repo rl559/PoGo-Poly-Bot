@@ -49,7 +49,10 @@ var raidBosses = require('./data/raidboss.json'),
 		token_secret : "lfZ6lD3Ju5CfykIRMPLaMAnUHrbpbXl3d8yg0ynAsYR9K"
 	},
 	Twitter = new TwitterStream(twitterKeys, false),
-	twitterUsers = [ 2839430431 , 849344094681870336, 961341668 ],
+	//2839430431 = https://twitter.com/PokemonGoApp
+	//849344094681870336 = https://twitter.com/NianticHelp
+	//961341668 = https://twitter.com/TheSquareMedia  REMOVED THIS ONE, don't need it
+	twitterUsers = [ 2839430431 , 849344094681870336 ],
 	timesAnHour = 0;
 
 
@@ -342,6 +345,17 @@ client.on("message", (message) => {
 		}
 		
 	}
+	/*
+	 * test Command
+	 */
+	 if (message.content.startsWith(prefix + "test")) {
+		 /*console.log(twitterUsers);
+		 twitterUsers.forEach(function (key) {
+			 console.log(key);
+		 });*/
+	 }
+	
+	
 	/*
 	 * USERINFO Command 341205742868496385
 	 */
