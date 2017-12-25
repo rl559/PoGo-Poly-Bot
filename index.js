@@ -49,13 +49,9 @@ twitterKeys = {
 	Twitter = new TwitterStream(twitterKeys, false),
 	//2839430431 = https://twitter.com/PokemonGoApp
 	//849344094681870336 = https://twitter.com/NianticHelp
-	//961341668 = https://twitter.com/TheSquareMedia  REMOVED THIS ONE, don't need it
-	//837025539315621888 = https://twitter.com/Pokemon_Newz
-	//96879107 = https://twitter.com/Pokemon
-	//793557083094446084 = https://twitter.com/sleepy_sealion
-	//575930104 = https://twitter.com/metaphorminute
+	//575930104 = https://twitter.com/metaphorminute  REMOVED, FOR TESTING
 	
-	twitterUsers = [ '2839430431' , '849344094681870336', '837025539315621888', '96879107', '793557083094446084'], //
+	twitterUsers = [ '2839430431' , '849344094681870336'], //
 	timesAnHour = 0;
 
 
