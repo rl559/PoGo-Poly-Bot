@@ -200,8 +200,12 @@ client.on("message", (message) => {
 			if( cityChannelName === 'fort_lauderdale' ){
 				cityChannelName = 'ft_lauderdale';			
 			}
-
-				let content = message.embeds[0].description.split('\n'),
+				let descSplit = message.embeds[0].description.split('\n');
+				let content;
+				
+				if(descSplit.length == 4)
+				{
+				content = descSplit,
 					raidBoss = content[1],
 					raidBossLvl = raidLevel;
 					raidBossImg = message.embeds[0].thumbnail.url,
@@ -210,6 +214,7 @@ client.on("message", (message) => {
 					timerResults = content[3].replace( '*Raid Ending: ', '').replace(' hours ', ':').replace(' min ', ':').replace(' sec*', ''),//*Raid Ending: 1 hours 35 min 34 sec*
 					endedTime = '',
 					timerArr = {};
+				}
 				console.log(content);
 				if (timerResults !== '') {
 					timerArr = timerResults.split(':');
