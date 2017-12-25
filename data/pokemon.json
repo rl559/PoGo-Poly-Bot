@@ -10343,5 +10343,256 @@
 	"evolveTo": "",
 	"evolveFrom": "",
 	"fleeRate": 0.07
+	},
+	"mawile": {
+	"id": 303,
+	"egg": 0,
+	"buddy": 5,
+	"candy": 0,
+	"name": "Mawile",
+	"img": "https://www.serebii.net/pokemongo/pokemon/303.png",
+	"stats": {
+		"stamina": 100,
+		"attack": 155,
+		"defense": 155
+	},
+	"maxCP": 1484,
+	"type": ["fairy", "steel"],
+	"weaknesses": {
+		"fire": 1.4,
+		"ground": 1.4
+	},
+	"quickMoves": {
+		"bite": {
+			"power": 6
+		},
+		"astonish": {
+			"power": 8
+		}
+	},
+	"chargeMoves": {
+		"iron-head": {
+			"power": 60
+		},
+		"play-rough": {
+			"power": 90
+		},
+		"vice-grip": {
+			"power": 35
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "",
+	"fleeRate": 0.09
+	},
+	"aron": {
+	"id": 304,
+	"egg": 0,
+	"buddy": 1,
+	"candy": 25,
+	"name": "Aron",
+	"img": "https://www.serebii.net/pokemongo/pokemon/304.png",
+	"stats": {
+		"stamina": 100,
+		"attack": 121,
+		"defense": 168
+	},
+	"maxCP": 1232,
+	"type": ["rock", "steel"],
+	"weaknesses": {
+		"fighting": 1.96,
+		"ground": 1.96,
+		"water": 1.4
+	},
+	"quickMoves": {
+		"metal-claw": {
+			"power": 8
+		},
+		"tackle": {
+			"power": 5
+		}
+	},
+	"chargeMoves": {
+		"iron-head": {
+			"power": 60
+		},
+		"body-slam": {
+			"power": 50
+		},
+		"rock-tomb": {
+			"power": 70
+		}
+	},
+	"evolveTo": "lairon",
+	"evolveFrom": "",
+	"fleeRate": 0.2
+	},
+	"lairon": {
+	"id": 305,
+	"egg": 0,
+	"buddy": 1,
+	"candy": 100,
+	"name": "Lairon",
+	"img": "https://www.serebii.net/pokemongo/pokemon/305.png",
+	"stats": {
+		"stamina": 120,
+		"attack": 158,
+		"defense": 240
+	},
+	"maxCP": 2004,
+	"type": ["rock", "steel"],
+	"weaknesses": {
+		"fighting": 1.96,
+		"ground": 1.96,
+		"water": 1.4
+	},
+	"quickMoves": {
+		"metal-claw": {
+			"power": 8
+		},
+		"iron-tail": {
+			"power": 15
+		}
+	},
+	"chargeMoves": {
+		"heavy-slam": {
+			"power": 70
+		},
+		"body-slam": {
+			"power": 50
+		},
+		"rock-slide": {
+			"power": 80
+		}
+	},
+	"evolveTo": "aggron",
+	"evolveFrom": "aron",
+	"fleeRate": 0.09
+	},
+	"aggron": {
+	"id": 306,
+	"egg": 0,
+	"buddy": 1,
+	"candy": 0,
+	"name": "Aggron",
+	"img": "https://www.serebii.net/pokemongo/pokemon/306.png",
+	"stats": {
+		"stamina": 140,
+		"attack": 198,
+		"defense": 314
+	},
+	"maxCP": 3004,
+	"type": ["rock", "steel"],
+	"weaknesses": {
+		"fighting": 1.96,
+		"ground": 1.96,
+		"water": 1.4
+	},
+	"quickMoves": {
+		"dragon-tail": {
+			"power": 15
+		},
+		"iron-tail": {
+			"power": 15
+		}
+	},
+	"chargeMoves": {
+		"heavy-slam": {
+			"power": 70
+		},
+		"stone-edge": {
+			"power": 100
+		},
+		"thunder": {
+			"power": 100
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "lairon",
+	"fleeRate": 0.06
+	},
+	"meditite": {
+	"id": 307,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 50,
+	"name": "Meditite",
+	"img": "https://www.serebii.net/pokemongo/pokemon/307.png",
+	"stats": {
+		"stamina": 60,
+		"attack": 78,
+		"defense": 107
+	},
+	"maxCP": 555,
+	"type": ["fighting", "psychic"],
+	"weaknesses": {
+		"fairy": 1.4,
+		"flying": 1.4,
+		"ghost": 1.4
+	},
+	"quickMoves": {
+		"confusion": {
+			"power": 20
+		},
+		"rock-smash": {
+			"power": 15
+		}
+	},
+	"chargeMoves": {
+		"psyshock": {
+			"power": 65
+		},
+		"ice-punch": {
+			"power": 50
+		},
+		"low-sweep": {
+			"power": 40
+		}
+	},
+	"evolveTo": "medicham",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"medicham": {
+	"id": 308,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 0,
+	"name": "Medicham",
+	"img": "https://www.serebii.net/pokemongo/pokemon/308.png",
+	"stats": {
+		"stamina": 120,
+		"attack": 121,
+		"defense": 152
+	},
+	"maxCP": 1275,
+	"type": ["fighting", "psychic"],
+	"weaknesses": {
+		"fairy": 1.4,
+		"flying": 1.4,
+		"ghost": 1.4
+	},
+	"quickMoves": {
+		"counter": {
+			"power": 12
+		},
+		"psycho-cut": {
+			"power": 5
+		}
+	},
+	"chargeMoves": {
+		"psychic": {
+			"power": 100
+		},
+		"ice-punch": {
+			"power": 50
+		},
+		"dynamic-punch": {
+			"power": 90
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "meditite",
+	"fleeRate": 0.06
 	}
 }
