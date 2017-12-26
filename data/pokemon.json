@@ -1,7 +1,7 @@
 {
 	"bulbasaur": {
 		"id": 1,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Bulbasaur",
@@ -74,7 +74,7 @@
 			},
 			"vine-whip": {
 				"power": 7,
-				"dps": 8.33
+				"dps": 11.67
 			}
 		},
 		"chargeMoves": {
@@ -84,11 +84,11 @@
 			},
 			"power-whip": {
 				"power": 90,
-				"dps": 24.62
+				"dps": 31.54
 			},
 			"sludge-bomb": {
 				"power": 80,
-				"dps": 24.78
+				"dps": 31.74
 			}
 		},
 		"evolveFrom": "bulbasaur",
@@ -118,17 +118,17 @@
 		"quickMoves": {
 			"razor-leaf": {
 				"power": 13,
-				"dps": 12.00
+				"dps": 16.00
 			},
 			"vine-whip": {
 				"power": 7,
-				"dps": 8.33
+				"dps": 15.00
 			}
 		},
 		"chargeMoves": {
 			"solar-beam": {
 				"power": 180,
-				"dps": 33.47
+				"dps": 43.67
 			},
 			"petal-blizzard": {
 				"power": 110,
@@ -136,7 +136,7 @@
 			},
 			"sludge-bomb": {
 				"power": 80,
-				"dps": 24.78
+				"dps": 41.74
 			}
 		},
 		"evolveFrom": "ivysaur",
@@ -144,7 +144,7 @@
 	},
 	"charmander": {
 		"id": 4,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Charmander",
@@ -216,10 +216,6 @@
 			"ember": {
 				"power": 10,
 				"dps": 10.00
-			},
-			"scratch": {
-				"power": 6,
-				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
@@ -267,14 +263,6 @@
 			"air-slash": {
 				"power": 14,
 				"dps": 15.83
-			},
-			"ember": {
-				"power": 10,
-				"dps": 14.00
-			},
-			"wing-attack": {
-				"power": 8,
-				"dps": 13.75
 			}
 		},
 		"chargeMoves": {
@@ -289,10 +277,6 @@
 			"dragon-claw": {
 				"power": 50,
 				"dps": 32.94
-			},
-			"flamethrower": {
-				"power": 70,
-				"dps": 42.73
 			}
 		},
 		"evolveFrom": "charmeleon",
@@ -300,7 +284,7 @@
 	},
 	"squirtle": {
 		"id": 7,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Squirtle",
@@ -320,7 +304,7 @@
 		"quickMoves": {
 			"bubble": {
 				"power": 12,
-				"dps": 6.00
+				"dps": 5.83
 			},
 			"tackle": {
 				"power": 5,
@@ -329,16 +313,16 @@
 		},
 		"chargeMoves": {
 			"water-pulse": {
-				"power": 5,
-				"dps": 6.00
+				"power": 70,
+				"dps": 12.50
 			},
 			"aqua-tail": {
 				"power": 50,
-				"dps": 6.00
+				"dps": 15.26
 			},
 			"aqua-jet": {
 				"power": 45,
-				"dps": 6.00
+				"dps": 10.00
 			}
 		},
 		"evolveTo": "wartortle",
@@ -438,7 +422,7 @@
 	},
 	"caterpie": {
 		"id": 10,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Caterpie",
