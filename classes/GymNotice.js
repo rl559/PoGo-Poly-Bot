@@ -45,12 +45,12 @@ module.exports = class GymNotice
   					'timerArr': {}};
   				}
   				console.log(content);
-  				if (content.timerResults !== '' && content.timerResults) {
+  				if (content && content.timerResults && content.timerResults !== '') {
   					content.timerArr = content.timerResults.split(':');
             endTime = moment(content.ssTakenDate).add({ hours: content.timerArr[0], minutes: content.timerArr[1], seconds: content.timerArr[2] }).tz('America/New_York');
   					content.endedTime = endTime.format("h:mm:ss A");
   				}
-  				if( content.raidBoss ){
+  				if( content && content.raidBoss ){
   						let raidBossMention = message.guild.roles.find('name', raidLevel),
   						raidChannel = '';
   					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';

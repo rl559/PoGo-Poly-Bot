@@ -172,7 +172,7 @@ client.on("message", (message) => {
 	/*
 	 * test Command
 	 */
-	 if (message.content.startsWith(prefix + "test")) {
+	 if (message.content.startsWith(prefix + "test1")) {
 		 //Put stuff here to test.
 		 message.guild.channels.find('name', 'raids').send({
 			 "embed": {
@@ -183,6 +183,19 @@ client.on("message", (message) => {
 					 "url": 'http://www.serebii.net/pokemongo/pokemon/248.png',
 				 },
 				 description: '**GymName**\nTyranitar\n**CP:** 34707 - **Moves:** Iron Tail / Crunch\n*Raid Ending: 0 hours 45 min 50 sec*'
+			 }
+		 });
+	 }
+	 if (message.content.startsWith(prefix + "test2")) {
+		 message.guild.channels.find('name', 'raids').send({
+			 "embed": {
+				 "color": 3447003,
+				 "title": 'Level 4 Raid is starting soon!',
+				 "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
+				 "thumbnail": {
+					 "url": 'https://images-ext-2.discordapp.net/external/zVajuJNDDxqjZc8VAUCL5txYG8yGYm2wFcOCMbC3ugw/https/raw.githubusercontent.com/PokeHuntr/Assets/master/raidlevels/4.png?width=160&height=154',
+				 },
+				 description: '**GymName**\n*Raid Starting: 0 hours 45 min 50 sec*'
 			 }
 		 });
 	 }
