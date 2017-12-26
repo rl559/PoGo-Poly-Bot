@@ -12750,7 +12750,7 @@
 	"maxCP": 503,
 	"type": ["psychic"],
 	"weaknesses": {
-		"dark" 1.4,
+		"dark": 1.4,
 		"ghost": 1.4,
 		"bug": 1.4
 	},
@@ -12786,7 +12786,7 @@
 	"maxCP": 772,
 	"type": ["ice"],
 	"weaknesses": {
-		"fire" 1.4,
+		"fire": 1.4,
 		"fighting": 1.4,
 		"rock": 1.4,
 		"steel": 1.4
@@ -12829,7 +12829,7 @@
 	"maxCP": 1945,
 	"type": ["ice"],
 	"weaknesses": {
-		"fire" 1.4,
+		"fire": 1.4,
 		"fighting": 1.4,
 		"rock": 1.4,
 		"steel": 1.4
@@ -12872,7 +12872,7 @@
 	"maxCP": 876,
 	"type": ["ice", "water"],
 	"weaknesses": {
-		"electric" 1.4,
+		"electric": 1.4,
 		"fighting": 1.4,
 		"grass": 1.4,
 		"rock": 1.4
@@ -12915,7 +12915,7 @@
 	"maxCP": 1607,
 	"type": ["ice", "water"],
 	"weaknesses": {
-		"electric" 1.4,
+		"electric": 1.4,
 		"fighting": 1.4,
 		"grass": 1.4,
 		"rock": 1.4
@@ -12958,7 +12958,7 @@
 	"maxCP": 2606,
 	"type": ["ice", "water"],
 	"weaknesses": {
-		"electric" 1.4,
+		"electric": 1.4,
 		"fighting": 1.4,
 		"grass": 1.4,
 		"rock": 1.4
