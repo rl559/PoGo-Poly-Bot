@@ -7488,21 +7488,26 @@
 	},
 	"quickMoves":{
 		"vine-whip": {
-			"power": 7
+			"power": 7,
+			"dps": 6.67
 		},
 		"tackle": {
-			"power": 5
+			"power": 5,
+			"dps": 6.00
 		}
 	},
 	"chargeMoves": {
 		"energy-ball": {
-			"power": 90
+			"power": 90,
+			"dps": 12.82
 		},
 		"grass-knot": {
-			"power": 90
+			"power": 90,
+			"dps": 19.23
 		},
 		"body-slam": {
-			"power": 50
+			"power": 50,
+			"dps": 12.63
 		}
 	},
 	"evolveTo": "bayleef",
@@ -7531,21 +7536,26 @@
 	},
 	"quickMoves": {
 		"razor-leaf": {
-			"power": 13
+			"power": 13,
+			"dps": 10.00
 		},
 		"tackle": {
-			"power": 5
+			"power": 5,
+			"dps": 8.00
 		}
 	},
 	"chargeMoves": {
 		"energy-ball": {
-			"power": 90
+			"power": 90,
+			"dps": 16.92
 		},
 		"grass-knot": {
-			"power": 90
+			"power": 90,
+			"dps": 25.38
 		},
 		"ancient-power": {
-			"power": 70
+			"power": 70,
+			"dps": 12.29
 		}
 	},
 	"evolveFrom": "chikorita",
@@ -7559,14 +7569,14 @@
 	"candy": 0,
 	"name": "Meganium",
 	"img": "http://www.serebii.net/pokemongo/pokemon/154.png",
-	"stats":{
+	"stats": {
 			"stamina": 160,
 			"attack": 168,
 			"defense":202
 	},
 	"maxCP": 2227,
 	"type": ["grass"],
-	"weaknesses":{
+	"weaknesses": {
 		"bug": 1.4,
 		"fire": 1.4,
 		"flying": 1.4,
@@ -7575,21 +7585,26 @@
 	},
 	"quickMoves": {
 		"vine-whip": {
-			"power": 7
+			"power": 7,
+			"dps": 13.33
 		},
 		"razor-leaf": {
-			"power": 13
+			"power": 13,
+			"dps": 14.00
 		}
 	},
 	"chargeMoves": {
 		"petal-blizzard": {
-			"power": 110
+			"power": 110,
+			"dps": 42.69
 		},
 		"solar-beam": {
-			"power": 180
+			"power": 180,
+			"dps": 37.14
 		},
 		"earthquake": {
-			"power": 120
+			"power": 120,
+			"dps": 28.06
 		}
 	},
 	"evolveFrom": "bayleef",
