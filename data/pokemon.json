@@ -677,7 +677,7 @@
 	},
 	"pidgey": {
 		"id": 16,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Pidgey",
@@ -766,7 +766,7 @@
 				"dps": 9.64
 			}
 		},
-		"evolveFrom": "pidgeot",
+		"evolveFrom": "pidgey",
 		"evolveTo": "pidgeot",
 		"fleeRate": 0.09
 	},
@@ -797,20 +797,12 @@
 			"steel-wing": {
 				"power": 11,
 				"dps": 12.50
-			},
-			"wing-attack": {
-				"power": 8,
-				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
 			"aerial-ace": {
 				"power": 55,
 				"dps": 22.92
-			},
-			"air-cutter": {
-				"power": 60,
-				"dps": 22.22
 			},
 			"hurricane": {
 				"power": 110,
@@ -826,7 +818,7 @@
 	},
 	"rattata": {
 		"id": 19,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Rattata",
@@ -881,7 +873,7 @@
 			"attack": 161,
 			"defense": 144
 		},
-		"maxCP": 1594,
+		"maxCP": 1549,
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
@@ -7496,6 +7488,28 @@
 			}
 		},
 		"fleeRate": 0.1
+	},
+	"chikorita": {
+	"id":152,
+	"egg":5,
+	"buddy":3,
+	"candy":25,
+	"name":"Chikorita",
+	"img": "http://www.serebii.net/pokemongo/pokemon/152.png",
+	"stats":{
+			"stamina": 90,
+			"attack": 92,
+			"defense":122
+	},
+	"maxCP": 801,
+	"type": ["grass"],
+	"weaknesses":{
+		"bug": 1.4,
+		"fire": 1.4,
+		"flying": 1.4,
+		"poison": 1.4,
+		"ice": 1.4,
+	},
 	},
 	"pichu": {
 		"id": 172,
