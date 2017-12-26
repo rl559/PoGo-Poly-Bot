@@ -7484,7 +7484,7 @@
 		"fire": 1.4,
 		"flying": 1.4,
 		"poison": 1.4,
-		"ice": 1.4,
+		"ice": 1.4
 	},
 	"quickMoves":{
 		"vine-whip": {
@@ -7532,7 +7532,7 @@
 		"fire": 1.4,
 		"flying": 1.4,
 		"poison": 1.4,
-		"ice": 1.4,
+		"ice": 1.4
 	},
 	"quickMoves": {
 		"razor-leaf": {
@@ -7581,7 +7581,7 @@
 		"fire": 1.4,
 		"flying": 1.4,
 		"poison": 1.4,
-		"ice": 1.4,
+		"ice": 1.4
 	},
 	"quickMoves": {
 		"vine-whip": {
