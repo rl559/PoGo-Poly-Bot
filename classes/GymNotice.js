@@ -7,7 +7,6 @@ ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 Moment = require('moment-timezone'),
 moment = require('moment');
 
-let currentDate = Moment().tz('America/New_York');
 let endTime;
 
 module.exports = class GymNotice
@@ -30,27 +29,28 @@ module.exports = class GymNotice
   				cityChannelName = 'ft_lauderdale';			
   			}
   				let descSplit = message.embeds[0].description.split('\n');
+          console.log(descSplit);
   				let content;
   				
   				if(descSplit.length == 4)
   				{
-  				content = descSplit,
-  					raidBoss = content[1],
-  					raidBossLvl = raidLevel;
-  					raidBossImg = message.embeds[0].thumbnail.url,
-  					ssTakenDate = new Date(message.createdTimestamp),
-  					gymResults = content[0],
-  					timerResults = content[3].replace( '*Raid Ending: ', '').replace(' hours ', ':').replace(' min ', ':').replace(' sec*', ''),//*Raid Ending: 1 hours 35 min 34 sec*
-  					endedTime = '',
-  					timerArr = {};
+  				content = {'desc': descSplit,
+  					'raidBoss': descSplit[1],
+  					'raidBossLvl': raidLevel,
+  					'raidBossImg': message.embeds[0].thumbnail.url,
+  					'ssTakenDate': new Date(message.createdTimestamp),
+  					'gymResults': descSplit[0],
+  					'timerResults': descSplit[3].replace( '*Raid Ending: ', '').replace(' hours ', ':').replace(' min ', ':').replace(' sec*', ''),//*Raid Ending: 1 hours 35 min 34 sec*
+  					'endedTime': '',
+  					'timerArr': {}};
   				}
   				console.log(content);
-  				if (timerResults !== '') {
-  					timerArr = timerResults.split(':');
-            endTime = moment(ssTakenDate).add({ hours: timerArr[0], minutes: timerArr[1], seconds: timerArr[2] }).tz('America/New_York');
-  					endedTime = endTime.format("h:mm:ss A");
+  				if (content.timerResults !== '' && content.timerResults) {
+  					content.timerArr = content.timerResults.split(':');
+            endTime = moment(content.ssTakenDate).add({ hours: content.timerArr[0], minutes: content.timerArr[1], seconds: content.timerArr[2] }).tz('America/New_York');
+  					content.endedTime = endTime.format("h:mm:ss A");
   				}
-  				if( raidBoss ){
+  				if( content.raidBoss ){
   						let raidBossMention = message.guild.roles.find('name', raidLevel),
   						raidChannel = '';
   					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
@@ -61,19 +61,19 @@ module.exports = class GymNotice
   								"color": 3447003,
   								"title": 'Raid Posted!',
   								"thumbnail": {
-  									"url": raidBossImg,
+  									"url": content.raidBossImg,
   								},
   								"fields": [{
   									"name": "Gym",
-  									"value": gymResults,
+  									"value": content.gymResults,
   									"inline": true
   								}, {
   									"name": "Timer",
-  									"value": timerResults,
+  									"value": content.timerResults,
   									"inline": true
   								}, {
   									"name": "Ends At",
-  									"value": endedTime,
+  									"value": content.endedTime,
   									"inline": true
   								}]
   							}
@@ -81,12 +81,12 @@ module.exports = class GymNotice
   							message.pin();
   						});
   					}
-            if(content.endedTime !== '')
+            if(content.endedTime !== '' && content.endedTime)
             {
               var arr = [];
-              addOptions = true;
-              optionCount = 0;
-              var tempDate = moment(currentDate);
+              var addOptions = true;
+              var optionCount = 0;
+              var tempDate = Moment().tz('America/New_York');
               while(addOptions && optionCount <9)
               {
                 tempDate.add(5, 'm');
@@ -99,7 +99,13 @@ module.exports = class GymNotice
                 }
                 optionCount++;
               }
-              console.log(arr);
+              var stringToSend = '/poll "What time should we raid?" ';
+              for(var i=0; i<arr.length; i++)
+              {
+                stringToSend = stringToSend + "\"" +arr[i] + "\" ";
+              }
+              raidChannel = message.guild.channels.find('name', 'raids');
+              raidChannel.send(stringToSend);
             }
   				}
   		}

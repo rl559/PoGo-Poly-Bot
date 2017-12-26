@@ -145,7 +145,7 @@ client.on("message", (message) => {
 		message.delete();
 	}
 	
-	if( message.author.username == 'GymHuntrBot' ){
+	if( message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot' ){
 		GymNoticeObj.display(message, GMapsObj);
 	}
 	
@@ -174,6 +174,17 @@ client.on("message", (message) => {
 	 */
 	 if (message.content.startsWith(prefix + "test")) {
 		 //Put stuff here to test.
+		 message.guild.channels.find('name', 'raids').send({
+			 "embed": {
+				 "color": 3447003,
+				 "title": 'Level 4 Raid has started!',
+				 "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
+				 "thumbnail": {
+					 "url": 'http://www.serebii.net/pokemongo/pokemon/248.png',
+				 },
+				 description: '**GymName**\nTyranitar\n**CP:** 34707 - **Moves:** Iron Tail / Crunch\n*Raid Ending: 0 hours 45 min 50 sec*'
+			 }
+		 });
 	 }
 	
 	/*

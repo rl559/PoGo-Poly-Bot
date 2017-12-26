@@ -130,5 +130,9 @@
 	"entei": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/244.png"
+	},
+	"groudon": {
+		"level": "Level 5",
+		"image": "https://www.serebii.net/pokemongo/pokemon/383.png"
 	}
 }
