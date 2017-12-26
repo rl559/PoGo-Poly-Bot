@@ -199,6 +199,54 @@ client.on("message", (message) => {
 			 }
 		 });
 	 }
+	 
+	 /*
+	 * rraid
+	 */
+	 if(message.content.startsWith(prefix + "rraid")) {
+		 const timePattern = new RegExp(/^(12|11|10|\d):\d\d(a|p)/g);
+		 var msg = message.content;
+		 msg = msg.replace(prefix+"rraid ", "");
+		 msgArgs = msg.split(" ");
+		 if(msgArgs.length != 2)
+		 {
+			 console.log("argError on rraid command");
+		 }
+		 else {
+				console.log(msgArgs);
+				var raidName = msgArgs[0];
+				raidName = raidName.toLowerCase();
+				var raidTime = msgArgs[1];
+				if(timePattern.test(raidTime) && Object.keys(raidBosses).includes(raidName))
+				{
+					console.log("raidTimepass");
+					var time = moment();
+					var splitTime = raidTime.split(":");
+					var hour = splitTime[0];
+					var min = splitTime[1].substring(0, splitTime[1].length-1);
+					if(raidTime.indexOf("p")>-1 && hour !== "12") hour = parseInt(hour) + 12;
+					time.hour(hour);
+					time.minute(min);
+					console.log(time.toString());
+					
+					message.guild.channels.find('name', 'raids').send({
+		 			 "embed": {
+		 				 "color": 3447003,
+		 				 "title": 'Level '+Object.keys(raidBosses).map(function(key){return raidBosses[key].level.replace("Level ", "");})+' Raid has started!',
+		 				 "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
+		 				 "thumbnail": {
+		 					 "url": 'http://www.serebii.net/pokemongo/pokemon/248.png',
+		 				 },
+		 				 description: '**GymName**\nTyranitar\n**CP:** 34707 - **Moves:** Iron Tail / Crunch\n*Raid Ending: 0 hours 45 min 50 sec*'
+		 			 }
+		 		 });
+		 	 }
+			 else {
+				 console.log("raidTimefail");
+			 }
+				}
+				
+		 }
 	
 	/*
 	 * USERINFO Command

@@ -105,7 +105,7 @@ module.exports = class GymNotice
                 stringToSend = stringToSend + "\"" +arr[i] + "\" ";
               }
               raidChannel = message.guild.channels.find('name', 'raids');
-              raidChannel.send(stringToSend);
+              var msg = raidChannel.send(stringToSend);
             }
   				}
   		}
