@@ -56,7 +56,7 @@ module.exports = class GymNotice
   					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
   					raidChannel = message.guild.channels.find('name', 'raids');
   					if ( raidChannel ) {
-  						raidChannel.send(`Gymhuntr has found a ${raidBossMention} Raid`, {
+  						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
   								"color": 3447003,
   								"title": 'Raid Posted!',
