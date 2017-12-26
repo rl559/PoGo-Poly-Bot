@@ -7466,11 +7466,11 @@
 		"fleeRate": 0.1
 	},
 	"chikorita": {
-	"id":152,
-	"egg":5,
-	"buddy":3,
-	"candy":25,
-	"name":"Chikorita",
+	"id": 152,
+	"egg": 5,
+	"buddy": 3,
+	"candy": 25,
+	"name": "Chikorita",
 	"img": "http://www.serebii.net/pokemongo/pokemon/152.png",
 	"stats":{
 			"stamina": 90,
@@ -7487,34 +7487,33 @@
 		"ice": 1.4,
 	},
 	"quickMoves":{
-		"vine-whip":{
+		"vine-whip": {
 			"power": 7
 		},
-		"tackle":{
+		"tackle": {
 			"power": 5
 		}
 	},
-	"chargeMoves":{
-		"energy-ball":{
+	"chargeMoves": {
+		"energy-ball": {
 			"power": 90
 		},
-		"grass-knot":{
+		"grass-knot": {
 			"power": 90
 		},
-		"body-slam":{
+		"body-slam": {
 			"power": 50
 		}
 	},
-	"evolveFrom": "chikorita",
 	"evolveTo": "bayleef",
 	"fleeRate": 0.10
 	},
 	"bayleef": {
-	"id":153,
-	"egg":0,
-	"buddy":3,
-	"candy":100,
-	"name":"Bayleef",
+	"id": 153,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 100,
+	"name": "Bayleef",
 	"img": "http://www.serebii.net/pokemongo/pokemon/153.png",
 	"stats":{
 			"stamina": 120,
@@ -7530,34 +7529,35 @@
 		"poison": 1.4,
 		"ice": 1.4,
 	},
-	"quickMoves":{
-		"razor-leaf":{
+	"quickMoves": {
+		"razor-leaf": {
 			"power": 13
 		},
-		"tackle":{
+		"tackle": {
 			"power": 5
 		}
 	},
-	"chargeMoves":{
-		"energy-ball":{
+	"chargeMoves": {
+		"energy-ball": {
 			"power": 90
 		},
-		"grass-knot":{
+		"grass-knot": {
 			"power": 90
 		},
-		"ancient-power":{
+		"ancient-power": {
 			"power": 70
 		}
 	},
+	"evolveFrom": "chikorita",
 	"evolveTo": "meganium",
 	"fleeRate": 0.07
 	},
 	"meganium": {
-	"id":154,
-	"egg":0,
-	"buddy":3,
-	"candy":0,
-	"name":"Meganium",
+	"id": 154,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 0,
+	"name": "Meganium",
 	"img": "http://www.serebii.net/pokemongo/pokemon/154.png",
 	"stats":{
 			"stamina": 160,
@@ -7573,22 +7573,22 @@
 		"poison": 1.4,
 		"ice": 1.4,
 	},
-	"quickMoves":{
-		"vine-whip":{
+	"quickMoves": {
+		"vine-whip": {
 			"power": 7
 		},
-		"razor-leaf":{
+		"razor-leaf": {
 			"power": 13
 		}
 	},
-	"chargeMoves":{
-		"petal-blizzard":{
+	"chargeMoves": {
+		"petal-blizzard": {
 			"power": 110
 		},
-		"solar-beam":{
+		"solar-beam": {
 			"power": 180
 		},
-		"earthquake":{
+		"earthquake": {
 			"power": 120
 		}
 	},
