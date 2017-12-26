@@ -10,10 +10,14 @@ module.exports = class Userinfo
 		if( channelName == 'commands' && userID ){
 			message.guild.fetchMember(userID, true)
 			.then((member)=>{
-        var team="";
-        if(message.member.roles.find("Instinct")) team="Instinct";
-        if(message.member.roles.find("Valor")) team="Valor";
-        if(message.member.roles.find("Mystic")) team="Mystic";
+        var team="None";
+        var level="None";
+        if(member.roles.find("name", "Level 1-19")) level ="Level 1-19";
+        if(member.roles.find("name", "Level 20-29")) level ="Level 20-29";
+        if(member.roles.find("name", "Level 30+")) level ="Level 30+";
+        if(member.roles.find("name", "Instinct")) team="Instinct";
+        if(member.roles.find("name", "Valor")) team="Valor";
+        if(member.roles.find("name", "Mystic")) team="Mystic";
 				let userMeta = message.guild.members.get(userID);
 				message.channel.send(`${message.author} here is the user info you are looking for`, {
 					"embed": {
@@ -31,7 +35,13 @@ module.exports = class Userinfo
               "name": "Team",
 							"value": team,
 							"inline": true
-            }]
+            },
+            {
+              "name": "Level",
+							"value": level,
+							"inline": true
+            }
+          ]
 					}
 				});
 			})
