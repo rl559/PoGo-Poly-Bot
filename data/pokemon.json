@@ -12650,5 +12650,340 @@
 	"evolveTo": "",
 	"evolveFrom": "",
 	"fleeRate": 0.1
+	},
+	"chimecho": {
+	"id": 358,
+	"egg": 0,
+	"buddy": 5,
+	"candy": 0,
+	"name": "Chimecho",
+	"img": "https://www.serebii.net/pokemongo/pokemon/358.png",
+	"stats": {
+		"stamina": 150,
+		"attack": 175,
+		"defense": 174
+	},
+	"maxCP": 2095,
+	"type": ["psychic"],
+	"weaknesses": {
+		"ghost": 1.4,
+		"dark": 1.4,
+		"bug": 1.4
+	},
+	"quickMoves": {
+		"extrasensory": {
+			"power": 12
+		},
+		"astonish": {
+			"power": 8
+		}
+	},
+	"chargeMoves": {
+		"shadow-ball": {
+			"power": 100
+		},
+		"psyshock": {
+			"power": 65
+		},
+		"energy-ball": {
+			"power": 95
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"absol": {
+	"id": 359,
+	"egg": 0,
+	"buddy": 5,
+	"candy": 0,
+	"name": "Absol",
+	"img": "https://www.serebii.net/pokemongo/pokemon/359.png",
+	"stats": {
+		"stamina": 130,
+		"attack": 246,
+		"defense": 120
+	},
+	"maxCP": 2280,
+	"type": ["dark"],
+	"weaknesses": {
+		"fairy": 1.4,
+		"fighting": 1.4,
+		"bug": 1.4
+	},
+	"quickMoves": {
+		"snarl": {
+			"power": 12
+		},
+		"psycho-cut": {
+			"power": 5
+		}
+	},
+	"chargeMoves": {
+		"thunder": {
+			"power": 100
+		},
+		"megahorn": {
+			"power": 90
+		},
+		"dark-pulse": {
+			"power": 80
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"wynaut": {
+	"id": 360,
+	"egg": 5,
+	"buddy": 3,
+	"candy": 50,
+	"name": "Wynaut",
+	"img": "https://www.serebii.net/pokemongo/pokemon/360.png",
+	"stats": {
+		"stamina": 190,
+		"attack": 41,
+		"defense": 86
+	},
+	"maxCP": 503,
+	"type": ["psychic"],
+	"weaknesses": {
+		"dark" 1.4,
+		"ghost": 1.4,
+		"bug": 1.4
+	},
+	"quickMoves": {
+		"counter": {
+			"power": 12
+		},
+		"splash": {
+			"power": 0
+		}
+	},
+	"chargeMoves": {
+		"mirror-coat": {
+			"power": 60
+		}
+	},
+	"evolveTo": "wobbuffet",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"snorunt": {
+	"id": 361,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 50,
+	"name": "Snorunt",
+	"img": "https://www.serebii.net/pokemongo/pokemon/361.png",
+	"stats": {
+		"stamina": 100,
+		"attack": 95,
+		"defense": 95
+	},
+	"maxCP": 772,
+	"type": ["ice"],
+	"weaknesses": {
+		"fire" 1.4,
+		"fighting": 1.4,
+		"rock": 1.4,
+		"steel": 1.4
+	},
+	"quickMoves": {
+		"powder-snow": {
+			"power": 6
+		},
+		"hex": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"shadow-ball": {
+			"power": 100
+		},
+		"icy-wind": {
+			"power": 60
+		},
+		"avalanche": {
+			"power": 90
+		}
+	},
+	"evolveTo": "glalie",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"glalie": {
+	"id": 362,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 0,
+	"name": "Glalie",
+	"img": "https://www.serebii.net/pokemongo/pokemon/362.png",
+	"stats": {
+		"stamina": 160,
+		"attack": 162,
+		"defense": 162
+	},
+	"maxCP": 1945,
+	"type": ["ice"],
+	"weaknesses": {
+		"fire" 1.4,
+		"fighting": 1.4,
+		"rock": 1.4,
+		"steel": 1.4
+	},
+	"quickMoves": {
+		"ice-shard": {
+			"power": 12
+		},
+		"frost-breath": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"shadow-ball": {
+			"power": 100
+		},
+		"gyro-ball": {
+			"power": 90
+		},
+		"avalanche": {
+			"power": 90
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "snowrunt",
+	"fleeRate": 0.06
+	},
+	"spheal": {
+	"id": 363,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 25,
+	"name": "Spheal",
+	"img": "https://www.serebii.net/pokemongo/pokemon/363.png",
+	"stats": {
+		"stamina": 140,
+		"attack": 95,
+		"defense": 90
+	},
+	"maxCP": 876,
+	"type": ["ice", "water"],
+	"weaknesses": {
+		"electric" 1.4,
+		"fighting": 1.4,
+		"grass": 1.4,
+		"rock": 1.4
+	},
+	"quickMoves": {
+		"rock-smash": {
+			"power": 15
+		},
+		"water-gun": {
+			"power": 5
+		}
+	},
+	"chargeMoves": {
+		"aurora-beam": {
+			"power": 80
+		},
+		"body-slam": {
+			"power": 50
+		},
+		"water-pulse": {
+			"power": 70
+		}
+	},
+	"evolveTo": "sealeo",
+	"evolveFrom": "",
+	"fleeRate": 0.1
+	},
+	"sealeo": {
+	"id": 364,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 100,
+	"name": "Sealeo",
+	"img": "https://www.serebii.net/pokemongo/pokemon/364.png",
+	"stats": {
+		"stamina": 180,
+		"attack": 137,
+		"defense": 132
+	},
+	"maxCP": 1607,
+	"type": ["ice", "water"],
+	"weaknesses": {
+		"electric" 1.4,
+		"fighting": 1.4,
+		"grass": 1.4,
+		"rock": 1.4
+	},
+	"quickMoves": {
+		"powder-snow": {
+			"power": 6
+		},
+		"water-gun": {
+			"power": 5
+		}
+	},
+	"chargeMoves": {
+		"aurora-beam": {
+			"power": 80
+		},
+		"body-slam": {
+			"power": 50
+		},
+		"water-pulse": {
+			"power": 70
+		}
+	},
+	"evolveTo": "walrein",
+	"evolveFrom": "spheal",
+	"fleeRate": 0.07
+	},
+	"walrein": {
+	"id": 365,
+	"egg": 0,
+	"buddy": 3,
+	"candy": 0,
+	"name": "Sealeo",
+	"img": "https://www.serebii.net/pokemongo/pokemon/365.png",
+	"stats": {
+		"stamina": 220,
+		"attack": 182,
+		"defense": 176
+	},
+	"maxCP": 2606,
+	"type": ["ice", "water"],
+	"weaknesses": {
+		"electric" 1.4,
+		"fighting": 1.4,
+		"grass": 1.4,
+		"rock": 1.4
+	},
+	"quickMoves": {
+		"waterfall": {
+			"power": 16
+		},
+		"frost-breath": {
+			"power": 10
+		}
+	},
+	"chargeMoves": {
+		"blizzard": {
+			"power": 130
+		},
+		"earthquake": {
+			"power": 120
+		},
+		"water-pulse": {
+			"power": 70
+		}
+	},
+	"evolveTo": "",
+	"evolveFrom": "sealeo",
+	"fleeRate": 0.05
 	}
 }
