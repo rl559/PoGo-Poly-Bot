@@ -83,7 +83,23 @@ module.exports = class GymNotice
   					}
             if(content.endedTime !== '')
             {
-              
+              var arr = [];
+              addOptions = true;
+              optionCount = 0;
+              var tempDate = moment(currentDate);
+              while(addOptions && optionCount <9)
+              {
+                tempDate.add(5, 'm');
+                if(tempDate.isBefore(endTime))
+                {
+                  arr.push(tempDate.format("hh:mm:ss a"));
+                }
+                else {
+                  addOptions = false;
+                }
+                optionCount++;
+              }
+              console.log(arr);
             }
   				}
   		}
