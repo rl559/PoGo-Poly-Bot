@@ -524,7 +524,7 @@
 			"struggle-bug": {
 				"power": 15,
 				"dps": 10.67
-			}
+			},
 			"confusion": {
 				"power": 20,
 				"dps": 10.63
@@ -652,7 +652,7 @@
 			"infestation": {
 				"power": 10,
 				"dps": 10.00
-			}
+			},
 			"poison-jab": {
 				"power": 10,
 				"dps": 13.75

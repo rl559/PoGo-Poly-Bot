@@ -148,6 +148,10 @@ client.on("message", (message) => {
 	if( message.system && message.type === 'PINS_ADD' && raidChannelPattern.test(channelName) && message.author.username === 'PoGoPolyBot' ){
 		message.delete();
 	}
+	if( message.author.username === 'PoGoPolyBot' && message.content.indexOf("/poll")>-1 )
+	{
+		message.delete();
+	}
 	
 	if( message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot' ){
 		GymNoticeObj.display(message, GMapsObj);

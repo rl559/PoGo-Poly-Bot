@@ -106,6 +106,7 @@ module.exports = class GymNotice
               }
               raidChannel = message.guild.channels.find('name', 'raids');
               var msg = raidChannel.send(stringToSend);
+              
             }
   				}
   		}
