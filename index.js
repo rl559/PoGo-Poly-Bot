@@ -34,6 +34,8 @@ const Discord = require("discord.js"),
 	TwitterObj = new TwitterMsgs(),
 	GymNotice = require("./classes/GymNotice.js"),
 	GymNoticeObj = new GymNotice(),
+	Rraid = require("./classes/Rraid.js"),
+	RraidObj = new Rraid(),
 	raidChannelPattern = new RegExp(/raids/);
 
 var raidBosses = require('./data/raidboss.json'),
@@ -62,8 +64,10 @@ client.on("guildMemberAdd", (member) => {
   4. To change your nickname, you can use the \`.callme\` command followed by the nickname you want to use. Your nickname will only change in this server.  Changing it to your PoGo account name will help others identify you.
   5. Use @here to notify active users in the current channel. It will help you call the attention of people that may be interested in your post, but __please do not misuse__ @here. Use it only when absolutely necessary.
   6. You can use the \`.tadd\` and \`.tdel\` commands to receive @ notifications for specific tiers of raids.  For example, try .tadd T5 or .tadd tier 5.
-	7. Use the voice channels in times of inclement weather.
-  8. Under no circumstances should you cause drama or fight with other members. If you need to talk, create a private group chat and talk it out there.
+	7. You can also notify others of raids at poly, using \`.rraid PokeName MinsLeft\`
+	8. Use the voice channels in times of inclement weather.
+  9. Under no circumstances should you cause drama or fight with other members. If you need to talk, create a private group chat and talk it out there.
+	10. If you are having issues, or want to learn more what the bot can do, just type \`.help\`
   Happy Hunting, hope you catch 'em all.`);
 
 	let role = member.guild.roles.find("name", 'Member');
@@ -170,8 +174,9 @@ client.on("message", (message) => {
 	}
 	
 	/*
-	 * test Command
+	 * test Commands (commented out)
 	 */
+	 /*
 	 if (message.content.startsWith(prefix + "test1")) {
 		 //Put stuff here to test.
 		 message.guild.channels.find('name', 'raids').send({
@@ -198,51 +203,13 @@ client.on("message", (message) => {
 				 description: '**GymName**\n*Raid Starting: 0 hours 45 min 50 sec*'
 			 }
 		 });
-	 }
+	 }*/
 	 
 	 /*
 	 * rraid
 	 */
 	 if(message.content.startsWith(prefix + "rraid")) {
-		 const timePattern = new RegExp(/^\d?\d$/g);
-		 var msg = message.content;
-		 msg = msg.replace(prefix+"rraid ", "");
-		 msgArgs = msg.split(" ");
-		 if(msgArgs.length != 2)
-		 {
-			 console.log("argError on rraid command");
-			 message.channel.send("Please try again.  You entered in too many or few arguments.  Try .rraid **bossname** **minuteRemaining**");
-		 }
-		 else {
-				console.log(msgArgs);
-				var raidName = msgArgs[0];
-				raidName = raidName.toLowerCase();
-				var minsLeft = msgArgs[1];
-				if(timePattern.test(minsLeft) && Object.keys(raidBosses).includes(raidName))
-				{
-					console.log("raidTimepass");
-					var time = moment();
-					time.add(minsLeft, "m");
-					console.log(time.toString());
-					
-					message.guild.channels.find('name', 'raids').send({
-		 			 "embed": {
-		 				 "color": 3447003,
-		 				 "title": 'Level '+raidBosses[raidName].level.replace("Level ", "")+' Raid has started!',
-		 				 "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
-		 				 "thumbnail": {
-		 					 "url": raidBosses[raidName].image,
-		 				 },
-		 				 description: '**Poly Gym**\n'+raidName+'\n**CP:** Unknown - **Moves:** Unknown\n*Raid Ending: 0 hours '+minsLeft+' min 00 sec*'
-		 			 }
-		 		 });
-		 	 }
-			 else {
-				 console.log("raidTimefail");
-				 message.channel.send("Please try again.  You either misspelled the raid boss or did not enter in a valid minute time.  Try .rraid **bossname** **minuteRemaining**");
-			 }
-				}
-				
+				RraidObj.display(prefix, message, raidBosses);
 		 }
 	
 	/*
