@@ -907,7 +907,7 @@
 	},
 	"spearow": {
 		"id": 21,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Spearow",
@@ -943,10 +943,6 @@
 			"drill-peck": {
 				"power": 60,
 				"dps": 17.83
-			},
-			"twister": {
-				"power": 45,
-				"dps": 9.29
 			},
 			"sky-attack": {
 				"power": 70,
@@ -994,10 +990,6 @@
 				"power": 80,
 				"dps": 26.07
 			},
-			"twister": {
-				"power": 45,
-				"dps": 14.64
-			},
 			"sky-attack": {
 				"power": 70,
 				"dps": 38.50
@@ -1008,7 +1000,7 @@
 	},
 	"ekans": {
 		"id": 23,
-		"egg": 5,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Ekans",
@@ -1028,7 +1020,7 @@
 		"quickMoves": {
 			"acid": {
 				"power": 9,
-				"dps": 7.5
+				"dps": 7.50
 			},
 			"poison-sting": {
 				"power": 5,
@@ -1036,10 +1028,6 @@
 			}
 		},
 		"chargeMoves": {
-			"gunk-shot": {
-				"power": 130,
-				"dps": 27.74
-			},
 			"sludge-bomb": {
 				"power": 80,
 				"dps": 23.04
@@ -1087,15 +1075,15 @@
 		"chargeMoves": {
 			"dark-pulse": {
 				"power": 80,
-				"dps": 25.00
+				"dps": 22.33
 			},
 			"gunk-shot": {
 				"power": 130,
-				"dps": 46.77
+				"dps": 42.26
 			},
 			"sludge-wave": {
 				"power": 110,
-				"dps": 38.44
+				"dps": 34.69
 			}
 		},
 		"evolveFrom": "ekans",
@@ -1103,7 +1091,7 @@
 	},
 	"pikachu": {
 		"id": 25,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Pikachu",
@@ -1127,16 +1115,16 @@
 			"quick-attack": {
 				"power": 8,
 				"dps": 6.25
+			},
+			"present": {
+				"power": 5,
+				"dps": 2.31
 			}
 		},
 		"chargeMoves": {
 			"discharge": {
 				"power": 65,
 				"dps": 17.60
-			},
-			"thunder": {
-				"power": 100,
-				"dps": 28.33
 			},
 			"thunderbolt": {
 				"power": 80,
@@ -1176,20 +1164,12 @@
 			"spark": {
 				"power": 6,
 				"dps": 10.00
-			},
-			"thunder-shock": {
-				"power": 5,
-				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
 			"brick-break": {
 				"power": 40,
 				"dps": 24.38
-			},
-			"thunder": {
-				"power": 100,
-				"dps": 48.33
 			},
 			"thunder-punch": {
 				"power": 45,
@@ -1205,7 +1185,7 @@
 	},
 	"sandshrew": {
 		"id": 27,
-		"egg": 5,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Sandshrew",
@@ -1241,10 +1221,6 @@
 			"rock-slide": {
 				"power": 80,
 				"dps": 18.89
-			},
-			"rock-tomb": {
-				"power": 70,
-				"dps": 14.06
 			},
 			"sand-tomb": {
 				"power": 80,
@@ -7510,6 +7486,114 @@
 		"poison": 1.4,
 		"ice": 1.4,
 	},
+	"quickMoves":{
+		"vine-whip":{
+			"power": 7
+		},
+		"tackle":{
+			"power": 5
+		}
+	},
+	"chargeMoves":{
+		"energy-ball":{
+			"power": 90
+		},
+		"grass-knot":{
+			"power": 90
+		},
+		"body-slam":{
+			"power": 50
+		}
+	},
+	"evolveFrom": "chikorita",
+	"evolveTo": "bayleef",
+	"fleeRate": 0.10
+	},
+	"bayleef": {
+	"id":153,
+	"egg":0,
+	"buddy":3,
+	"candy":100,
+	"name":"Bayleef",
+	"img": "http://www.serebii.net/pokemongo/pokemon/153.png",
+	"stats":{
+			"stamina": 120,
+			"attack": 122,
+			"defense": 155
+	},
+	"maxCP": 1296,
+	"type": ["grass"],
+	"weaknesses":{
+		"bug": 1.4,
+		"fire": 1.4,
+		"flying": 1.4,
+		"poison": 1.4,
+		"ice": 1.4,
+	},
+	"quickMoves":{
+		"razor-leaf":{
+			"power": 13
+		},
+		"tackle":{
+			"power": 5
+		}
+	},
+	"chargeMoves":{
+		"energy-ball":{
+			"power": 90
+		},
+		"grass-knot":{
+			"power": 90
+		},
+		"ancient-power":{
+			"power": 70
+		}
+	},
+	"evolveTo": "meganium",
+	"fleeRate": 0.07
+	},
+	"meganium": {
+	"id":154,
+	"egg":0,
+	"buddy":3,
+	"candy":0,
+	"name":"Meganium",
+	"img": "http://www.serebii.net/pokemongo/pokemon/154.png",
+	"stats":{
+			"stamina": 160,
+			"attack": 168,
+			"defense":202
+	},
+	"maxCP": 2227,
+	"type": ["grass"],
+	"weaknesses":{
+		"bug": 1.4,
+		"fire": 1.4,
+		"flying": 1.4,
+		"poison": 1.4,
+		"ice": 1.4,
+	},
+	"quickMoves":{
+		"vine-whip":{
+			"power": 7
+		},
+		"razor-leaf":{
+			"power": 13
+		}
+	},
+	"chargeMoves":{
+		"petal-blizzard":{
+			"power": 110
+		},
+		"solar-beam":{
+			"power": 180
+		},
+		"earthquake":{
+			"power": 120
+		}
+	},
+	"evolveFrom": "bayleef",
+	"fleeRate": 0.05
 	},
 	"pichu": {
 		"id": 172,
