@@ -1,5 +1,5 @@
 {
-  "name": "PoGo Bot",
+  "name": "pogobot",
   "version": "1.2.3",
   "description": "PoGo Test Bot, may be pushed in future",
   "main": "index.js",
