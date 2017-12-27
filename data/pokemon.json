@@ -4236,7 +4236,7 @@
 	},
 	"gastly": {
 		"id": 92,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Gastly",
@@ -4260,10 +4260,6 @@
 				"power": 5,
 				"dps": 12.00
 			},
-			"sucker-punch": {
-				"power": 7,
-				"dps": 10.00
-			},
 			"astonish": {
 				"power": 8,
 				"dps": 8.18
@@ -4273,10 +4269,6 @@
 			"dark-pulse": {
 				"power": 80,
 				"dps": 25.00
-			},
-			"ominous-wind": {
-				"power": 50,
-				"dps": 24.35
 			},
 			"sludge-bomb": {
 				"power": 80,
@@ -4312,10 +4304,6 @@
 			"psychic": 1.4
 		},
 		"quickMoves": {
-			"lick": {
-				"power": 5,
-				"dps": 14.00
-			},
 			"shadow-claw": {
 				"power": 9,
 				"dps": 18.57
@@ -4329,10 +4317,6 @@
 			"dark-pulse": {
 				"power": 80,
 				"dps": 30.00
-			},
-			"shadow-ball": {
-				"power": 100,
-				"dps": 44.67
 			},
 			"sludge-bomb": {
 				"power": 80,
@@ -4368,10 +4352,6 @@
 			"psychic": 1.4
 		},
 		"quickMoves": {
-			"shadow-claw": {
-				"power": 9,
-				"dps": 21.43
-			},
 			"sucker-punch": {
 				"power": 7,
 				"dps": 14.29
@@ -4386,10 +4366,6 @@
 				"power": 80,
 				"dps": 54.78
 			},
-			"dark-pulse": {
-				"power": 80,
-				"dps": 35.00
-			},
 			"shadow-ball": {
 				"power": 100,
 				"dps": 52.33
@@ -4397,10 +4373,6 @@
 			"focus-blast": {
 				"power": 140,
 				"dps": 52.29
-			},
-			"sludge-wave": {
-				"power": 110,
-				"dps": 54.06
 			}
 		},
 		"evolveFrom": "haunter",
@@ -4408,9 +4380,9 @@
 	},
 	"onix": {
 		"id": 95,
-		"egg": 10,
+		"egg": 5,
 		"buddy": 5,
-		"candy": 0,
+		"candy": 50,
 		"name": "Onix",
 		"img": "http://www.serebii.net/pokemongo/pokemon/095.png",
 		"stats": {
@@ -4424,10 +4396,8 @@
 			"grass": 1.96,
 			"water": 1.96,
 			"fighting": 1.4,
-
 			"ground": 1.4,
 			"steel": 1.4,
-
 			"ice": 1.4
 		},
 		"quickMoves": {
@@ -4441,14 +4411,6 @@
 			}
 		},
 		"chargeMoves": {
-			"iron-head": {
-				"power": 60,
-				"dps": 13.68
-			},
-			"rock-slide": {
-				"power": 80,
-				"dps": 15.19
-			},
 			"stone-edge": {
 				"power": 100,
 				"dps": 22.61
@@ -4462,6 +4424,7 @@
 				"dps": 14.29
 			}
 		},
+		"evolveTo": "steelix",
 		"fleeRate": 0.09
 	},
 	"drowzee": {
@@ -4545,14 +4508,6 @@
 				"power": 100,
 				"dps": 31.07
 			},
-			"psyshock": {
-				"power": 65,
-				"dps": 21.11
-			},
-			"shadow-ball": {
-				"power": 100,
-				"dps": 24.33
-			},
 			"future-sight": {
 				"power": 120,
 				"dps": 38.52
@@ -4567,7 +4522,7 @@
 	},
 	"krabby": {
 		"id": 98,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Krabby",
@@ -4637,10 +4592,6 @@
 			"metal-claw": {
 				"power": 8,
 				"dps": 14.29
-			},
-			"mud-shot": {
-				"power": 5,
-				"dps": 11.67
 			}
 		},
 		"chargeMoves": {
@@ -7668,7 +7619,7 @@
 	},
 	"pichu": {
 		"id": 172,
-		"egg": 2,
+		"egg": 5,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Pichu",
@@ -7686,6 +7637,9 @@
 		"quickMoves": {
 			"thunder-shock": {
 				"power": 5
+			},
+			"quick-attack": {
+				"power": 8
 			}
 		},
 		"chargeMoves": {
@@ -7729,11 +7683,11 @@
 			}
 		},
 		"chargeMoves": {
-			"grass-knot": {
-				"power": 90
+			"body-slam": {
+				"power": 50
 			},
-			"psyshock": {
-				"power": 65
+			"psychic": {
+				"power": 100
 			},
 			"signal-beam": {
 				"power": 75
@@ -7755,7 +7709,7 @@
 			"defense": 34
 		},
 		"maxCP": 512,
-		"type": ["fairy", "normal"],
+		"type": ["fairy"],
 		"weaknesses": {
 			"poison": 1.4,
 			"steel": 1.4
@@ -7769,8 +7723,8 @@
 			}
 		},
 		"chargeMoves": {
-			"wild-charge": {
-				"power": 90
+			"body-slam": {
+				"power": 50
 			},
 			"shadow-ball": {
 				"power": 100
@@ -7784,8 +7738,8 @@
 	},
 	"togepi": {
 		"id": 175,
-		"egg": 2,
-		"buddy": 3,
+		"egg": 5,
+		"buddy": 5,
 		"candy": 50,
 		"name": "Togepi",
 		"img": "http://www.serebii.net/pokemongo/pokemon/175.png",
@@ -7801,8 +7755,8 @@
 			"steel": 1.4
 		},
 		"quickMoves": {
-			"hidden-power": {
-				"power": 15
+			"zen-headbutt": {
+				"power": 12
 			},
 			"peck": {
 				"power": 10
