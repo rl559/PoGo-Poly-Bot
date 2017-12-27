@@ -10,7 +10,7 @@ var twitterKeys = {
 	//849344094681870336 = https://twitter.com/NianticHelp REMOVED, SPAM
 	//575930104 = https://twitter.com/metaphorminute  REMOVED, FOR TESTING
 	
-	twitterUsers = [ '2839430431', '575930104']; //
+	twitterUsers = [ '2839430431']; //
 module.exports = class TwitterMsgs
 {
   display(client)
