@@ -1,6 +1,12 @@
 pokedex = require('../pokedex.js');
-module.exports = class PokedexCmd
+
+function cap(string) 
 {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+module.exports = class PokedexCmd
+{  
 display(prefix, message){
   var pattern = prefix + "pokedex";
   var query = message.content.substr(message.content.indexOf(pattern) + pattern.length).trim().toLowerCase();
@@ -103,7 +109,7 @@ display(prefix, message){
         },
         {
           "name": "Evolve To/From",
-          "value": evolveTo.toString()+"/"+evolveFrom.toString(),
+          "value": cap(evolveTo.toString())+"/"+cap(evolveFrom.toString()),
           "inline": true
         }
       ]
