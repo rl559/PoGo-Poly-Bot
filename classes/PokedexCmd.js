@@ -76,7 +76,7 @@ display(prefix, message){
     }
     if(evolveTo.constructor === Array)
     {
-      for(i=0; i<evolveTo.length; i++)
+      for(var i=0; i<evolveTo.length; i++)
       {
         evolveTo[i] = cap(evolveTo[i]);
       }
