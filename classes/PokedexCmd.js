@@ -39,7 +39,7 @@ display(prefix, message){
       weaknessValue += '<:type' + itemValue + ':' + emojiId + '> (' + amount + ')';
     });
     Object.keys(pokemon.chargeMoves).forEach(function (key) {
-      chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": Attack - " + pokemon.chargeMoves[key].power;
+      chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": - " + pokemon.chargeMoves[key].power;
       if (pokemon.chargeMoves[key].dps !== null && typeof pokemon.chargeMoves[key].dps !== 'undefined') {
         chargedMoves += " | DPS " + pokemon.chargeMoves[key].dps + "\n";
       } else {
@@ -48,7 +48,7 @@ display(prefix, message){
     });
 
     Object.keys(pokemon.quickMoves).forEach(function (key) {
-      quickMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": Attack - " + pokemon.quickMoves[key].power;
+      quickMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": - " + pokemon.quickMoves[key].power;
       if (pokemon.quickMoves[key].dps !== null && typeof pokemon.quickMoves[key].dps !== 'undefined') {
         quickMoves += " | DPS " + pokemon.quickMoves[key].dps + "\n";
       } else {
@@ -103,7 +103,7 @@ display(prefix, message){
         },
         {
           "name": "Evolve To/From",
-          "value": evolveTo+"/"+evolveFrom,
+          "value": evolveTo.toString()+"/"+evolveFrom.toString(),
           "inline": true
         }
       ]
