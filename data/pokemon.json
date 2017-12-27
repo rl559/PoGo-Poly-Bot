@@ -4676,7 +4676,7 @@
 		"quickMoves": {
 			"volt-switch": {
 				"power": 20,
-				"dps": 9.57
+				"dps": 9.13
 			},
 			"spark": {
 				"power": 6,
@@ -4686,15 +4686,15 @@
 		"chargeMoves": {
 			"discharge": {
 				"power": 65,
-				"dps": 27.60
+				"dps": 27.20
 			},
 			"hyper-beam": {
 				"power": 150,
-				"dps": 35.00
+				"dps": 34.21
 			},
 			"thunderbolt": {
 				"power": 80,
-				"dps": 34.00
+				"dps": 33.60
 			}
 		},
 		"evolveFrom": "voltorb",
@@ -4702,7 +4702,7 @@
 	},
 	"exeggcute": {
 		"id": 102,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Exeggcute",
@@ -4780,14 +4780,6 @@
 				"dps": 10.91
 			},
 			"extrasensory": {
-				"power": 12,
-				"dps": 15.45
-			},
-			"confusion": {
-				"power": 20,
-				"dps": 17.50
-			},
-			"zen-headbutt": {
 				"power": 12,
 				"dps": 15.45
 			}
@@ -4904,7 +4896,7 @@
 	},
 	"hitmonlee": {
 		"id": 106,
-		"egg": 10,
+		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Hitmonlee",
@@ -4940,24 +4932,17 @@
 				"power": 40,
 				"dps": 28.42
 			},
-			"brick-break": {
-				"power": 40,
-				"dps": 33.75
-			},
 			"stone-edge": {
 				"power": 100,
 				"dps": 49.13
-			},
-			"stomp": {
-				"power": 55,
-				"dps": 36.47
 			}
 		},
+		"evolveFrom": "tyrogue",
 		"fleeRate": 0.09
 	},
 	"hitmonchan": {
 		"id": 107,
-		"egg": 10,
+		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Hitmonchan",
@@ -4982,20 +4967,12 @@
 			"bullet-punch": {
 				"power": 9,
 				"dps": 10.00
-			},
-			"rock-smash": {
-				"power": 15,
-				"dps": 13.85
 			}
 		},
 		"chargeMoves": {
 			"close-combat": {
 				"power": 100,
 				"dps": 50.43
-			},
-			"brick-break": {
-				"power": 40,
-				"dps": 29.38
 			},
 			"fire-punch": {
 				"power": 55,
@@ -5010,6 +4987,7 @@
 				"dps": 24.44
 			}
 		},
+		"evolveFrom": "tyrogue",
 		"fleeRate": 0.09
 	},
 	"lickitung": {
