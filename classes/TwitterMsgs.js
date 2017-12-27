@@ -15,6 +15,7 @@ module.exports = class TwitterMsgs
 {
   display(client)
   {
+		console.log(twitterKeys);
     Twitter.stream('statuses/filter', {
     	follow: twitterUsers
     });

@@ -157,7 +157,7 @@ client.on("message", (message) => {
 	
 	if (message.author.bot) return;
 	
-	if( message.isMentioned(message.guild.members.get("394132572763848705")) ){
+	if( message.isMentioned(message.guild.members.get(process.env.client_id)) ){
 		BotContactObj.display(message);
 	}
 	
