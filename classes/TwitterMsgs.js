@@ -28,7 +28,7 @@ module.exports = class TwitterMsgs
         let tweet = JSON.parse(obj.toString()),
     		messageContent = '';
     		console.log(tweet);
-    	if(typeof tweet.user !== 'undefined' && tweet.user !== null){
+    	if(typeof tweet.user !== 'undefined' && tweet.user !== null && tweet.in_reply_to_status_id === null && tweet.in_reply_to_user_id === null){
     		console.log(tweet.user.id_str);
     		if( twitterUsers.includes( tweet.user.id_str ) ){
     			console.log("User matches followed users");
