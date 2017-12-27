@@ -1278,10 +1278,10 @@
 	},
 	"nidoran-f": {
 		"id": 29,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
-		"name": "Nidoran â™€",
+		"name": "Nidoran F",
 		"img": "http://www.serebii.net/pokemongo/pokemon/029.png",
 
 		"stats": {
@@ -1418,10 +1418,10 @@
 	},
 	"nidoran-m": {
 		"id": 32,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
-		"name": "Nidoran â™‚",
+		"name": "Nidoran M",
 		"img": "http://www.serebii.net/pokemongo/pokemon/032.png",
 
 		"stats": {
@@ -1530,10 +1530,6 @@
 			"water": 1.4
 		},
 		"quickMoves": {
-			"fury-cutter": {
-				"power": 3,
-				"dps": 10.00
-			},
 			"iron-tail": {
 				"power": 15,
 				"dps": 14.55
@@ -1562,7 +1558,7 @@
 	},
 	"clefairy": {
 		"id": 35,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Clefairy",
@@ -1626,10 +1622,6 @@
 			"steel": 1.4
 		},
 		"quickMoves": {
-			"pound": {
-				"power": 7,
-				"dps": 11.67
-			},
 			"zen-headbutt": {
 				"power": 12,
 				"dps": 10.00
@@ -1658,7 +1650,7 @@
 	},
 	"vulpix": {
 		"id": 37,
-		"egg": 5,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Vulpix",
@@ -1723,10 +1715,6 @@
 			"water": 1.4
 		},
 		"quickMoves": {
-			"ember": {
-				"power": 10,
-				"dps": 11.00
-			},
 			"feint-attack": {
 				"power": 10,
 				"dps": 10.00
@@ -1737,14 +1725,6 @@
 			}
 		},
 		"chargeMoves": {
-			"fire-blast": {
-				"power": 140,
-				"dps": 33.81
-			},
-			"flamethrower": {
-				"power": 70,
-				"dps": 32.27
-			},
 			"heat-wave": {
 				"power": 95,
 				"dps": 32.33
@@ -1763,7 +1743,7 @@
 	},
 	"jigglypuff": {
 		"id": 39,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Jigglypuff",
@@ -1791,10 +1771,6 @@
 			}
 		},
 		"chargeMoves": {
-			"body-slam": {
-				"power": 50,
-				"dps": 13.16
-			},
 			"disarming-voice": {
 				"power": 70,
 				"dps": 8.72
@@ -1806,10 +1782,6 @@
 			"gyro-ball": {
 				"power": 80,
 				"dps": 10.00
-			},
-			"play-rough": {
-				"power": 90,
-				"dps": 15.17
 			}
 		},
 		"evolveFrom": "igglybuff",
@@ -1863,9 +1835,9 @@
 	},
 	"zubat": {
 		"id": 41,
-		"egg": 2,
+		"egg": 0,
 		"buddy": 1,
-		"candy": 50,
+		"candy": 25,
 		"name": "Zubat",
 		"img": "http://www.serebii.net/pokemongo/pokemon/041.png",
 
@@ -1901,10 +1873,6 @@
 				"power": 35,
 				"dps": 10.59
 			},
-			"sludge-bomb": {
-				"power": 80,
-				"dps": 17.39
-			},
 			"swift": {
 				"power": 60,
 				"dps": 8.93
@@ -1917,7 +1885,7 @@
 		"id": 42,
 		"egg": 0,
 		"buddy": 1,
-		"candy": 0,
+		"candy": 100,
 		"name": "Golbat",
 		"img": "http://www.serebii.net/pokemongo/pokemon/042.png",
 		"stats": {
@@ -1948,10 +1916,6 @@
 				"power": 60,
 				"dps": 21.48
 			},
-			"ominous-wind": {
-				"power": 50,
-				"dps": 17.83
-			},
 			"poison-fang": {
 				"power": 35,
 				"dps": 20.00
@@ -1962,11 +1926,12 @@
 			}
 		},
 		"evolveFrom": "zubat",
+		"evolveTo": "crobat",
 		"fleeRate": 0.07
 	},
 	"oddish": {
 		"id": 43,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Oddish",
@@ -2058,7 +2023,7 @@
 			}
 		},
 		"evolveFrom": "oddish",
-		"evolveTo": "vileplume",
+		"evolveTo": ["vileplume", "bellossom"],
 		"fleeRate": 0.07
 	},
 	"vileplume": {
