@@ -34,7 +34,7 @@ module.exports = class Rraid
             "thumbnail": {
               "url": raidBosses[raidName].image,
             },
-            description: '**Poly Gym**\n'+raidName+'\n**CP:** Unknown - **Moves:** Unknown\n*Raid Ending: 0 hours '+minsLeft+' min 00 sec*'
+            description: '**Poly Gym**\n'+raidName+'\n**CP:** '+raidBosses[raidName].cp+' - **Moves:** Unknown\n*Raid Ending: 0 hours '+minsLeft+' min 00 sec*'
           }
         });
       }
