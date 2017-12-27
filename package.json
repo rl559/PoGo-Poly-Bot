@@ -1,6 +1,6 @@
 {
   "name": "pogobot",
-  "version": "0.99",
+  "version": "0.0.1",
   "description": "PoGo Bot, will be used by poly pogo group soon",
   "main": "index.js",
   "dependencies": {
