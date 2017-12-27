@@ -42,7 +42,7 @@ var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
 
 
-client.login("Mzk0MTMyNTcyNzYzODQ4NzA1.DSAKTA.d2r7QnChHAAcLD7mqXeYczsK4Mo");
+client.login(process.env.clientlogin);
 
 client.on("ready", () => {
 	console.log("I am ready!");

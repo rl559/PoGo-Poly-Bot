@@ -1,9 +1,9 @@
 const TwitterStream = require('twitter-stream-api');
 var twitterKeys = {
-	consumer_key : "poyJARVI2vqGmfyaEIabWXlmm",
-	consumer_secret : "LxqjoxmofSTWsbScn7wUNxd7DKDjNJ6bjFvf9CPrUEHhcTGO9f",
-	token : "288824671-XwJxXH5n9eNmXwbffb5oXP99USx3rysrxj2Ypo38",
-	token_secret : "lfZ6lD3Ju5CfykIRMPLaMAnUHrbpbXl3d8yg0ynAsYR9K"
+	consumer_key : process.env.tconsumer,
+	consumer_secret : process.env.tcsecret,
+	token : process.env.ttoken,
+	token_secret : process.env.ttokensec
 },
 	Twitter = new TwitterStream(twitterKeys, false),
 	//2839430431 = https://twitter.com/PokemonGoApp

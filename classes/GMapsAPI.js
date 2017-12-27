@@ -1,5 +1,5 @@
 var publicConfig = {
-  key: 'AIzaSyCYtlcX6HByoHsNAIcSOpTpRLffPai-i7g',
+  key: process.env.gmapskey,
   stagger_time: 1000, // for elevationPath
   encode_polylines: false,
   secure: true, // use https
