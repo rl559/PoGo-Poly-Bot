@@ -2806,10 +2806,6 @@
 				"power": 45,
 				"dps": 18.95
 			},
-			"scald": {
-				"power": 80,
-				"dps": 17.03
-			},
 			"mud-bomb": {
 				"power": 55,
 				"dps": 15.65
@@ -2820,7 +2816,7 @@
 			}
 		},
 		"evolveFrom": "poliwag",
-		"evolveTo": "poliwrath",
+		"evolveTo": ["poliwrath", "politoed"],
 		"fleeRate": 0.07
 	},
 	"poliwrath": {
@@ -2849,10 +2845,6 @@
 				"power": 12,
 				"dps": 11.67
 			},
-			"mud-shot": {
-				"power": 5,
-				"dps": 8.33
-			},
 			"rock-smash": {
 				"power": 15,
 				"dps": 13.08
@@ -2867,10 +2859,6 @@
 				"power": 50,
 				"dps": 24.21
 			},
-			"submission": {
-				"power": 60,
-				"dps": 30.00
-			},
 			"dynamic-punch": {
 				"power": 90,
 				"dps": 36.67
@@ -2881,7 +2869,7 @@
 	},
 	"abra": {
 		"id": 63,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Abra",
@@ -2959,7 +2947,7 @@
 		"chargeMoves": {
 			"dazzling-gleam": {
 				"power": 100,
-				"dps": 33.43
+				"dps": 33.14
 			},
 			"psybeam": {
 				"power": 70,
@@ -2967,7 +2955,7 @@
 			},
 			"shadow-ball": {
 				"power": 100,
-				"dps": 39.00
+				"dps": 38.67
 			}
 		},
 		"evolveFrom": "abra",
@@ -3004,14 +2992,6 @@
 			}
 		},
 		"chargeMoves": {
-			"dazzling-gleam": {
-				"power": 100,
-				"dps": 38.86
-			},
-			"psychic": {
-				"power": 100,
-				"dps": 58.21
-			},
 			"shadow-ball": {
 				"power": 100,
 				"dps": 45.33
@@ -3030,7 +3010,7 @@
 	},
 	"machop": {
 		"id": 66,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Machop",
@@ -3052,10 +3032,6 @@
 			"karate-chop": {
 				"power": 8,
 				"dps": 8.75
-			},
-			"low-kick": {
-				"power": 6,
-				"dps": 8.33
 			},
 			"rock-smash": {
 				"power": 15,
@@ -3114,10 +3090,6 @@
 				"power": 40,
 				"dps": 26.88
 			},
-			"cross-chop": {
-				"power": 50,
-				"dps": 36.00
-			},
 			"submission": {
 				"power": 60,
 				"dps": 29.09
@@ -3155,28 +3127,12 @@
 				"power": 9,
 				"dps": 12.22
 			},
-			"karate-chop": {
-				"power": 8,
-				"dps": 15.00
-			},
 			"counter": {
 				"power": 12,
 				"dps": 18.89
 			}
 		},
 		"chargeMoves": {
-			"cross-chop": {
-				"power": 50,
-				"dps": 47.33
-			},
-			"stone-edge": {
-				"power": 100,
-				"dps": 51.30
-			},
-			"submission": {
-				"power": 60,
-				"dps": 38.64
-			},
 			"close-combat": {
 				"power": 100,
 				"dps": 61.30
@@ -3195,7 +3151,7 @@
 	},
 	"bellsprout": {
 		"id": 69,
-		"egg": 5,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Bellsprout",
@@ -3208,6 +3164,12 @@
 		},
 		"maxCP": 916,
 		"type": ["grass", "poison"],
+		"weaknesses": {
+			"fire": 1.4,
+			"flying": 1.4,
+			"ice": 1.4,
+			"psychic": 1.4
+		},
 		"quickMoves": {
 			"acid": {
 				"power": 9,
@@ -3260,10 +3222,6 @@
 			"acid": {
 				"power": 9,
 				"dps": 12.50
-			},
-			"razor-leaf": {
-				"power": 13,
-				"dps": 14.00
 			},
 			"bullet-seed": {
 				"power": 8,
@@ -3337,7 +3295,7 @@
 	},
 	"tentacool": {
 		"id": 72,
-		"egg": 5,
+		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Tentacool",
