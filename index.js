@@ -150,6 +150,10 @@ client.on("message", (message) => {
 	{
 		message.delete();
 	}
+	if(message.author.username === 'Simple Poll' && message.content.indexOf("Simple Poll usage:")>-1)
+	{
+		message.delete();
+	}
 	
 	if( message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot' ){
 		GymNoticeObj.display(message, GMapsObj);
