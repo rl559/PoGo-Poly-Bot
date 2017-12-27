@@ -82,7 +82,13 @@ display(prefix, message){
           "name": "MaxCP",
           "value": pokemon.maxCP,
           "inline": true
-        }, {
+        }, 
+        {
+          "name": "Flee Rate",
+          "value": pokemon.fleeRate,
+          "inline": true
+        },
+        {
           "name": "Charged Move(s)",
           "value": chargedMoves,
           "inline": true

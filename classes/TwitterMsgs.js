@@ -27,11 +27,11 @@ module.exports = class TwitterMsgs
     	console.log('message received');
         let tweet = JSON.parse(obj.toString()),
     		messageContent = '';
-    		console.log(tweet);
+    		
     	if(typeof tweet.user !== 'undefined' && tweet.user !== null && tweet.in_reply_to_status_id === null && tweet.in_reply_to_user_id === null){
     		console.log(tweet.user.id_str);
     		if( twitterUsers.includes( tweet.user.id_str ) ){
-    			console.log("User matches followed users");
+    			console.log("User matches followed users, and is not a reply!");
     			messageContent = `@everyone BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
     			client.guilds.forEach((item, index)=>{
     				let announcements = '';
