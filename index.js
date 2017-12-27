@@ -92,9 +92,8 @@ function everyHour(){
 	let currentDate = Moment().tz('America/New_York').format('YYYY-MM-DD HH:MM:SS');
 	let currentDateString = Moment().tz('America/New_York').format( 'YYYY-MM-DD');
 	let currentTime = Moment().tz('America/New_York');
-	if( currentTime.hour() <= 23 && currentTime.hour() >= 6 ){
 		client.guilds.forEach((item, index)=>{
-			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0) {
+			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0 && currentTime.hour() <= 23 && currentTime.hour() >= 6) {
 				const userlist = newUsers[index].map(u => u.toString()).join(" ");
 				item.channels.find('name', 'announcements').send("Welcome our new members!\n" + userlist);
 				newUsers[index].clear();
@@ -131,7 +130,6 @@ function everyHour(){
 					}
 				});
 		});
-	}
 	if( timesAnHour >= 3 ){
 		timesAnHour = 0;
 	}else{
