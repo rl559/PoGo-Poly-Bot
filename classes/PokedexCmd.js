@@ -67,14 +67,14 @@ display(prefix, message){
     });
     var evolveTo = pokemon.evolveTo;
     var evolveFrom = pokemon.evolveFrom;
-    if(evolveFrom.constructor === Array)
+    if(evolveFrom && evolveFrom.constructor === Array)
     {
       for(var i=0; i<evolveFrom.length; i++)
       {
         evolveFrom[i] = cap(evolveFrom[i]);
       }
     }
-    if(evolveTo.constructor === Array)
+    if(evolveTo && evolveTo.constructor === Array)
     {
       for(var i=0; i<evolveTo.length; i++)
       {
