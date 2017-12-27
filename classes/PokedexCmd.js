@@ -67,6 +67,13 @@ display(prefix, message){
     });
     var evolveTo = pokemon.evolveTo;
     var evolveFrom = pokemon.evolveFrom;
+    if(evolveFrom.constructor === Array)
+    {
+      for(i=0; i<evolveFrom.length; i++)
+      {
+        evolveFrom[i] = cap(evolveFrom[i]);
+      }
+    }
     if(evolveTo === undefined || evolveTo === "") evolveTo = "None"
     if(evolveFrom === undefined || evolveFrom === "") evolveFrom = "None"
     message.channel.send(`${message.author} here is your pokedex result for ${query}`, {
