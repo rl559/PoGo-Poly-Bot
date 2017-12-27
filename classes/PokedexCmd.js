@@ -69,7 +69,7 @@ display(prefix, message){
     var evolveFrom = pokemon.evolveFrom;
     if(evolveFrom.constructor === Array)
     {
-      for(i=0; i<evolveFrom.length; i++)
+      for(var i=0; i<evolveFrom.length; i++)
       {
         evolveFrom[i] = cap(evolveFrom[i]);
       }
@@ -95,7 +95,7 @@ display(prefix, message){
           "value": typeValue,
           "inline": true
         }, {
-          "name": "Weaknesse(s)",
+          "name": "Weakness(es)",
           "value": weaknessValue,
           "inline": true
         }, {
