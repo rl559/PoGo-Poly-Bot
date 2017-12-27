@@ -7,10 +7,10 @@ var twitterKeys = {
 },
 	Twitter = new TwitterStream(twitterKeys, false),
 	//2839430431 = https://twitter.com/PokemonGoApp
-	//849344094681870336 = https://twitter.com/NianticHelp
+	//849344094681870336 = https://twitter.com/NianticHelp REMOVED, SPAM
 	//575930104 = https://twitter.com/metaphorminute  REMOVED, FOR TESTING
 	
-	twitterUsers = [ '2839430431' , '849344094681870336']; //
+	twitterUsers = [ '2839430431', '575930104']; //
 module.exports = class TwitterMsgs
 {
   display(client)
@@ -27,7 +27,7 @@ module.exports = class TwitterMsgs
     	console.log('message received');
         let tweet = JSON.parse(obj.toString()),
     		messageContent = '';
-    		//console.log(tweet);
+    		console.log(tweet);
     	if(typeof tweet.user !== 'undefined' && tweet.user !== null){
     		console.log(tweet.user.id_str);
     		if( twitterUsers.includes( tweet.user.id_str ) ){
