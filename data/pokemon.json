@@ -7668,7 +7668,7 @@
 	},
 	"pichu": {
 		"id": 172,
-		"egg": 5,
+		"egg": 2,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Pichu",
@@ -7686,9 +7686,6 @@
 		"quickMoves": {
 			"thunder-shock": {
 				"power": 5
-			},
-			"quick-attack": {
-				"power": 8
 			}
 		},
 		"chargeMoves": {
@@ -7732,11 +7729,11 @@
 			}
 		},
 		"chargeMoves": {
-			"body-slam": {
-				"power": 50
+			"grass-knot": {
+				"power": 90
 			},
-			"psychic": {
-				"power": 100
+			"psyshock": {
+				"power": 65
 			},
 			"signal-beam": {
 				"power": 75
@@ -7758,7 +7755,7 @@
 			"defense": 34
 		},
 		"maxCP": 512,
-		"type": ["fairy"],
+		"type": ["fairy", "normal"],
 		"weaknesses": {
 			"poison": 1.4,
 			"steel": 1.4
@@ -7772,8 +7769,8 @@
 			}
 		},
 		"chargeMoves": {
-			"body-slam": {
-				"power": 50
+			"wild-charge": {
+				"power": 90
 			},
 			"shadow-ball": {
 				"power": 100
@@ -7787,8 +7784,8 @@
 	},
 	"togepi": {
 		"id": 175,
-		"egg": 5,
-		"buddy": 5,
+		"egg": 2,
+		"buddy": 3,
 		"candy": 50,
 		"name": "Togepi",
 		"img": "http://www.serebii.net/pokemongo/pokemon/175.png",
@@ -7804,8 +7801,8 @@
 			"steel": 1.4
 		},
 		"quickMoves": {
-			"zen-headbutt": {
-				"power": 12
+			"hidden-power": {
+				"power": 15
 			},
 			"peck": {
 				"power": 10
