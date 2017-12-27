@@ -59,6 +59,10 @@ display(prefix, message){
     Object.keys(pokemon.stats).forEach(function (key) {
       statsValue += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": " + pokemon.stats[key] + "\n";
     });
+    var evolveTo = pokemon.evolveTo;
+    var evolveFrom = pokemon.evolveFrom;
+    if(evolveTo === undefined || evolveTo === "") evolveTo = "None"
+    if(evolveFrom === undefined || evolveTo === "") evolveFrom = "None"
     message.channel.send(`${message.author} here is your pokedex result for ${query}`, {
       "embed": {
         "color": 3447003,
@@ -95,6 +99,11 @@ display(prefix, message){
         {
           "name": "Flee Rate",
           "value": pokemon.fleeRate.toString(),
+          "inline": true
+        },
+        {
+          "name": "Evolve To/From",
+          "value": evolveTo+"/"+evolveFrom,
           "inline": true
         }
       ]
