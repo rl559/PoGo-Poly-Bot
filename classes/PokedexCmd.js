@@ -85,7 +85,7 @@ display(prefix, message){
         }, 
         {
           "name": "Flee Rate",
-          "value": pokemon.fleeRate,
+          "value": pokemon.fleeRate.toString(),
           "inline": true
         },
         {
