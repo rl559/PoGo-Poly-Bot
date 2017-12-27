@@ -4648,10 +4648,6 @@
 				"power": 65,
 				"dps": 17.20
 			},
-			"signal-beam": {
-				"power": 75,
-				"dps": 14.14
-			},
 			"thunderbolt": {
 				"power": 80,
 				"dps": 21.20
@@ -4684,10 +4680,6 @@
 			},
 			"spark": {
 				"power": 6,
-				"dps": 10.00
-			},
-			"tackle": {
-				"power": 5,
 				"dps": 10.00
 			}
 		},
@@ -6274,7 +6266,7 @@
 				"dps": 13.57
 			}
 		},
-		"evolveTo": ["vaporeon", "jolteon", "flareon"],
+		"evolveTo": ["vaporeon", "jolteon", "flareon", "umbreon", "espeon"],
 		"fleeRate": 0.1
 	},
 	"vaporeon": {
