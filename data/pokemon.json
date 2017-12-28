@@ -7032,7 +7032,7 @@
 		"evolveTo": "bayleef",
 		"fleeRate": 0.1
 		},
-		"bayleef": {
+	"bayleef": {
 		"id": 153,
 		"egg": 0,
 		"buddy": 3,
@@ -7081,7 +7081,7 @@
 		"evolveTo": "meganium",
 		"fleeRate": 0.07
 		},
-		"meganium": {
+	"meganium": {
 		"id": 154,
 		"egg": 0,
 		"buddy": 3,
@@ -7129,7 +7129,7 @@
 		"evolveFrom": "bayleef",
 		"fleeRate": 0.05
 		},
-		"cyndaquil": {
+	"cyndaquil": {
 		  "id": 155,
 		  "egg": 5,
 		  "buddy": 3,
@@ -7175,7 +7175,7 @@
 		  "evolveTo": "quilava",
 		  "fleeRate": 0.1
 		},
-		"quilava": {
+	"quilava": {
 		  "id": 155,
 		  "egg": 0,
 		  "buddy": 3,
@@ -7222,7 +7222,7 @@
 		  "evolveTo": "typhlosion",
 		  "fleeRate": 0.07
 		},
-		"typhlosion": {
+	"typhlosion": {
 		  "id": 157,
 		  "egg": 0,
 		  "buddy": 3,
@@ -7268,7 +7268,7 @@
 		  "evolveFrom": "quilava",
 		  "fleeRate": 0.05
 		},
-		"totodile": {
+	"totodile": {
 		  "id": 158,
 		  "egg": 5,
 		  "buddy": 3,
@@ -7313,7 +7313,7 @@
 		  "evolveTo": "croconaw",
 		  "fleeRate": 0.1
 		},
-		"croconaw": {
+	"croconaw": {
 		  "id": 159,
 		  "egg": 0,
 		  "buddy": 3,
@@ -7359,7 +7359,7 @@
 		  "evolveTo": "feraligatr",
 		  "fleeRate": 0.07
 		},
-		"feraligatr": {
+	"feraligatr": {
 		  "id": 160,
 		  "egg": 0,
 		  "buddy": 3,
@@ -7403,7 +7403,96 @@
 		  },
 		  "evolveFrom": "croconaw",
 		  "fleeRate": 0.05
+		},
+	"sentret": {
+		  "id": 161,
+		  "egg": 0,
+		  "buddy": 1,
+		  "candy": 25,
+		  "name": "Sentret",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/161.png",
+		  "stats": {
+		    "stamina": 70,
+		    "attack": 79,
+		    "defense": 77
+		  },
+		  "maxCP": 519,
+		  "type": ["normal"],
+		  "weaknesses": {
+		    "fighting": 1.4
+		  },
+		  "quickMoves": {
+		    "scratch": {
+		      "power": 6,
+		      "dps": 6.00
+		    },
+		    "quick-attack": {
+		      "power": 8,
+		      "dps": 5.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "dig": {
+		      "power": 100,
+		      "dps": 8.51
+		    },
+		    "brick-break": {
+		      "power": 40,
+		      "dps": 10.00
+		    },
+		    "grass-knot": {
+		      "power": 90,
+		      "dps": 13.85
+		    }
+		  },
+		  "evolveTo": "furret",
+		  "fleeRate": 0.2
 	},
+	"furret": {
+		  "id": 162,
+		  "egg": 0,
+		  "buddy": 1,
+		  "candy": 0,
+		  "name": "Sentret",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/162.png",
+		  "stats": {
+		    "stamina": 170,
+		    "attack": 148,
+		    "defense": 130
+		  },
+		  "maxCP": 1667,
+		  "type": ["normal"],
+		  "weaknesses": {
+		    "fighting": 1.4
+		  },
+		  "quickMoves": {
+		    "sucker-punch": {
+		      "power": 7,
+		      "dps": 8.57
+		    },
+		    "quick-attack": {
+		      "power": 8,
+		      "dps": 10.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "dig": {
+		      "power": 100,
+		      "dps": 15.96
+		    },
+		    "brick-break": {
+		      "power": 40,
+		      "dps": 18.75
+		    },
+		    "hyper-beam": {
+		      "power": 150,
+		      "dps": 32.26
+		    }
+		  },
+		  "evolveTo": "sentret",
+		  "fleeRate": 0.07
+	},
+	
 	"pichu": {
 		"id": 172,
 		"egg": 5,
