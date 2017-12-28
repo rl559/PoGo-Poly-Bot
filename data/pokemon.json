@@ -6985,420 +6985,424 @@
 		"fleeRate": 0.1
 	},
 	"chikorita": {
-	"id": 152,
-	"egg": 5,
-	"buddy": 3,
-	"candy": 25,
-	"name": "Chikorita",
-	"img": "http://www.serebii.net/pokemongo/pokemon/152.png",
-	"stats":{
+		"id": 152,
+		"egg": 5,
+		"buddy": 3,
+		"candy": 25,
+		"name": "Chikorita",
+		"img": "http://www.serebii.net/pokemongo/pokemon/152.png",
+		"stats": {
 			"stamina": 90,
 			"attack": 92,
-			"defense":122
-	},
-	"maxCP": 801,
-	"type": ["grass"],
-	"weaknesses":{
-		"bug": 1.4,
-		"fire": 1.4,
-		"flying": 1.4,
-		"poison": 1.4,
-		"ice": 1.4
-	},
-	"quickMoves":{
-		"vine-whip": {
-			"power": 7,
-			"dps": 6.67
+			"defense": 122
 		},
-		"tackle": {
-			"power": 5,
-			"dps": 6.00
-		}
-	},
-	"chargeMoves": {
-		"energy-ball": {
-			"power": 90,
-			"dps": 12.82
+		"maxCP": 801,
+		"type": ["grass"],
+		"weaknesses":{
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
 		},
-		"grass-knot": {
-			"power": 90,
-			"dps": 19.23
+		"quickMoves":{
+			"vine-whip": {
+				"power": 7,
+				"dps": 6.67
+			},
+			"tackle": {
+				"power": 5,
+				"dps": 6.00
+			}
 		},
-		"body-slam": {
-			"power": 50,
-			"dps": 12.63
-		}
-	},
-	"evolveTo": "bayleef",
-	"fleeRate": 0.10
-	},
-	"bayleef": {
-	"id": 153,
-	"egg": 0,
-	"buddy": 3,
-	"candy": 100,
-	"name": "Bayleef",
-	"img": "http://www.serebii.net/pokemongo/pokemon/153.png",
-	"stats":{
-			"stamina": 120,
-			"attack": 122,
-			"defense": 155
-	},
-	"maxCP": 1296,
-	"type": ["grass"],
-	"weaknesses":{
-		"bug": 1.4,
-		"fire": 1.4,
-		"flying": 1.4,
-		"poison": 1.4,
-		"ice": 1.4
-	},
-	"quickMoves": {
-		"razor-leaf": {
-			"power": 13,
-			"dps": 10.00
+		"chargeMoves": {
+			"energy-ball": {
+				"power": 90,
+				"dps": 12.82
+			},
+			"grass-knot": {
+				"power": 90,
+				"dps": 19.23
+			},
+			"body-slam": {
+				"power": 50,
+				"dps": 12.63
+			}
 		},
-		"tackle": {
-			"power": 5,
-			"dps": 8.00
-		}
-	},
-	"chargeMoves": {
-		"energy-ball": {
-			"power": 90,
-			"dps": 16.92
+		"evolveTo": "bayleef",
+		"fleeRate": 0.1
 		},
-		"grass-knot": {
-			"power": 90,
-			"dps": 25.38
+		"bayleef": {
+		"id": 153,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 100,
+		"name": "Bayleef",
+		"img": "http://www.serebii.net/pokemongo/pokemon/153.png",
+		"stats": {
+				"stamina": 120,
+				"attack": 122,
+				"defense": 155
 		},
-		"ancient-power": {
-			"power": 70,
-			"dps": 12.29
-		}
-	},
-	"evolveFrom": "chikorita",
-	"evolveTo": "meganium",
-	"fleeRate": 0.07
-	},
-	"meganium": {
-	"id": 154,
-	"egg": 0,
-	"buddy": 3,
-	"candy": 0,
-	"name": "Meganium",
-	"img": "http://www.serebii.net/pokemongo/pokemon/154.png",
-	"stats": {
-			"stamina": 160,
-			"attack": 168,
-			"defense":202
-	},
-	"maxCP": 2227,
-	"type": ["grass"],
-	"weaknesses": {
-		"bug": 1.4,
-		"fire": 1.4,
-		"flying": 1.4,
-		"poison": 1.4,
-		"ice": 1.4
-	},
-	"quickMoves": {
-		"vine-whip": {
-			"power": 7,
-			"dps": 13.33
+		"maxCP": 1296,
+		"type": ["grass"],
+		"weaknesses":{
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
 		},
-		"razor-leaf": {
-			"power": 13,
-			"dps": 14.00
-		}
-	},
-	"chargeMoves": {
-		"petal-blizzard": {
-			"power": 110,
-			"dps": 42.69
+		"quickMoves": {
+			"razor-leaf": {
+				"power": 13,
+				"dps": 10.00
+			},
+			"tackle": {
+				"power": 5,
+				"dps": 8.00
+			}
 		},
-		"solar-beam": {
-			"power": 180,
-			"dps": 37.14
+		"chargeMoves": {
+			"energy-ball": {
+				"power": 90,
+				"dps": 16.92
+			},
+			"grass-knot": {
+				"power": 90,
+				"dps": 25.38
+			},
+			"ancient-power": {
+				"power": 70,
+				"dps": 12.29
+			}
 		},
-		"earthquake": {
-			"power": 120,
-			"dps": 28.06
-		}
-	},
-	"evolveFrom": "bayleef",
-	"fleeRate": 0.05
-	},
-	"cyndaquil": {
-	  "id": 155,
-	  "egg": 5,
-	  "buddy": 3,
-	  "candy": 25,
-	  "name": "Cyndaquil",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/155.png",
-	  "stats": {
-	    "stamina": 78,
-	    "attack": 116,
-	    "defense": 96
-	  },
-	  "maxCP": 831,
-	  "type": ["fire"],
-	  "weaknesses": {
-	    "ground": 1.4,
-	    "rock": 1.4,
-	    "water": 1.4
-	  },
-	  "quickMoves": {
-	    "tackle": {
-	      "power": 5,
-	      "dps": 6.00
-	    },
-	    "ember": {
-	      "power": 10,
-	      "dps": 7.00
-	    }
-	  },
-	  "chargeMoves": {
-	    "swift": {
-	      "power": 60,
-	      "dps": 12.50
-	    },
-	    "flamethrower": {
-	      "power": 70,
-	      "dps": 22.27
-	    }
-	  },
-	  "evolveTo": "quilava",
-	  "fleeRate": 0.10
-	},
-	"quilava": {
-	  "id": 155,
-	  "egg": 0,
-	  "buddy": 3,
-	  "candy": 100,
-	  "name": "Quilava",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/156.png",
-	  "stats": {
-	    "stamina": 116,
-	    "attack": 158,
-	    "defense": 129
-	  },
-	  "maxCP": 1484,
-	  "type": ["fire"],
-	  "weaknesses": {
-	    "ground": 1.4,
-	    "rock": 1.4,
-	    "water": 1.4
-	  },
-	  "quickMoves": {
-	    "tackle": {
-	      "power": 5,
-	      "dps": 8.00
-	    },
-	    "ember": {
-	      "power": 10,
-	      "dps": 10.00
-	    }
-	  },
-	  "chargeMoves": {
-	    "flame-charge": {
-	      "power": 70,
-	      "dps": 17.63
-	    },
-	    "dig": {
-	      "power": 100,
-	      "dps": 17.02
-	    },
-	    "flamethrower": {
-	      "power": 70,
-	      "dps": 30.45
-	    }
-	  },
-	  "evolveFrom": "cyndaquil",
-	  "evolveTo": "typhlosion",
-	  "fleeRate": 0.07
-	},
-	"typhlosion": {
-	  "id": 157,
-	  "egg": 0,
-	  "buddy": 3,
-	  "candy": 0,
-	  "name": "Typhlosion",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/157.png",
-	  "stats": {
-	    "stamina": 156,
-	    "attack": 223,
-	    "defense": 176
-	  },
-	  "maxCP": 2686,
-	  "type": ["fire"],
-	  "weaknesses": {
-	    "ground": 1.4,
-	    "rock": 1.4,
-	    "water": 1.4
-	  },
-	  "quickMoves": {
-	    "shadow-claw": {
-	      "power": 9,
-	      "dps": 15.71
-	    },
-	    "ember": {
-	      "power": 10,
-	      "dps": 14.00
-	    }
-	  },
-	  "chargeMoves": {
-	    "fire-blast": {
-	      "power": 140,
-	      "dps": 44.76
-	    },
-	    "overheat": {
-	      "power": 160,
-	      "dps": 53.75
-	    },
-	    "solar-beam": {
-	      "power": 180,
-	      "dps": 41.02
-	    }
-	  },
-	  "evolveFrom": "quilava",
-	  "fleeRate": 0.10
-	},
-	"totodile": {
-	  "id": 158,
-	  "egg": 5,
-	  "buddy": 3,
-	  "candy": 25,
-	  "name": "Totodile",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/158.png",
-	  "stats": {
-	    "stamina": 100,
-	    "attack": 117,
-	    "defense": 116
-	  },
-	  "maxCP": 1011,
-	  "type": ["water"],
-	  "weaknesses": {
-	    "grass": 1.4,
-	    "electic": 1.4
-	  },
-	  "quickMoves": {
-	    "water-gun": {
-	      "power": 5,
-	      "dps": 8.00
-	    },
-	    "scratch": {
-	      "power": 6,
-	      "dps": 8.00
-	    }
-	  },
-	  "chargeMoves": {
-	    "crunch": {
-	      "power": 70,
-	      "dps": 12.81
-	    },
-	    "aqua-jet": {
-	      "power": 45,
-	      "dps": 12.31
-	    },
-	    "water-pulse": {
-	      "power": 70,
-	      "dps": 15.63
-	    }
-	  },
-	  "evolveTo": "croconaw",
-	  "fleeRate": 0.07
-	},
-	"croconaw": {
-	  "id": 159,
-	  "egg": 0,
-	  "buddy": 3,
-	  "candy": 100,
-	  "name": "Croconaw",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/159.png",
-	  "stats": {
-	    "stamina": 130,
-	    "attack": 150,
-	    "defense": 151
-	  },
-	  "maxCP": 1598,
-	  "type": ["water"],
-	  "weaknesses": {
-	    "grass": 1.4,
-	    "electic": 1.4
-	  },
-	  "quickMoves": {
-	    "water-gun": {
-	      "power": 5,
-	      "dps": 10.00
-	    },
-	    "scratch": {
-	      "power": 6,
-	      "dps": 10.00
-	    }
-	  },
-	  "chargeMoves": {
-	    "crunch": {
-	      "power": 70,
-	      "dps": 16.56
-	    },
-	    "ice-punch": {
-	      "power": 50,
-	      "dps": 20.00
-	    },
-	    "water-pulse": {
-	      "power": 70,
-	      "dps": 20.00
-	    }
-	  },
-	  "evolveFrom": "totodile",
-	  "evolveTo": "feraligatr",
-	  "fleeRate": 0.07
-	},
-	"feraligatr": {
-	  "id": 160,
-	  "egg": 0,
-	  "buddy": 3,
-	  "candy": 0,
-	  "name": "Feraligator",
-	  "img": "http://www.serebii.net/pokemongo/pokemon/160.png",
-	  "stats": {
-	    "stamina": 170,
-	    "attack": 205,
-	    "defense": 197
-	  },
-	  "maxCP": 2721,
-	  "type": ["water"],
-	  "weaknesses": {
-	    "grass": 1.4,
-	    "electic": 1.4
-	  },
-	  "quickMoves": {
-	    "bite": {
-	      "power": 6,
-	      "dps": 14.00
-	    },
-	    "waterfall": {
-	      "power": 16,
-	      "dps": 16.67
-	    }
-	  },
-	  "chargeMoves": {
-	    "crunch": {
-	      "power": 70,
-	      "dps": 22.50
-	    },
-	    "hydro-pump": {
-	      "power": 130,
-	      "dps": 48.48
-	    },
-	    "ice-beam": {
-	      "power": 90,
-	      "dps": 28.18
-	    }
-	  },
-	  "evolveFrom": "croconaw",
-	  "fleeRate": 0.05
+		"evolveFrom": "chikorita",
+		"evolveTo": "meganium",
+		"fleeRate": 0.07
+		},
+		"meganium": {
+		"id": 154,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Meganium",
+		"img": "http://www.serebii.net/pokemongo/pokemon/154.png",
+		"stats": {
+				"stamina": 160,
+				"attack": 168,
+				"defense":202
+		},
+		"maxCP": 2227,
+		"type": ["grass"],
+		"weaknesses": {
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
+		},
+		"quickMoves": {
+			"vine-whip": {
+				"power": 7,
+				"dps": 13.33
+			},
+			"razor-leaf": {
+				"power": 13,
+				"dps": 14.00
+			}
+		},
+		"chargeMoves": {
+			"petal-blizzard": {
+				"power": 110,
+				"dps": 42.69
+			},
+			"solar-beam": {
+				"power": 180,
+				"dps": 37.14
+			},
+			"earthquake": {
+				"power": 120,
+				"dps": 28.06
+			}
+		},
+		"evolveFrom": "bayleef",
+		"fleeRate": 0.05
+		},
+		"cyndaquil": {
+		  "id": 155,
+		  "egg": 5,
+		  "buddy": 3,
+		  "candy": 25,
+		  "name": "Cyndaquil",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/155.png",
+		  "stats": {
+		    "stamina": 78,
+		    "attack": 116,
+		    "defense": 96
+		  },
+		  "maxCP": 831,
+		  "type": ["fire"],
+		  "weaknesses": {
+		    "ground": 1.4,
+		    "rock": 1.4,
+		    "water": 1.4
+		  },
+		  "quickMoves": {
+		    "tackle": {
+		      "power": 5,
+		      "dps": 6.00
+		    },
+		    "ember": {
+		      "power": 10,
+		      "dps": 7.00
+		    }
+		  },
+		  "chargeMoves": {
+				"flame-charge": {
+					"power": 70,
+					"dps": 12.89
+				},
+				"swift": {
+		      "power": 60,
+		      "dps": 12.50
+		    },
+		    "flamethrower": {
+		      "power": 70,
+		      "dps": 22.27
+		    }
+		  },
+		  "evolveTo": "quilava",
+		  "fleeRate": 0.1
+		},
+		"quilava": {
+		  "id": 155,
+		  "egg": 0,
+		  "buddy": 3,
+		  "candy": 100,
+		  "name": "Quilava",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/156.png",
+		  "stats": {
+		    "stamina": 116,
+		    "attack": 158,
+		    "defense": 129
+		  },
+		  "maxCP": 1484,
+		  "type": ["fire"],
+		  "weaknesses": {
+		    "ground": 1.4,
+		    "rock": 1.4,
+		    "water": 1.4
+		  },
+		  "quickMoves": {
+		    "tackle": {
+		      "power": 5,
+		      "dps": 8.00
+		    },
+		    "ember": {
+		      "power": 10,
+		      "dps": 10.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "flame-charge": {
+		      "power": 70,
+		      "dps": 17.63
+		    },
+		    "dig": {
+		      "power": 100,
+		      "dps": 17.02
+		    },
+		    "flamethrower": {
+		      "power": 70,
+		      "dps": 30.45
+		    }
+		  },
+		  "evolveFrom": "cyndaquil",
+		  "evolveTo": "typhlosion",
+		  "fleeRate": 0.07
+		},
+		"typhlosion": {
+		  "id": 157,
+		  "egg": 0,
+		  "buddy": 3,
+		  "candy": 0,
+		  "name": "Typhlosion",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/157.png",
+		  "stats": {
+		    "stamina": 156,
+		    "attack": 223,
+		    "defense": 176
+		  },
+		  "maxCP": 2686,
+		  "type": ["fire"],
+		  "weaknesses": {
+		    "ground": 1.4,
+		    "rock": 1.4,
+		    "water": 1.4
+		  },
+		  "quickMoves": {
+		    "shadow-claw": {
+		      "power": 9,
+		      "dps": 15.71
+		    },
+		    "ember": {
+		      "power": 10,
+		      "dps": 14.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "fire-blast": {
+		      "power": 140,
+		      "dps": 44.76
+		    },
+		    "overheat": {
+		      "power": 160,
+		      "dps": 53.75
+		    },
+		    "solar-beam": {
+		      "power": 180,
+		      "dps": 41.02
+		    }
+		  },
+		  "evolveFrom": "quilava",
+		  "fleeRate": 0.05
+		},
+		"totodile": {
+		  "id": 158,
+		  "egg": 5,
+		  "buddy": 3,
+		  "candy": 25,
+		  "name": "Totodile",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/158.png",
+		  "stats": {
+		    "stamina": 100,
+		    "attack": 117,
+		    "defense": 116
+		  },
+		  "maxCP": 1011,
+		  "type": ["water"],
+		  "weaknesses": {
+		    "grass": 1.4,
+		    "electic": 1.4
+		  },
+		  "quickMoves": {
+		    "water-gun": {
+		      "power": 5,
+		      "dps": 8.00
+		    },
+		    "scratch": {
+		      "power": 6,
+		      "dps": 8.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "crunch": {
+		      "power": 70,
+		      "dps": 12.81
+		    },
+		    "aqua-jet": {
+		      "power": 45,
+		      "dps": 12.31
+		    },
+		    "water-pulse": {
+		      "power": 70,
+		      "dps": 15.63
+		    }
+		  },
+		  "evolveTo": "croconaw",
+		  "fleeRate": 0.1
+		},
+		"croconaw": {
+		  "id": 159,
+		  "egg": 0,
+		  "buddy": 3,
+		  "candy": 100,
+		  "name": "Croconaw",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/159.png",
+		  "stats": {
+		    "stamina": 130,
+		    "attack": 150,
+		    "defense": 151
+		  },
+		  "maxCP": 1598,
+		  "type": ["water"],
+		  "weaknesses": {
+		    "grass": 1.4,
+		    "electic": 1.4
+		  },
+		  "quickMoves": {
+		    "water-gun": {
+		      "power": 5,
+		      "dps": 10.00
+		    },
+		    "scratch": {
+		      "power": 6,
+		      "dps": 10.00
+		    }
+		  },
+		  "chargeMoves": {
+		    "crunch": {
+		      "power": 70,
+		      "dps": 16.56
+		    },
+		    "ice-punch": {
+		      "power": 50,
+		      "dps": 20.00
+		    },
+		    "water-pulse": {
+		      "power": 70,
+		      "dps": 20.00
+		    }
+		  },
+		  "evolveFrom": "totodile",
+		  "evolveTo": "feraligatr",
+		  "fleeRate": 0.07
+		},
+		"feraligatr": {
+		  "id": 160,
+		  "egg": 0,
+		  "buddy": 3,
+		  "candy": 0,
+		  "name": "Feraligator",
+		  "img": "http://www.serebii.net/pokemongo/pokemon/160.png",
+		  "stats": {
+		    "stamina": 170,
+		    "attack": 205,
+		    "defense": 197
+		  },
+		  "maxCP": 2721,
+		  "type": ["water"],
+		  "weaknesses": {
+		    "grass": 1.4,
+		    "electic": 1.4
+		  },
+		  "quickMoves": {
+		    "bite": {
+		      "power": 6,
+		      "dps": 14.00
+		    },
+		    "waterfall": {
+		      "power": 16,
+		      "dps": 16.67
+		    }
+		  },
+		  "chargeMoves": {
+		    "crunch": {
+		      "power": 70,
+		      "dps": 22.50
+		    },
+		    "hydro-pump": {
+		      "power": 130,
+		      "dps": 48.48
+		    },
+		    "ice-beam": {
+		      "power": 90,
+		      "dps": 28.18
+		    }
+		  },
+		  "evolveFrom": "croconaw",
+		  "fleeRate": 0.05
 	},
 	"pichu": {
 		"id": 172,
