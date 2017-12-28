@@ -108,17 +108,18 @@ display(prefix, message){
           "inline": true
         }, 
         {
-          "name": "Charged Move(s)",
-          "value": chargedMoves,
-          "inline": true
-        }, {
           "name": "Quick Move(s)",
           "value": quickMoves,
           "inline": true
         },
         {
+          "name": "Charged Move(s)",
+          "value": chargedMoves,
+          "inline": true
+        }, 
+        {
           "name": "Flee Rate",
-          "value": pokemon.fleeRate.toString(),
+          "value": (pokemon.fleeRate*100).toString()+"%",
           "inline": true
         },
         {
