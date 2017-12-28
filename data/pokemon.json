@@ -8134,6 +8134,102 @@
 		"evolveFrom": "togepi",
 		"fleeRate": 0.05
 	},
+	"natu": {
+		"id": 177,
+		"egg": 5,
+		"buddy": 3,
+		"candy": 50,
+		"name": "Natu",
+		"img": "http://www.serebii.net/pokemongo/pokemon/177.png",
+		"stats": {
+			"stamina": 80,
+			"attack": 134,
+			"defense": 80
+		},
+		"maxCP": 925,
+		"type": ["psychic", "flying"],
+		"weaknesses": {
+			"dark": 1.4,
+			"ghost": 1.4,
+			"electric": 1.4,
+			"ice": 1.4,
+			"rock": 1.4
+		},
+		"quickMoves": {
+			"peck": {
+				"power": 10,
+				"dps": 9.00
+			},
+			"quick-attack": {
+				"power": 8,
+				"dps": 7.50
+			}
+		},
+		"chargeMoves": {
+			"night-shade": {
+				"power": 60,
+				"dps": 15.77
+			},
+			"psyshock": {
+				"power": 65,
+				"dps": 19.63
+			},
+			"drill-peck": {
+				"power": 60,
+				"dps": 21.30
+			}
+		},
+		"evolveTo": "xatu",
+		"fleeRate": 0.15
+	},
+	"xatu": {
+		"id": 178,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Natu",
+		"img": "http://www.serebii.net/pokemongo/pokemon/178.png",
+		"stats": {
+			"stamina": 130,
+			"attack": 192,
+			"defense": 146
+		},
+		"maxCP": 1975,
+		"type": ["psychic", "flying"],
+		"weaknesses": {
+			"dark": 1.4,
+			"ghost": 1.4,
+			"electric": 1.4,
+			"ice": 1.4,
+			"rock": 1.4
+		},
+		"quickMoves": {
+			"air-slash": {
+				"power": 14,
+				"dps": 14.17
+			},
+			"feint-attack": {
+				"power": 10,
+				"dps": 11.11
+			}
+		},
+		"chargeMoves": {
+			"ominous-wind": {
+				"power": 50,
+				"dps": 21.30
+			},
+			"future-sight": {
+				"power": 120,
+				"dps": 51.48
+			},
+			"aerial-ace": {
+				"power": 55,
+				"dps": 26.67
+			}
+		},
+		"evolveFrom": "natu",
+		"fleeRate": 0.07
+	},
 	"smoochum": {
 		"id": 238,
 		"egg": 10,
