@@ -119,7 +119,7 @@ display(prefix, message){
         }, 
         {
           "name": "Flee Rate",
-          "value": (pokemon.fleeRate*100).toString()+"%",
+          "value": (Math.round(pokemon.fleeRate*100)).toString()+"%",
           "inline": true
         },
         {
