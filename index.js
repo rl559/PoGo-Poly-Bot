@@ -34,6 +34,7 @@ const Discord = require("discord.js"),
 	TwitterObj = new TwitterMsgs(),
 	GymNotice = require("./classes/GymNotice.js"),
 	GymNoticeObj = new GymNotice(),
+	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	Rraid = require("./classes/Rraid.js"),
 	RraidObj = new Rraid(),
 	raidChannelPattern = new RegExp(/raids/);
