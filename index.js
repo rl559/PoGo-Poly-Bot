@@ -160,7 +160,7 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, deleted simple poll error");
 	}
 	
-	if( message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot' ){
+	if( (message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot') && (message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)) ){
 		GymNoticeObj.display(message, GMapsObj);
 		console.log(Date.now()+" current timestamp, GymNotice triggered");
 	}

@@ -14,7 +14,7 @@ module.exports = class GymNotice
   display(message, GMapsObj)
   {
     
-  		if( message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)){
+  		//if( message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)){
   			let raidLevel = '';
   			if(raid1Pattern.test(message.embeds[0].title)) raidLevel = 'T1';
   			if(raid2Pattern.test(message.embeds[0].title)) raidLevel = 'T2';
@@ -109,6 +109,6 @@ module.exports = class GymNotice
               
             }
   				}
-  		}
+  		//}
   }
 }
