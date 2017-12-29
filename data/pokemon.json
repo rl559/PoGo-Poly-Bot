@@ -10610,7 +10610,7 @@
 				"dps": 8.00
 			},
 			"quick-attack": {
-				"power": ,
+				"power": 8,
 				"dps": 6.25
 			}
 		},
@@ -10670,7 +10670,7 @@
 				"dps": 41.52
 			},
 			"blizzard": {
-				"power": ,
+				"power": 130,
 				"dps": 36.77
 			}
 		},
