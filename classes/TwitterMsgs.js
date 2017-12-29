@@ -24,6 +24,7 @@ module.exports = class TwitterMsgs
     });
 
     Twitter.on('data', function (obj) {
+			console.log(Date.now()+" current timestamp, twittermsg triggered");
     	console.log('message received');
         let tweet = JSON.parse(obj.toString()),
     		messageContent = '';

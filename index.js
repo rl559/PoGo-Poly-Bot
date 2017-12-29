@@ -89,6 +89,7 @@ client.on("guildMemberRemove", (member) => {
 
 //actually runs every 15 minutes
 function everyHour(){
+	console.log(Date.now()+" current timestamp, everyHour triggered");
 	let currentDate = Moment().tz('America/New_York').format('YYYY-MM-DD HH:MM:SS');
 	let currentDateString = Moment().tz('America/New_York').format( 'YYYY-MM-DD');
 	let currentTime = Moment().tz('America/New_York');
@@ -117,6 +118,7 @@ function everyHour(){
 									//console.log( 'timerends: ' + timerEnds + ' currentTime: '+ currentDate + ' isExpired: '+isExpired );
 									if( isExpired ){
 										message.unpin();
+										console.log(Date.now()+" current timestamp, removed pin");
 									}
 
 								});
@@ -145,24 +147,29 @@ client.on("message", (message) => {
 	
 	if( message.system && message.type === 'PINS_ADD' && raidChannelPattern.test(channelName) && message.author.username === 'PoGoPolyBot' ){
 		message.delete();
+		console.log(Date.now()+" current timestamp, deleted pin notification");
 	}
 	if( message.author.username === 'PoGoPolyBot' && message.content.indexOf("/poll")>-1 )
 	{
 		message.delete();
+		console.log(Date.now()+" current timestamp, deleted poll message");
 	}
 	if(message.author.username === 'Simple Poll' && message.content.indexOf("Simple Poll usage:")>-1)
 	{
 		message.delete();
+		console.log(Date.now()+" current timestamp, deleted simple poll error");
 	}
 	
 	if( message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot' ){
 		GymNoticeObj.display(message, GMapsObj);
+		console.log(Date.now()+" current timestamp, GymNotice triggered");
 	}
 	
 	if (message.author.bot) return;
 	
 	if( message.isMentioned(message.guild.members.get(process.env.client_id)) ){
 		BotContactObj.display(message);
+		console.log(Date.now()+" current timestamp, BotContact triggered");
 	}
 	
 	/*
@@ -170,6 +177,7 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "callme")) {
 		CallmeObj.display(prefix, message);
+		console.log(Date.now()+" current timestamp, callme triggered");
 	}
 	
 	/*
@@ -177,6 +185,7 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "help")) {
 		HelpObj.display(prefix, message);
+		console.log(Date.now()+" current timestamp, help triggered");
 	}
 	
 	/*
@@ -216,6 +225,7 @@ client.on("message", (message) => {
 	 */
 	 if(message.content.startsWith(prefix + "rraid")) {
 				RraidObj.display(prefix, message, raidBosses);
+				console.log(Date.now()+" current timestamp, rraid triggered");
 		 }
 	
 	/*
@@ -223,6 +233,7 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "userinfo")) {
 		UserinfoObj.display(prefix, message, channelName);
+		console.log(Date.now()+" current timestamp, userinfo triggered");
 	}
 	
 	/*
@@ -230,8 +241,10 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "tdel")) {
 		TAddDelObj.tdel(prefix, message);
+		console.log(Date.now()+" current timestamp, tdel triggered");
 	} else if (message.content.startsWith(prefix + "tadd")) {
 		TAddDelObj.tadd(prefix, message);
+		console.log(Date.now()+" current timestamp, tadd triggered");
 	}
 	
 	/*
@@ -239,6 +252,7 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "invite")) {
 		InviteObj.genInvite(message);
+		console.log(Date.now()+" current timestamp, invite triggered");
 	}
 
 	/*
@@ -246,12 +260,14 @@ client.on("message", (message) => {
 	 */
 	if (message.content.startsWith(prefix + "pokedex")) {
 		PokedexObj.display(prefix, message);
+		console.log(Date.now()+" current timestamp, pokedex triggered");
 	}
 	/*
 	 * ADDRESS COMMAND
 	 */
 	if (message.content.startsWith(prefix + "address")) {
 		AddressObj.display(message, prefix, GMapsObj);
+		console.log(Date.now()+" current timestamp, address triggered");
 		}
 
 });
