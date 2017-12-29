@@ -8877,7 +8877,7 @@
 				"dps": 32.61
 			}
 		},
-		"evolveTo": "sunkern",
+		"evolveFrom": "sunkern",
 		"fleeRate": 0.07
 	},
 	"smoochum": {
