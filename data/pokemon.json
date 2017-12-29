@@ -8230,6 +8230,187 @@
 		"evolveFrom": "natu",
 		"fleeRate": 0.07
 	},
+	"mareep": {
+		"id": 179,
+		"egg": 10,
+		"buddy": 5,
+		"candy": 25,
+		"name": "Mareep",
+		"img": "http://www.serebii.net/pokemongo/pokemon/179.png",
+		"stats": {
+			"stamina": 110,
+			"attack": 114,
+			"defense": 82
+		},
+		"maxCP": 887,
+		"type": ["electric"],
+		"weaknesses": {
+			"ground": 1.4
+		},
+		"quickMoves": {
+			"tackle": {
+				"power": 5,
+				"dps": 6.00
+			},
+			"thunder-shock": {
+				"power": 5,
+				"dps": 6.67
+			}
+		},
+		"chargeMoves": {
+			"body-slam": {
+				"power": 50,
+				"dps": 15.26
+			},
+			"thunderbolt": {
+				"power": 80,
+				"dps": 22.00
+			},
+			"discharge": {
+				"power": 65,
+				"dps": 18.00
+			}
+		},
+		"evolveTo": "flaaffy",
+		"fleeRate": 0.1
+	},
+	"flaaffy": {
+		"id": 180,
+		"egg": 0,
+		"buddy": 5,
+		"candy": 100,
+		"name": "Flaaffy",
+		"img": "http://www.serebii.net/pokemongo/pokemon/180.png",
+		"stats": {
+			"stamina": 140,
+			"attack": 145,
+			"defense": 112
+		},
+		"maxCP": 1402,
+		"type": ["electric"],
+		"weaknesses": {
+			"ground": 1.4
+		},
+		"quickMoves": {
+			"tackle": {
+				"power": 5,
+				"dps": 8.00
+			},
+			"charge-beam": {
+				"power": 8,
+				"dps": 6.36
+			}
+		},
+		"chargeMoves": {
+			"power-gem": {
+				"power": 80,
+				"dps": 20.34
+			},
+			"thunderbolt": {
+				"power": 80,
+				"dps": 28.00
+			},
+			"discharge": {
+				"power": 65,
+				"dps": 22.80
+			}
+		},
+		"evolveFrom": "mareep",
+		"evolveTo": "ampharos",
+		"fleeRate": 0.07
+	},
+	"ampharos": {
+		"id": 181,
+		"egg": 0,
+		"buddy": 5,
+		"candy": 0,
+		"name": "Ampharos",
+		"img": "http://www.serebii.net/pokemongo/pokemon/181.png",
+		"stats": {
+			"stamina": 180,
+			"attack": 211,
+			"defense": 172
+		},
+		"maxCP": 2695,
+		"type": ["electric"],
+		"weaknesses": {
+			"ground": 1.4
+		},
+		"quickMoves": {
+			"volt-switch": {
+				"power": 20,
+				"dps": 11.30
+			},
+			"charge-beam": {
+				"power": 8,
+				"dps": 10.00
+			}
+		},
+		"chargeMoves": {
+			"zap-cannon": {
+				"power": 140,
+				"dps": 48.11
+			},
+			"focus-blast": {
+				"power": 140,
+				"dps": 42.29
+			},
+			"thunder": {
+				"power": 100,
+				"dps": 52.92
+			}
+		},
+		"evolveFrom": "flaaffy",
+		"fleeRate": 0.05
+	},
+	"bellossom": {
+		"id": 182,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Bellossom",
+		"img": "http://www.serebii.net/pokemongo/pokemon/182.png",
+		"stats": {
+			"stamina": 150,
+			"attack": 169,
+			"defense": 189
+		},
+		"maxCP": 2108,
+		"type": ["grass"],
+		"weaknesses": {
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
+		},
+		"quickMoves": {
+			"razor-leaf": {
+				"power": 13,
+				"dps": 14.00
+			},
+			"acid": {
+				"power": 9,
+				"dps": 10.00
+			}
+		},
+		"chargeMoves": {
+			"leaf-blade": {
+				"power": 70,
+				"dps": 29.58
+			},
+			"petal-blizzard": {
+				"power": 110,
+				"dps": 43.08
+			},
+			"dazzling-gleam": {
+				"power": 100,
+				"dps": 24.29
+			}
+		},
+		"evolveFrom": "gloom",
+		"fleeRate": 0.05
+	},
 	"smoochum": {
 		"id": 238,
 		"egg": 10,
