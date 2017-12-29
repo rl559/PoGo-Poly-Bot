@@ -8877,8 +8877,231 @@
 				"dps": 32.61
 			}
 		},
-		"evolveTo": "sunkern",
+		"evolveFrom": "sunkern",
 		"fleeRate": 0.07
+	},
+	"yanma": {
+		"id": 193,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Yanma",
+		"img": "http://www.serebii.net/pokemongo/pokemon/193.png",
+		"stats": {
+			"stamina": 130,
+			"attack": 154,
+			"defense": 94
+		},
+		"maxCP": 1326,
+		"type": ["bug", "flying"],
+		"weaknesses": {
+			"electric": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"rock": 1.96,
+			"ice": 1.4
+		},
+		"quickMoves": {
+			"quick-attack": {
+				"power": 8,
+				"dps": 8.75
+			},
+			"wing-attack": {
+				"power": 8,
+				"dps": 10.00
+			}
+		},
+		"chargeMoves": {
+			"ancient-power": {
+				"power": 70,
+				"dps": 15.43
+			},
+			"aerial-ace": {
+				"power": 55,
+				"dps": 21.25
+			},
+			"silver-wind": {
+				"power": 70,
+				"dps": 17.57
+			}
+		},
+		"fleeRate": 0.1
+	},
+	"wooper": {
+		"id": 194,
+		"egg": 5,
+		"buddy": 3,
+		"candy": 50,
+		"name": "Wooper",
+		"img": "http://www.serebii.net/pokemongo/pokemon/194.png",
+		"stats": {
+			"stamina": 110,
+			"attack": 75,
+			"defense": 75
+		},
+		"maxCP": 596,
+		"type": ["ground", "water"],
+		"weaknesses": {
+			"grass": 1.96
+		},
+		"quickMoves": {
+			"water-gun": {
+				"power": 5,
+				"dps": 6.00
+			},
+			"mud-shot": {
+				"power": 5,
+				"dps": 5.00
+			}
+		},
+		"chargeMoves": {
+			"mud-bomb": {
+				"power": 55,
+				"dps": 10.87
+			},
+			"dig": {
+				"power": 100,
+				"dps": 9.79
+			},
+			"body-slam": {
+				"power": 50,
+				"dps": 10.00
+			}
+		},
+		"evolveTo": "quagsire",
+		"fleeRate": 0.1
+	},
+	"quagsire": {
+		"id": 195,
+		"egg": 0,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Quagsire",
+		"img": "http://www.serebii.net/pokemongo/pokemon/195.png",
+		"stats": {
+			"stamina": 190,
+			"attack": 152,
+			"defense": 152
+		},
+		"maxCP": 1929,
+		"type": ["ground", "water"],
+		"weaknesses": {
+			"grass": 1.96
+		},
+		"quickMoves": {
+			"water-gun": {
+				"power": 5,
+				"dps": 10.00
+			},
+			"mud-shot": {
+				"power": 5,
+				"dps": 8.33
+			}
+		},
+		"chargeMoves": {
+			"sludge-bomb": {
+				"power": 80,
+				"dps": 26.52
+			},
+			"earthquake": {
+				"power": 120,
+				"dps": 30.56
+			},
+			"stone-edge": {
+				"power": 100,
+				"dps": 33.48
+			}
+		},
+		"evolveFrom": "wooper",
+		"fleeRate": 0.07
+	},
+	"espeon": {
+		"id": 196,
+		"egg": 0,
+		"buddy": 5,
+		"candy": 0,
+		"name": "Espeon",
+		"img": "http://www.serebii.net/pokemongo/pokemon/196.png",
+		"stats": {
+			"stamina": 130,
+			"attack": 261,
+			"defense": 194
+		},
+		"maxCP": 3000,
+		"type": ["psychic"],
+		"weaknesses": {
+			"bug": 1.4,
+			"dark": 1.4,
+			"ghost": 1.4
+		},
+		"quickMoves": {
+			"confusion": {
+				"power": 20,
+				"dps": 20.00
+			},
+			"zen-headbutt": {
+				"power": 12,
+				"dps": 17.27
+			}
+		},
+		"chargeMoves": {
+			"psybeam": {
+				"power": 70,
+				"dps": 34.38
+			},
+			"psychic": {
+				"power": 100,
+				"dps": 56.07
+			},
+			"future-sight": {
+				"power": 120,
+				"dps": 69.63
+			}
+		},
+		"evolveFrom": "eevee",
+		"fleeRate": 0.05
+	},
+	"umbreon": {
+		"id": 197,
+		"egg": 0,
+		"buddy": 5,
+		"candy": 0,
+		"name": "Umbreon",
+		"img": "http://www.serebii.net/pokemongo/pokemon/197.png",
+		"stats": {
+			"stamina": 190,
+			"attack": 126,
+			"defense": 250
+		},
+		"maxCP": 2052,
+		"type": ["dark"],
+		"weaknesses": {
+			"bug": 1.4,
+			"dark": 1.4,
+			"ghost": 1.4
+		},
+		"quickMoves": {
+			"feint-attack": {
+				"power": 10,
+				"dps": 8.89
+			},
+			"snarl": {
+				"power": 12,
+				"dps": 9.09
+			}
+		},
+		"chargeMoves": {
+			"dark-pulse": {
+				"power": 80,
+				"dps": 20.33
+			},
+			"foul-play": {
+				"power": 70,
+				"dps": 26.50
+			}
+		},
+		"evolveFrom": "eevee",
+		"fleeRate": 0.05
 	},
 	"smoochum": {
 		"id": 238,
