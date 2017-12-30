@@ -282,6 +282,6 @@
 	"celebi": {
 		"level": "Level 5",
 		"image": "https://www.serebii.net/pokemongo/pokemon/251.png",
-		"cp": 37726
+		"cp": "37726"
 	}
 }
