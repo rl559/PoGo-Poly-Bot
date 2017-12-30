@@ -13858,21 +13858,26 @@
 		},
 		"quickMoves": {
 			"shadow-claw": {
-				"power": 9
+				"power": 9,
+				"dps": 11.43
 			},
 			"feint-attack": {
-				"power": 10
+				"power": 10,
+				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
 			"power-gem": {
-				"power": 80
+				"power": 80,
+				"dps": 19.66
 			},
 			"foul-play": {
-				"power": 70
+				"power": 70,
+				"dps": 30.00
 			},
 			"shadow-sneak": {
-				"power": 50
+				"power": 50,
+				"dps": 14.83
 			}
 		},
 		"evolveTo": "",
@@ -13899,21 +13904,26 @@
 		},
 		"quickMoves": {
 			"bite": {
-				"power": 6
+				"power": 6,
+				"dps": 10.00
 			},
 			"astonish": {
-				"power": 8
+				"power": 8,
+				"dps": 6.36
 			}
 		},
 		"chargeMoves": {
 			"iron-head": {
-				"power": 60
+				"power": 60,
+				"dps": 29.47
 			},
 			"play-rough": {
-				"power": 90
+				"power": 90,
+				"dps": 28.97
 			},
 			"vice-grip": {
-				"power": 35
+				"power": 35,
+				"dps": 14.74
 			}
 		},
 		"evolveTo": "",
@@ -13941,21 +13951,26 @@
 		},
 		"quickMoves": {
 			"metal-claw": {
-				"power": 8
+				"power": 8,
+				"dps": 8.57
 			},
 			"tackle": {
-				"power": 5
+				"power": 5,
+				"dps": 8.00
 			}
 		},
 		"chargeMoves": {
 			"iron-head": {
-				"power": 60
+				"power": 60,
+				"dps": 23.16
 			},
 			"body-slam": {
-				"power": 50
+				"power": 50,
+				"dps": 16.32
 			},
 			"rock-tomb": {
-				"power": 70
+				"power": 70,
+				"dps": 15.94
 			}
 		},
 		"evolveTo": "lairon",
@@ -13983,21 +13998,26 @@
 		},
 		"quickMoves": {
 			"metal-claw": {
-				"power": 8
+				"power": 8,
+				"dps": 11.43
 			},
 			"iron-tail": {
-				"power": 15
+				"power": 15,
+				"dps": 13.64
 			}
 		},
 		"chargeMoves": {
 			"heavy-slam": {
-				"power": 70
+				"power": 70,
+				"dps": 31.90
 			},
 			"body-slam": {
-				"power": 50
+				"power": 50,
+				"dps": 21.05
 			},
 			"rock-slide": {
-				"power": 80
+				"power": 80,
+				"dps": 28.15
 			}
 		},
 		"evolveTo": "aggron",
@@ -14025,21 +14045,26 @@
 		},
 		"quickMoves": {
 			"dragon-tail": {
-				"power": 15
+				"power": 15,
+				"dps": 13.64
 			},
 			"iron-tail": {
-				"power": 15
+				"power": 15,
+				"dps": 16.36
 			}
 		},
 		"chargeMoves": {
 			"heavy-slam": {
-				"power": 70
+				"power": 70,
+				"dps": 40.00
 			},
 			"stone-edge": {
-				"power": 100
+				"power": 100,
+				"dps": 51.74
 			},
 			"thunder": {
-				"power": 100
+				"power": 100,
+				"dps": 41.67
 			}
 		},
 		"evolveTo": "",
@@ -14067,21 +14092,26 @@
 		},
 		"quickMoves": {
 			"confusion": {
-				"power": 20
+				"power": 20,
+				"dps": 6.25
 			},
 			"rock-smash": {
-				"power": 15
+				"power": 15,
+				"dps": 6.15
 			}
 		},
 		"chargeMoves": {
 			"psyshock": {
-				"power": 65
+				"power": 65,
+				"dps": 11.48
 			},
 			"ice-punch": {
-				"power": 50
+				"power": 50,
+				"dps": 10.53
 			},
 			"low-sweep": {
-				"power": 40
+				"power": 40,
+				"dps": 10.00
 			}
 		},
 		"evolveTo": "medicham",
@@ -14109,21 +14139,26 @@
 		},
 		"quickMoves": {
 			"counter": {
-				"power": 12
+				"power": 12,
+				"dps": 10.00
 			},
 			"psycho-cut": {
-				"power": 5
+				"power": 5,
+				"dps": 6.67
 			}
 		},
 		"chargeMoves": {
 			"psychic": {
-				"power": 100
+				"power": 100,
+				"dps": 26.07
 			},
 			"ice-punch": {
-				"power": 50
+				"power": 50,
+				"dps": 16.32
 			},
 			"dynamic-punch": {
-				"power": 90
+				"power": 90,
+				"dps": 24.44
 			}
 		},
 		"evolveTo": "",
@@ -14149,21 +14184,26 @@
 		},
 		"quickMoves": {
 			"spark": {
-				"power": 6
+				"power": 6,
+				"dps": 7.14
 			},
 			"quick-attack": {
-				"power": 8
+				"power": 8,
+				"dps": 6.25
 			}
 		},
 		"chargeMoves": {
 			"thunderbolt": {
-				"power": 80
+				"power": 80,
+				"dps": 24.00
 			},
 			"discharge": {
-				"power": 65
+				"power": 65,
+				"dps": 19.20
 			},
 			"swift": {
-				"power": 60
+				"power": 60,
+				"dps": 13.21
 			}
 		},
 		"evolveTo": "manectric",
@@ -14189,21 +14229,26 @@
 		},
 		"quickMoves": {
 			"snarl": {
-				"power": 12
+				"power": 12,
+				"dps": 11.82
 			},
 			"charge-beam": {
-				"power": 8
+				"power": 8,
+				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
 			"thunder": {
-				"power": 100
+				"power": 100,
+				"dps": 54.17
 			},
 			"wild-charge": {
-				"power": 90
+				"power": 90,
+				"dps": 45.00
 			},
 			"flame-burst": {
-				"power": 70
+				"power": 70,
+				"dps": 29.23
 			}
 		},
 		"evolveTo": "",
@@ -14229,21 +14274,26 @@
 		},
 		"quickMoves": {
 			"spark": {
-				"power": 6
+				"power": 6,
+				"dps": 10.00
 			},
 			"quick-attack": {
-				"power": 8
+				"power": 8,
+				"dps": 8.75
 			}
 		},
 		"chargeMoves": {
 			"thunderbolt": {
-				"power": 80
+				"power": 80,
+				"dps": 32.40
 			},
 			"discharge": {
-				"power": 65
+				"power": 65,
+				"dps": 26.40
 			},
 			"swift": {
-				"power": 60
+				"power": 60,
+				"dps": 18.21
 			}
 		},
 		"evolveTo": "",
@@ -14269,21 +14319,26 @@
 		},
 		"quickMoves": {
 			"spark": {
-				"power": 6
+				"power": 6,
+				"dps": 8.57
 			},
 			"quick-attack": {
-				"power": 8
+				"power": 8,
+				"dps": 7.50
 			}
 		},
 		"chargeMoves": {
 			"thunderbolt": {
-				"power": 80
+				"power": 80,
+				"dps": 28.40
 			},
 			"discharge": {
-				"power": 65
+				"power": 65,
+				"dps": 23.20
 			},
 			"swift": {
-				"power": 60
+				"power": 60,
+				"dps": 16.07
 			}
 		},
 		"evolveTo": "",
@@ -14311,21 +14366,26 @@
 		},
 		"quickMoves": {
 			"struggle-bug": {
-				"power": 15
+				"power": 15,
+				"dps": 8.67
 			},
 			"tackle": {
-				"power": 5
+				"power": 5,
+				"dps": 8.00
 			}
 		},
 		"chargeMoves": {
 			"thunderbolt": {
-				"power": 80
+				"power": 80,
+				"dps": 23.20
 			},
 			"signal-beam": {
-				"power": 75
+				"power": 75,
+				"dps": 22.41
 			},
 			"bug-buzz": {
-				"power": 90
+				"power": 90,
+				"dps": 21.08
 			}
 		},
 		"evolveTo": "",
@@ -14353,21 +14413,26 @@
 		},
 		"quickMoves": {
 			"struggle-bug": {
-				"power": 15
+				"power": 15,
+				"dps": 8.67
 			},
 			"tackle": {
-				"power": 5
+				"power": 5,
+				"dps": 8.00
 			}
 		},
 		"chargeMoves": {
 			"dazzling-gleam": {
-				"power": 100
+				"power": 100,
+				"dps": 20.57
 			},
 			"silver-wind": {
-				"power": 70
+				"power": 70,
+				"dps": 16.49
 			},
 			"bug-buzz": {
-				"power": 90
+				"power": 90,
+				"dps": 21.08
 			}
 		},
 		"evolveTo": "",
@@ -14396,21 +14461,26 @@
 		},
 		"quickMoves": {
 			"poison-jab": {
-				"power": 10
+				"power": 10,
+				"dps": 15.00
 			},
 			"razor-leaf": {
-				"power": 13
+				"power": 13,
+				"dps": 15.00
 			}
 		},
 		"chargeMoves": {
 			"dazzling-gleam": {
-				"power": 100
+				"power": 100,
+				"dps": 26.86
 			},
 			"petal-blizzard": {
-				"power": 110
+				"power": 110,
+				"dps": 47.31
 			},
 			"sludge-bomb": {
-				"power": 80
+				"power": 80,
+				"dps": 39.13
 			}
 		},
 		"evolveTo": "",
@@ -14437,21 +14507,26 @@
 		},
 		"quickMoves": {
 			"pound": {
-				"power": 7
+				"power": 7,
+				"dps": 5.00
 			},
 			"rock-smash": {
-				"power": 15
+				"power": 15,
+				"dps": 5.38
 			}
 		},
 		"chargeMoves": {
 			"gunk-shot": {
-				"power": 130
+				"power": 130,
+				"dps": 20.32
 			},
 			"sludge": {
-				"power": 50
+				"power": 50,
+				"dps": 11.90
 			},
 			"ice-beam": {
-				"power": 90
+				"power": 90,
+				"dps": 11.21
 			}
 		},
 		"evolveTo": "swalot",
@@ -14478,21 +14553,26 @@
 		},
 		"quickMoves": {
 			"infestation": {
-				"power": 10
+				"power": 10,
+				"dps": 7.27
 			},
 			"rock-smash": {
-				"power": 15
+				"power": 15,
+				"dps": 8.46
 			}
 		},
 		"chargeMoves": {
 			"gunk-shot": {
-				"power": 130
+				"power": 130,
+				"dps": 35.48
 			},
 			"sludge-bomb": {
-				"power": 80
+				"power": 80,
+				"dps": 29.57
 			},
 			"ice-beam": {
-				"power": 90
+				"power": 90,
+				"dps": 19.09
 			}
 		},
 		"evolveTo": "",
@@ -14522,21 +14602,26 @@
 		},
 		"quickMoves": {
 			"bite": {
-				"power": 6
+				"power": 6,
+				"dps": 14.00
 			},
 			"snarl": {
-				"power": 12
+				"power": 12,
+				"dps": 11.82
 			}
 		},
 		"chargeMoves": {
 			"crunch": {
-				"power": 70
+				"power": 70,
+				"dps": 22.50
 			},
 			"aqua-jet": {
-				"power": 45
+				"power": 45,
+				"dps": 18.08
 			},
 			"poison-fang": {
-				"power": 35
+				"power": 35,
+				"dps": 17.65
 			}
 		},
 		"evolveTo": "",
@@ -14566,21 +14651,26 @@
 		},
 		"quickMoves": {
 			"bite": {
-				"power": 6
+				"power": 6,
+				"dps": 18.00
 			},
 			"waterfall": {
-				"power": 16
+				"power": 16,
+				"dps": 20.00
 			}
 		},
 		"chargeMoves": {
 			"crunch": {
-				"power": 70
+				"power": 70,
+				"dps": 32.19
 			},
 			"hydro-pump": {
-				"power": 130
+				"power": 130,
+				"dps": 57.58
 			},
 			"poison-fang": {
-				"power": 35
+				"power": 35,
+				"dps": 25.29
 			}
 		},
 		"evolveTo": "",
@@ -14607,21 +14697,26 @@
 		},
 		"quickMoves": {
 			"splash": {
-				"power": 0
+				"power": 0,
+				"dps": 0.00
 			},
 			"water-gun": {
-				"power": 5
+				"power": 5,
+				"dps": 10.00
 			}
 		},
 		"chargeMoves": {
 			"heavy-slam": {
-				"power": 70
+				"power": 70,
+				"dps": 22.86
 			},
 			"body-slam": {
-				"power": 50
+				"power": 50,
+				"dps": 18.42
 			},
 			"water-pulse": {
-				"power": 70
+				"power": 70,
+				"dps": 18.13
 			}
 		},
 		"evolveTo": "wailord",
@@ -14648,21 +14743,26 @@
 		},
 		"quickMoves": {
 			"zen-headbutt": {
-				"power": 12
+				"power": 12,
+				"dps": 10.00
 			},
 			"water-gun": {
-				"power": 5
+				"power": 5,
+				"dps": 12.00
 			}
 		},
 		"chargeMoves": {
 			"surf": {
-				"power": 65
+				"power": 65,
+				"dps": 40.59
 			},
 			"blizzard": {
-				"power": 130
+				"power": 130,
+				"dps": 36.77
 			},
 			"hyper-beam": {
-				"power": 150
+				"power": 150,
+				"dps": 34.74
 			}
 		},
 		"evolveTo": "",
@@ -14689,21 +14789,26 @@
 		},
 		"quickMoves": {
 			"ember": {
-				"power": 10
+				"power": 10,
+				"dps": 8.00
 			},
 			"tackle": {
-				"power": 5
+				"power": 5,
+				"dps": 6.00
 			}
 		},
 		"chargeMoves": {
 			"heat-wave": {
-				"power": 95
+				"power": 95,
+				"dps": 22.67
 			},
 			"stomp": {
-				"power": 55
+				"power": 55,
+				"dps": 19.41
 			},
 			"bulldoze": {
-				"power": 80
+				"power": 80,
+				"dps": 16.57
 			}
 		},
 		"evolveTo": "camerupt",
@@ -14730,21 +14835,26 @@
 		},
 		"quickMoves": {
 			"ember": {
-				"power": 10
+				"power": 10,
+				"dps": 12.00
 			},
 			"rock-smash": {
-				"power": 15
+				"power": 15,
+				"dps": 11.54
 			}
 		},
 		"chargeMoves": {
 			"overheat": {
-				"power": 160
+				"power": 160,
+				"dps": 46.75
 			},
 			"earthquake": {
-				"power": 120
+				"power": 120,
+				"dps": 38.89
 			},
 			"solar-beam": {
-				"power": 180
+				"power": 180,
+				"dps": 35.71
 			}
 		},
 		"evolveTo": "",
@@ -14771,21 +14881,26 @@
 		},
 		"quickMoves": {
 			"ember": {
-				"power": 10
+				"power": 10,
+				"dps": 10.00
 			},
 			"fire-spin": {
-				"power": 14
+				"power": 14,
+				"dps": 11.82
 			}
 		},
 		"chargeMoves": {
 			"overheat": {
-				"power": 160
+				"power": 160,
+				"dps": 36.25
 			},
 			"earthquake": {
-				"power": 120
+				"power": 120,
+				"dps": 25.28
 			},
 			"solar-beam": {
-				"power": 180
+				"power": 180,
+				"dps": 27.76
 			}
 		},
 		"evolveTo": "",
@@ -14813,21 +14928,26 @@
 		},
 		"quickMoves": {
 			"zen-headbutt": {
-				"power": 12
+				"power": 12,
+				"dps": 9.09
 			},
 			"splash": {
-				"power": 0
+				"power": 0,
+				"dps": 0.00
 			}
 		},
 		"chargeMoves": {
 			"shadow-ball": {
-				"power": 100
+				"power": 100,
+				"dps": 21.00
 			},
 			"mirror-coat": {
-				"power": 60
+				"power": 60,
+				"dps": 17.69
 			},
 			"psybeam": {
-				"power": 70
+				"power": 70,
+				"dps": 16.56
 			}
 		},
 		"evolveTo": "grumpig",
@@ -14855,21 +14975,26 @@
 		},
 		"quickMoves": {
 			"extrasensory": {
-				"power": 12
+				"power": 12,
+				"dps": 11.82
 			},
 			"charge-beam": {
-				"power": 8
+				"power": 8,
+				"dps": 6.36
 			}
 		},
 		"chargeMoves": {
 			"shadow-ball": {
-				"power": 100
+				"power": 100,
+				"dps": 28.67
 			},
 			"psychic": {
-				"power": 100
+				"power": 100,
+				"dps": 36.79
 			},
 			"mirror-coat": {
-				"power": 60
+				"power": 60,
+				"dps": 23.85
 			}
 		},
 		"evolveTo": "",
@@ -14895,21 +15020,26 @@
 		},
 		"quickMoves": {
 			"sucker-punch": {
-				"power": 7
+				"power": 7,
+				"dps": 7.14
 			},
 			"psycho-cut": {
-				"power": 5
+				"power": 5,
+				"dps": 5.00
 			}
 		},
 		"chargeMoves": {
 			"rock-tomb": {
-				"power": 70
+				"power": 70,
+				"dps": 12.81
 			},
 			"dig": {
-				"power": 100
+				"power": 100,
+				"dps": 12.34
 			},
 			"icy-wind": {
-				"power": 60
+				"power": 60,
+				"dps": 10.61
 			}
 		},
 		"evolveTo": "",
@@ -14937,21 +15067,26 @@
 		},
 		"quickMoves": {
 			"struggle-bug": {
-				"power": 15
+				"power": 15,
+				"dps": 8.67
 			},
 			"mud-shot": {
-				"power": 5
+				"power": 5,
+				"dps": 8.33
 			}
 		},
 		"chargeMoves": {
 			"sand-tomb": {
-				"power": 80
+				"power": 80,
+				"dps": 19.50
 			},
 			"dig": {
-				"power": 100
+				"power": 100,
+				"dps": 20.85
 			},
 			"crunch": {
-				"power": 70
+				"power": 70,
+				"dps": 17.81
 			}
 		},
 		"evolveTo": "vibrava",
@@ -14979,21 +15114,26 @@
 		},
 		"quickMoves": {
 			"dragon-breath": {
-				"power": 6
+				"power": 6,
+				"dps": 10.00
 			},
 			"mud-shot": {
-				"power": 5
+				"power": 5,
+				"dps": 8.33
 			}
 		},
 		"chargeMoves": {
 			"sand-tomb": {
-				"power": 80
+				"power": 80,
+				"dps": 16.25
 			},
 			"bulldoze": {
-				"power": 80
+				"power": 80,
+				"dps": 18.57
 			},
 			"bug-buzz": {
-				"power": 90
+				"power": 90,
+				"dps": 16.49
 			}
 		},
 		"evolveTo": "flygon",
@@ -15021,21 +15161,26 @@
 		},
 		"quickMoves": {
 			"dragon-tail": {
-				"power": 15
+				"power": 15,
+				"dps": 17.27
 			},
 			"mud-shot": {
-				"power": 5
+				"power": 5,
+				"dps": 11.67
 			}
 		},
 		"chargeMoves": {
 			"stone-edge": {
-				"power": 100
+				"power": 100,
+				"dps": 44.78
 			},
 			"earthquake": {
-				"power": 120
+				"power": 120,
+				"dps": 41.11
 			},
 			"dragon-claw": {
-				"power": 50
+				"power": 50,
+				"dps": 36.47
 			}
 		},
 		"evolveTo": "",
@@ -15065,21 +15210,26 @@
 		},
 		"quickMoves": {
 			"sucker-punch": {
-				"power": 7
+				"power": 7,
+				"dps": 8.57
 			},
 			"poison-sting": {
-				"power": 5
+				"power": 5,
+				"dps": 6.67
 			}
 		},
 		"chargeMoves": {
 			"grass-knot": {
-				"power": 90
+				"power": 90,
+				"dps": 32.69
 			},
 			"seed-bomb": {
-				"power": 55
+				"power": 55,
+				"dps": 24.76
 			},
 			"brick-break": {
-				"power": 40
+				"power": 40,
+				"dp": 20.00
 			}
 		},
 		"evolveTo": "cacturne",
@@ -15111,21 +15261,26 @@
 		},
 		"quickMoves": {
 			"poison-jab": {
-				"power": 10
+				"power": 10,
+				"dps": 15.00
 			},
 			"sucker-punch": {
-				"power": 7
+				"power": 7,
+				"dps": 14.29
 			}
 		},
 		"chargeMoves": {
 			"grass-knot": {
-				"power": 90
+				"power": 90,
+				"dps": 46.15
 			},
 			"dynamic-punch": {
-				"power": 90
+				"power": 90,
+				"dps": 37.04
 			},
 			"dark-pulse": {
-				"power": 80
+				"power": 80,
+				"dps": 35.67
 			}
 		},
 		"evolveTo": "",
