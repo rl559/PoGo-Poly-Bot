@@ -2,17 +2,17 @@
 	"croconaw": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/159.png",
-		"cp": "Unknown"
+		"cp": "5207"
 	},
 	"quilava": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/156.png",
-		"cp": "Unknown"
+		"cp": "5085"
 	},
 	"bayleef": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/153.png",
-		"cp": "Unknown"
+		"cp": "4375"
 	},
 	"magikarp": {
 		"level": "Level 1",
@@ -82,27 +82,27 @@
 	"exeggutor": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/103.png",
-		"cp": "Unknown"
+		"cp": "12633"
 	},
 	"muk": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/089.png",
-		"cp": "Unknown"
+		"cp": "11200"
 	},
 	"magmar": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/126.png",
-		"cp": "Unknown"
+		"cp": "11610"
 	},
 	"elektabuzz": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/125.png",
-		"cp": "Unknown"
+		"cp": "11311"
 	},
 	"weezing": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/110.png",
-		"cp": "Unknown"
+		"cp": "11245"
 	},
 	"ninetales": {
 		"level": "Level 3",
@@ -127,17 +127,17 @@
 	"vaporeon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/134.png",
-		"cp": "Unknown"
+		"cp": "16696"
 	},
 	"jolteon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/135.png",
-		"cp": "Unknown"
+		"cp": "19883"
 	},
 	"flareon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/136.png",
-		"cp": "Unknown"
+		"cp": "2155"
 	},
 	"machamp": {
 		"level": "Level 3",
@@ -152,7 +152,7 @@
 	"arcanine": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/059.png",
-		"cp": "Unknown"
+		"cp": "17832"
 	},
 	"gengar": {
 		"level": "Level 3",
@@ -202,12 +202,12 @@
 	"rhydon": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/112.png",
-		"cp": "Unknown"
+		"cp": "30512"
 	},
 	"charizard": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/006.png",
-		"cp": "Unknown"
+		"cp": "28485"
 	},
 	"lapras": {
 		"level": "Level 4",
@@ -217,12 +217,12 @@
 	"venusaur": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/003.png",
-		"cp": "Unknown"
+		"cp": "26921"
 	},
 	"blastoise": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/009.png",
-		"cp": "Unknown"
+		"cp": "24162"
 	},
 	"mewtwo": {
 		"level": "Level 5",
@@ -278,5 +278,10 @@
 		"level": "Level 5",
 		"image": "https://www.serebii.net/pokemongo/pokemon/383.png",
 		"cp": "59505"
+	},
+	"celebi": {
+		"level": "Level 5",
+		"image": "https://www.serebii.net/pokemongo/pokemon/251.png",
+		"cp": 37726
 	}
 }
