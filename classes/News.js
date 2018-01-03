@@ -1,4 +1,4 @@
-module.exports = class TwitterMsgs
+module.exports = class News
 {
   newson(prefix, message)
   {
