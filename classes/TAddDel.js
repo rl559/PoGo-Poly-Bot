@@ -46,11 +46,11 @@ tadd(prefix, message)
     }
     if(theRole === "all")
     {
-      tier1 = message.guild.roles.find("name", "T1");
-      tier2 = message.guild.roles.find("name", "T2");
-      tier3 = message.guild.roles.find("name", "T3");
-      tier4 = message.guild.roles.find("name", "T4");
-      tier5 = message.guild.roles.find("name", "T5");
+      let tier1 = message.guild.roles.find("name", "T1");
+      let tier2 = message.guild.roles.find("name", "T2");
+      let tier3 = message.guild.roles.find("name", "T3");
+      let tier4 = message.guild.roles.find("name", "T4");
+      let tier5 = message.guild.roles.find("name", "T5");
       rolesFound.push(tier1);
       rolesFoundNames.push("T1");
       rolesFound.push(tier2);
@@ -118,11 +118,11 @@ tdel(prefix, message)
     }
     if(theRole === "all")
     {
-      tier1 = message.guild.roles.find("name", "T1");
-      tier2 = message.guild.roles.find("name", "T2");
-      tier3 = message.guild.roles.find("name", "T3");
-      tier4 = message.guild.roles.find("name", "T4");
-      tier5 = message.guild.roles.find("name", "T5");
+      let tier1 = message.guild.roles.find("name", "T1");
+      let tier2 = message.guild.roles.find("name", "T2");
+      let tier3 = message.guild.roles.find("name", "T3");
+      let tier4 = message.guild.roles.find("name", "T4");
+      let tier5 = message.guild.roles.find("name", "T5");
       rolesFound.push(tier1);
       rolesFoundNames.push("T1");
       rolesFound.push(tier2);
