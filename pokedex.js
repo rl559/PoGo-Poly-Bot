@@ -7,7 +7,15 @@ var pokemonData = require('./data/pokemon.json'),
 	//console.log(pokemonData[search]);
 	if( pokemonData[search] !== undefined ){
 		return pokemonData[search];
-	}else{
+	}
+	else{
+		for(var pokemon in pokemonData)
+		{
+			if(pokemon.id === parseInt(search))
+			{
+				return pokemon;
+			}
+		}
 		return null;
 	}
 };
