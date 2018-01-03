@@ -11,6 +11,7 @@ var pokemonData = require('./data/pokemon.json'),
 	else{
 		for(var pokemon in pokemonData)
 		{
+			console.log(parseInt(search));
 			if(pokemon.id === parseInt(search))
 			{
 				return pokemon;
