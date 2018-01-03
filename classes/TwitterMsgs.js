@@ -33,7 +33,7 @@ module.exports = class TwitterMsgs
     		console.log(tweet.user.id_str);
     		if( twitterUsers.includes( tweet.user.id_str ) ){
     			console.log("User matches followed users, and is not a reply!");
-    			messageContent = `@everyone BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
+    			messageContent = `BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
     			client.guilds.forEach((item, index)=>{
     				let announcements = '';
     				announcements = item.channels.find('name', 'announcements');

@@ -19,27 +19,48 @@ tadd(prefix, message)
       {
         theRole = "T1";
       }
-      if(raid2Pattern.test(theRole))
+      else if(raid2Pattern.test(theRole))
       {
         theRole = "T2";
       }
-      if(raid3Pattern.test(theRole))
+      else if(raid3Pattern.test(theRole))
       {
         theRole = "T3";
       }
-      if(raid4Pattern.test(theRole))
+      else if(raid4Pattern.test(theRole))
       {
         theRole = "T4";
       }
-      if(raid5Pattern.test(theRole))
+      else if(raid5Pattern.test(theRole))
       {
         theRole = "T5";
+      }
+      else {
+        if(theRole !=="all") theRole = 'undefined';
       }
     let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
     let isAdmin = adminPattern.test(theRole);
     if (role !== null && role !== 'undefined' && isAdmin === false) {
       rolesFound.push(role);
       rolesFoundNames.push(theRole);
+    }
+    if(theRole === "all")
+    {
+      tier1 = message.guild.roles.find("name", "T1");
+      tier2 = message.guild.roles.find("name", "T2");
+      tier3 = message.guild.roles.find("name", "T3");
+      tier4 = message.guild.roles.find("name", "T4");
+      tier5 = message.guild.roles.find("name", "T5");
+      rolesFound.push(tier1);
+      rolesFoundNames.push("T1");
+      rolesFound.push(tier2);
+      rolesFoundNames.push("T2");
+      rolesFound.push(tier3);
+      rolesFoundNames.push("T3");
+      rolesFound.push(tier4);
+      rolesFoundNames.push("T4");
+      rolesFound.push(tier5);
+      rolesFoundNames.push("T5");
     }
   });
   message.member.addRoles(rolesFound).then(member => {
@@ -67,27 +88,51 @@ tdel(prefix, message)
     {
       theRole = "T1";
     }
-    if(raid2Pattern.test(theRole))
+    else if(raid2Pattern.test(theRole))
     {
       theRole = "T2";
     }
-    if(raid3Pattern.test(theRole))
+    else if(raid3Pattern.test(theRole))
     {
       theRole = "T3";
     }
-    if(raid4Pattern.test(theRole))
+    else if(raid4Pattern.test(theRole))
     {
       theRole = "T4";
     }
-    if(raid5Pattern.test(theRole))
+    else if(raid5Pattern.test(theRole))
     {
       theRole = "T5";
+    }
+    else{
+      if(theRole !=="all")
+      {
+        theRole = 'undefined';
+      }
     }
     let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
     let isAdmin = adminPattern.test(theRole);
     if (role !== null && role !== 'undefined' && isAdmin === false) {
       rolesFound.push(role);
       rolesFoundNames.push(theRole);
+    }
+    if(theRole === "all")
+    {
+      tier1 = message.guild.roles.find("name", "T1");
+      tier2 = message.guild.roles.find("name", "T2");
+      tier3 = message.guild.roles.find("name", "T3");
+      tier4 = message.guild.roles.find("name", "T4");
+      tier5 = message.guild.roles.find("name", "T5");
+      rolesFound.push(tier1);
+      rolesFoundNames.push("T1");
+      rolesFound.push(tier2);
+      rolesFoundNames.push("T2");
+      rolesFound.push(tier3);
+      rolesFoundNames.push("T3");
+      rolesFound.push(tier4);
+      rolesFoundNames.push("T4");
+      rolesFound.push(tier5);
+      rolesFoundNames.push("T5");
     }
   });
   message.member.removeRoles(rolesFound).then(member => {
