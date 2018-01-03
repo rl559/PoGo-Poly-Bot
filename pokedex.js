@@ -13,7 +13,7 @@ var pokemonData = require('./data/pokemon.json'),
 		{
 			if(pokemonData[pokemon].id === parseInt(search))
 			{
-				return pokemon;
+				return pokemonData[pokemon];
 			}
 		}
 		return null;
