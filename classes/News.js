@@ -3,7 +3,7 @@ module.exports = class News
   newson(prefix, message)
   {
     let news = message.guild.roles.find("name", "news");
-    message.member.addRoles(news).then(member => {
+    message.member.addRole(news).then(member => {
         message.channel.send(`${message.author} you are now receiving news notifications.`);
     }).catch(error => {
       if (error) {
@@ -14,7 +14,7 @@ module.exports = class News
   newsoff(prefix, message)
   {
     let news = message.guild.roles.find("name", "news");
-    message.member.removeRoles(news).then(member => {
+    message.member.removeRole(news).then(member => {
         message.channel.send(`${message.author} you are no longer receiving news notifications.`);
     }).catch(error => {
       if (error) {
