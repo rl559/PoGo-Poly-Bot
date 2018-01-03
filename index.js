@@ -22,6 +22,8 @@ const Discord = require("discord.js"),
 	InviteObj = new Invite(),
 	TAddDel = require("./classes/TAddDel.js"),
 	TAddDelObj = new TAddDel(),
+	News = require("./classes/News.js"),
+	NewsObj = new News(),
 	Userinfo = require("./classes/Userinfo.js"),
 	UserinfoObj = new Userinfo(),
 	Help = require("./classes/Help.js"),
@@ -246,6 +248,17 @@ client.on("message", (message) => {
 	} else if (message.content.startsWith(prefix + "tadd")) {
 		TAddDelObj.tadd(prefix, message);
 		console.log(Date.now()+" current timestamp, tadd triggered");
+	}
+	
+	/*
+	* newson - newsoff Command
+	*/
+	if (message.content.startsWith(prefix + "newson")) {
+		NewsObj.newson(prefix, message);
+		console.log(Date.now()+" current timestamp, newson triggered");
+	} else if (message.content.startsWith(prefix + "newsoff")) {
+		NewsObj.newsoff(prefix, message);
+		console.log(Date.now()+" current timestamp, newsoff triggered");
 	}
 	
 	/*
