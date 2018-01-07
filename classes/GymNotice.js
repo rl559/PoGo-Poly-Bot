@@ -11,6 +11,17 @@ let endTime;
 
 module.exports = class GymNotice
 {
+  function getEmoji(name, message) {
+    var emojiId = '';
+    message.guild.emojis.forEach(function (item, index) {
+      if (item.name === name) {
+        emojiId = item.id;
+      }
+    });
+
+    return emojiId;
+  }
+  
   display(message, GMapsObj)
   {
     
@@ -61,7 +72,8 @@ module.exports = class GymNotice
               var weaknessEmojis = "";
               for(var weakness in weaknesses)
               {
-                weaknessEmojis = weaknessEmojis + ":type"+weaknesses[weakness].toLowerCase()+":";
+                var emojiName = "type"+weaknesses[weakness].toLowerCase();
+                weaknessEmojis = weaknessEmojis + "<:type"+emojiName+":"+this.getEmoji(emojiName, message)+">";
               }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
