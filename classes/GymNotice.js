@@ -5,6 +5,7 @@ raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
 raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
 Moment = require('moment-timezone'),
 moment = require('moment');
+pokedex = require('../pokedex.js');
 
 let endTime;
 
@@ -55,6 +56,8 @@ module.exports = class GymNotice
   					raidBossMention = (raidBossMention) ? '<@&' + raidBossMention.id + '>' : '';
   					raidChannel = message.guild.channels.find('name', 'raids');
   					if ( raidChannel ) {
+              var weaknesses = Object.keys(pokedex(content.raidBoss).weaknesses);
+              console.log(weaknesses);
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
   								"color": 3447003,
