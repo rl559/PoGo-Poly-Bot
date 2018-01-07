@@ -61,7 +61,7 @@ module.exports = class GymNotice
               var weaknessEmojis = "";
               for(var weakness in weaknesses)
               {
-                weaknessEmojis = weaknessEmojis + ":type"+weakness.toLowerCase()+":";
+                weaknessEmojis = weaknessEmojis + ":type"+weaknesses[weakness].toLowerCase()+":";
               }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
