@@ -58,6 +58,11 @@ module.exports = class GymNotice
   					if ( raidChannel ) {
               var weaknesses = Object.keys(pokedex(content.raidBoss).weaknesses);
               console.log(weaknesses);
+              var weaknessEmojis = "";
+              for(var weakness in weaknesses)
+              {
+                weaknessEmojis = weaknessEmojis + ":type"+weakness.toLowerCase()+":";
+              }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
   								"color": 3447003,
@@ -77,7 +82,11 @@ module.exports = class GymNotice
   									"name": "Ends At",
   									"value": content.endedTime,
   									"inline": true
-  								}]
+  								},{
+                    "name": "Weaknesses",
+                    "value": weaknessEmojis,
+                    "inline": true
+                  }]
   							}
   						} ).then(message => {
   							message.pin();
