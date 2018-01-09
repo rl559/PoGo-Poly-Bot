@@ -17361,7 +17361,8 @@
 			"grass": 1.4,
 			"fighting": 1.4,
 			"ground": 1.4,
-			"water": 1.4
+			"water": 1.4,
+			"steel": 1.4
 		},
 		"quickMoves": {
 			"rock-throw": {
@@ -17376,7 +17377,7 @@
 		"chargeMoves": {
 			"stone-edge": {
 				"power": 100,
-				"dps": 36.96
+				"dps": 46.96
 			},
 			"focus-blast": {
 				"power": 140,
@@ -17594,38 +17595,34 @@
 		"name": "Kyogre",
 		"img": "https://www.serebii.net/pokemongo/pokemon/382.png",
 		"stats": {
-			"stamina": 200,
-			"attack": 297,
-			"defense": 276
+			"stamina": 182,
+			"attack": 270,
+			"defense": 251
 		},
-		"maxCP": 4874,
+		"maxCP": 4074,
 		"type": ["water"],
 		"weaknesses": {
 			"electric": 1.4,
 			"grass": 1.4
 		},
 		"quickMoves": {
-			"dragon-tail": {
-				"power": 15,
-				"dps": 20.91
-			},
 			"waterfall": {
 				"power": 16,
-				"dps": 24.17
+				"dps": 21.67
 			}
 		},
 		"chargeMoves": {
 			"hydro-pump": {
 				"power": 130,
-				"dps": 70.30
+				"dps": 63.94
 			},
 			"blizzard": {
 				"power": 130,
-				"dps": 62.58
+				"dps": 56.77
 			},
 			"thunder": {
 				"power": 100,
-				"dps": 62.08
+				"dps": 56.67
 			}
 		},
 		"evolveTo": "",
@@ -17697,7 +17694,7 @@
 			"rock": 1.4,
 			"fairy": 1.4,
 			"dragon": 1.4,
-			"ice": 1.4
+			"ice": 1.96
 		},
 		"quickMoves": {
 			"dragon-tail": {
