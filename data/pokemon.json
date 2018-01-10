@@ -2109,6 +2109,14 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"ground": 0.714,
+			"poison": 0.714,
+			"fighting": 0.51
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -2155,6 +2163,14 @@
 			"electric": 1.4,
 			"ice": 1.4,
 			"rock": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"ground": 0.714,
+			"poison": 0.714,
+			"fighting": 0.51
 		},
 		"quickMoves": {
 			"bite": {
@@ -2205,6 +2221,13 @@
 			"ice": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"acid": {
 				"power": 9,
@@ -2253,6 +2276,13 @@
 			"ice": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"acid": {
 				"power": 9,
@@ -2300,6 +2330,13 @@
 			"fire": 1.4,
 			"ice": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"acid": {
@@ -2351,6 +2388,13 @@
 			"ice": 1.4,
 			"poison": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"ground": 0.51,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"bug-bite": {
 				"power": 5,
@@ -2400,6 +2444,13 @@
 			"ice": 1.4,
 			"poison": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"ground": 0.51,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"fury-cutter": {
 				"power": 3,
@@ -2448,6 +2499,13 @@
 			"rock": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.51
+		},
 		"quickMoves": {
 			"bug-bite": {
 				"power": 5,
@@ -2494,6 +2552,13 @@
 			"fire": 1.4,
 			"rock": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.51
 		},
 		"quickMoves": {
 			"confusion": {
@@ -2542,6 +2607,11 @@
 			"ice": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"rock": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"mud-slap": {
 				"power": 15,
@@ -2588,6 +2658,11 @@
 			"ice": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"rock": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"mud-slap": {
 				"power": 15,
@@ -2633,6 +2708,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -2676,6 +2754,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"feint-attack": {
@@ -2723,6 +2804,12 @@
 			"Electric": 1.4,
 			"Grass": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"water-gun": {
 				"power": 5,
@@ -2767,6 +2854,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"confusion": {
@@ -2815,6 +2908,11 @@
 			"flying": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
+		},
 		"quickMoves": {
 			"karate-chop": {
 				"power": 8,
@@ -2860,6 +2958,11 @@
 			"fairy": 1.4,
 			"flying": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
 		},
 		"quickMoves": {
 			"low-kick": {
@@ -2908,6 +3011,14 @@
 			"rock": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -2953,6 +3064,14 @@
 			"ground": 1.4,
 			"rock": 1.4,
 			"water": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"fire-fang": {
@@ -3000,6 +3119,12 @@
 			"Electric": 1.4,
 			"Grass": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"bubble": {
 				"power": 12,
@@ -3045,6 +3170,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"bubble": {
@@ -3095,6 +3226,15 @@
 			"flying": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"rock": 0.714,
+			"dark": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"bubble": {
 				"power": 12,
@@ -3141,7 +3281,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
-
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"zen-headbutt": {
 				"power": 12,
@@ -3176,7 +3319,6 @@
 		"candy": 100,
 		"name": "Kadabra",
 		"img": "http://www.serebii.net/pokemongo/pokemon/064.png",
-
 		"stats": {
 			"stamina": 80,
 			"attack": 232,
@@ -3188,6 +3330,10 @@
 			"bug": 1.4,
 			"dark": 1.4,
 			"ghost": 1.4
+		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"confusion": {
@@ -3236,6 +3382,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -3270,7 +3420,6 @@
 		"candy": 25,
 		"name": "Machop",
 		"img": "http://www.serebii.net/pokemongo/pokemon/066.png",
-
 		"stats": {
 			"stamina": 140,
 			"attack": 137,
@@ -3282,6 +3431,11 @@
 			"fairy": 1.4,
 			"flying": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
 		},
 		"quickMoves": {
 			"karate-chop": {
@@ -3330,6 +3484,11 @@
 			"flying": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
+		},
 		"quickMoves": {
 			"karate-chop": {
 				"power": 8,
@@ -3376,6 +3535,11 @@
 			"fairy": 1.4,
 			"flying": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
 		},
 		"quickMoves": {
 			"bullet-punch": {
@@ -3425,6 +3589,13 @@
 			"ice": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"acid": {
 				"power": 9,
@@ -3459,7 +3630,6 @@
 		"candy": 100,
 		"name": "Weepinbell",
 		"img": "http://www.serebii.net/pokemongo/pokemon/070.png",
-
 		"stats": {
 			"stamina": 130,
 			"attack": 172,
@@ -3472,6 +3642,13 @@
 			"fire": 1.4,
 			"ice": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"acid": {
@@ -3521,6 +3698,13 @@
 			"ice": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"acid": {
 				"power": 9,
@@ -3555,7 +3739,6 @@
 		"candy": 50,
 		"name": "Tentacool",
 		"img": "http://www.serebii.net/pokemongo/pokemon/072.png",
-
 		"stats": {
 			"stamina": 80,
 			"attack": 97,
@@ -3567,6 +3750,16 @@
 			"electric": 1.4,
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"bubble": {
@@ -3613,6 +3806,16 @@
 			"electric": 1.4,
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"acid": {
@@ -3664,6 +3867,14 @@
 			"steel": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
+		},
 		"quickMoves": {
 			"rock-throw": {
 				"power": 12,
@@ -3713,6 +3924,14 @@
 			"ground": 1.4,
 			"steel": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
 		},
 		"quickMoves": {
 			"mud-slap": {
@@ -3764,6 +3983,14 @@
 			"steel": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
+		},
 		"quickMoves": {
 			"mud-slap": {
 				"power": 15,
@@ -3811,6 +4038,14 @@
 			"rock": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"steel": 0.714,
+			"ice": 0.714
+		},
 		"quickMoves": {
 			"ember": {
 				"power": 10,
@@ -3856,6 +4091,14 @@
 			"ground": 1.4,
 			"rock": 1.4,
 			"water": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"steel": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"low-kick": {
@@ -3906,6 +4149,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -3954,6 +4205,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -3988,7 +4247,6 @@
 		"candy": 0,
 		"name": "Magnemite",
 		"img": "http://www.serebii.net/pokemongo/pokemon/081.png",
-
 		"stats": {
 			"stamina": 50,
 			"attack": 165,
@@ -4000,6 +4258,20 @@
 			"ground": 1.96,
 			"fighting": 1.4,
 			"fire": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"electric": 0.714,
+			"grass": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"fairy": 0.714,
+			"flying": 0.51,
+			"poison": 0.51,
+			"steel": 0.51,
+			"dragon": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"spark": {
@@ -4047,6 +4319,20 @@
 			"fighting": 1.4,
 			"fire": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"electric": 0.714,
+			"grass": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"fairy": 0.714,
+			"flying": 0.51,
+			"poison": 0.51,
+			"steel": 0.51,
+			"dragon": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"spark": {
 				"power": 6,
@@ -4093,6 +4379,12 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"ground": 0.51,
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"fury-cutter": {
 				"power": 3,
@@ -4126,7 +4418,6 @@
 		"candy": 50,
 		"name": "Doduo",
 		"img": "http://www.serebii.net/pokemongo/pokemon/084.png",
-
 		"stats": {
 			"stamina": 70,
 			"attack": 158,
@@ -4138,6 +4429,12 @@
 			"electric": 1.4,
 			"ice": 1.4,
 			"rock": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"ground": 0.51,
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"peck": {
@@ -4185,6 +4482,12 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"ground": 0.51,
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"feint-attack": {
 				"power": 10,
@@ -4230,6 +4533,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"ice-shard": {
@@ -4278,6 +4587,10 @@
 			"fighting": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"ice": 0.51,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"frost-breath": {
 				"power": 10,
@@ -4312,7 +4625,6 @@
 		"candy": 50,
 		"name": "Grimer",
 		"img": "http://www.serebii.net/pokemongo/pokemon/088.png",
-
 		"stats": {
 			"stamina": 160,
 			"attack": 135,
@@ -4323,6 +4635,13 @@
 		"weaknesses": {
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"poison-jab": {
@@ -4369,6 +4688,13 @@
 			"ground": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.714
+		},
 		"quickMoves": {
 			"poison-jab": {
 				"power": 10,
@@ -4403,7 +4729,6 @@
 		"candy": 50,
 		"name": "Shellder",
 		"img": "http://www.serebii.net/pokemongo/pokemon/090.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 116,
@@ -4414,6 +4739,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"ice-shard": {
@@ -4462,6 +4793,10 @@
 			"fighting": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"ice": 0.51,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"frost-breath": {
 				"power": 10,
@@ -4496,7 +4831,6 @@
 		"candy": 25,
 		"name": "Gastly",
 		"img": "http://www.serebii.net/pokemongo/pokemon/092.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 186,
@@ -4509,6 +4843,14 @@
 			"ghost": 1.4,
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.714,
+			"normal": 0.51,
+			"fairy": 0.714,
+			"poison": 0.51,
+			"fighting": 0.36414
 		},
 		"quickMoves": {
 			"lick": {
@@ -4544,7 +4886,6 @@
 		"candy": 100,
 		"name": "Haunter",
 		"img": "http://www.serebii.net/pokemongo/pokemon/093.png",
-
 		"stats": {
 			"stamina": 90,
 			"attack": 223,
@@ -4557,6 +4898,14 @@
 			"ghost": 1.4,
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.714,
+			"normal": 0.51,
+			"fairy": 0.714,
+			"poison": 0.51,
+			"fighting": 0.36414
 		},
 		"quickMoves": {
 			"shadow-claw": {
@@ -4605,6 +4954,14 @@
 			"ghost": 1.4,
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.714,
+			"normal": 0.51,
+			"fairy": 0.714,
+			"poison": 0.51,
+			"fighting": 0.36414
 		},
 		"quickMoves": {
 			"sucker-punch": {
@@ -4655,6 +5012,14 @@
 			"steel": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
+		},
 		"quickMoves": {
 			"rock-throw": {
 				"power": 12,
@@ -4702,6 +5067,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -4748,6 +5117,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -4782,7 +5155,6 @@
 		"candy": 50,
 		"name": "Krabby",
 		"img": "http://www.serebii.net/pokemongo/pokemon/098.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 181,
@@ -4793,6 +5165,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"bubble": {
@@ -4839,6 +5217,12 @@
 			"Electric": 1.4,
 			"Grass": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"bubble": {
 				"power": 12,
@@ -4873,7 +5257,6 @@
 		"candy": 50,
 		"name": "Voltorb",
 		"img": "http://www.serebii.net/pokemongo/pokemon/100.png",
-
 		"stats": {
 			"stamina": 80,
 			"attack": 109,
@@ -14838,7 +15221,7 @@
 		"id": 318,
 		"egg": 0,
 		"buddy": 3,
-		"candy": 0,
+		"candy": 50,
 		"name": "Carvanha",
 		"img": "https://www.serebii.net/pokemongo/pokemon/318.png",
 		"stats": {
@@ -14879,7 +15262,7 @@
 				"dps": 17.65
 			}
 		},
-		"evolveTo": "",
+		"evolveTo": "sharpedo",
 		"evolveFrom": "",
 		"fleeRate": 0.06
 	},
@@ -14929,7 +15312,7 @@
 			}
 		},
 		"evolveTo": "",
-		"evolveFrom": "",
+		"evolveFrom": "carvanha",
 		"fleeRate": 0.06
 	},
 	"wailmer": {
