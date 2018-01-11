@@ -223,11 +223,11 @@ client.on("message", (message) => {
 		 });
 	 }*/
 	 
-	 if (message.content.startsWith(prefix + "test"))
+	 /*if (message.content.startsWith(prefix + "test"))
 	 {
 		 let newsMention = message.guild.roles.find('name', 'news');
 		 message.guild.channels.find('name', 'raids').send('<@&' + newsMention.id + '>');
-	 }
+	 }*/
 	 
 	 /*
 	 * rraid
