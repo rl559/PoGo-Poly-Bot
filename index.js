@@ -99,7 +99,7 @@ function everyHour(){
 		client.guilds.forEach((item, index)=>{
 			if ( newUsers[index] && newUsers[index].size > 0 && timesAnHour == 0 && currentTime.hour() <= 23 && currentTime.hour() >= 6) {
 				const userlist = newUsers[index].map(u => u.toString()).join(" ");
-				item.channels.find('name', 'announcements').send("Welcome our new members!\n" + userlist);
+				item.channels.find('name', 'announcements').send("Welcome our new members!\n" + userlist+"\nPlease make sure to ask an admin for team and level ranks.");
 				newUsers[index].clear();
 			}
 
@@ -222,6 +222,12 @@ client.on("message", (message) => {
 			 }
 		 });
 	 }*/
+	 
+	 if (message.content.startsWith(prefix + "test"))
+	 {
+		 let newsMention = message.guild.roles.find('name', 'news');
+		 message.guild.channels.find('name', 'raids').send('<@&' + newsMention.id + '>');
+	 }
 	 
 	 /*
 	 * rraid
