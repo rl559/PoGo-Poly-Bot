@@ -2,286 +2,343 @@
 	"croconaw": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/159.png",
-		"cp": "5207"
+		"cp": "5207",
+		"active": false
 	},
 	"quilava": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/156.png",
-		"cp": "5085"
+		"cp": "5085",
+		"active": false
 	},
 	"bayleef": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/153.png",
-		"cp": "4375"
+		"cp": "4375",
+		"active": false
 	},
 	"magikarp": {
 		"level": "Level 1",
 		"image": "http://www.serebii.net/pokemongo/pokemon/129.png",
-		"cp": "1165"
+		"cp": "1165",
+		"active": true
 	},
 	"ivysaur": {
 		"level": "Level 1",
 		"image": "https://www.serebii.net/pokemongo/pokemon/002.png",
-		"cp": "5238"
+		"cp": "5238",
+		"active": true
 	},
 	"charmeleon": {
 		"level": "Level 1",
 		"image": "https://www.serebii.net/pokemongo/pokemon/005.png",
-		"cp": "5085"
+		"cp": "5085",
+		"active": true
 	},
 	"wartortle":{
 		"level": "Level 1",
 		"image": "https://www.serebii.net/pokemongo/pokemon/008.png",
-		"cp": "4503"
+		"cp": "4503",
+		"active": true
 	},
 	"metapod":{
 		"level": "Level 1",
 		"image": "https://www.serebii.net/pokemongo/pokemon/011.png",
-		"cp": "1534"
+		"cp": "1534",
+		"active": true
 	},
 	"wailmer":{
 		"level": "Level 1",
 		"image": "https://www.serebii.net/pokemongo/pokemon/320.png",
-		"cp": "3369"
+		"cp": "3369",
+		"active": true
 	},
 	"sandslash":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/028.png",
-		"cp": "12312"
+		"cp": "12312",
+		"active": true
 	},
 	"tentacruel":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/073.png",
-		"cp": "12190"
+		"cp": "12190",
+		"active": true
 	},
 	"magneton":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/082.png",
-		"cp": "14172"
+		"cp": "14172",
+		"active": true
 	},
 	"cloyster":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/091.png",
-		"cp": "15678"
+		"cp": "15678",
+		"active": true
 	},
 	"marowak":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/105.png",
-		"cp": "9891"
+		"cp": "9891",
+		"active": true
 	},
 	"mawile":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/303.png",
-		"cp": "9403"
+		"cp": "9403",
+		"active": true
 	},
 	"sableye":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/302.png",
-		"cp": "8266"
+		"cp": "8266",
+		"active": true
 	},
 	"exeggutor": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/103.png",
-		"cp": "12633"
+		"cp": "12633",
+		"active": false
 	},
 	"muk": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/089.png",
-		"cp": "11200"
+		"cp": "11200",
+		"active": false
 	},
 	"magmar": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/126.png",
-		"cp": "11610"
+		"cp": "11610",
+		"active": false
 	},
-	"elektabuzz": {
+	"electabuzz": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/125.png",
-		"cp": "11311"
+		"cp": "11311",
+		"active": false
 	},
 	"weezing": {
 		"level": "Level 2",
 		"image": "http://www.serebii.net/pokemongo/pokemon/110.png",
-		"cp": "11245"
+		"cp": "11245",
+		"active": false
 	},
 	"ninetales": {
 		"level": "Level 3",
 		"image": "https://www.serebii.net/pokemongo/pokemon/038.png",
-		"cp": "14914"
+		"cp": "14914",
+		"active": true
 	},
 	"scyther": {
 		"level": "Level 3",
 		"image": "https://www.serebii.net/pokemongo/pokemon/123.png",
-		"cp": "17358"
+		"cp": "17358",
+		"active": true
 	},
 	"porygon":{
 		"level": "Level 3",
 		"image": "https://www.serebii.net/pokemongo/pokemon/137.png",
-		"cp": "11419"
+		"cp": "11419",
+		"active": true
 	},
 	"omastar":{
 		"level": "Level 3",
 		"image": "https://www.serebii.net/pokemongo/pokemon/139.png",
-		"cp": "18915"
+		"cp": "18915",
+		"active": true
 	},
 	"vaporeon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/134.png",
-		"cp": "16696"
+		"cp": "16696",
+		"active": false
 	},
 	"jolteon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/135.png",
-		"cp": "19883"
+		"cp": "19883",
+		"active": false
 	},
 	"flareon": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/136.png",
-		"cp": "2155"
+		"cp": "2155",
+		"active": false
 	},
 	"machamp": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/068.png",
-		"cp": "18144"
+		"cp": "18144",
+		"active": true
 	},
 	"alakazam": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/065.png",
-		"cp": "22646"
+		"cp": "22646",
+		"active": true
 	},
 	"arcanine": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/059.png",
-		"cp": "17832"
+		"cp": "17832",
+		"active": false
 	},
 	"gengar": {
 		"level": "Level 3",
 		"image": "http://www.serebii.net/pokemongo/pokemon/094.png",
-		"cp": "19768"
+		"cp": "19768",
+		"active": true
 	},
 	"nidoqueen":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/031.png",
-		"cp": "23216"
+		"cp": "23216",
+		"active": true
 	},
 	"nidoking":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/034.png",
-		"cp": "24873"
+		"cp": "24873",
+		"active": true
 	},
 	"poliwrath":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/062.png",
-		"cp": "24247"
+		"cp": "24247",
+		"active": true
 	},
 	"victreebel":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/071.png",
-		"cp": "23780"
+		"cp": "23780",
+		"active": true
 	},
 	"golem":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/076.png",
-		"cp": "30572"
+		"cp": "30572",
+		"active": true
 	},
 	"absol":{
 		"level": "Level 4",
 		"image": "https://www.serebii.net/pokemongo/pokemon/359.png",
-		"cp": "26262"
+		"cp": "26262",
+		"active": true
 	},
 	"tyranitar": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/248.png",
-		"cp": "34707"
+		"cp": "34707",
+		"active": true
 	},
 	"snorlax": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/143.png",
-		"cp": "25419"
+		"cp": "25419",
+		"active": true
 	},
 	"rhydon": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/112.png",
-		"cp": "30512"
+		"cp": "30512",
+		"active": false
 	},
 	"charizard": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/006.png",
-		"cp": "28485"
+		"cp": "28485",
+		"active": false
 	},
 	"lapras": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/131.png",
-		"cp": "21768"
+		"cp": "21768",
+		"active": true
 	},
 	"venusaur": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/003.png",
-		"cp": "26921"
+		"cp": "26921",
+		"active": false
 	},
 	"blastoise": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/009.png",
-		"cp": "24162"
+		"cp": "24162",
+		"active": false
 	},
 	"mewtwo": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/150.png",
-		"cp": "49430"
+		"cp": "49430",
+		"active": false
 	},
 	"mew": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/151.png",
-		"cp": "37733"
+		"cp": "37733",
+		"active": false
 	},
 	"ho-oh": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/250.png",
-		"cp": "48276"
+		"cp": "48276",
+		"active": false
 	},
 	"lugia": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/249.png",
-		"cp": "42753"
+		"cp": "42753",
+		"active": false
 	},
 	"articuno": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/144.png",
-		"cp": "37603"
+		"cp": "37603",
+		"active": false
 	},
 	"zapdos": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/145.png",
-		"cp": "42691"
+		"cp": "42691",
+		"active": false
 	},
 	"moltres": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/146.png",
-		"cp": "41953"
+		"cp": "41953",
+		"active": false
 	},
 	"suicune": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/245.png",
-		"cp": "34471"
+		"cp": "34471",
+		"active": false
 	},
 	"raikou": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/243.png",
-		"cp": "42932"
+		"cp": "42932",
+		"active": false
 	},
 	"entei": {
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/244.png",
-		"cp": "38628"
+		"cp": "38628",
+		"active": false
 	},
 	"groudon": {
 		"level": "Level 5",
 		"image": "https://www.serebii.net/pokemongo/pokemon/383.png",
-		"cp": "59505"
+		"cp": "59505",
+		"active": true
 	},
 	"celebi": {
 		"level": "Level 5",
 		"image": "https://www.serebii.net/pokemongo/pokemon/251.png",
-		"cp": "37726"
+		"cp": "37726",
+		"active": false
 	}
 }
