@@ -223,7 +223,7 @@ client.on("message", (message) => {
 		 });
 	 }*/
 	 
-	 if (message.content.startsWith(prefix + "test"))
+	 /*if (message.content.startsWith(prefix + "test"))
 	 { 
 		 client.guilds.forEach((item, index)=>{
 			 let newsMention = item.roles.find('name', 'news');
@@ -234,7 +234,7 @@ client.on("message", (message) => {
 				 announcements.send( messageContent );
 			 }
 		 });
-	 }
+	 }*/
 	 
 	 /*
 	 * rraid
