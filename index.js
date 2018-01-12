@@ -224,10 +224,10 @@ client.on("message", (message) => {
 	 }*/
 	 
 	 if (message.content.startsWith(prefix + "test"))
-	 {
-		 let newsMention = message.guild.roles.find('name', 'news');
-		 messageContent = '<@&' + newsMention.id + '>'+' BREAKING NEWS from  https://twitter.com//status/';
+	 { 
 		 client.guilds.forEach((item, index)=>{
+			 let newsMention = item.roles.find('name', 'news');
+			 messageContent = '<@&' + newsMention.id + '>'+' BREAKING NEWS from  https://twitter.com//status/';
 			 let announcements = '';
 			 announcements = item.channels.find('name', 'announcements');
 			 if ( announcements ) {
