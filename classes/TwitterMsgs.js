@@ -36,7 +36,7 @@ module.exports = class TwitterMsgs
 					
     			client.guilds.forEach((item, index)=>{
 						let newsMention = item.roles.find('name', 'news');
-	    			messageContent = '<@&' + newsMention.id + '>'+' BREAKING NEWS from ${tweet.user.screen_name} https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}';
+	    			messageContent = '<@&' + newsMention.id + '>'+' BREAKING NEWS from '+tweet.user.screen_name+' https://twitter.com/'+tweet.user.screen_name+'/status/'+tweet.id_str;
     				let announcements = '';
     				announcements = item.channels.find('name', 'announcements');
     				if ( announcements ) {

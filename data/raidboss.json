@@ -340,5 +340,11 @@
 		"image": "https://www.serebii.net/pokemongo/pokemon/251.png",
 		"cp": "37726",
 		"active": false
+	},
+	"kyogre": {
+		"level": "Level 5",
+		"image": "https://www.serebii.net/pokemongo/pokemon/251.png",
+		"cp": "37726",
+		"active": true
 	}
 }
