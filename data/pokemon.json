@@ -7637,7 +7637,6 @@
 		"candy": 25,
 		"name": "Dratini",
 		"img": "http://www.serebii.net/pokemongo/pokemon/147.png",
-
 		"stats": {
 			"stamina": 82,
 			"attack": 119,
@@ -7649,6 +7648,12 @@
 			"dragon": 1.4,
 			"fairy": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"dragon-breath": {
@@ -7684,7 +7689,6 @@
 		"candy": 100,
 		"name": "Dragonair",
 		"img": "http://www.serebii.net/pokemongo/pokemon/148.png",
-
 		"stats": {
 			"stamina": 122,
 			"attack": 163,
@@ -7696,6 +7700,12 @@
 			"dragon": 1.4,
 			"fairy": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"dragon-breath": {
@@ -7745,6 +7755,14 @@
 			"fairy": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.51,
+			"ground": 0.51,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"dragon-tail": {
 				"power": 15,
@@ -7790,6 +7808,10 @@
 			"bug": 1.4,
 			"dark": 1.4,
 			"ghost": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"confusion": {
@@ -7839,6 +7861,10 @@
 			"bug": 1.4,
 			"dark": 1.4,
 			"ghost": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"pound": {
