@@ -6468,6 +6468,12 @@
 			"electric": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"ground": 0.36414,
+			"fighting": 0.51
+		},
 		"quickMoves": {
 			"air-slash": {
 				"power": 14,
@@ -6517,6 +6523,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"ice": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -6560,6 +6570,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"low-kick": {
@@ -6607,6 +6622,13 @@
 			"rock": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"ice": 0.714
+		},
 		"quickMoves": {
 			"ember": {
 				"power": 10,
@@ -6653,6 +6675,11 @@
 			"fire": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"grass": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714
+		},
 		"quickMoves": {
 			"bug-bite": {
 				"power": 5,
@@ -6696,6 +6723,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -6729,7 +6759,6 @@
 		"candy": 400,
 		"name": "Magikarp",
 		"img": "http://www.serebii.net/pokemongo/pokemon/129.png",
-
 		"stats": {
 			"stamina": 40,
 			"attack": 29,
@@ -6740,6 +6769,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714,
+			"fire": 0.714
 		},
 		"quickMoves": {
 			"splash": {
@@ -6773,6 +6808,14 @@
 		"weaknesses": {
 			"electric": 1.96,
 			"rock": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"ground": 0.51,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"bite": {
@@ -6821,6 +6864,10 @@
 			"fighting": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"ice": 0.51,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"frost-breath": {
 				"power": 10,
@@ -6864,6 +6911,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"transform": {
 				"power": 0,
@@ -6885,7 +6935,6 @@
 		"candy": 25,
 		"name": "Eevee",
 		"img": "http://www.serebii.net/pokemongo/pokemon/133.png",
-
 		"stats": {
 			"stamina": 110,
 			"attack": 104,
@@ -6895,6 +6944,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"quick-attack": {
@@ -6926,7 +6978,6 @@
 		"candy": 0,
 		"name": "Vaporeon",
 		"img": "http://www.serebii.net/pokemongo/pokemon/134.png",
-
 		"stats": {
 			"stamina": 260,
 			"attack": 205,
@@ -6937,6 +6988,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"water-gun": {
@@ -6968,7 +7025,6 @@
 		"candy": 0,
 		"name": "Jolteon",
 		"img": "http://www.serebii.net/pokemongo/pokemon/135.png",
-
 		"stats": {
 			"stamina": 130,
 			"attack": 232,
@@ -6978,6 +7034,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"volt-switch": {
@@ -7026,6 +7087,13 @@
 			"rock": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"ice": 0.714
+		},
 		"quickMoves": {
 			"fire-spin": {
 				"power": 14,
@@ -7070,6 +7138,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"hidden-power": {
 				"power": 15,
@@ -7104,7 +7175,6 @@
 		"candy": 50,
 		"name": "Omanyte",
 		"img": "http://www.serebii.net/pokemongo/pokemon/138.png",
-
 		"stats": {
 			"stamina": 70,
 			"attack": 155,
@@ -7117,6 +7187,13 @@
 			"fighting": 1.4,
 			"ground": 1.4,
 			"electric": 1.4
+		},
+		"resistances": {
+			"fire": 0.51,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"mud-shot": {
@@ -7165,6 +7242,13 @@
 			"ground": 1.4,
 			"electric": 1.4
 		},
+		"resistances": {
+			"fire": 0.51,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
+		},
 		"quickMoves": {
 			"mud-shot": {
 				"power": 5,
@@ -7199,7 +7283,6 @@
 		"candy": 50,
 		"name": "Kabuto",
 		"img": "http://www.serebii.net/pokemongo/pokemon/140.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 148,
@@ -7212,6 +7295,13 @@
 			"fighting": 1.4,
 			"ground": 1.4,
 			"electric": 1.4
+		},
+		"resistances": {
+			"fire": 0.51,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"mud-shot": {
@@ -7259,6 +7349,13 @@
 			"fighting": 1.4,
 			"ground": 1.4,
 			"electric": 1.4
+		},
+		"resistances": {
+			"fire": 0.51,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"rock-smash": {
@@ -7308,6 +7405,14 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"normal": 0.714,
+			"flying": 0.714,
+			"ground": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -7350,6 +7455,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"lick": {
@@ -7397,6 +7505,11 @@
 			"steel": 1.4,
 			"electric": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"ground": 0.51
+		},
 		"quickMoves": {
 			"frost-breath": {
 				"power": 10,
@@ -7436,6 +7549,14 @@
 		"weaknesses": {
 			"ice": 1.4,
 			"rock": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"flying": 0.714,
+			"ground": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"charge-beam": {
@@ -7477,6 +7598,15 @@
 			"rock": 1.96,
 			"water": 1.4,
 			"electric": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"fire": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"ground": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"fire-spin": {
