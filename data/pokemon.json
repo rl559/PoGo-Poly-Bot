@@ -5267,6 +5267,11 @@
 		"weaknesses": {
 			"ground": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
+		},
 		"quickMoves": {
 			"spark": {
 				"power": 6,
@@ -5310,6 +5315,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"volt-switch": {
@@ -5362,6 +5372,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -5412,6 +5430,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"bullet-seed": {
 				"power": 8,
@@ -5459,6 +5485,11 @@
 			"ice": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"rock": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"mud-slap": {
 				"power": 15,
@@ -5504,6 +5535,11 @@
 			"grass": 1.4,
 			"ice": 1.4,
 			"water": 1.4
+		},
+		"resistances": {
+			"electric": 0.51,
+			"rock": 0.714,
+			"poison": 0.714
 		},
 		"quickMoves": {
 			"mud-slap": {
@@ -5551,6 +5587,11 @@
 			"flying": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"rock": 0.714,
+			"dark": 0.714
+		},
 		"quickMoves": {
 			"low-kick": {
 				"power": 6,
@@ -5596,6 +5637,11 @@
 			"fairy": 1.4,
 			"flying": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"electric": 0.51,
+			"rock": 0.714,
+			"poison": 0.714
 		},
 		"quickMoves": {
 			"counter": {
@@ -5645,6 +5691,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"lick": {
 				"power": 5,
@@ -5678,7 +5727,6 @@
 		"candy": 50,
 		"name": "Koffing",
 		"img": "http://www.serebii.net/pokemongo/pokemon/109.png",
-
 		"stats": {
 			"stamina": 80,
 			"attack": 119,
@@ -5689,6 +5737,13 @@
 		"weaknesses": {
 			"ground": 1.4,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
@@ -5735,6 +5790,13 @@
 			"ground": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"fighting": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -5769,7 +5831,6 @@
 		"candy": 50,
 		"name": "Rhyhorn",
 		"img": "http://www.serebii.net/pokemongo/pokemon/111.png",
-
 		"stats": {
 			"stamina": 160,
 			"attack": 140,
@@ -5784,6 +5845,14 @@
 			"fighting": 1.4,
 			"ground": 1.4,
 			"steel": 1.4
+		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
 		},
 		"quickMoves": {
 			"mud-slap": {
@@ -5834,6 +5903,14 @@
 			"ground": 1.4,
 			"steel": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
+		},
 		"quickMoves": {
 			"mud-slap": {
 				"power": 15,
@@ -5877,6 +5954,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"pound": {
@@ -5926,6 +6006,12 @@
 			"ice": 1.4,
 			"poison": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"vine-whip": {
 				"power": 7,
@@ -5969,6 +6055,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"low-kick": {
 				"power": 6,
@@ -6002,7 +6091,6 @@
 		"candy": 25,
 		"name": "Horsea",
 		"img": "http://www.serebii.net/pokemongo/pokemon/116.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 129,
@@ -6013,6 +6101,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"bubble": {
@@ -6058,6 +6152,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"dragon-breath": {
@@ -6106,6 +6206,12 @@
 			"Electric": 1.4,
 			"Grass": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"mud-shot": {
 				"power": 5,
@@ -6151,6 +6257,12 @@
 			"Electric": 1.4,
 			"Grass": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"peck": {
 				"power": 10,
@@ -6185,7 +6297,6 @@
 		"candy": 50,
 		"name": "Staryu",
 		"img": "http://www.serebii.net/pokemongo/pokemon/120.png",
-
 		"stats": {
 			"stamina": 60,
 			"attack": 137,
@@ -6196,6 +6307,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
@@ -6245,6 +6362,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"hidden-power": {
 				"power": 15,
@@ -6290,6 +6415,11 @@
 			"ghost": 1.4,
 			"poison": 1.4,
 			"steel": 1.4
+		},
+		"resistances": {
+			"dragon": 0.51,
+			"fighting": 0.51,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"confusion": {
