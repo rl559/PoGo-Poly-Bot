@@ -7929,6 +7929,12 @@
 			"poison": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
 		"quickMoves":{
 			"vine-whip": {
 				"power": 7,
@@ -7976,6 +7982,12 @@
 			"flying": 1.4,
 			"poison": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"razor-leaf": {
@@ -8026,6 +8038,12 @@
 			"poison": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"vine-whip": {
 				"power": 7,
@@ -8072,6 +8090,14 @@
 		    "rock": 1.4,
 		    "water": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"fire": 0.714,
+				"grass": 0.714,
+				"fairy": 0.714,
+				"steel": 0.714,
+				"ice": 0.714
+			},
 		  "quickMoves": {
 		    "tackle": {
 		      "power": 5,
@@ -8118,6 +8144,14 @@
 		    "rock": 1.4,
 		    "water": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"fire": 0.714,
+				"grass": 0.714,
+				"fairy": 0.714,
+				"steel": 0.714,
+				"ice": 0.714
+			},
 		  "quickMoves": {
 		    "tackle": {
 		      "power": 5,
@@ -8165,6 +8199,14 @@
 		    "rock": 1.4,
 		    "water": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"fire": 0.714,
+				"grass": 0.714,
+				"fairy": 0.714,
+				"steel": 0.714,
+				"ice": 0.714
+			},
 		  "quickMoves": {
 		    "shadow-claw": {
 		      "power": 9,
@@ -8210,6 +8252,12 @@
 		    "grass": 1.4,
 		    "electric": 1.4
 		  },
+			"resistances": {
+				"fire": 0.714,
+				"steel": 0.714,
+				"ice": 0.714,
+				"water": 0.714
+			},
 		  "quickMoves": {
 		    "water-gun": {
 		      "power": 5,
@@ -8255,6 +8303,12 @@
 		    "grass": 1.4,
 		    "electric": 1.4
 		  },
+			"resistances": {
+				"fire": 0.714,
+				"steel": 0.714,
+				"ice": 0.714,
+				"water": 0.714
+			},
 		  "quickMoves": {
 		    "water-gun": {
 		      "power": 5,
@@ -8301,6 +8355,12 @@
 		    "grass": 1.4,
 		    "electric": 1.4
 		  },
+			"resistances": {
+				"fire": 0.714,
+				"steel": 0.714,
+				"ice": 0.714,
+				"water": 0.714
+			},
 		  "quickMoves": {
 		    "bite": {
 		      "power": 6,
@@ -8345,6 +8405,9 @@
 		  "weaknesses": {
 		    "fighting": 1.4
 		  },
+			"resistances": {
+				"ghost": 0.51
+			},
 		  "quickMoves": {
 		    "scratch": {
 		      "power": 6,
@@ -8389,6 +8452,9 @@
 		  "weaknesses": {
 		    "fighting": 1.4
 		  },
+			"resistances": {
+				"ghost": 0.51
+			},
 		  "quickMoves": {
 		    "sucker-punch": {
 		      "power": 7,
@@ -8435,6 +8501,12 @@
 				"rock": 1.4,
 				"ice": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.714,
+				"ground": 0.51,
+				"ghost": 0.51
+			},
 		  "quickMoves": {
 		    "feint-attack": {
 		      "power": 10,
@@ -8481,6 +8553,12 @@
 				"rock": 1.4,
 				"ice": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.714,
+				"ground": 0.51,
+				"ghost": 0.51
+			},
 		  "quickMoves": {
 		    "wing-attack": {
 		      "power": 8,
@@ -8529,6 +8607,12 @@
 				"flying": 1.4,
 				"ice": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.51,
+				"ground": 0.36414,
+				"fighting": 0.51
+			},
 		  "quickMoves": {
 		    "tackle": {
 		      "power": 5,
@@ -8577,6 +8661,12 @@
 				"flying": 1.4,
 				"ice": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.51,
+				"ground": 0.36414,
+				"fighting": 0.51
+			},
 		  "quickMoves": {
 		    "struggle-bug": {
 		      "power": 15,
@@ -8624,6 +8714,13 @@
 				"flying": 1.4,
 				"psychic": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.51,
+				"fairy": 0.714,
+				"poison": 0.714,
+				"fighting": 0.51
+			},
 		  "quickMoves": {
 		    "poison-sting": {
 		      "power": 5,
@@ -8671,6 +8768,13 @@
 				"flying": 1.4,
 				"psychic": 1.4
 		  },
+			"resistances": {
+				"bug": 0.714,
+				"grass": 0.51,
+				"fairy": 0.714,
+				"poison": 0.714,
+				"fighting": 0.51
+			},
 		  "quickMoves": {
 		    "poison-sting": {
 		      "power": 5,
@@ -8718,6 +8822,14 @@
 				"ice": 1.4,
 				"psychic": 1.4
 		  },
+			"resistances": {
+				"bug": 0.51,
+				"grass": 0.51,
+				"fairy": 0.714,
+				"ground": 0.714,
+				"poison": 0.714,
+				"fighting": 0.51
+			},
 		  "quickMoves": {
 		    "air-slash": {
 		      "power": 14,
@@ -8763,6 +8875,13 @@
 		    "grass": 1.4,
 				"ground": 1.4
 		  },
+			"resistances": {
+				"fire": 0.714,
+				"flying": 0.714,
+				"steel": 0.51,
+				"ice": 0.714,
+				"water": 0.714
+			},
 		  "quickMoves": {
 		    "bubble": {
 		      "power": 12,
@@ -8808,6 +8927,13 @@
 		    "grass": 1.4,
 				"ground": 1.4
 		  },
+			"resistances": {
+				"fire": 0.714,
+				"flying": 0.714,
+				"steel": 0.51,
+				"ice": 0.714,
+				"water": 0.714
+			},
 		  "quickMoves": {
 		    "water-gun": {
 		      "power": 5,
@@ -8852,6 +8978,11 @@
 		"weaknesses": {
 			"ground": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
+		},
 		"quickMoves": {
 			"thunder-shock": {
 				"power": 5,
@@ -8892,6 +9023,12 @@
 		"weaknesses": {
 			"poison": 1.4,
 			"steel": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"pound": {
@@ -8938,6 +9075,12 @@
 			"poison": 1.4,
 			"steel": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"pound": {
 				"power": 7,
@@ -8982,6 +9125,12 @@
 		"weaknesses": {
 			"poison": 1.4,
 			"steel": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"hidden-power": {
@@ -9031,6 +9180,14 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"bug": 0.51,
+			"grass": 0.714,
+			"dark": 0.714,
+			"ground": 0.51,
+			"dragon": 0.51,
+			"fighting": 0.51
+		},
 		"quickMoves": {
 			"extrasensory": {
 				"power": 12,
@@ -9078,6 +9235,12 @@
 			"electric": 1.4,
 			"ice": 1.4,
 			"rock": 1.4
+		},
+		"resistances": {
+			"grass": 0.714,
+			"ground": 0.51,
+			"fighting": 0.51,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"peck": {
@@ -9127,6 +9290,12 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"grass": 0.714,
+			"ground": 0.51,
+			"fighting": 0.51,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"air-slash": {
 				"power": 14,
@@ -9170,6 +9339,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
@@ -9215,6 +9389,11 @@
 		"weaknesses": {
 			"ground": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -9259,6 +9438,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"volt-switch": {
@@ -9307,6 +9491,12 @@
 			"flying": 1.4,
 			"poison": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"razor-leaf": {
@@ -18608,11 +18798,11 @@
 		"name": "Rayquaza",
 		"img": "https://www.serebii.net/pokemongo/pokemon/384.png",
 		"stats": {
-			"stamina": 210,
-			"attack": 312,
-			"defense": 187
+			"stamina": 191,
+			"attack": 284,
+			"defense": 170
 		},
-		"maxCP": 4354,
+		"maxCP": 3645,
 		"type": ["dragon", "flying"],
 		"weaknesses": {
 			"rock": 1.4,
@@ -18620,28 +18810,36 @@
 			"dragon": 1.4,
 			"ice": 1.96
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.51,
+			"ground": 0.51,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"dragon-tail": {
 				"power": 15,
-				"dps": 26.36
+				"dps": 23.64
 			},
 			"air-slash": {
 				"power": 14,
-				"dps": 22.50
+				"dps": 20.00
 			}
 		},
 		"chargeMoves": {
 			"outrage": {
 				"power": 110,
-				"dps": 52.82
+				"dps": 48.21
 			},
 			"aerial-ace": {
 				"power": 55,
-				"dps": 42.92
+				"dps": 39.17
 			},
 			"ancient-power": {
 				"power": 70,
-				"dps": 31.43
+				"dps": 28.57
 			}
 		},
 		"evolveTo": "",
