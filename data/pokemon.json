@@ -9544,6 +9544,15 @@
 			"Grass": 1.4,
 			"poison": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -9590,6 +9599,15 @@
 			"electric": 1.4,
 			"Grass": 1.4,
 			"poison": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"rock-smash": {
@@ -9639,6 +9657,12 @@
 			"fighting": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"rock-throw": {
 				"power": 12,
@@ -9682,6 +9706,12 @@
 		"weaknesses": {
 			"electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"mud-shot": {
@@ -9731,6 +9761,12 @@
 			"poison": 1.4,
 			"ice": 1.96
 		},
+		"resistances": {
+			"grass": 0.51,
+			"ground": 0.36414,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -9778,6 +9814,12 @@
 			"flying": 1.4,
 			"poison": 1.4,
 			"ice": 1.96
+		},
+		"resistances": {
+			"grass": 0.51,
+			"ground": 0.36414,
+			"fighting": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
@@ -9828,6 +9870,12 @@
 			"poison": 1.4,
 			"ice": 1.96
 		},
+		"resistances": {
+			"grass": 0.51,
+			"ground": 0.36414,
+			"fighting": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"infestation": {
 				"power": 10,
@@ -9871,6 +9919,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"scratch": {
@@ -9918,6 +9969,12 @@
 			"flying": 1.4,
 			"poison": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"razor-leaf": {
@@ -9967,6 +10024,12 @@
 			"poison": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"razor-leaf": {
 				"power": 13,
@@ -10015,6 +10078,12 @@
 			"rock": 1.96,
 			"ice": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"ground": 0.36414,
+			"fighting": 0.51
+		},
 		"quickMoves": {
 			"quick-attack": {
 				"power": 8,
@@ -10057,6 +10126,13 @@
 		"type": ["ground", "water"],
 		"weaknesses": {
 			"grass": 1.96
+		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"rock": 0.714,
+			"poison": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"water-gun": {
@@ -10101,6 +10177,13 @@
 		"type": ["ground", "water"],
 		"weaknesses": {
 			"grass": 1.96
+		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"rock": 0.714,
+			"poison": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"water-gun": {
@@ -10148,6 +10231,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"confusion": {
 				"power": 20,
@@ -10194,6 +10281,11 @@
 			"fairy": 1.4,
 			"fighting": 1.4
 		},
+		"resistances": {
+			"dark": 0.714,
+			"ghost": 0.714,
+			"psychic": 0.51
+		},
 		"quickMoves": {
 			"feint-attack": {
 				"power": 10,
@@ -10236,6 +10328,13 @@
 			"fairy": 1.4,
 			"ice": 1.4,
 			"rock": 1.4
+		},
+		"resistances": {
+			"grass": 0.714,
+			"dark": 0.714,
+			"ground": 0.51,
+			"ghost": 0.714,
+			"psychic": 0.51
 		},
 		"quickMoves": {
 			"feint-attack": {
@@ -10284,6 +10383,14 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"water-gun": {
 				"power": 5,
@@ -10328,6 +10435,12 @@
 		"weaknesses": {
 			"dark": 1.4,
 			"ghost": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"normal": 0.51,
+			"poison": 0.714,
+			"fighting": 0.51
 		},
 		"quickMoves": {
 			"astonish": {
@@ -10374,6 +10487,10 @@
 			"dark": 1.4,
 			"ghost": 1.4
 		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"hidden-power": {
 				"power": 15,
@@ -10406,6 +10523,10 @@
 			"bug": 1.4,
 			"dark": 1.4,
 			"ghost": 1.4
+		},
+		"resistances": {
+			"fighting": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"counter": {
@@ -10442,6 +10563,10 @@
 		"weaknesses": {
 			"bug": 1.4,
 			"dark": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
@@ -10488,6 +10613,11 @@
 			"rock": 1.4,
 			"flying": 1.4
 		},
+		"resistances": {
+			"grass": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -10531,6 +10661,17 @@
 		"type": ["bug", "steel"],
 		"weaknesses": {
 			"fire": 1.96
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"normal": 0.714,
+			"fairy": 0.714,
+			"poison": 0.51,
+			"steel": 0.714,
+			"dragon": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"struggle-bug": {
@@ -10576,6 +10717,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -10615,10 +10759,17 @@
 			"defense": 204
 		},
 		"maxCP": 1758,
-		"type": ["flying", "normal"],
+		"type": ["flying", "ground"],
 		"weaknesses": {
 			"water": 1.4,
 			"ice": 1.96
+		},
+		"resistances": {
+			"bug": 0.714,
+			"electric": 0.51,
+			"ground": 0.51,
+			"poison": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"fury-cutter": {
@@ -10655,7 +10806,7 @@
 		"img": "http://www.serebii.net/pokemongo/pokemon/208.png",
 		"stats": {
 			"stamina": 150,
-			"attack": 143,
+			"attack": 148,
 			"defense": 333
 		},
 		"maxCP": 2439,
@@ -10665,6 +10816,18 @@
 			"ground": 1.4,
 			"fighting": 1.4,
 			"water": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"electric": 0.51,
+			"normal": 0.714,
+			"rock": 0.51,
+			"fairy": 0.714,
+			"flying": 0.714,
+			"poison": 0.36414,
+			"steel": 0.714,
+			"dragon": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"iron-tail": {
@@ -10711,6 +10874,12 @@
 			"poison": 1.4,
 			"steel": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714
+		},
 		"quickMoves": {
 			"bite": {
 				"power": 6,
@@ -10755,6 +10924,12 @@
 		"weaknesses": {
 			"poison": 1.4,
 			"steel": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"dark": 0.714,
+			"dragon": 0.51,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"bite": {
@@ -10802,6 +10977,16 @@
 			"ground": 1.4,
 			"psychic": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"fairy": 0.714,
+			"poison": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714,
+			"ice": 0.714,
+			"water": 0.714
+		},
 		"quickMoves": {
 			"poison-sting": {
 				"power": 5,
@@ -10844,6 +11029,17 @@
 		"type": ["bug", "steel"],
 		"weaknesses": {
 			"fire": 1.96
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.51,
+			"normal": 0.714,
+			"fairy": 0.714,
+			"poison": 0.51,
+			"steel": 0.714,
+			"dragon": 0.714,
+			"ice": 0.714,
+			"psychic": 0.714
 		},
 		"quickMoves": {
 			"bullet-punch": {
@@ -10891,6 +11087,10 @@
 			"steel": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"normal": 0.714,
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"struggle-bug": {
 				"power": 15,
@@ -10936,6 +11136,13 @@
 			"fairy": 1.4,
 			"flying": 1.96,
 			"psychic": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"grass": 0.714,
+			"dark": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"struggle-bug": {
@@ -10985,6 +11192,12 @@
 			"steel": 1.4,
 			"fighting": 1.96
 		},
+		"resistances": {
+			"dark": 0.714,
+			"ghost": 0.714,
+			"ice": 0.714,
+			"psychic": 0.51
+		},
 		"quickMoves": {
 			"ice-shard": {
 				"power": 12,
@@ -11027,6 +11240,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"scratch": {
@@ -11071,6 +11287,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"metal-claw": {
@@ -11118,6 +11337,14 @@
 			"ground": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"fairy": 0.714,
+			"steel": 0.714,
+			"ice": 0.714
+		},
 		"quickMoves": {
 			"ember": {
 				"power": 10,
@@ -11164,6 +11391,15 @@
 			"ground": 1.96,
 			"water": 1.96,
 			"fighting": 1.4
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.51,
+			"normal": 0.714,
+			"fairy": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"ember": {
@@ -11213,6 +11449,9 @@
 			"fighting": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -11261,6 +11500,9 @@
 			"fighting": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"poison": 0.714
+		},
 		"quickMoves": {
 			"ice-shard": {
 				"power": 12,
@@ -11307,6 +11549,13 @@
 			"grass": 1.96,
 			"ground": 1.4,
 			"fighting": 1.4
+		},
+		"resistances": {
+			"fire": 0.51,
+			"normal": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ice": 0.714
 		},
 		"quickMoves": {
 			"tackle": {
