@@ -227,6 +227,12 @@
 		"cp": "26262",
 		"active": true
 	},
+	"aggron": {
+		"level": "Level 4",
+		"image": "https://www.serebii.net/pokemongo/pokemon/306.png",
+		"cp": "33458",
+		"active": true
+	},
 	"tyranitar": {
 		"level": "Level 4",
 		"image": "http://www.serebii.net/pokemongo/pokemon/248.png",
@@ -273,7 +279,7 @@
 		"level": "Level 5",
 		"image": "http://www.serebii.net/pokemongo/pokemon/150.png",
 		"cp": "49430",
-		"active": false
+		"active": true
 	},
 	"mew": {
 		"level": "Level 5",
@@ -333,7 +339,7 @@
 		"level": "Level 5",
 		"image": "https://www.serebii.net/pokemongo/pokemon/383.png",
 		"cp": "59505",
-		"active": true
+		"active": false
 	},
 	"celebi": {
 		"level": "Level 5",
