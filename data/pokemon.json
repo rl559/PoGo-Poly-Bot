@@ -12506,6 +12506,9 @@
 		"weaknesses": {
 			"fighting": 1.4
 		},
+		"resistances": {
+			"ghost": 0.51
+		},
 		"quickMoves": {
 			"tackle": {
 				"power": 5,
@@ -12548,6 +12551,9 @@
 		"type": ["normal"],
 		"weaknesses": {
 			"fighting": 1.4
+		},
+		"resistances": {
+			"ghost": 0.51
 		},
 		"quickMoves": {
 			"pound": {
@@ -12592,6 +12598,11 @@
 		"type": ["electric"],
 		"weaknesses": {
 			"ground": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"flying": 0.714,
+			"steel": 0.714
 		},
 		"quickMoves": {
 			"volt-switch": {
@@ -12638,6 +12649,14 @@
 			"rock": 1.4,
 			"water": 1.4
 		},
+		"resistances": {
+			"bug": 0.714,
+			"fire": 0.714,
+			"Grass": 0.714,
+			"fairy": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
+		},
 		"quickMoves": {
 			"fire-spin": {
 				"power": 14,
@@ -12681,6 +12700,12 @@
 		"weaknesses": {
 			"Electric": 1.4,
 			"Grass": 1.4
+		},
+		"resistances": {
+			"fire": 0.714,
+			"steel": 0.714,
+			"ice": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"extrasensory": {
@@ -12730,6 +12755,14 @@
 			"steel": 1.4,
 			"ice": 1.4
 		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
+		},
 		"quickMoves": {
 			"rock-smash": {
 				"power": 15,
@@ -12778,6 +12811,14 @@
 			"ground": 1.4,
 			"steel": 1.4,
 			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.51,
+			"fire": 0.714,
+			"normal": 0.714,
+			"rock": 0.714,
+			"flying": 0.714,
+			"poison": 0.51
 		},
 		"quickMoves": {
 			"rock-smash": {
@@ -12830,6 +12871,15 @@
 			"bug": 1.4,
 			"fairy": 1.4
 		},
+		"resistances": {
+			"fire": 0.714,
+			"normal": 0.714,
+			"dark": 0.714,
+			"flying": 0.714,
+			"poison": 0.714,
+			"ghost": 0.714,
+			"psychic": 0.51
+		},
 		"quickMoves": {
 			"iron-tail": {
 				"power": 15,
@@ -12878,6 +12928,12 @@
 			"ice": 1.4,
 			"rock": 1.4
 		},
+		"resistances": {
+			"grass": 0.714,
+			"ground": 0.51,
+			"fighting": 0.51,
+			"psychic": 0.714
+		},
 		"quickMoves": {
 			"extrasensory": {
 				"power": 12,
@@ -12922,6 +12978,15 @@
 			"rock": 1.96,
 			"water": 1.4,
 			"electric": 1.4
+		},
+		"resistances": {
+			"bug": 0.51,
+			"fire": 0.714,
+			"grass": 0.51,
+			"fairy": 0.714,
+			"ground": 0.714,
+			"steel": 0.714,
+			"fighting": 0.714
 		},
 		"quickMoves": {
 			"extrasensory": {
@@ -12971,6 +13036,14 @@
 			"fire": 1.4,
 			"ice": 1.4,
 			"poison": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"fighting": 0.714,
+			"psychic": 0.714,
+			"water": 0.714
 		},
 		"quickMoves": {
 			"confusion": {
