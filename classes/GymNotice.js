@@ -130,6 +130,9 @@ module.exports = class GymNotice
               }
               raidChannel = message.guild.channels.find('name', 'raids');
               var msg = raidChannel.send(stringToSend);
+              var msg2 = raidChannel.send("React here if you aren't/can't go:");
+              var emoji = client.emojis.find("name", "cry");
+              msg2.react(emoji.id);
               
             }
   				}
