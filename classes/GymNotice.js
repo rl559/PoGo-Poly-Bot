@@ -167,7 +167,7 @@ module.exports = class GymNotice
                               });
                           });
                       });
-                  });
+                  }
                   message.react('😢');
                 }
   						});
