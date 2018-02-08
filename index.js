@@ -234,11 +234,7 @@ client.on("message", (message) => {
 	 
 	 if (message.content.startsWith(prefix + "test1")) {
 		 //Put stuff here to test.
-		 for(user in message.guild.users)
-		 {
-			 console.log(user.nickname);
-			 console.log(user.id);
-		 }
+		 console.log(message.guild.users);
 	 }/*
 	 if (message.content.startsWith(prefix + "test2")) {
 		 message.guild.channels.find('name', 'raids').send({
