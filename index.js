@@ -163,11 +163,10 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, deleted simple poll error");
 	}
 	
-	if(message.author.username === 'Simple Poll')
+	if(message.author.username === 'Simple Poll' && message.embeds[0].description.indexOf("What time should we raid?")>-1)
 	{
 		raidChannel = message.guild.channels.find('name', 'raids');
-		//var msg2 = raidChannel.send("React here if you aren't/can't go:").then(function (message){message.react('😢');});
-		console.log(message.embeds[0].description);
+		var msg2 = raidChannel.send("React here if you aren't/can't go:").then(function (message){message.react('😢');});
 	}
 	
 	if( (message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot') && (message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)) ){
