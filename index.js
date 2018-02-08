@@ -191,7 +191,9 @@ client.on("message", (message) => {
 	}
 	if(message.member.id === process.env.potato && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
-		message.react('🥔');
+		//message.react('🥔');
+		let party2 = client.emojis.find("name", "partywurmple2");
+		message.react(party2).then(function (emoji){message.react('🥔').then(function (emoji){let party = client.emojis.find("name", "partywurmple");message.react(party);});});
 	}
 	
 	if(message.member.id === process.env.cool && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
