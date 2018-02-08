@@ -158,17 +158,30 @@ module.exports = class GymNotice
                                             if(arr.length>7)
                                               message.react('8⃣').then(function (emoji){
                                                 if(arr.length>8)
-                                                  message.react('9⃣');
+                                                  message.react('9⃣').then(function (emoji){message.react('😢');});
                                               });
+                                              else
+                                                message.react('😢');
                                           });
+                                          else
+                                            message.react('😢');
                                       });
+                                      else
+                                        message.react('😢');
                                   });
+                                  else
+                                    message.react('😢');
                                 });
+                                else
+                                  message.react('😢');
                               });
+                              else
+                                message.react('😢');
                           });
+                          else
+                            message.react('😢');
                       });
                   }
-                  message.react('😢');
                 });
   					}
             /*if(content.endedTime !== '' && content.endedTime)
