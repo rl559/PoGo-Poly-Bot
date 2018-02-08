@@ -83,6 +83,32 @@ module.exports = class GymNotice
                 var emojiName = "type"+resistances[resist].toLowerCase();
                 resistEmojis = resistEmojis + "<:type"+emojiName+":"+getEmoji(emojiName, message)+">";
               }
+              var stringToSend = '';
+              var arr = [];
+              if(content.endedTime !== '' && content.endedTime)
+              {
+                var addOptions = true;
+                var optionCount = 0;
+                var tempDate = Moment().tz('America/New_York');
+                while(addOptions && optionCount <9)
+                {
+                  tempDate.add(5, 'm');
+                  if(tempDate.isBefore(endTime))
+                  {
+                    arr.push(tempDate.format("hh:mm:ss a"));
+                  }
+                  else {
+                    addOptions = false;
+                  }
+                  optionCount++;
+                }
+                var emojis = ['1⃣','2⃣','3⃣','4⃣','5⃣','6⃣','7⃣','8⃣','9⃣'];
+                for(var i=0; i<arr.length; i++)
+                {
+                  stringToSend = stringToSend +emojis[i]+arr[i]+"\n";
+                }
+                stringToSend = stringToSend+'😢'+"Unable to attend";
+              }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
   								"color": 3447003,
@@ -106,13 +132,47 @@ module.exports = class GymNotice
                     "name": "Weaknesses/Resistances",
                     "value": "W: "+weaknessEmojis+"\nR: "+resistEmojis,
                     "inline": true
+                  },
+                  {
+                    "name": "What time should we raid?",
+                    "value": stringToSend,
+                    "inline": false
                   }]
   							}
   						} ).then(message => {
   							message.pin();
+                if(arr.length>0){
+                  message.react('1⃣').then(function (emoji){
+                    if(arr.length >1)
+                      message.react('2⃣').then(function (emoji){
+                        if(arr.length > 2)
+                          message.react('3⃣').then(function (emoji){
+                            if(arr.length > 3)
+                              message.react('4⃣').then(function(emoji){
+                                if(arr.length>4).then(function (emoji){
+                                  message.react('5⃣').then(function (emoji){
+                                    if(arr.length>5)
+                                      message.react('6⃣').then(function (emoji){
+                                        if(arr.length>6)
+                                          message.react('7⃣').then(function (emoji){
+                                            if(arr.length>7)
+                                              message.react('8⃣').then(function (emoji){
+                                                if(arr.length>8)
+                                                  message.react('9⃣');
+                                              });
+                                          });
+                                      });
+                                  });
+                                });
+                              });
+                          });
+                      });
+                  });
+                  message.react('😢');
+                }
   						});
   					}
-            if(content.endedTime !== '' && content.endedTime)
+            /*if(content.endedTime !== '' && content.endedTime)
             {
               var arr = [];
               var addOptions = true;
@@ -139,7 +199,7 @@ module.exports = class GymNotice
               var msg = raidChannel.send(stringToSend);
               
               
-            }
+            }*/
   				}
   		//}
   }
