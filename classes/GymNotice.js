@@ -81,7 +81,7 @@ module.exports = class GymNotice
               for(var resist in resistances)
               {
                 var emojiName = "type"+resistances[resist].toLowerCase();
-                resistEmojisEmojis = resistEmojis + "<:type"+emojiName+":"+getEmoji(emojiName, message)+">";
+                resistEmojis = resistEmojis + "<:type"+emojiName+":"+getEmoji(emojiName, message)+">";
               }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
