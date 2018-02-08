@@ -103,7 +103,7 @@ display(prefix, message){
           "value": typeValue,
           "inline": true
         }, {
-          "name": "Weakness(es)\Resistance(s)",
+          "name": "Weakness(es)\\Resistance(s)",
           "value": "W: "+weaknessValue+"\nR: "+resistanceValue,
           "inline": true
         }, {
