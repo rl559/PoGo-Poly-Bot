@@ -180,6 +180,12 @@ client.on("message", (message) => {
 		message.react('🐸');
 	}
 	
+	if(message.member.id === process.env.bagel && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	{
+		let bagel = client.emojis.find("name", "bagel");
+		message.react(bagel);
+	}
+	
 	if(message.member.id === process.env.treeman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🌲');
