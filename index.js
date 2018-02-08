@@ -39,7 +39,9 @@ const Discord = require("discord.js"),
 	ghbLevelPattern = new RegExp(/Level 1|Level 2|Level 3|Level 4|Level 5/i),
 	Rraid = require("./classes/Rraid.js"),
 	RraidObj = new Rraid(),
-	raidChannelPattern = new RegExp(/raids/);
+	raidChannelPattern = new RegExp(/raids/),
+	Btext = require("./classes/Btext.js"),
+	BTextObj = new Btext();
 
 var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
@@ -331,5 +333,13 @@ client.on("message", (message) => {
 		AddressObj.display(message, prefix, GMapsObj);
 		console.log(Date.now()+" current timestamp, address triggered");
 		}
+		
+	/*
+	* BTEXT COMMAND
+	*/
+	if(message.content.startsWith(prefix + "b")){
+		BTextObj.process(message, prefix);
+		console.log(Date.now()+" current timestamp, btext triggered");
+	}
 
 });
