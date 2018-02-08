@@ -180,6 +180,13 @@ client.on("message", (message) => {
 		message.react('🐸');
 	}
 	
+	if(message.member.roles.find('name', 'treeman')!==null)
+	{
+		message.react('🌲');
+	}
+	
+	
+	
 	if (message.author.bot) return;
 	
 	if( message.isMentioned(message.guild.members.get(process.env.client_id)) ){
