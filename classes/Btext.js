@@ -36,7 +36,7 @@ module.exports = class GymNotice
     
     for(var i=0; i<msgText.length; i++)
     {
-      mappingVal = mapping[msgText.charAt(i)];
+      var mappingVal = mapping[msgText.charAt(i)];
       if (mappingVal)
         newMsg = newMsg + mappingVal;
       else if (msgText[i] === "?")
