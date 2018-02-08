@@ -69,12 +69,19 @@ module.exports = class GymNotice
   					raidChannel = message.guild.channels.find('name', 'raids');
   					if ( raidChannel ) {
               var weaknesses = Object.keys(pokedex(content.raidBoss).weaknesses);
+              var resistances = Object.keys(pokedex(content.raidBoss).resistances);
               console.log(weaknesses);
               var weaknessEmojis = "";
+              var resistEmojis = "";
               for(var weakness in weaknesses)
               {
                 var emojiName = "type"+weaknesses[weakness].toLowerCase();
                 weaknessEmojis = weaknessEmojis + "<:type"+emojiName+":"+getEmoji(emojiName, message)+">";
+              }
+              for(var resist in resistances)
+              {
+                var emojiName = "type"+resistances[resist].toLowerCase();
+                resistEmojisEmojis = resistEmojis + "<:type"+emojiName+":"+getEmoji(emojiName, message)+">";
               }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
@@ -96,8 +103,8 @@ module.exports = class GymNotice
   									"value": content.endedTime,
   									"inline": true
   								},{
-                    "name": "Weaknesses",
-                    "value": weaknessEmojis,
+                    "name": "Weaknesses/Resistances",
+                    "value": "W: "+weaknessEmojis+"\nR: "+resistEmojis,
                     "inline": true
                   }]
   							}
