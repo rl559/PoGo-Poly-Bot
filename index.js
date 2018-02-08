@@ -231,21 +231,15 @@ client.on("message", (message) => {
 	/*
 	 * test Commands (commented out)
 	 */
-	 /*
+	 
 	 if (message.content.startsWith(prefix + "test1")) {
 		 //Put stuff here to test.
-		 message.guild.channels.find('name', 'raids').send({
-			 "embed": {
-				 "color": 3447003,
-				 "title": 'Level 4 Raid has started!',
-				 "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
-				 "thumbnail": {
-					 "url": 'http://www.serebii.net/pokemongo/pokemon/248.png',
-				 },
-				 description: '**GymName**\nTyranitar\n**CP:** 34707 - **Moves:** Iron Tail / Crunch\n*Raid Ending: 0 hours 45 min 50 sec*'
-			 }
-		 });
-	 }
+		 for(user in message.guild.users)
+		 {
+			 console.log(user.nickname);
+			 console.log(user.id);
+		 }
+	 }/*
 	 if (message.content.startsWith(prefix + "test2")) {
 		 message.guild.channels.find('name', 'raids').send({
 			 "embed": {
