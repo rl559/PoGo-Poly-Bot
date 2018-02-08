@@ -175,12 +175,12 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, GymNotice triggered");
 	}
 	
-	if(message.member.roles.find('name', 'frogman')!==null)
+	if(message.member.id === process.env.frogman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🐸');
 	}
 	
-	if(message.member.roles.find('name', 'treeman')!==null)
+	if(message.member.id === process.env.treeman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🌲');
 		message.react('🌳');
@@ -189,17 +189,17 @@ client.on("message", (message) => {
 		message.react('🌴');
 		message.react('🌱');
 	}
-	if(message.member.roles.find('name', 'potato')!==null)
+	if(message.member.id === process.env.potato && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🥔');
 	}
 	
-	if(message.member.roles.find('name', 'cool')!==null)
+	if(message.member.id === process.env.potato && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🔥').then(function (emoji){message.react('😎').then(function (emoji){let fire = client.emojis.find("name", "typefire");message.react(fire);});});
 	}
 	
-	if(message.member.roles.find('name', 'egghead')!==null)
+	if(message.member.id === process.env.eggplant && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🍆');
 	}
@@ -231,11 +231,11 @@ client.on("message", (message) => {
 	/*
 	 * test Commands (commented out)
 	 */
-	 
+	 /*
 	 if (message.content.startsWith(prefix + "test1")) {
 		 //Put stuff here to test.
 		 console.log(message.guild.members);
-	 }/*
+	 }
 	 if (message.content.startsWith(prefix + "test2")) {
 		 message.guild.channels.find('name', 'raids').send({
 			 "embed": {
