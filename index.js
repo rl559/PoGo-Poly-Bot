@@ -183,6 +183,11 @@ client.on("message", (message) => {
 	if(message.member.roles.find('name', 'treeman')!==null)
 	{
 		message.react('🌲');
+		message.react('🌳');
+		message.react('🎄');
+		message.react('🎋');
+		message.react('🌴');
+		message.react('🌱');
 	}
 	
 	
