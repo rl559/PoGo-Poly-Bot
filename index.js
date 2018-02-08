@@ -198,6 +198,8 @@ client.on("message", (message) => {
 	{
 		message.react('🔥');
 		message.react('😎');
+		let fire = client.emojis.find("name", "typefire");
+		message.react(fire);
 	}
 	
 	
