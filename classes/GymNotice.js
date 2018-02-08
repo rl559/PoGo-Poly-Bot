@@ -102,7 +102,8 @@ module.exports = class GymNotice
                   }
                   optionCount++;
                 }
-                var emojis = ['1⃣','2⃣','3⃣','4⃣','5⃣','6⃣','7⃣','8⃣','9⃣'];
+                //var emojis = ['1⃣','2⃣','3⃣','4⃣','5⃣','6⃣','7⃣','8⃣','9⃣'];
+                var emojis = [':one:',':two:',':three:',':four:',':five:',':six:',':seven:',':eight:',':nine:'];
                 for(var i=0; i<arr.length; i++)
                 {
                   stringToSend = stringToSend +emojis[i]+arr[i]+"\n";
@@ -159,6 +160,8 @@ module.exports = class GymNotice
                                               message.react('8⃣').then(function (emoji){
                                                 if(arr.length>8)
                                                   message.react('9⃣').then(function (emoji){message.react('😢');});
+                                                else
+                                                  message.react('😢');
                                               });
                                               else
                                                 message.react('😢');
