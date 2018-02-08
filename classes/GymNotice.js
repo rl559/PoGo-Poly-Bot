@@ -169,8 +169,7 @@ module.exports = class GymNotice
                       });
                   }
                   message.react('😢');
-                }
-  						});
+                });
   					}
             /*if(content.endedTime !== '' && content.endedTime)
             {
