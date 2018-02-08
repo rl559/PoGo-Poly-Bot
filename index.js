@@ -73,8 +73,9 @@ client.on("guildMemberAdd", (member) => {
 	10. If you are having issues, or want to learn more what the bot can do, just type \`.help\`
   Happy Hunting, hope you catch 'em all.`);
 
-	let role = member.guild.roles.find("name", 'Member');
-	member.addRole(role).catch(console.error);
+	//commented out, testing
+	//let role = member.guild.roles.find("name", 'Member');
+	//member.addRole(role).catch(console.error);
 	
 	
   if (!newUsers[guild.id]){
