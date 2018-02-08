@@ -108,7 +108,10 @@ module.exports = class GymNotice
                 {
                   stringToSend = stringToSend +emojis[i]+arr[i]+"\n";
                 }
-                stringToSend = stringToSend+'😢'+"Unable to attend";
+                if(arr.length > 0)
+                  stringToSend = stringToSend+'😢'+"Unable to attend";
+                if(arr.length == 0)
+                  stringToSend = 'You should already be there.';
               }
   						raidChannel.send(`A ${raidBossMention} Raid has been found!`, {
   							"embed": {
