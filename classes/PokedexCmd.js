@@ -104,7 +104,7 @@ display(prefix, message){
           "inline": true
         }, {
           "name": "Weakness(es)\Resistance(s)",
-          "value": "W:"weaknessValue+"\nR:"+resistanceValue,
+          "value": "W:"+weaknessValue+"\nR:"+resistanceValue,
           "inline": true
         }, {
           "name": "Stats",
