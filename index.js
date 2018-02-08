@@ -189,6 +189,16 @@ client.on("message", (message) => {
 		message.react('🌴');
 		message.react('🌱');
 	}
+	if(message.member.roles.find('name', 'potato')!==null)
+	{
+		message.react('🥔');
+	}
+	
+	if(message.member.roles.find('name', 'cool')!==null)
+	{
+		message.react('🔥');
+		message.react('😎');
+	}
 	
 	
 	
