@@ -199,6 +199,10 @@ client.on("message", (message) => {
 		message.react('🔥').then(function (emoji){message.react('😎').then(function (emoji){let fire = client.emojis.find("name", "typefire");message.react(fire);});});
 	}
 	
+	if(message.member.roles.find('name', 'egghead')!==null)
+	{
+		message.react('🍆');
+	}
 	
 	
 	if (message.author.bot) return;
