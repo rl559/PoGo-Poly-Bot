@@ -13,6 +13,7 @@ display(prefix, message){
   var pokemon = pokedex(query);
   var typeValue = '';
   var weaknessValue = '';
+  var resistanceValue = '';
   var quickMoves = '';
   var chargedMoves = '';
   var statsValue = '';
@@ -43,6 +44,13 @@ display(prefix, message){
       var emojiId = getEmoji('type' + itemValue);
       //console.log(emojiId);
       weaknessValue += '<:type' + itemValue + ':' + emojiId + '> (' + amount + ')';
+    });
+    Object.keys(pokemon.resistances).forEach(function (key) {
+      var itemValue = key.toLocaleLowerCase();
+      var amount = pokemon.resistances[key];
+      var emojiId = getEmoji('type' + itemValue);
+      //console.log(emojiId);
+      resistanceValue += '<:type' + itemValue + ':' + emojiId + '> (' + amount + ')';
     });
     Object.keys(pokemon.chargeMoves).forEach(function (key) {
       chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": " + pokemon.chargeMoves[key].power;
@@ -95,8 +103,8 @@ display(prefix, message){
           "value": typeValue,
           "inline": true
         }, {
-          "name": "Weakness(es)",
-          "value": weaknessValue,
+          "name": "Weakness(es)\nResistance",
+          "value": weaknessValue+"\n"+resistanceValue,
           "inline": true
         }, {
           "name": "Stats",
