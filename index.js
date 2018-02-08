@@ -196,10 +196,7 @@ client.on("message", (message) => {
 	
 	if(message.member.roles.find('name', 'cool')!==null)
 	{
-		message.react('🔥');
-		message.react('😎');
-		let fire = client.emojis.find("name", "typefire");
-		message.react(fire);
+		message.react('🔥').then(function (emoji){message.react('😎').then(function (emoji){let fire = client.emojis.find("name", "typefire");message.react(fire);});});
 	}
 	
 	
