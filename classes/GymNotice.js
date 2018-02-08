@@ -149,7 +149,7 @@ module.exports = class GymNotice
                           message.react('3⃣').then(function (emoji){
                             if(arr.length > 3)
                               message.react('4⃣').then(function(emoji){
-                                if(arr.length>4).then(function (emoji){
+                                if(arr.length>4)
                                   message.react('5⃣').then(function (emoji){
                                     if(arr.length>5)
                                       message.react('6⃣').then(function (emoji){
