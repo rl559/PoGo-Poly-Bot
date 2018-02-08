@@ -175,6 +175,11 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, GymNotice triggered");
 	}
 	
+	if(message.member.roles.find('name', 'frogman')!==null)
+	{
+		message.react('🐸');
+	}
+	
 	if (message.author.bot) return;
 	
 	if( message.isMentioned(message.guild.members.get(process.env.client_id)) ){
