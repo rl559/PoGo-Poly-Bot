@@ -163,6 +163,13 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, deleted simple poll error");
 	}
 	
+	if(message.author.username === 'Simple Poll')
+	{
+		raidChannel = message.guild.channels.find('name', 'raids');
+		//var msg2 = raidChannel.send("React here if you aren't/can't go:").then(function (message){message.react('😢');});
+		console.log(message);
+	}
+	
 	if( (message.author.username == 'GymHuntrBot' || message.author.username == 'PoGoPolyBot') && (message.embeds.length > 0 && message.embeds[0].url && ghbLevelPattern.test(message.embeds[0].title)) ){
 		GymNoticeObj.display(message, GMapsObj);
 		console.log(Date.now()+" current timestamp, GymNotice triggered");
