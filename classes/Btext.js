@@ -3,7 +3,7 @@ module.exports = class GymNotice
   process(message, prefix)
   {
     var mapping = {};
-    mapping.a = " :regional_indicator_a: ";
+    /*mapping.a = " :regional_indicator_a: ";
     mapping.b = " :regional_indicator_b: ";
     mapping.c = " :regional_indicator_c: ";
     mapping.d = " :regional_indicator_d: ";
@@ -28,7 +28,35 @@ module.exports = class GymNotice
     mapping.w = " :regional_indicator_w: ";
     mapping.x = " :regional_indicator_x: ";
     mapping.y = " :regional_indicator_y: ";
-    mapping.z = " :regional_indicator_z: ";
+    mapping.z = " :regional_indicator_z: ";*/
+    
+    mapping.a = " 🇦 ";
+    mapping.b = " 🇧 ";
+    mapping.c = " 🇨 ";
+    mapping.d = " 🇩 ";
+    mapping.e = " 🇪 ";
+    mapping.f = " 🇫 ";
+    mapping.g = " 🇬 ";
+    mapping.h = " 🇭 ";
+    mapping.i = " 🇮 ";
+    mapping.j = " 🇯 ";
+    mapping.k = " 🇰 ";
+    mapping.l = " 🇱 ";
+    mapping.m = " 🇲 ";
+    mapping.n = " 🇳 ";
+    mapping.o = " 🇴 ";
+    mapping.p = " 🇵 ";
+    mapping.q = " 🇶 ";
+    mapping.r = " 🇷 ";
+    mapping.s = " 🇸 ";
+    mapping.t = " 🇹 ";
+    mapping.u = " 🇺 ";
+    mapping.v = " 🇻 ";
+    mapping.w = " 🇼 ";
+    mapping.x = " 🇽 ";
+    mapping.y = " 🇾 ";
+    mapping.z = " 🇿 ";
+    
     
     var msgText = message.content.replace(".b ", "").toLowerCase();
     
@@ -40,9 +68,11 @@ module.exports = class GymNotice
       if (mappingVal)
         newMsg = newMsg + mappingVal;
       else if (msgText[i] === "?")
-        newMsg = newMsg + " :question: ";
+        //newMsg = newMsg + " :question: ";
+        newMsg = newMsg + " ❓ ";
       else if (msgText[i] === "!")
-        newMsg = newMsg + " :exclamation: ";
+        //newMsg = newMsg + " :exclamation: ";
+        newMsg = newMsg + " ❗ ";
       else if (msgText[i] === " ")
         newMsg = newMsg + "    ";
       else
