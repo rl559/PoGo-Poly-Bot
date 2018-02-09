@@ -30,7 +30,7 @@ module.exports = class GymNotice
     mapping.y = " :regional_indicator_y: ";
     mapping.z = " :regional_indicator_z: ";
     
-    var msgText = message.content.replace(".b ", "");
+    var msgText = message.content.replace(".b ", "").toLowerCase();
     
     var newMsg = '';
     
