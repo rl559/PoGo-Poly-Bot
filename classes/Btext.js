@@ -62,6 +62,7 @@ module.exports = class GymNotice
     
     var newMsg = '';
     
+
     for(var i=0; i<msgText.length; i++)
     {
       var mappingVal = mapping[msgText.charAt(i)];
@@ -78,6 +79,9 @@ module.exports = class GymNotice
       else
         newMsg = newMsg + msgText[i];
     }
+    if(newMsg.length < 2000)
     message.channel.send(`${message.author} said: ${newMsg}`).then(function (result){message.delete();});
+    else
+    message.channel.send(`${message.author} please try something shorter`).then(function (result){message.delete();});
   }
 }
