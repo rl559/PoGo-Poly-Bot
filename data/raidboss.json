@@ -352,5 +352,11 @@
 		"image": "https://www.serebii.net/pokemongo/pokemon/382.png",
 		"cp": "37726",
 		"active": true
+	},
+	"rayquaza": {
+		"level": "Level 5",
+		"image": "https://www.serebii.net/pokemongo/pokemon/384.png",
+		"cp": "45468",
+		"active": true
 	}
 }
