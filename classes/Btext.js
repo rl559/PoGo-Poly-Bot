@@ -48,7 +48,6 @@ module.exports = class GymNotice
       else
         newMsg = newMsg + msgText[i];
     }
-    message.channel.send(`${message.author} said: ${newMsg}`);
-    console.log(newMsg);
+    message.channel.send(`${message.author} said: ${newMsg}`).then(function (result){message.delete();});
   }
 }
