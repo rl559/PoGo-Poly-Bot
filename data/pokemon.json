@@ -1,7 +1,6 @@
 {
 	"bulbasaur": {
 		"id": 1,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Bulbasaur",
@@ -55,7 +54,6 @@
 	},
 	"ivysaur": {
 		"id": 2,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Ivysaur",
@@ -111,7 +109,6 @@
 	},
 	"venusaur": {
 		"id": 3,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Venusaur",
@@ -165,7 +162,6 @@
 	},
 	"charmander": {
 		"id": 4,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Charmander",
@@ -220,7 +216,6 @@
 	},
 	"charmeleon": {
 		"id": 5,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Charmeleon",
@@ -275,7 +270,6 @@
 	},
 	"charizard": {
 		"id": 6,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Charizard",
@@ -330,7 +324,6 @@
 	},
 	"squirtle": {
 		"id": 7,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Squirtle",
@@ -382,7 +375,6 @@
 	},
 	"wartortle": {
 		"id": 8,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Wartortle",
@@ -435,7 +427,6 @@
 	},
 	"blastoise": {
 		"id": 9,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Blastoise",
@@ -486,7 +477,6 @@
 	},
 	"caterpie": {
 		"id": 10,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Caterpie",
@@ -530,7 +520,6 @@
 	},
 	"metapod": {
 		"id": 11,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Metapod",
@@ -575,7 +564,6 @@
 	},
 	"butterfree": {
 		"id": 12,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Butterfree",
@@ -629,7 +617,6 @@
 	},
 	"weedle": {
 		"id": 13,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Weedle",
@@ -676,7 +663,6 @@
 	},
 	"kakuna": {
 		"id": 14,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Kakuna",
@@ -724,7 +710,6 @@
 	},
 	"beedrill": {
 		"id": 15,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Beedrill",
@@ -778,7 +763,6 @@
 	},
 	"pidgey": {
 		"id": 16,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Pidgey",
@@ -831,7 +815,6 @@
 	},
 	"pidgeotto": {
 		"id": 17,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Pidgeotto",
@@ -885,7 +868,6 @@
 	},
 	"pidgeot": {
 		"id": 18,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Pidgeot",
@@ -937,7 +919,6 @@
 	},
 	"rattata": {
 		"id": 19,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Rattata",
@@ -985,7 +966,6 @@
 	},
 	"raticate": {
 		"id": 20,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Raticate",
@@ -1032,7 +1012,6 @@
 	},
 	"spearow": {
 		"id": 21,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Spearow",
@@ -1085,7 +1064,6 @@
 	},
 	"fearow": {
 		"id": 22,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Fearow",
@@ -1137,7 +1115,6 @@
 	},
 	"ekans": {
 		"id": 23,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Ekans",
@@ -1190,7 +1167,6 @@
 	},
 	"arbok": {
 		"id": 24,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Arbok",
@@ -1242,7 +1218,6 @@
 	},
 	"pikachu": {
 		"id": 25,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Pikachu",
@@ -1297,7 +1272,6 @@
 	},
 	"raichu": {
 		"id": 26,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Raichu",
@@ -1346,7 +1320,6 @@
 	},
 	"sandshrew": {
 		"id": 27,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Sandshrew",
@@ -1398,7 +1371,6 @@
 	},
 	"sandslash": {
 		"id": 28,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sandslash",
@@ -1449,7 +1421,6 @@
 	},
 	"nidoran-f": {
 		"id": 29,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Nidoran F",
@@ -1502,7 +1473,6 @@
 	},
 	"nidorina": {
 		"id": 30,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Nidorina",
@@ -1556,7 +1526,6 @@
 	},
 	"nidoqueen": {
 		"id": 31,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Nidoqueen",
@@ -1611,7 +1580,6 @@
 	},
 	"nidoran-m": {
 		"id": 32,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Nidoran M",
@@ -1664,7 +1632,6 @@
 	},
 	"nidorino": {
 		"id": 33,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Nidorino",
@@ -1718,7 +1685,6 @@
 	},
 	"nidoking": {
 		"id": 34,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Nidoking",
@@ -1773,7 +1739,6 @@
 	},
 	"clefairy": {
 		"id": 35,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Clefairy",
@@ -1826,7 +1791,6 @@
 	},
 	"clefable": {
 		"id": 36,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Clefable",
@@ -1877,7 +1841,6 @@
 	},
 	"vulpix": {
 		"id": 37,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Vulpix",
@@ -1932,7 +1895,6 @@
 	},
 	"ninetales": {
 		"id": 38,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Ninetales",
@@ -1986,7 +1948,6 @@
 	},
 	"jigglypuff": {
 		"id": 39,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Jigglypuff",
@@ -2039,7 +2000,6 @@
 	},
 	"wigglytuff": {
 		"id": 40,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Wigglytuff",
@@ -2090,7 +2050,6 @@
 	},
 	"zubat": {
 		"id": 41,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Zubat",
@@ -2146,7 +2105,6 @@
 	},
 	"golbat": {
 		"id": 42,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 100,
 		"name": "Golbat",
@@ -2202,7 +2160,6 @@
 	},
 	"oddish": {
 		"id": 43,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Oddish",
@@ -2257,7 +2214,6 @@
 	},
 	"gloom": {
 		"id": 44,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Gloom",
@@ -2313,7 +2269,6 @@
 	},
 	"vileplume": {
 		"id": 45,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Vileplume",
@@ -2367,7 +2322,6 @@
 	},
 	"paras": {
 		"id": 46,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Paras",
@@ -2424,7 +2378,6 @@
 	},
 	"parasect": {
 		"id": 47,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Parasect",
@@ -2480,7 +2433,6 @@
 	},
 	"venonat": {
 		"id": 48,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Venonat",
@@ -2535,7 +2487,6 @@
 	},
 	"venomoth": {
 		"id": 49,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Venomoth",
@@ -2589,7 +2540,6 @@
 	},
 	"diglett": {
 		"id": 50,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Diglett",
@@ -2641,7 +2591,6 @@
 	},
 	"dugtrio": {
 		"id": 51,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Dugtrio",
@@ -2692,7 +2641,6 @@
 	},
 	"meowth": {
 		"id": 52,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Meowth",
@@ -2740,7 +2688,6 @@
 	},
 	"persian": {
 		"id": 53,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Persian",
@@ -2787,7 +2734,6 @@
 	},
 	"psyduck": {
 		"id": 54,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Psyduck",
@@ -2839,7 +2785,6 @@
 	},
 	"golduck": {
 		"id": 55,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Golduck",
@@ -2890,7 +2835,6 @@
 	},
 	"mankey": {
 		"id": 56,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Mankey",
@@ -2942,7 +2886,6 @@
 	},
 	"primeape": {
 		"id": 57,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Primeape",
@@ -2993,7 +2936,6 @@
 	},
 	"growlithe": {
 		"id": 58,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Growlithe",
@@ -3048,7 +2990,6 @@
 	},
 	"arcanine": {
 		"id": 59,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Arcanine",
@@ -3102,7 +3043,6 @@
 	},
 	"poliwag": {
 		"id": 60,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Poliwag",
@@ -3154,7 +3094,6 @@
 	},
 	"poliwhirl": {
 		"id": 61,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Poliwhirl",
@@ -3207,7 +3146,6 @@
 	},
 	"poliwrath": {
 		"id": 62,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Poliwrath",
@@ -3264,7 +3202,6 @@
 	},
 	"abra": {
 		"id": 63,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Abra",
@@ -3314,7 +3251,6 @@
 	},
 	"kadabra": {
 		"id": 64,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Kadabra",
@@ -3365,7 +3301,6 @@
 	},
 	"alakazam": {
 		"id": 65,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Alakazam",
@@ -3415,7 +3350,6 @@
 	},
 	"machop": {
 		"id": 66,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Machop",
@@ -3466,7 +3400,6 @@
 	},
 	"machoke": {
 		"id": 67,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Machoke",
@@ -3519,7 +3452,6 @@
 	},
 	"machamp": {
 		"id": 68,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Machamp",
@@ -3570,7 +3502,6 @@
 	},
 	"bellsprout": {
 		"id": 69,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Bellsprout",
@@ -3625,7 +3556,6 @@
 	},
 	"weepinbell": {
 		"id": 70,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Weepinbell",
@@ -3680,7 +3610,6 @@
 	},
 	"victreebel": {
 		"id": 71,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Victreebel",
@@ -3734,7 +3663,6 @@
 	},
 	"tentacool": {
 		"id": 72,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Tentacool",
@@ -3790,7 +3718,6 @@
 	},
 	"tentacruel": {
 		"id": 73,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Tentacruel",
@@ -3846,7 +3773,6 @@
 	},
 	"geodude": {
 		"id": 74,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Geodude",
@@ -3904,7 +3830,6 @@
 	},
 	"graveler": {
 		"id": 75,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 100,
 		"name": "Graveler",
@@ -3963,7 +3888,6 @@
 	},
 	"golem": {
 		"id": 76,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Golem",
@@ -4020,7 +3944,6 @@
 	},
 	"ponyta": {
 		"id": 77,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Ponyta",
@@ -4075,7 +3998,6 @@
 	},
 	"rapidash": {
 		"id": 78,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Rapidash",
@@ -4129,7 +4051,6 @@
 	},
 	"slowpoke": {
 		"id": 79,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Slowpoke",
@@ -4186,7 +4107,6 @@
 	},
 	"slowbro": {
 		"id": 80,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Slowbro",
@@ -4242,7 +4162,6 @@
 	},
 	"magnemite": {
 		"id": 81,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Magnemite",
@@ -4302,7 +4221,6 @@
 	},
 	"magneton": {
 		"id": 82,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Magneton",
@@ -4362,7 +4280,6 @@
 	},
 	"farfetchd": {
 		"id": 83,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Farfetch'd",
@@ -4413,7 +4330,6 @@
 	},
 	"doduo": {
 		"id": 84,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Doduo",
@@ -4465,7 +4381,6 @@
 	},
 	"dodrio": {
 		"id": 85,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Dodrio",
@@ -4517,7 +4432,6 @@
 	},
 	"seel": {
 		"id": 86,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Seel",
@@ -4569,7 +4483,6 @@
 	},
 	"dewgong": {
 		"id": 87,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Dewgong",
@@ -4620,7 +4533,6 @@
 	},
 	"grimer": {
 		"id": 88,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Grimer",
@@ -4672,7 +4584,6 @@
 	},
 	"muk": {
 		"id": 89,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Muk",
@@ -4724,7 +4635,6 @@
 	},
 	"shellder": {
 		"id": 90,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Shellder",
@@ -4775,7 +4685,6 @@
 	},
 	"cloyster": {
 		"id": 91,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Cloyster",
@@ -4826,7 +4735,6 @@
 	},
 	"gastly": {
 		"id": 92,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Gastly",
@@ -4881,7 +4789,6 @@
 	},
 	"haunter": {
 		"id": 93,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Haunter",
@@ -4937,7 +4844,6 @@
 	},
 	"gengar": {
 		"id": 94,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Gengar",
@@ -4992,7 +4898,6 @@
 	},
 	"onix": {
 		"id": 95,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Onix",
@@ -5049,7 +4954,6 @@
 	},
 	"drowzee": {
 		"id": 96,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Drowzee",
@@ -5100,7 +5004,6 @@
 	},
 	"hypno": {
 		"id": 97,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Hypno",
@@ -5150,7 +5053,6 @@
 	},
 	"krabby": {
 		"id": 98,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Krabby",
@@ -5201,7 +5103,6 @@
 	},
 	"kingler": {
 		"id": 99,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Kingler",
@@ -5252,7 +5153,6 @@
 	},
 	"voltorb": {
 		"id": 100,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Voltorb",
@@ -5301,7 +5201,6 @@
 	},
 	"electrode": {
 		"id": 101,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Electrode",
@@ -5350,7 +5249,6 @@
 	},
 	"exeggcute": {
 		"id": 102,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Exeggcute",
@@ -5409,7 +5307,6 @@
 	},
 	"exeggutor": {
 		"id": 103,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Exeggutor",
@@ -5467,7 +5364,6 @@
 	},
 	"cubone": {
 		"id": 104,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Cubone",
@@ -5519,7 +5415,6 @@
 	},
 	"marowak": {
 		"id": 105,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Marowak",
@@ -5570,7 +5465,6 @@
 	},
 	"hitmonlee": {
 		"id": 106,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Hitmonlee",
@@ -5621,7 +5515,6 @@
 	},
 	"hitmonchan": {
 		"id": 107,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Hitmonchan",
@@ -5676,7 +5569,6 @@
 	},
 	"lickitung": {
 		"id": 108,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Lickitung",
@@ -5722,7 +5614,6 @@
 	},
 	"koffing": {
 		"id": 109,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Koffing",
@@ -5774,7 +5665,6 @@
 	},
 	"weezing": {
 		"id": 110,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Weezing",
@@ -5826,7 +5716,6 @@
 	},
 	"rhyhorn": {
 		"id": 111,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Rhyhorn",
@@ -5883,7 +5772,6 @@
 	},
 	"rhydon": {
 		"id": 112,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Rhydon",
@@ -5940,7 +5828,6 @@
 	},
 	"chansey": {
 		"id": 113,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Chansey",
@@ -5987,7 +5874,6 @@
 	},
 	"tangela": {
 		"id": 114,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Tangela",
@@ -6040,7 +5926,6 @@
 	},
 	"kangaskhan": {
 		"id": 115,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Kangaskhan",
@@ -6086,7 +5971,6 @@
 	},
 	"horsea": {
 		"id": 116,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Horsea",
@@ -6137,7 +6021,6 @@
 	},
 	"seadra": {
 		"id": 117,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Seadra",
@@ -6189,7 +6072,6 @@
 	},
 	"goldeen": {
 		"id": 118,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Goldeen",
@@ -6241,7 +6123,6 @@
 	},
 	"seaking": {
 		"id": 119,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Seaking",
@@ -6292,7 +6173,6 @@
 	},
 	"staryu": {
 		"id": 120,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Staryu",
@@ -6343,7 +6223,6 @@
 	},
 	"starmie": {
 		"id": 121,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Starmie",
@@ -6399,7 +6278,6 @@
 	},
 	"mr-mime": {
 		"id": 122,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Mr. Mime",
@@ -6449,7 +6327,6 @@
 	},
 	"scyther": {
 		"id": 123,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Scyther",
@@ -6503,7 +6380,6 @@
 	},
 	"jynx": {
 		"id": 124,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Jynx",
@@ -6556,7 +6432,6 @@
 	},
 	"electabuzz": {
 		"id": 125,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Electabuzz",
@@ -6605,7 +6480,6 @@
 	},
 	"magmar": {
 		"id": 126,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Magmar",
@@ -6658,7 +6532,6 @@
 	},
 	"pinsir": {
 		"id": 127,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Pinsir",
@@ -6708,7 +6581,6 @@
 	},
 	"tauros": {
 		"id": 128,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Tauros",
@@ -6754,7 +6626,6 @@
 	},
 	"magikarp": {
 		"id": 129,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 400,
 		"name": "Magikarp",
@@ -6793,7 +6664,6 @@
 	},
 	"gyarados": {
 		"id": 130,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Gyarados",
@@ -6846,7 +6716,6 @@
 	},
 	"lapras": {
 		"id": 131,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Lapras",
@@ -6896,7 +6765,6 @@
 	},
 	"ditto": {
 		"id": 132,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Ditto",
@@ -6930,7 +6798,6 @@
 	},
 	"eevee": {
 		"id": 133,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Eevee",
@@ -6973,7 +6840,6 @@
 	},
 	"vaporeon": {
 		"id": 134,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Vaporeon",
@@ -7020,7 +6886,6 @@
 	},
 	"jolteon": {
 		"id": 135,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Jolteon",
@@ -7069,7 +6934,6 @@
 	},
 	"flareon": {
 		"id": 136,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Flareon",
@@ -7123,7 +6987,6 @@
 	},
 	"porygon": {
 		"id": 137,
-		"egg": 10,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Porygon",
@@ -7170,7 +7033,6 @@
 	},
 	"omanyte": {
 		"id": 138,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Omanyte",
@@ -7224,7 +7086,6 @@
 	},
 	"omastar": {
 		"id": 139,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Omastar",
@@ -7278,7 +7139,6 @@
 	},
 	"kabuto": {
 		"id": 140,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Kabuto",
@@ -7332,7 +7192,6 @@
 	},
 	"kabutops": {
 		"id": 141,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Kabutops",
@@ -7386,7 +7245,6 @@
 	},
 	"aerodactyl": {
 		"id": 142,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Aerodactyl",
@@ -7441,7 +7299,6 @@
 	},
 	"snorlax": {
 		"id": 143,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Snorlax",
@@ -7487,7 +7344,6 @@
 	},
 	"articuno": {
 		"id": 144,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Articuno",
@@ -7534,7 +7390,6 @@
 	},
 	"zapdos": {
 		"id": 145,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Zapdos",
@@ -7582,7 +7437,6 @@
 	},
 	"moltres": {
 		"id": 146,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Moltres",
@@ -7632,7 +7486,6 @@
 	},
 	"dratini": {
 		"id": 147,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Dratini",
@@ -7684,7 +7537,6 @@
 	},
 	"dragonair": {
 		"id": 148,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Dragonair",
@@ -7737,7 +7589,6 @@
 	},
 	"dragonite": {
 		"id": 149,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Dragonite",
@@ -7792,7 +7643,6 @@
 	},
 	"mewtwo": {
 		"id": 150,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Mewtwo",
@@ -7845,7 +7695,6 @@
 	},
 	"mew": {
 		"id": 151,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Mew",
@@ -7910,7 +7759,6 @@
 	},
 	"chikorita": {
 		"id": 152,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Chikorita",
@@ -7964,7 +7812,6 @@
 		},
 	"bayleef": {
 		"id": 153,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Bayleef",
@@ -8019,7 +7866,6 @@
 		},
 	"meganium": {
 		"id": 154,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Meganium",
@@ -8073,7 +7919,6 @@
 		},
 	"cyndaquil": {
 		  "id": 155,
-		  "egg": 5,
 		  "buddy": 3,
 		  "candy": 25,
 		  "name": "Cyndaquil",
@@ -8127,7 +7972,6 @@
 		},
 	"quilava": {
 		  "id": 155,
-		  "egg": 0,
 		  "buddy": 3,
 		  "candy": 100,
 		  "name": "Quilava",
@@ -8182,7 +8026,6 @@
 		},
 	"typhlosion": {
 		  "id": 157,
-		  "egg": 0,
 		  "buddy": 3,
 		  "candy": 0,
 		  "name": "Typhlosion",
@@ -8236,7 +8079,6 @@
 		},
 	"totodile": {
 		  "id": 158,
-		  "egg": 5,
 		  "buddy": 3,
 		  "candy": 25,
 		  "name": "Totodile",
@@ -8287,7 +8129,6 @@
 		},
 	"croconaw": {
 		  "id": 159,
-		  "egg": 0,
 		  "buddy": 3,
 		  "candy": 100,
 		  "name": "Croconaw",
@@ -8339,7 +8180,6 @@
 		},
 	"feraligatr": {
 		  "id": 160,
-		  "egg": 0,
 		  "buddy": 3,
 		  "candy": 0,
 		  "name": "Feraligator",
@@ -8390,7 +8230,6 @@
 		},
 	"sentret": {
 		  "id": 161,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 25,
 		  "name": "Sentret",
@@ -8437,7 +8276,6 @@
 	},
 	"furret": {
 		  "id": 162,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 0,
 		  "name": "Sentret",
@@ -8484,7 +8322,6 @@
 	},
 	"hoothoot": {
 		  "id": 163,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 50,
 		  "name": "Hoothoot",
@@ -8536,7 +8373,6 @@
 	},
 	"noctowl": {
 		  "id": 164,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 0,
 		  "name": "Noctowl",
@@ -8588,7 +8424,6 @@
 	},
 	"ledyba": {
 		  "id": 165,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 50,
 		  "name": "Ledyba",
@@ -8642,7 +8477,6 @@
 	},
 	"ledian": {
 		  "id": 166,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 0,
 		  "name": "Ledian",
@@ -8696,7 +8530,6 @@
 	},
 	"spinarak": {
 		  "id": 167,
-		  "egg": 2,
 		  "buddy": 1,
 		  "candy": 50,
 		  "name": "Spinarak",
@@ -8750,7 +8583,6 @@
 	},
 	"ariados": {
 		  "id": 168,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 0,
 		  "name": "Ariados",
@@ -8804,7 +8636,6 @@
 	},
 	"crobat": {
 		  "id": 169,
-		  "egg": 0,
 		  "buddy": 1,
 		  "candy": 0,
 		  "name": "Crobat",
@@ -8859,7 +8690,6 @@
 	},
 	"chinchou": {
 		  "id": 170,
-		  "egg": 5,
 		  "buddy": 3,
 		  "candy": 50,
 		  "name": "Chinchou",
@@ -8911,7 +8741,6 @@
 	},
 	"lanturn": {
 		  "id": 171,
-		  "egg": 0,
 		  "buddy": 3,
 		  "candy": 0,
 		  "name": "Lanturn",
@@ -8963,7 +8792,6 @@
 	},
 	"pichu": {
 		"id": 172,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Pichu",
@@ -9008,7 +8836,6 @@
 	},
 	"cleffa": {
 		"id": 173,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Cleffa",
@@ -9059,7 +8886,6 @@
 	},
 	"igglybuff": {
 		"id": 174,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Igglybuff",
@@ -9110,7 +8936,6 @@
 	},
 	"togepi": {
 		"id": 175,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Togepi",
@@ -9161,7 +8986,6 @@
 	},
 	"togetic": {
 		"id": 176,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Togetic",
@@ -9217,7 +9041,6 @@
 	},
 	"natu": {
 		"id": 177,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Natu",
@@ -9271,7 +9094,6 @@
 	},
 	"xatu": {
 		"id": 178,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Natu",
@@ -9325,7 +9147,6 @@
 	},
 	"mareep": {
 		"id": 179,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Mareep",
@@ -9374,7 +9195,6 @@
 	},
 	"flaaffy": {
 		"id": 180,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Flaaffy",
@@ -9424,7 +9244,6 @@
 	},
 	"ampharos": {
 		"id": 181,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Ampharos",
@@ -9473,7 +9292,6 @@
 	},
 	"bellossom": {
 		"id": 182,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Bellossom",
@@ -9527,7 +9345,6 @@
 	},
 	"marill": {
 		"id": 183,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Marill",
@@ -9583,7 +9400,6 @@
 	},
 	"azumarill": {
 		"id": 184,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Azumarill",
@@ -9638,7 +9454,6 @@
 	},
 	"sudowoodo": {
 		"id": 185,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Sudowoodo",
@@ -9691,7 +9506,6 @@
 	},
 	"politoed": {
 		"id": 186,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Politoed",
@@ -9742,7 +9556,6 @@
 	},
 	"hoppip": {
 		"id": 187,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Hoppip",
@@ -9796,7 +9609,6 @@
 	},
 	"skiploom": {
 		"id": 188,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Skiploom",
@@ -9851,7 +9663,6 @@
 	},
 	"jumpluff": {
 		"id": 189,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Jumpluff",
@@ -9905,7 +9716,6 @@
 	},
 	"aipom": {
 		"id": 190,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Aipom",
@@ -9951,7 +9761,6 @@
 	},
 	"sunkern": {
 		"id": 191,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Sunkern",
@@ -10005,7 +9814,6 @@
 	},
 	"sunflora": {
 		"id": 192,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sunflora",
@@ -10059,7 +9867,6 @@
 	},
 	"yanma": {
 		"id": 193,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Yanma",
@@ -10112,7 +9919,6 @@
 	},
 	"wooper": {
 		"id": 194,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Wooper",
@@ -10163,7 +9969,6 @@
 	},
 	"quagsire": {
 		"id": 195,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Quagsire",
@@ -10214,7 +10019,6 @@
 	},
 	"espeon": {
 		"id": 196,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Espeon",
@@ -10264,7 +10068,6 @@
 	},
 	"umbreon": {
 		"id": 197,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Umbreon",
@@ -10311,7 +10114,6 @@
 	},
 	"murkrow": {
 		"id": 198,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Murkrow",
@@ -10364,7 +10166,6 @@
 	},
 	"slowking": {
 		"id": 199,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Slowking",
@@ -10420,7 +10221,6 @@
 	},
 	"misdreavus": {
 		"id": 200,
-		"egg": 2,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Misdreavus",
@@ -10470,7 +10270,6 @@
 	},
 	"unown": {
 		"id": 201,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Unown",
@@ -10507,7 +10306,6 @@
 	},
 	"wobbuffet": {
 		"id": 202,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Wobbuffet",
@@ -10548,7 +10346,6 @@
 	},
 	"girafarig": {
 		"id": 203,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Girafarig",
@@ -10596,7 +10393,6 @@
 	},
 	"pineco": {
 		"id": 204,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Pineco",
@@ -10647,7 +10443,6 @@
 	},
 	"forretress": {
 		"id": 205,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Forretress",
@@ -10702,7 +10497,6 @@
 	},
 	"dunsparce": {
 		"id": 206,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Dunsparce",
@@ -10748,7 +10542,6 @@
 	},
 	"gligar": {
 		"id": 207,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Gligar",
@@ -10799,7 +10592,6 @@
 	},
 	"steelix": {
 		"id": 208,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Steelix",
@@ -10858,7 +10650,6 @@
 	},
 	"snubbull": {
 		"id": 209,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Snubbull",
@@ -10909,7 +10700,6 @@
 	},
 	"granbull": {
 		"id": 210,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Granbull",
@@ -10960,7 +10750,6 @@
 	},
 	"qwilfish": {
 		"id": 211,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Qwilfish",
@@ -11015,7 +10804,6 @@
 	},
 	"scizor": {
 		"id": 212,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Scizor",
@@ -11070,7 +10858,6 @@
 	},
 	"shuckle": {
 		"id": 213,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Shuckle",
@@ -11119,7 +10906,6 @@
 	},
 	"heracross": {
 		"id": 214,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Heracross",
@@ -11172,7 +10958,6 @@
 	},
 	"sneasel": {
 		"id": 215,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sneasel",
@@ -11226,7 +11011,6 @@
 	},
 	"teddiursa": {
 		"id": 216,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Teddiursa",
@@ -11273,7 +11057,6 @@
 	},
 	"ursaring": {
 		"id": 217,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Ursaring",
@@ -11320,7 +11103,6 @@
 	},
 	"slugma": {
 		"id": 218,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Slugma",
@@ -11374,7 +11156,6 @@
 	},
 	"magcargo": {
 		"id": 219,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Magcargo",
@@ -11430,7 +11211,6 @@
 	},
 	"swinub": {
 		"id": 220,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Swinub",
@@ -11481,7 +11261,6 @@
 	},
 	"piloswine": {
 		"id": 221,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Piloswine",
@@ -11532,7 +11311,6 @@
 	},
 	"corsola": {
 		"id": 222,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Corsola",
@@ -11585,7 +11363,6 @@
 	},
 	"remoraid": {
 		"id": 223,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Remoraid",
@@ -11636,7 +11413,6 @@
 	},
 	"octillery": {
 		"id": 224,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Octillery",
@@ -11687,7 +11463,6 @@
 	},
 	"delibird": {
 		"id": 225,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Delibird",
@@ -11734,7 +11509,6 @@
 	},
 	"mantine": {
 		"id": 226,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Mantine",
@@ -11786,7 +11560,6 @@
 	},
 	"skarmory": {
 		"id": 227,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Skarmory",
@@ -11842,7 +11615,6 @@
 	},
 	"houndour": {
 		"id": 228,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Houndour",
@@ -11898,7 +11670,6 @@
 	},
 	"houndoom": {
 		"id": 229,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Houndoom",
@@ -11954,7 +11725,6 @@
 	},
 	"kingdra": {
 		"id": 230,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Kingdra",
@@ -12004,7 +11774,6 @@
 	},
 	"phanphy": {
 		"id": 231,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Phanphy",
@@ -12055,7 +11824,6 @@
 	},
 	"donphan": {
 		"id": 232,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Donphan",
@@ -12106,7 +11874,6 @@
 	},
 	"porygon2": {
 		"id": 233,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Porygon2",
@@ -12153,7 +11920,6 @@
 	},
 	"stantler": {
 		"id": 234,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Stantler",
@@ -12199,7 +11965,6 @@
 	},
 	"smeargle": {
 		"id": 235,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Smeargle",
@@ -12233,7 +11998,6 @@
 	},
 	"tyrogue": {
 		"id": 236,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Tyrogue",
@@ -12284,7 +12048,6 @@
 	},
 	"hitmontop": {
 		"id": 237,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Hitmontop",
@@ -12335,7 +12098,6 @@
 	},
 	"smoochum": {
 		"id": 238,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Smoochum",
@@ -12388,7 +12150,6 @@
 	},
 	"elekid": {
 		"id": 239,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Elekid",
@@ -12437,7 +12198,6 @@
 	},
 	"magby": {
 		"id": 240,
-		"egg": 5,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Magby",
@@ -12491,7 +12251,6 @@
 	},
 	"miltank": {
 		"id": 241,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Miltank",
@@ -12537,7 +12296,6 @@
 	},
 	"blissey": {
 		"id": 242,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Blissey",
@@ -12584,7 +12342,6 @@
 	},
 	"raikou": {
 		"id": 243,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Raikou",
@@ -12632,7 +12389,6 @@
 	},
 	"entei": {
 		"id": 244,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Entei",
@@ -12685,7 +12441,6 @@
 	},
 	"suicune": {
 		"id": 245,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Suicune",
@@ -12735,7 +12490,6 @@
 	},
 	"larvitar": {
 		"id": 246,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Larvitar",
@@ -12792,7 +12546,6 @@
 	},
 	"pupitar": {
 		"id": 247,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Pupitar",
@@ -12850,7 +12603,6 @@
 	},
 	"tyranitar": {
 		"id": 248,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Tyranitar",
@@ -12909,7 +12661,6 @@
 	},
 	"lugia": {
 		"id": 249,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Lugia",
@@ -12962,7 +12713,6 @@
 	},
 	"ho-oh": {
 		"id": 250,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Ho-oh",
@@ -13016,7 +12766,6 @@
 	},
 	"celebi": {
 		"id": 251,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Celebi",
@@ -13073,7 +12822,6 @@
 	},
 	"treecko": {
 		"id": 252,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Treecko",
@@ -13127,7 +12875,6 @@
 	},
 	"grovyle": {
 		"id": 253,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Grovyle",
@@ -13182,7 +12929,6 @@
 	},
 	"sceptile": {
 		"id": 254,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sceptile",
@@ -13237,7 +12983,6 @@
 	},
 	"torchic": {
 		"id": 255,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Torchic",
@@ -13291,7 +13036,6 @@
 	},
 	"combusken": {
 		"id": 255,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Combusken",
@@ -13347,7 +13091,6 @@
 	},
 	"blaziken": {
 		"id": 257,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Blaziken",
@@ -13403,7 +13146,6 @@
 	},
 	"mudkip": {
 		"id": 258,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Mudkip",
@@ -13455,7 +13197,6 @@
 	},
 	"marshtomp": {
 		"id": 259,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Marshtomp",
@@ -13507,7 +13248,6 @@
 	},
 	"swampert": {
 		"id": 260,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Swampert",
@@ -13559,7 +13299,6 @@
 	},
 	"poochyena": {
 		"id": 261,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Poochyena",
@@ -13611,7 +13350,6 @@
 	},
 	"mightyena": {
 		"id": 262,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Mightyena",
@@ -13663,7 +13401,6 @@
 	},
 	"zigzagoon": {
 		"id": 263,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Zigzagoon",
@@ -13711,7 +13448,6 @@
 	},
 	"linoone": {
 		"id": 264,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Linoone",
@@ -13759,7 +13495,6 @@
 	},
 	"wurmple": {
 		"id": 265,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Wurmple",
@@ -13803,7 +13538,6 @@
 	},
 	"silcoon": {
 		"id": 266,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Silcoon",
@@ -13847,7 +13581,6 @@
 	},
 	"beautifly": {
 		"id": 267,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Beautifly",
@@ -13902,7 +13635,6 @@
 	},
 	"cascoon": {
 		"id": 268,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Cascoon",
@@ -13946,7 +13678,6 @@
 	},
 	"dustox": {
 		"id": 269,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Dustox",
@@ -14001,7 +13732,6 @@
 	},
 	"lotad": {
 		"id": 270,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Lotad",
@@ -14049,7 +13779,6 @@
 	},
 	"lombre": {
 		"id": 271,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Lombre",
@@ -14101,7 +13830,6 @@
 	},
 	"ludicolo": {
 		"id": 272,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Ludicolo",
@@ -14153,7 +13881,6 @@
 	},
 	"seedot": {
 		"id": 273,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Seedot",
@@ -14208,7 +13935,6 @@
 	},
 	"nuzleaf": {
 		"id": 274,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Nuzleaf",
@@ -14268,7 +13994,6 @@
 	},
 	"shiftry": {
 		"id": 275,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Nuzleaf",
@@ -14328,7 +14053,6 @@
 	},
 	"taillow": {
 		"id": 276,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Taillow",
@@ -14373,7 +14097,6 @@
 	},
 	"swellow": {
 		"id": 277,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Swellow",
@@ -14426,7 +14149,6 @@
 	},
 	"wingull": {
 		"id": 278,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Wingull",
@@ -14480,7 +14202,6 @@
 	},
 	"pelipper": {
 		"id": 279,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Pelipper",
@@ -14534,7 +14255,6 @@
 	},
 	"ralts": {
 		"id": 280,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Ralts",
@@ -14586,7 +14306,6 @@
 	},
 	"kirlia": {
 		"id": 281,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Kirlia",
@@ -14638,7 +14357,6 @@
 	},
 	"gardevoir": {
 		"id": 282,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Gardevoir",
@@ -14690,7 +14408,6 @@
 	},
 	"surskit": {
 		"id": 283,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Surskit",
@@ -14744,7 +14461,6 @@
 	},
 	"masquerain": {
 		"id": 284,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Masquerain",
@@ -14798,7 +14514,6 @@
 	},
 	"shroomish": {
 		"id": 285,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Shroomish",
@@ -14853,7 +14568,6 @@
 	},
 	"breloom": {
 		"id": 286,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Breloom",
@@ -14911,7 +14625,6 @@
 	},
 	"slakoth": {
 		"id": 287,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Slakoth",
@@ -14955,7 +14668,6 @@
 	},
 	"vigoroth": {
 		"id": 288,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Vigoroth",
@@ -15003,7 +14715,6 @@
 	},
 	"slaking": {
 		"id": 289,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Slaking",
@@ -15047,7 +14758,6 @@
 	},
 	"nincada": {
 		"id": 290,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 50,
 		"name": "Nincada",
@@ -15101,7 +14811,6 @@
 	},
 	"ninjask": {
 		"id": 291,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Ninjask",
@@ -15156,7 +14865,6 @@
 	},
 	"shedinja": {
 		"id": 292,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Shedinja",
@@ -15213,7 +14921,6 @@
 	},
 	"whismur": {
 		"id": 293,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 12,
 		"name": "Whismur",
@@ -15261,7 +14968,6 @@
 	},
 	"loudred": {
 		"id": 294,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Loudred",
@@ -15305,7 +15011,6 @@
 	},
 	"exploud": {
 		"id": 295,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Exploud",
@@ -15353,7 +15058,6 @@
 	},
 	"makuhita": {
 		"id": 296,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Makuhita",
@@ -15405,7 +15109,6 @@
 	},
 	"hariyama": {
 		"id": 297,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Hariyama",
@@ -15457,7 +15160,6 @@
 	},
 	"azurill": {
 		"id": 298,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Azurill",
@@ -15509,7 +15211,6 @@
 	},
 	"nosepass": {
 		"id": 299,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Nosepass",
@@ -15564,7 +15265,6 @@
 	},
 	"skitty": {
 		"id": 300,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Skitty",
@@ -15612,7 +15312,6 @@
 	},
 	"delcatty": {
 		"id": 301,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Delcatty",
@@ -15660,7 +15359,6 @@
 	},
 	"sableye": {
 		"id": 302,
-		"egg": 10,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Sableye",
@@ -15711,7 +15409,6 @@
 	},
 	"mawile": {
 		"id": 303,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Mawile",
@@ -15770,7 +15467,6 @@
 	},
 	"aron": {
 		"id": 304,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 25,
 		"name": "Aron",
@@ -15827,7 +15523,6 @@
 	},
 	"lairon": {
 		"id": 305,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 100,
 		"name": "Lairon",
@@ -15884,7 +15579,6 @@
 	},
 	"aggron": {
 		"id": 306,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Aggron",
@@ -15941,7 +15635,6 @@
 	},
 	"meditite": {
 		"id": 307,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Meditite",
@@ -15991,7 +15684,6 @@
 	},
 	"medicham": {
 		"id": 308,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Medicham",
@@ -16041,7 +15733,6 @@
 	},
 	"electrike": {
 		"id": 309,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Electrike",
@@ -16091,7 +15782,6 @@
 	},
 	"manectric": {
 		"id": 310,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Manectric",
@@ -16141,7 +15831,6 @@
 	},
 	"plusle": {
 		"id": 311,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Plusle",
@@ -16191,7 +15880,6 @@
 	},
 	"minun": {
 		"id": 312,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Minun",
@@ -16241,7 +15929,6 @@
 	},
 	"volbeat": {
 		"id": 313,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Volbeat",
@@ -16293,7 +15980,6 @@
 	},
 	"illumise": {
 		"id": 314,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Illumise",
@@ -16345,7 +16031,6 @@
 	},
 	"roselia": {
 		"id": 315,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Roselia",
@@ -16400,7 +16085,6 @@
 	},
 	"gulpin": {
 		"id": 316,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Gulpin",
@@ -16453,7 +16137,6 @@
 	},
 	"swalot": {
 		"id": 317,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Swalot",
@@ -16506,7 +16189,6 @@
 	},
 	"carvanha": {
 		"id": 318,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Carvanha",
@@ -16564,7 +16246,6 @@
 	},
 	"sharpedo": {
 		"id": 319,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sharpedo",
@@ -16622,7 +16303,6 @@
 	},
 	"wailmer": {
 		"id": 320,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 400,
 		"name": "Wailmer",
@@ -16674,7 +16354,6 @@
 	},
 	"wailord": {
 		"id": 321,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Wailord",
@@ -16726,7 +16405,6 @@
 	},
 	"numel": {
 		"id": 322,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Numel",
@@ -16780,7 +16458,6 @@
 	},
 	"camerupt": {
 		"id": 323,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Camerupt",
@@ -16834,7 +16511,6 @@
 	},
 	"torkoal": {
 		"id": 324,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Torkoal",
@@ -16888,7 +16564,6 @@
 	},
 	"spoink": {
 		"id": 325,
-		"egg": 2,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Spoink",
@@ -16939,7 +16614,6 @@
 	},
 	"grumpig": {
 		"id": 326,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Grumpig",
@@ -16990,7 +16664,6 @@
 	},
 	"spinda": {
 		"id": 327,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Spinda",
@@ -17038,7 +16711,6 @@
 	},
 	"trapinch": {
 		"id": 328,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Trapinch",
@@ -17090,7 +16762,6 @@
 	},
 	"vibrava": {
 		"id": 329,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Vibrava",
@@ -17143,7 +16814,6 @@
 	},
 	"flygon": {
 		"id": 330,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Flygon",
@@ -17196,7 +16866,6 @@
 	},
 	"cacnea": {
 		"id": 331,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Cacnea",
@@ -17251,7 +16920,6 @@
 	},
 	"cacturne": {
 		"id": 332,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Cacturne",
@@ -17311,7 +16979,6 @@
 	},
 	"swablu": {
 		"id": 333,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Swablu",
@@ -17364,7 +17031,6 @@
 	},
 	"altaria": {
 		"id": 334,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Altaria",
@@ -17420,7 +17086,6 @@
 	},
 	"zangoose": {
 		"id": 335,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Zangoose",
@@ -17468,7 +17133,6 @@
 	},
 	"seviper": {
 		"id": 336,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Seviper",
@@ -17521,7 +17185,6 @@
 	},
 	"lunatone": {
 		"id": 337,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Lunatone",
@@ -17579,7 +17242,6 @@
 	},
 	"solrock": {
 		"id": 338,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Solrock",
@@ -17637,7 +17299,6 @@
 	},
 	"barboach": {
 		"id": 339,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 50,
 		"name": "Barboach",
@@ -17689,7 +17350,6 @@
 	},
 	"whiscash": {
 		"id": 340,
-		"egg": 0,
 		"buddy": 1,
 		"candy": 0,
 		"name": "Whiscash",
@@ -17741,7 +17401,6 @@
 	},
 	"corphish": {
 		"id": 341,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Corphish",
@@ -17793,7 +17452,6 @@
 	},
 	"crawdaunt": {
 		"id": 342,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Crawdaunt",
@@ -17851,7 +17509,6 @@
 	},
 	"baltoy": {
 		"id": 343,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Baltoy",
@@ -17908,7 +17565,6 @@
 	},
 	"claydol": {
 		"id": 344,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Claydol",
@@ -17965,7 +17621,6 @@
 	},
 	"lileep": {
 		"id": 345,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Lileep",
@@ -18017,7 +17672,6 @@
 	},
 	"cradily": {
 		"id": 346,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Cradily",
@@ -18069,7 +17723,6 @@
 	},
 	"anorith": {
 		"id": 347,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Anorith",
@@ -18120,7 +17773,6 @@
 	},
 	"armaldo": {
 		"id": 348,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Armaldo",
@@ -18171,7 +17823,6 @@
 	},
 	"feebas": {
 		"id": 349,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Feebas",
@@ -18215,7 +17866,6 @@
 	},
 	"milotic": {
 		"id": 350,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Milotic",
@@ -18267,7 +17917,6 @@
 	},
 	"castform": {
 		"id": 351,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Castform",
@@ -18286,27 +17935,59 @@
 			"ghost": 0.51
 		},
 		"quickMoves": {
-			"rock-smash": {
-				"power": 15,
-				"dps": 8.46
-			},
-			"bite": {
-				"power": 6,
+			"tackle": {
+				"power": 5,
 				"dps": 10.00
+			},
+			"hex": {
+				"power": 10,
+				"dps": 10.00
+			},
+			"water-gun": {
+				"power": 5,
+				"dps": 8.00
+			},
+			"powder-snow": {
+				"power": 6,
+				"dps": 5.00
+			},
+			"ember": {
+				"power": 10,
+				"dps": 7.00
 			}
 		},
 		"chargeMoves": {
-			"stomp": {
-				"power": 55,
-				"dps": 27.06
+			"hurricane": {
+				"power": 110,
+				"dps": 28.52
 			},
-			"crunch": {
-				"power": 70,
-				"dps": 15.31
+			"energy-ball": {
+				"power": 90,
+				"dps": 16.15
 			},
-			"ancient-power": {
-				"power": 70,
-				"dps": 14.00
+			"hydro-pump": {
+				"power": 130,
+				"dps": 27.58
+			},
+			"thunder": {
+				"power": 100,
+				"dps": 29.17
+			},
+			"blizzard": {
+				"power": 130,
+				"dps": 29.35
+			},
+			"ice-beam": {
+				"power": 90,
+				"dps": 19.09
+			},
+			"fire-blast": {
+				"power": 140,
+				"dps": 23.33
+			},
+			"solar-beam": {
+				"power": 180,
+				"dps": 25.71
 			}
 		},
 		"evolveTo": "",
@@ -18315,7 +17996,6 @@
 	},
 	"kecleon": {
 		"id": 352,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Kecleon",
@@ -18375,7 +18055,6 @@
 	},
 	"shuppet": {
 		"id": 353,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Shuppet",
@@ -18427,7 +18106,6 @@
 	},
 	"banette": {
 		"id": 354,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Banette",
@@ -18479,7 +18157,6 @@
 	},
 	"duskull": {
 		"id": 355,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Duskull",
@@ -18531,7 +18208,6 @@
 	},
 	"dusclops": {
 		"id": 356,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Dusclops",
@@ -18583,7 +18259,6 @@
 	},
 	"tropius": {
 		"id": 357,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Tropius",
@@ -18637,7 +18312,6 @@
 	},
 	"chimecho": {
 		"id": 358,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Chimecho",
@@ -18688,7 +18362,6 @@
 	},
 	"absol": {
 		"id": 359,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Absol",
@@ -18740,7 +18413,6 @@
 	},
 	"wynaut": {
 		"id": 360,
-		"egg": 5,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Wynaut",
@@ -18783,7 +18455,6 @@
 	},
 	"snorunt": {
 		"id": 361,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Snorunt",
@@ -18834,7 +18505,6 @@
 	},
 	"glalie": {
 		"id": 362,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Glalie",
@@ -18885,7 +18555,6 @@
 	},
 	"spheal": {
 		"id": 363,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 25,
 		"name": "Spheal",
@@ -18937,7 +18606,6 @@
 	},
 	"sealeo": {
 		"id": 364,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 100,
 		"name": "Sealeo",
@@ -18989,7 +18657,6 @@
 	},
 	"walrein": {
 		"id": 365,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Sealeo",
@@ -19041,7 +18708,6 @@
 	},
 	"clamperl": {
 		"id": 366,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 50,
 		"name": "Clamperl",
@@ -19089,7 +18755,6 @@
 	},
 	"huntail": {
 		"id": 367,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Huntail",
@@ -19141,7 +18806,6 @@
 	},
 	"gorebyss": {
 		"id": 368,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Gorebyss",
@@ -19193,7 +18857,6 @@
 	},
 	"relicanth": {
 		"id": 369,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Relicanth",
@@ -19248,7 +18911,6 @@
 	},
 	"luvdisc": {
 		"id": 370,
-		"egg": 0,
 		"buddy": 3,
 		"candy": 0,
 		"name": "Luvdisc",
@@ -19300,7 +18962,6 @@
 	},
 	"bagon": {
 		"id": 371,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Bagon",
@@ -19353,7 +19014,6 @@
 	},
 	"shelgon": {
 		"id": 372,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Shelgon",
@@ -19406,7 +19066,6 @@
 	},
 	"salamence": {
 		"id": 373,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Salamence",
@@ -19462,7 +19121,6 @@
 	},
 	"beldum": {
 		"id": 374,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 25,
 		"name": "Beldum",
@@ -19510,7 +19168,6 @@
 	},
 	"metang": {
 		"id": 375,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 100,
 		"name": "Metang",
@@ -19570,7 +19227,6 @@
 	},
 	"metagross": {
 		"id": 376,
-		"egg": 0,
 		"buddy": 5,
 		"candy": 0,
 		"name": "Metagross",
@@ -19630,7 +19286,6 @@
 	},
 	"regirock": {
 		"id": 377,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Regirock",
@@ -19685,7 +19340,6 @@
 	},
 	"regice": {
 		"id": 378,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Regice",
@@ -19736,7 +19390,6 @@
 	},
 	"registeel": {
 		"id": 379,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Registeel",
@@ -19796,7 +19449,6 @@
 	},
 	"latias": {
 		"id": 380,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Latias",
@@ -19854,7 +19506,6 @@
 	},
 	"latios": {
 		"id": 381,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Latios",
@@ -19912,7 +19563,6 @@
 	},
 	"kyogre": {
 		"id": 382,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Kyogre",
@@ -19960,7 +19610,6 @@
 	},
 	"groudon": {
 		"id": 383,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Groudon",
@@ -20012,7 +19661,6 @@
 	},
 	"rayquaza": {
 		"id": 384,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Rayquaza",
@@ -20068,7 +19716,6 @@
 	},
 	"jirachi": {
 		"id": 385,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Jirachi",
@@ -20128,7 +19775,6 @@
 	},
 	"deoxys": {
 		"id": 386,
-		"egg": 0,
 		"buddy": 20,
 		"candy": 0,
 		"name": "Deoxys",
