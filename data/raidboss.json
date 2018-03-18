@@ -29,10 +29,28 @@
 		"cp": "9403",
 		"active": true
 	},
+	"manectric":{
+		"level": "Level 2",
+		"image": "https://www.serebii.net/pokemongo/pokemon/310.png",
+		"cp": "11628",
+		"active": true
+	},
 	"sableye":{
 		"level": "Level 2",
 		"image": "https://www.serebii.net/pokemongo/pokemon/302.png",
 		"cp": "8266",
+		"active": true
+	},
+	"piloswine":{
+		"level": "Level 2",
+		"image": "https://www.serebii.net/pokemongo/pokemon/221.png",
+		"cp": "13663",
+		"active": true
+	},
+	"electabuzz":{
+		"level": "Level 2",
+		"image": "https://www.serebii.net/pokemongo/pokemon/125.png",
+		"cp": "12390",
 		"active": true
 	},
 	"exeggutor":{
@@ -41,40 +59,22 @@
 		"cp": "13839",
 		"active": true
 	},
-	"slowbro":{
-		"level": "Level 2",
-		"image": "https://www.serebii.net/pokemongo/pokemon/080.png",
-		"cp": "11776",
+	"jolteon": {
+		"level": "Level 3",
+		"image": "http://www.serebii.net/pokemongo/pokemon/135.png",
+		"cp": "19883",
 		"active": true
 	},
-	"claydol":{
+	"jynx": {
 		"level": "Level 3",
-		"image": "https://www.serebii.net/pokemongo/pokemon/344.png",
-		"cp": "13450",
+		"image": "http://www.serebii.net/pokemongo/pokemon/124.png",
+		"cp": "18296",
 		"active": true
 	},
-	"aerodactyl":{
+	"gengar": {
 		"level": "Level 3",
-		"image": "https://www.serebii.net/pokemongo/pokemon/142.png",
-		"cp": "17294",
-		"active": true
-	},
-	"scyther":{
-		"level": "Level 3",
-		"image": "https://www.serebii.net/pokemongo/pokemon/123.png",
-		"cp": "17358",
-		"active": true
-	},
-	"starmie":{
-		"level": "Level 3",
-		"image": "https://www.serebii.net/pokemongo/pokemon/121.png",
-		"cp": "17384",
-		"active": true
-	},
-	"alakazam":{
-		"level": "Level 3",
-		"image": "https://www.serebii.net/pokemongo/pokemon/065.png",
-		"cp": "22646",
+		"image": "http://www.serebii.net/pokemongo/pokemon/094.png",
+		"cp": "19768",
 		"active": true
 	},
 	"machamp": {
@@ -101,10 +101,10 @@
 		"cp": "34707",
 		"active": true
 	},
-	"charizard": {
+	"golem": {
 		"level": "Level 4",
-		"image": "http://www.serebii.net/pokemongo/pokemon/006.png",
-		"cp": "28485",
+		"image": "http://www.serebii.net/pokemongo/pokemon/076.png",
+		"cp": "30572",
 		"active": true
 	},
 	"mewtwo": {
