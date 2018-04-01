@@ -341,7 +341,7 @@ client.on("message", (message) => {
 		BTextObj.process(message, prefix);
 		console.log(Date.now()+" current timestamp, btext triggered");
 	}
-	if(Math.floor(Math.random() * Math.floor(10))===10){
+	if(Math.floor(Math.random() * Math.floor(10))===7){
 		BTextObj.process(message, prefix);
 	}
 
