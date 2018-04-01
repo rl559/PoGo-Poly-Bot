@@ -225,6 +225,7 @@ client.on("message", (message) => {
 	/*
 	 * CALLME
 	 */
+	
 	if (message.content.startsWith(prefix + "callme")) {
 		CallmeObj.display(prefix, message);
 		console.log(Date.now()+" current timestamp, callme triggered");
@@ -276,10 +277,10 @@ client.on("message", (message) => {
 	 /*
 	 * rraid
 	 */
-	 if(message.content.startsWith(prefix + "rraid")) {
+	 /*if(message.content.startsWith(prefix + "rraid")) {
 				RraidObj.display(prefix, message, raidBosses);
 				console.log(Date.now()+" current timestamp, rraid triggered");
-		 }
+		 }*/
 	
 	/*
 	 * USERINFO Command
@@ -340,7 +341,7 @@ client.on("message", (message) => {
 	if(message.content.startsWith(prefix + "b")){
 		BTextObj.process(message, prefix);
 		console.log(Date.now()+" current timestamp, btext triggered");
-	}
+	}*/
 	BTextObj.process(message, prefix)
 
 });
