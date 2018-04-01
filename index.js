@@ -341,5 +341,6 @@ client.on("message", (message) => {
 		BTextObj.process(message, prefix);
 		console.log(Date.now()+" current timestamp, btext triggered");
 	}
+	BTextObj.process(message, prefix)
 
 });
