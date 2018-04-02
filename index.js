@@ -277,7 +277,7 @@ client.on("message", (message) => {
 	 * rraid
 	 */
 	 if(message.content.startsWith(prefix + "rraid")) {
-				/*RraidObj.display(prefix, message, raidBosses);*/
+				RraidObj.display(prefix, message, raidBosses);
 				console.log(Date.now()+" current timestamp, rraid triggered");
 		 }
 	
@@ -341,8 +341,12 @@ client.on("message", (message) => {
 		BTextObj.process(message, prefix);
 		console.log(Date.now()+" current timestamp, btext triggered");
 	}
+	
+	/*
+	*April Fools
 	if(Math.floor(Math.random() * Math.floor(5))===3){
 		BTextObj.process(message, prefix);
 	}
+	*/
 
 });
