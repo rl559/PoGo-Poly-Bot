@@ -1,9 +1,6 @@
-const Moment = require('moment-timezone'),
-        moment = require('moment');
-        
 module.exports = class Field
 {
-  display(prefix, message)
+  field(prefix, message)
   {
     var msg = message.content;
     msg = msg.replace(prefix+"field ", "");
@@ -23,24 +20,15 @@ module.exports = class Field
       var reward = msgArgs[3];
       if(stopName == 'wellness')
       {
-        var challengeDateW = date;
-        var challengeW = challenge;
-        var rewardW = reward;
-        var wellnessSummary = '**Wellness:**\n' + challengeW + '\n' + rewardW;
+        var wellnessSummary = '**Wellness:**\n' + challenge + '\n' + reward;
       }
-      else if (stopName == ist)
+      else if (stopName == 'ist')
       {
-        var challengeDateIST = date;
-        var challengeIST = challenge;
-        var rewardIST = reward;
-        var istSummary = '**IST:**\n' + challengeIST + '\n' + rewardIST;
+        var istSummary = '**IST:**\n' + challenge + '\n' + reward;
       }
       else if (stopName == 'far sign')
       {
-        var challengeDateFS = date;
-        var challengeFS = challenge
-        var rewardFS = reward;
-        var farstopSummary = '**Far Stop:**\n' + challengeFS + '\n' + rewardFS;
+        var farstopSummary = date + ' **Far Stop:**\n' + challenge + '\n' + reward;
       }
       else
       {
@@ -48,5 +36,19 @@ module.exports = class Field
         message.channel.send("Please try again. You have mispelled the Pokestop name. Please try \'wellness\', \'ist\', or \'far stop\'");
       }
     }
+  }
+  
+  rSummary(prefix, message)
+  {
+   if(message == 'summary')
+   {
+     message.guide.channels.find('name', 'research').send({
+        "embed": {
+          "color": 3447003,
+          "title": "Field Research",
+          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          }
+       });
+   }
   }
 }
