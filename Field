@@ -1,0 +1,30 @@
+const Moment = require('moment-timezone'),
+        moment = require('moment');
+        
+module.exports = class Field
+{
+  display(prefix, message, raidBosses)
+  {
+    var msg = message.content;
+    msg = msg.replace(prefix+"field ", "");
+    var msgArgs = msg.splt(" - ");
+    if(msgArgs.length != 3)
+    {
+      console.log("argError on field command");
+      message.channel.send("Please try again. You entered in too many or too few arguments. Try .field **StopName** - **challenge** - **reward**);
+    }
+    else
+    {
+      console.log(msgArgs);
+      var stopName = msgArgs[0];
+      var challenge = msgArgs[1];
+      var reward = msgArgs[2];
+      message.guide.channels.find('name', 'research').send({
+        "embed": {
+          "color": 3447003,
+          "title": date + ' Field Research",
+          }
+       });
+    }
+  }
+}
