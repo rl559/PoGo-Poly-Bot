@@ -11,7 +11,7 @@ module.exports = class Field
     if(msgArgs.length != 4)
     {
       console.log("argError on field command");
-      message.channel.send("Please try again. You entered in too many or too few arguments. Try .field **Date** - **StopName** - **challenge** - **reward**);
+      message.channel.send("Please try again. You entered in too many or too few arguments. Try .field **Date** - **StopName** - **challenge** - **reward**");
     }
     else
     {
