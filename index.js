@@ -41,7 +41,9 @@ const Discord = require("discord.js"),
 	RraidObj = new Rraid(),
 	raidChannelPattern = new RegExp(/raids/),
 	Btext = require("./classes/Btext.js"),
-	BTextObj = new Btext();
+	BTextObj = new Btext(),
+	Field = require("./classes/Field.js"),
+	FieldObj = new Field();
 
 var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
@@ -280,6 +282,18 @@ client.on("message", (message) => {
 				RraidObj.display(prefix, message, raidBosses);
 				console.log(Date.now()+" current timestamp, rraid triggered");
 		 }
+	
+	/*
+	* Field and Research Summary commands
+	*/
+	if(message.content.startsWith(prefix + "field")) {
+		FieldObj.field(prefix, message);
+		console.log(Date.now() + "current timestamp, userinfo triggered");
+	}
+	if(message.content.startsWith(prefix + "rsummary")) {
+		FieldObj.rsummary(prefix, message);
+		console.log(Date.now() + "current timestamp, userinfo triggered");
+	}
 	
 	/*
 	 * USERINFO Command
