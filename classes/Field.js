@@ -44,12 +44,14 @@ module.exports = class Field
   
   rsummary(prefix, message)
   {
-     message.guide.channels.find('name', 'research').send({
+     console.log("I made it to the rsummary function in Field.js");
+     message.channel.send({
         "embed": {
           "color": 3447003,
           "title": "Field Research",
           "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
           }
        });
+    console.log("I made it past the message sending. If I did not send please fix me!");
   }
 }
