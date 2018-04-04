@@ -44,7 +44,7 @@ module.exports = class Field
   
   rsummary(prefix, message)
   {
-   if(message == 'summary')
+   if(message == 'rsummary')
    {
      message.guide.channels.find('name', 'research').send({
         "embed": {
