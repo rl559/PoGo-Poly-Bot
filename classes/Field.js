@@ -1,6 +1,6 @@
-var wellnessSummary;
-var istSummary;
-var farstopSummary;
+var wellnessSummary = "";
+var istSummary = "";
+var farstopSummary = "";
 
 module.exports = class Field
 {
@@ -44,8 +44,6 @@ module.exports = class Field
   
   rsummary(prefix, message)
   {
-   if(message == 'rsummary')
-   {
      message.guide.channels.find('name', 'research').send({
         "embed": {
           "color": 3447003,
@@ -53,6 +51,5 @@ module.exports = class Field
           "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
           }
        });
-   }
   }
 }
