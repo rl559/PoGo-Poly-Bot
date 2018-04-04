@@ -1,3 +1,7 @@
+var wellnessSummary;
+var istSummary;
+var farstopSummary;
+
 module.exports = class Field
 {
   field(prefix, message)
@@ -20,15 +24,15 @@ module.exports = class Field
       var reward = msgArgs[3];
       if(stopName == 'wellness')
       {
-        var wellnessSummary = '**Wellness:**\n' + challenge + '\n' + reward;
+        wellnessSummary = '**Wellness:**\n' + challenge + '\n' + reward;
       }
       else if (stopName == 'ist')
       {
-        var istSummary = '**IST:**\n' + challenge + '\n' + reward;
+        istSummary = '**IST:**\n' + challenge + '\n' + reward;
       }
       else if (stopName == 'far sign')
       {
-        var farstopSummary = date + ' **Far Stop:**\n' + challenge + '\n' + reward;
+        farstopSummary = date + ' **Far Stop:**\n' + challenge + '\n' + reward;
       }
       else
       {
