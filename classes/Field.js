@@ -8,7 +8,7 @@ module.exports = class Field
   {
     var msg = message.content;
     msg = msg.replace(prefix+"field ", "");
-    var msgArgs = msg.splt(" - ");
+    var msgArgs = msg.split(" - ");
     if(msgArgs.length != 4)
     {
       console.log("argError on field command");
