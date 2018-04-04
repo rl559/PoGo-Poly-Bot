@@ -42,7 +42,7 @@ module.exports = class Field
     }
   }
   
-  rSummary(prefix, message, wellnessSummary, istSummary, farstopSummary)
+  rsummary(prefix, message)
   {
    if(message == 'summary')
    {
