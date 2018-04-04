@@ -113,10 +113,16 @@
 		"cp": "49430",
 		"active": true
 	},
-	"lugia": {
+	"latios": {
 		"level": "Level 5",
-		"image": "https://www.serebii.net/pokemongo/pokemon/249.png",
-		"cp": "42753",
+		"image": "https://www.serebii.net/pokemongo/pokemon/381.png",
+		"cp": "49323",
 		"active": true
+	}
+	"latias": {
+		"level": "Level 5",
+		"image": "https://www.serebii.net/pokemongo/pokemon/380.png",
+		"cp": "45704",
+		"active": false
 	}
 }
