@@ -24,15 +24,21 @@ module.exports = class Field
       var reward = msgArgs[3];
       if(stopName == 'wellness')
       {
-        wellnessSummary = '**Wellness:**\n' + challenge + '\n' + reward;
+        wellnessSummary = '**Wellness:**\n' + date + '\n' + challenge + '\n' + reward;
+        console.log("Wellness research updated");
+        message.channel.send("Wellness Research Updated!");
       }
       else if (stopName == 'ist')
       {
-        istSummary = '**IST:**\n' + challenge + '\n' + reward;
+        istSummary = '**IST:**\n' + date + '\n' + challenge + '\n' + reward;
+        console.log("IST research updated");
+        message.channel.send("IST Research Updated!");
       }
-      else if (stopName == 'far sign')
+      else if (stopName == 'far stop')
       {
-        farstopSummary = date + ' **Far Stop:**\n' + challenge + '\n' + reward;
+        farstopSummary = '**Far Stop:**\n' + date + '\n' + challenge + '\n' + reward;
+        console.log("Far Stop research updated");
+        message.channel.send("Far Stop Research Updated!");
       }
       else
       {
@@ -44,7 +50,6 @@ module.exports = class Field
   
   rsummary(prefix, message)
   {
-     console.log("I made it to the rsummary function in Field.js");
      message.channel.send({
         "embed": {
           "color": 3447003,
@@ -52,6 +57,5 @@ module.exports = class Field
           "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
           }
        });
-    console.log("I made it past the message sending. If I did not send please fix me!");
   }
 }
