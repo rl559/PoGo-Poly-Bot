@@ -1,6 +1,6 @@
-var wellnessSummary = "";
-var istSummary = "";
-var farstopSummary = "";
+var wellnessSummary = '**Wellness:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
+var istSummary = '**IST:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
+var farstopSummary = '**Far Stop:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
 
 module.exports = class Field
 {
