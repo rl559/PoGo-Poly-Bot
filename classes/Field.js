@@ -22,7 +22,7 @@ module.exports = class Field
       stopName = stopName.toLowerCase();
       var challenge = msgArgs[2];
       var reward = msgArgs[3];
-      
+
       if(reward.toLowerCase() == "encounter")
       {
         //Catch challenge encounters
@@ -131,7 +131,7 @@ module.exports = class Field
         //Hatch challenge encounters
         else if (challenge.toLowerCase() == "hatch an egg")
         {
-          reward = "Eggsecute Encounter";
+          reward = "Exeggcute Encounter";
         }
         else if (challenge.toLowerCase() == "hatch 3 eggs")
         {
@@ -181,7 +181,7 @@ module.exports = class Field
           reward = "Electabuzz Encounter";
         }
       }
-      
+
       if(stopName == 'wellness')
       {
         wellnessSummary = '**Wellness:**\n' + date + '\n' + challenge + '\n' + reward;
@@ -234,7 +234,7 @@ module.exports = class Field
       }
     }
   }
-  
+
   rsummary(prefix, message)
   {
      message.channel.send({
