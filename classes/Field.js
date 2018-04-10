@@ -27,18 +27,45 @@ module.exports = class Field
         wellnessSummary = '**Wellness:**\n' + date + '\n' + challenge + '\n' + reward;
         console.log("Wellness research updated");
         message.channel.send("Wellness Research Updated!");
+        message.channel.send
+        ({
+        "embed":
+          {
+          "color": 3447003,
+          "title": "Field Research",
+          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          }
+        });
       }
       else if (stopName == 'ist')
       {
         istSummary = '**IST:**\n' + date + '\n' + challenge + '\n' + reward;
         console.log("IST research updated");
         message.channel.send("IST Research Updated!");
+        message.channel.send
+        ({
+        "embed":
+          {
+          "color": 3447003,
+          "title": "Field Research",
+          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          }
+        });
       }
       else if (stopName == 'far stop')
       {
         farstopSummary = '**Far Stop:**\n' + date + '\n' + challenge + '\n' + reward;
         console.log("Far Stop research updated");
         message.channel.send("Far Stop Research Updated!");
+        message.channel.send
+        ({
+        "embed":
+          {
+          "color": 3447003,
+          "title": "Field Research",
+          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          }
+        });
       }
       else
       {
