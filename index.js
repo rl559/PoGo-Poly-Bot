@@ -100,8 +100,28 @@ function grabGamepressRaidList(){
 	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/raid-boss-list.json', function (error, response, body) {
   if (!error && response.statusCode == 200) {
      var importedJSON = JSON.parse(body);
-     console.log(importedJSON);
-		 console.log("grabbed raid list successfully");
+		 var convertedJSON = {};
+		 for (i=0; len = importedJSON.length; i<len; i++)
+		 {
+			 if (importedJSON.legacy === "off" && importedJSON.future === "off" && importedJSON.special === "off") {
+				 var name = importedJSON.title;
+				 var level = importedJSON.tier;
+				 name.replace(/<(?:.|\n)*?>/gm, '');
+				 level.replace(/<(?:.|\n)*?>/gm, '');
+				 level.trim();
+				 convertedJSON[name] = 
+				 {
+					 "level": level,
+					 "image": "",
+					 "cp": importedJSON.cp,
+					 "active": true
+				 };
+			 }
+		 }
+		 if (convertedJSON.length != 0) {
+		 	console.log("grabbed raid list successfully");
+			console.log(convertedJSON);
+	 	 }
   } else {
 		console.log("did not grab raid list successfully");
 	}
