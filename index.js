@@ -57,7 +57,6 @@ client.on("ready", () => {
 	console.log("I am ready!");
 	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
 	grabGamepressEvolveList();
-	grabGamepressRaidList();
 });
 
 //start tweet messaging service
@@ -116,7 +115,7 @@ function grabGamepressRaidList(){
 				 convertedJSON[name.toLowerCase()] = 
 				 {
 					 "level": "Level "+level,
-					 "image": "http://www.serebii.net/pokemongo/pokemon/"+pokedex(name.toLowerCase()).id+".png",
+					 "image": "http://www.serebii.net/pokemongo/pokemon/"+pokedex(name.toLowerCase()).id.padStart(3, "0")+".png",
 					 "cp": importedJSON[i].cp,
 					 "active": true
 				 };
@@ -154,9 +153,44 @@ function grabGamepressPokemonList(evolveList){
 		 console.log("grabbed pokemon list successfully");
 		 console.log(evolveList.length);
 		 console.log(importedJSON.length);
-		 if (convertedJSON.length != 0) {
-			console.log("converted properly");
+		 pokemonLength = importedJSON.length;
+		 for (var i = 0; i<pokemonLength; i++)
+		 {
+			 var idStr = evolveList[i]['number'];
+			 var id = parseInt(idStr);
+			 var name = evolveList[i]['title_1'];
+			 var key = name.toLowerCase();
+			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
+			 var candy = parseInt(importedJSON[i]['candy']);
+			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.padStart(3, "0")+".png";
+			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
+			 var maxCP = parseInt(importedJSON[i]['cp']);
+			 var type = importedJSON[i]['field_pokemon_type'].toLowerCase().split(", ");
+			 var weaknesses = {};
+			 var resistances = {};
+			 var quickMoves = {};
+			 var chargeMoves = {};
+			 var evolveTo = "",
+			 var fleeRate = parseFloat(importedJSON[i]['field_flee_rate'].replace(" %", ""))*100.0;
+			 convertedJSON[key] = {
+				 "id":id,
+				 "buddy":buddy,
+				 "candy":candy,
+				 "name":name,
+				 "img":img,
+				 "stats":stats,
+				 "maxCP":maxCP,
+				 "type":type,
+				 "weaknesses":weaknesses,
+				 "resistances":resistances,
+				 "quickMoves":quickMoves,
+				 "chargeMoves":chargeMoves,
+				 "evolveTo":evolveTo,
+				 "fleeRate":fleeRate
+			 };
 		 }
+		 console.log(convertedJSON);
+		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
 	}
