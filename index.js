@@ -102,15 +102,13 @@ function grabGamepressRaidList(){
      var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
 		 var len = importedJSON.length;
-		 console.log(len);
 		 for (var i=0; i<len; i++)
 		 {
-			 console.log("in");
 			 if (importedJSON[i].legacy === "Off" && importedJSON[i].future === "Off" && importedJSON[i].special === "Off") {
 				 var name = importedJSON[i].title;
 				 var level = importedJSON[i].tier;
-				 name.replace(/<(?:.|\n)*?>/gm, '');
-				 level.replace(/<(?:.|\n)*?>/gm, '');
+				 name = name.replace(/<(?:.|\n)*?>/gm, '');
+				 level = level.replace(/(<(?:.|\n)*?>)*?(\\n)*/gm, '');
 				 level.trim();
 				 console.log(name);
 				 console.log(level);
