@@ -109,11 +109,10 @@ function grabGamepressRaidList(){
 				 var level = importedJSON[i].tier;
 				 name = name.replace(/<(?:.|\n)*?>/gm, '');
 				 level = level.replace(/(<(?:.|\n)*?>)|\\n/gm, '');
-				 console.log(level);
-				 level.trim();
-				 convertedJSON[name] = 
+				 level = level.replace(/\\n/gm, '').trim();
+				 convertedJSON[name.toLowerCase()] = 
 				 {
-					 "level": level,
+					 "level": "Level "+level,
 					 "image": "",
 					 "cp": importedJSON[i].cp,
 					 "active": true
