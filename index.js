@@ -46,6 +46,7 @@ const Discord = require("discord.js"),
 	FieldObj = new Field(),
 	pokedex = require('./pokedex.js');
 
+var types = require('./data/types.json')
 var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
 
@@ -126,6 +127,37 @@ function grabGamepressRaidList(){
 	 	 }
   } else {
 		console.log("did not grab raid list successfully");
+	}
+})
+}
+
+function grabGamepressEvolveList(){
+	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/move-en.json', function (error, response, body) {
+	if (!error && response.statusCode == 200) {
+		 var importedJSON = JSON.parse(body);
+		 var len = importedJSON.length;
+		console.log("grabbed pokemon move list successfully");
+		grabGamepressPokemonList(importedJSON);
+	} else {
+		console.log("did not grab pokemon move list successfully");
+	}
+})
+}
+
+function grabGamepressPokemonList(var evolveList){
+	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/move-en.json', function (error, response, body) {
+	if (!error && response.statusCode == 200) {
+		 var importedJSON = JSON.parse(body);
+		 var convertedJSON = {};
+		 var len = importedJSON.length;
+		 console.log("grabbed pokemon list successfully");
+		 console.log(evolveList.length);
+		 console.log(importedJSON.length);
+		 if (convertedJSON.length != 0) {
+			console.log("converted properly");
+		 }
+	} else {
+		console.log("did not grab pokemon successfully");
 	}
 })
 }
