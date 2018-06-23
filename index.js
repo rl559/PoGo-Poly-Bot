@@ -104,12 +104,14 @@ function grabGamepressRaidList(){
 		 var len = importedJSON.length;
 		 for (i=0; i<len; i++)
 		 {
-			 if (importedJSON.legacy === "off" && importedJSON.future === "off" && importedJSON.special === "off") {
+			 if (importedJSON.legacy === "Off" && importedJSON.future === "Off" && importedJSON.special === "Off") {
 				 var name = importedJSON.title;
 				 var level = importedJSON.tier;
 				 name.replace(/<(?:.|\n)*?>/gm, '');
 				 level.replace(/<(?:.|\n)*?>/gm, '');
 				 level.trim();
+				 console.log(name);
+				 console.log(level);
 				 convertedJSON[name] = 
 				 {
 					 "level": level,
