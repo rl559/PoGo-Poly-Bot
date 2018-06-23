@@ -112,10 +112,18 @@ function grabGamepressRaidList(){
 				 name = name.replace(/<(?:.|\n)*?>/gm, '');
 				 level = level.replace(/(<(?:.|\n)*?>)|\\n/gm, '');
 				 level = level.replace(/\\n/gm, '').trim();
+				 
+				 String.prototype.lpad = function(padString, length) {
+	    	 		var str = this;
+	    			while (str.length < length)
+	        		str = padString + str;
+	    			return str;
+					}
+				 
 				 convertedJSON[name.toLowerCase()] = 
 				 {
 					 "level": "Level "+level,
-					 "image": "http://www.serebii.net/pokemongo/pokemon/"+(pokedex(name.toLowerCase()).id).toString().padStart(3, "0")+".png",
+					 "image": "http://www.serebii.net/pokemongo/pokemon/"+(pokedex(name.toLowerCase()).id).toString().lpad("0", 3)+".png",
 					 "cp": importedJSON[i].cp,
 					 "active": true
 				 };
@@ -154,6 +162,14 @@ function grabGamepressPokemonList(evolveList){
 		 console.log(evolveList.length);
 		 console.log(importedJSON.length);
 		 pokemonLength = importedJSON.length;
+		 
+		 String.prototype.lpad = function(padString, length) {
+				var str = this;
+				while (str.length < length)
+					str = padString + str;
+				return str;
+			}
+		 
 		 for (var i = 0; i<pokemonLength; i++)
 		 {
 			 console.log(evolveList[i]);
@@ -164,7 +180,7 @@ function grabGamepressPokemonList(evolveList){
 			 var key = name.toLowerCase();
 			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
 			 var candy = parseInt(importedJSON[i]['candy']);
-			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.padStart(3, "0")+".png";
+			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.lpad("0",3)+".png";
 			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
 			 var maxCP = parseInt(importedJSON[i]['cp']);
 			 var type = importedJSON[i]['field_pokemon_type'].toLowerCase().split(", ");
