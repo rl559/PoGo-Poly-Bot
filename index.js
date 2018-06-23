@@ -44,7 +44,7 @@ const Discord = require("discord.js"),
 	BTextObj = new Btext(),
 	Field = require("./classes/Field.js"),
 	FieldObj = new Field(),
-	pokedex = require('../pokedex.js');
+	pokedex = require('pokedex.js');
 
 var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
