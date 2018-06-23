@@ -115,7 +115,7 @@ function grabGamepressRaidList(){
 				 convertedJSON[name.toLowerCase()] = 
 				 {
 					 "level": "Level "+level,
-					 "image": "http://www.serebii.net/pokemongo/pokemon/"+pokedex(name.toLowerCase()).id.padStart(3, "0")+".png",
+					 "image": "http://www.serebii.net/pokemongo/pokemon/"+(pokedex(name.toLowerCase()).id).toString().padStart(3, "0")+".png",
 					 "cp": importedJSON[i].cp,
 					 "active": true
 				 };
