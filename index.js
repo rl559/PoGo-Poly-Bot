@@ -56,6 +56,7 @@ client.login(process.env.clientlogin);
 client.on("ready", () => {
 	console.log("I am ready!");
 	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
+	grabGamepressEvolveList();
 	grabGamepressRaidList();
 });
 
@@ -144,7 +145,7 @@ function grabGamepressEvolveList(){
 })
 }
 
-function grabGamepressPokemonList(var evolveList){
+function grabGamepressPokemonList(evolveList){
 	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/move-en.json', function (error, response, body) {
 	if (!error && response.statusCode == 200) {
 		 var importedJSON = JSON.parse(body);
