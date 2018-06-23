@@ -102,8 +102,10 @@ function grabGamepressRaidList(){
      var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
 		 var len = importedJSON.length;
-		 for (i=0; i<len; i++)
+		 console.log(len);
+		 for (var i=0; i<len; i++)
 		 {
+			 console.log("in");
 			 if (importedJSON.legacy === "Off" && importedJSON.future === "Off" && importedJSON.special === "Off") {
 				 var name = importedJSON.title;
 				 var level = importedJSON.tier;
