@@ -145,7 +145,7 @@ function grabGamepressEvolveList(){
 }
 
 function grabGamepressPokemonList(evolveList){
-	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/move-en.json', function (error, response, body) {
+	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/list-en.json', function (error, response, body) {
 	if (!error && response.statusCode == 200) {
 		 var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
@@ -162,8 +162,8 @@ function grabGamepressPokemonList(evolveList){
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
 			 var key = name.toLowerCase();
-			 var buddy = parseInt(evolveList[i]['buddy'].replace(" km", ""));
-			 var candy = parseInt(evolveList[i]['candy']);
+			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
+			 var candy = parseInt(importedJSON[i]['candy']);
 			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.padStart(3, "0")+".png";
 			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
 			 var maxCP = parseInt(importedJSON[i]['cp']);
@@ -173,7 +173,7 @@ function grabGamepressPokemonList(evolveList){
 			 var quickMoves = {};
 			 var chargeMoves = {};
 			 var evolveTo = "";
-			 var fleeRate = parseFloat(importedJSON[i]['field_flee_rate'].replace(" %", ""))*100.0;
+			 var fleeRate = parseFloat(evolveList[i]['field_flee_rate'].replace(" %", ""))*100.0;
 			 convertedJSON[key] = {
 				 "id":id,
 				 "buddy":buddy,
