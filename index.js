@@ -101,7 +101,8 @@ function grabGamepressRaidList(){
   if (!error && response.statusCode == 200) {
      var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
-		 for (i=0; len = importedJSON.length; i<len; i++)
+		 var len = importedJSON.length;
+		 for (i=0; i<len; i++)
 		 {
 			 if (importedJSON.legacy === "off" && importedJSON.future === "off" && importedJSON.special === "off") {
 				 var name = importedJSON.title;
