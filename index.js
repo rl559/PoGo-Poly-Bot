@@ -43,7 +43,8 @@ const Discord = require("discord.js"),
 	Btext = require("./classes/Btext.js"),
 	BTextObj = new Btext(),
 	Field = require("./classes/Field.js"),
-	FieldObj = new Field();
+	FieldObj = new Field(),
+	pokedex = require('../pokedex.js');
 
 var raidBosses = require('./data/raidboss.json'),
 	timesAnHour = 0;
@@ -113,7 +114,7 @@ function grabGamepressRaidList(){
 				 convertedJSON[name.toLowerCase()] = 
 				 {
 					 "level": "Level "+level,
-					 "image": "",
+					 "image": "http://www.serebii.net/pokemongo/pokemon/"+pokedex(name.toLowerCase())+".png",
 					 "cp": importedJSON[i].cp,
 					 "active": true
 				 };
