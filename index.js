@@ -106,9 +106,9 @@ function grabGamepressRaidList(){
 		 for (var i=0; i<len; i++)
 		 {
 			 console.log("in");
-			 if (importedJSON.legacy === "Off" && importedJSON.future === "Off" && importedJSON.special === "Off") {
-				 var name = importedJSON.title;
-				 var level = importedJSON.tier;
+			 if (importedJSON[i].legacy === "Off" && importedJSON[i].future === "Off" && importedJSON[i].special === "Off") {
+				 var name = importedJSON[i].title;
+				 var level = importedJSON[i].tier;
 				 name.replace(/<(?:.|\n)*?>/gm, '');
 				 level.replace(/<(?:.|\n)*?>/gm, '');
 				 level.trim();
@@ -118,7 +118,7 @@ function grabGamepressRaidList(){
 				 {
 					 "level": level,
 					 "image": "",
-					 "cp": importedJSON.cp,
+					 "cp": importedJSON[i].cp,
 					 "active": true
 				 };
 			 }
