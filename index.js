@@ -160,8 +160,8 @@ function grabGamepressPokemonList(evolveList){
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
 			 var key = name.toLowerCase();
-			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
-			 var candy = parseInt(importedJSON[i]['candy']);
+			 var buddy = parseInt(evolveList[i]['buddy'].replace(" km", ""));
+			 var candy = parseInt(evolveList[i]['candy']);
 			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.padStart(3, "0")+".png";
 			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
 			 var maxCP = parseInt(importedJSON[i]['cp']);
