@@ -157,10 +157,7 @@ function grabGamepressPokemonList(evolveList){
 	if (!error && response.statusCode == 200) {
 		 var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
-		 var len = importedJSON.length;
 		 console.log("grabbed pokemon list successfully");
-		 console.log(evolveList.length);
-		 console.log(importedJSON.length);
 		 pokemonLength = importedJSON.length;
 		 
 		 String.prototype.lpad = function(padString, length) {
@@ -169,6 +166,16 @@ function grabGamepressPokemonList(evolveList){
 					str = padString + str;
 				return str;
 			}
+			
+			var evolveLen = evolveList.length;
+			for (var i = 0; i<evolveLen; i++)
+			{
+				if (evolveList[i]['field_primary_moves'] === "") {
+					delete evolveList[i];
+				}
+			}
+			console.log(evolveList.length);
+			console.log(importedJSON.length);
 
 		 evolveList.sort(function(a, b) {
     	var textA = a.title_1;
