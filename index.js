@@ -156,6 +156,8 @@ function grabGamepressPokemonList(evolveList){
 		 pokemonLength = importedJSON.length;
 		 for (var i = 0; i<pokemonLength; i++)
 		 {
+			 console.log(evolveList[i]);
+			 console.log(importedJSON[i]);
 			 var idStr = evolveList[i]['number'];
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
