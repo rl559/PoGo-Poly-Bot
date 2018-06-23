@@ -170,7 +170,7 @@ function grabGamepressPokemonList(evolveList){
 			 var resistances = {};
 			 var quickMoves = {};
 			 var chargeMoves = {};
-			 var evolveTo = "",
+			 var evolveTo = "";
 			 var fleeRate = parseFloat(importedJSON[i]['field_flee_rate'].replace(" %", ""))*100.0;
 			 convertedJSON[key] = {
 				 "id":id,
