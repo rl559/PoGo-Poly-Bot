@@ -179,16 +179,16 @@ function grabGamepressPokemonList(evolveList){
 
 		 evolveList.sort(function(a, b) {
     	var textA = a.title_1;
-    	var textB = b.title_1.toUpperCase();
+    	var textB = b.title_1;
     	return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 		});
 		importedJSON.sort(function(a, b) {
     	var textA = a.title_1;
-    	var textB = b.title_1.toUpperCase();
+    	var textB = b.title_1;
     	return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 		});
 		 
-		 for (var i = 0; i<pokemonLength; i++)
+		 for (var i = 0; i<Math.min(pokemonLength, evolveLen); i++)
 		 {
 			 console.log("");
 			 console.log(evolveList[i]['title_1']);
