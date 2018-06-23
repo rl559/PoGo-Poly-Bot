@@ -172,14 +172,16 @@ function grabGamepressPokemonList(evolveList){
 		 
 		 for (var i = 0; i<pokemonLength; i++)
 		 {
-			 console.log(evolveList[i]);
-			 console.log(importedJSON[i]);
+			 console.log("");
+			 console.log(evolveList[i]['title_1']);
+			 console.log(importedJSON[i]['title_1']);
+			 console.log("");
 			 var idStr = evolveList[i]['number'];
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
 			 var key = name.toLowerCase();
 			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
-			 var candy = parseInt(importedJSON[i]['candy']);
+			 var candy = parseInt((importedJSON[i]['candy'].length != 0) ? importedJSON[i]['candy'] : "0");
 			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.lpad("0",3)+".png";
 			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
 			 var maxCP = parseInt(importedJSON[i]['cp']);
@@ -207,7 +209,7 @@ function grabGamepressPokemonList(evolveList){
 				 "fleeRate":fleeRate
 			 };
 		 }
-		 console.log(convertedJSON);
+		 //console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
