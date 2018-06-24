@@ -225,7 +225,7 @@ function grabGamepressPokemonList(evolveList){
 				 "fleeRate":fleeRate
 			 };
 		 }
-		 console.log(convertedJSON);
+		 //console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
@@ -266,8 +266,8 @@ function getQuickCharge(quickMove, chargeMove){
 	chargeVal.forEach(function(val){
 		val = val.replace(" ","-");
 		toReturn["chargeMoves"][val] = {};
-		toReturn["chargeMoves"][val]["power"] = -1;
-		toReturn["chargeMoves"][val]["dps"] = -1;
+		toReturn["chargeMoves"][val]["power"] = "-1";
+		toReturn["chargeMoves"][val]["dps"] = "-1";
 	});
 	return toReturn;
 	console.log(toReturn);
