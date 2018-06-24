@@ -167,11 +167,19 @@ function grabGamepressPokemonList(evolveList){
 				return str;
 			}
 			
+			prevEvolve = {};
+			
 			var evolveLen = evolveList.length;
 			for (var i = 0; i<evolveLen; i++)
 			{
 				if (evolveList[i]['field_primary_moves'] === "") {
 					delete evolveList[i];
+				}
+				else if (evolveList[i]["field_evolutions"] != "") {
+					var evolves = evolveList[i]["field_evolutions"].toLowerCase().split(", ");
+					for (var j=0; j< evolves.length; j++) {
+						prevEvolve[evolves[i]] = evolveList[i]["title_1"].toLowerCase();
+					}
 				}
 			}
 			console.log(evolveList.length);
@@ -204,9 +212,8 @@ function grabGamepressPokemonList(evolveList){
 			 var weaknesses = weaknessResist["weak"];
 			 var resistances = weaknessResist["resist"];
 			 var quickCharge = getQuickCharge(evolveList[i]['field_primary_moves'], evolveList[i]['field_secondary_moves']);
-			 var quickMoves = {};
-			 var chargeMoves = {};
-			 var evolveTo = "";
+			 var evolveTo = evolveList[i]["field_evolutions"].toLowerCase().split(", ");
+			 var evolveFrom = getEvolveFrom(prevEvolve, key);
 			 var fleeRate = parseFloat(evolveList[i]['field_flee_rate'].replace(" %", ""))/100.0;
 			 convertedJSON[key] = {
 				 "id":id,
@@ -221,11 +228,12 @@ function grabGamepressPokemonList(evolveList){
 				 "resistances":resistances,
 				 "quickMoves":quickCharge["quickMoves"],
 				 "chargeMoves":quickCharge["chargeMoves"],
-				 "evolveTo":evolveTo,
 				 "fleeRate":fleeRate
 			 };
+			 if (evolveTo[0]!="") convertedJSON[key]["evolveTo"] = evolveTo;
+			 if (evolveFrom != null) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
-		 //console.log(convertedJSON);
+		 console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
@@ -266,11 +274,19 @@ function getQuickCharge(quickMove, chargeMove){
 	chargeVal.forEach(function(val){
 		val = val.replace(" ","-");
 		toReturn["chargeMoves"][val] = {};
-		toReturn["chargeMoves"][val]["power"] = "-1";
-		toReturn["chargeMoves"][val]["dps"] = "-1";
+		toReturn["chargeMoves"][val]["power"] = -1;
+		toReturn["chargeMoves"][val]["dps"] = -1;
 	});
-	console.log(toReturn);
 	return toReturn;
+}
+
+function getEvolveFrom(prevEvolve, key){
+	if (key in prevEvolve) {
+		return prevEvolve[key];
+	}
+	else {
+		return false;
+	}
 }
 
 //actually runs every 15 minutes
