@@ -233,7 +233,7 @@ function grabGamepressPokemonList(evolveList){
 			 if (evolveTo[0]!="") convertedJSON[key]["evolveTo"] = evolveTo;
 			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
-		 //console.log(convertedJSON);
+		 console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
@@ -281,8 +281,8 @@ function getQuickCharge(quickMove, chargeMove){
 }
 
 function getEvolveFrom(prevEvolve, key){
-	console.log(prevEvolve);
-	console.log(key);
+	//console.log(prevEvolve);
+	//console.log(key);
 	if (key in prevEvolve) {
 		return prevEvolve[key];
 	}
