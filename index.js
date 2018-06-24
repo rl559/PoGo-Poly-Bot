@@ -190,10 +190,6 @@ function grabGamepressPokemonList(evolveList){
 		 
 		 for (var i = 0; i<Math.min(pokemonLength, evolveLen); i++)
 		 {
-			 console.log("");
-			 console.log(evolveList[i]['title_1']);
-			 console.log(importedJSON[i]['title_1']);
-			 console.log("");
 			 var idStr = evolveList[i]['number'];
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
@@ -204,8 +200,10 @@ function grabGamepressPokemonList(evolveList){
 			 var stats = {"stamina":parseInt(importedJSON[i]['sta']),"attack":parseInt(importedJSON[i]['atk']),"defense":parseInt(importedJSON[i]['def'])};
 			 var maxCP = parseInt(importedJSON[i]['cp']);
 			 var type = importedJSON[i]['field_pokemon_type'].toLowerCase().split(", ");
-			 var weaknesses = {};
-			 var resistances = {};
+			 var weaknessResist = getWeaknessResist(type);
+			 var weaknesses = weaknessResist["weak"];
+			 var resistances = weaknessResist["resist"];
+			 var quickCharge = getQuickCharge(evolveList[i]['field_primary_moves'], evolveList[i]['field_secondary_moves']);
 			 var quickMoves = {};
 			 var chargeMoves = {};
 			 var evolveTo = "";
@@ -221,18 +219,53 @@ function grabGamepressPokemonList(evolveList){
 				 "type":type,
 				 "weaknesses":weaknesses,
 				 "resistances":resistances,
-				 "quickMoves":quickMoves,
-				 "chargeMoves":chargeMoves,
+				 "quickMoves":quickCharge["quickMoves"],
+				 "chargeMoves":quickCharge["chargeMoves"],
 				 "evolveTo":evolveTo,
 				 "fleeRate":fleeRate
 			 };
 		 }
-		 //console.log(convertedJSON);
+		 console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
 	}
 })
+}
+
+function getWeaknessResist(typeArray){
+	//currently only supports pokemon with two types
+	var test1 = typeArray[0]+"/"+typeArray[1];
+	var test2 = typeArray[1]+"/"+typeArray[0];
+	toReturn = {};
+	if(types.hasOwnProperty(test1))
+	{
+		toReturn["weak"] = types[test1]["weak"];
+		toReturn["resist"] = types[test1]["resist"];
+	}
+	else if(types.hasOwnProperty(test2))
+	{
+		toReturn["weak"] = types[test2]["weak"];
+		toReturn["resist"] = types[test2]["resist"];
+	}
+	return toReturn;
+}
+
+function getQuickCharge(quickMove, chargeMove){
+	toReturn = {};
+	toReturn["quickMoves"] = {};
+	toReturn["chargeMoves"] = {};	
+	quickVal = quickMove.toLowerCase().split(", ");
+	quickVal.forEach(function(val){
+		val = val.replace(" ","-");
+		toReturn["quickMoves"][val] = {"power":-1, "dps":-1};
+	});
+	chargeVal = chargeMove.toLowerCase().split(", ");
+	chargeVal.forEach(function(val){
+		val = val.replace(" ","-");
+		toReturn["chargeMoves"][val] = {"power":-1, "dps":-1};
+	});
+	return toReturn;
 }
 
 //actually runs every 15 minutes
