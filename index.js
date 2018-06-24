@@ -234,7 +234,7 @@ function grabGamepressPokemonList(evolveList){
 			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
 		 console.log(convertedJSON);
-		 pokedex.updatePokemonData(convertedJSON);
+		 //console.log(pokedex.pokemonData);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");

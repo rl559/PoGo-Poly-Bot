@@ -30,9 +30,5 @@ var pokemonData = require('./data/pokemon.json'),
   }
 })(pokedex);
 
-function updatePokemonData(newData){
-	this.pokemonData = newData;
-}
-
 //var pokemon = pokedex("bulbasaur");
 //console.log(pokemon);
