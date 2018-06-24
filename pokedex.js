@@ -4,8 +4,12 @@
 /** pokemon.js | list of pokemon data **/
 var pokemonData = require('./data/pokemon.json'),
 	pokedex = function( search ) {
+	if (typeof search === "object")
+	{
+		pokemonData = search;
+	}
 	//console.log(pokemonData[search]);
-	if( pokemonData[search] !== undefined ){
+	else if( pokemonData[search] !== undefined ){
 		return pokemonData[search];
 	}
 	else{

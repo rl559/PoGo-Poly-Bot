@@ -201,7 +201,7 @@ function grabGamepressPokemonList(evolveList){
 			 var idStr = evolveList[i]['number'];
 			 var id = parseInt(idStr);
 			 var name = evolveList[i]['title_1'];
-			 var key = name.toLowerCase();
+			 var key = name.toLowerCase().replace(/[^\w\s]/gi, '').replace(" ", "-");
 			 var buddy = parseInt(importedJSON[i]['buddy'].replace(" km", ""));
 			 var candy = parseInt((importedJSON[i]['candy'].length != 0) ? importedJSON[i]['candy'] : "0");
 			 var img = "http://www.serebii.net/pokemongo/pokemon/"+idStr.lpad("0",3)+".png";
@@ -234,7 +234,7 @@ function grabGamepressPokemonList(evolveList){
 			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
 		 console.log(convertedJSON);
-		 //console.log(pokedex.pokemonData);
+		 pokedex(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
