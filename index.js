@@ -176,7 +176,7 @@ function grabGamepressPokemonList(evolveList){
 					delete evolveList[i];
 				}
 				else if (evolveList[i]["field_evolutions"] != "") {
-					var evolves = evolveList[i]["field_evolutions"].toLowerCase().split(", ");
+					var evolves = evolveList[i]["field_evolutions"].toLowerCase().replace(/[^\w\s]/gi, '').replace(" ", "-").split(", ");
 					for (var j=0; j< evolves.length; j++) {
 						prevEvolve[evolves[j]] = evolveList[i]["title_1"].toLowerCase();
 					}
