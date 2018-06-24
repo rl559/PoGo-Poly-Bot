@@ -99,7 +99,7 @@ client.on("guildMemberRemove", (member) => {
 });
 
 function grabGamepressRaidList(){
-	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/raid-boss-list.json', function (error, response, body) {
+	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/raid-boss-list.json?v100', function (error, response, body) {
   if (!error && response.statusCode == 200) {
      var importedJSON = JSON.parse(body);
 		 var convertedJSON = {};
