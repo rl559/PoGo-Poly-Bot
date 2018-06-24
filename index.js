@@ -207,7 +207,7 @@ function grabGamepressPokemonList(evolveList){
 			 var quickMoves = {};
 			 var chargeMoves = {};
 			 var evolveTo = "";
-			 var fleeRate = parseFloat(evolveList[i]['field_flee_rate'].replace(" %", ""))*100.0;
+			 var fleeRate = parseFloat(evolveList[i]['field_flee_rate'].replace(" %", ""))/100.0;
 			 convertedJSON[key] = {
 				 "id":id,
 				 "buddy":buddy,
@@ -258,14 +258,19 @@ function getQuickCharge(quickMove, chargeMove){
 	quickVal = quickMove.toLowerCase().split(", ");
 	quickVal.forEach(function(val){
 		val = val.replace(" ","-");
-		toReturn["quickMoves"][val] = {"power":-1, "dps":-1};
+		toReturn["quickMoves"][val] = {};
+		toReturn["quickMoves"][val]["power"]= -1;
+		toReturn["quickMoves"][val]["dps"]= -1;
 	});
 	chargeVal = chargeMove.toLowerCase().split(", ");
 	chargeVal.forEach(function(val){
 		val = val.replace(" ","-");
-		toReturn["chargeMoves"][val] = {"power":-1, "dps":-1};
+		toReturn["chargeMoves"][val] = {};
+		toReturn["chargeMoves"][val]["power"] = -1;
+		toReturn["chargeMoves"][val]["dps"] = -1;
 	});
 	return toReturn;
+	console.log(toReturn);
 }
 
 //actually runs every 15 minutes
