@@ -46,9 +46,9 @@ const Discord = require("discord.js"),
 	FieldObj = new Field(),
 	pokedex = require('./pokedex.js');
 
-var types = require('./data/types.json')
-var raidBosses = require('./data/raidboss.json'),
-	timesAnHour = 0;
+var types = require('./data/types.json');
+raidBosses = require('./data/raidboss.json');
+var timesAnHour = 0;
 
 
 client.login(process.env.clientlogin);
