@@ -178,7 +178,7 @@ function grabGamepressPokemonList(evolveList){
 				else if (evolveList[i]["field_evolutions"] != "") {
 					var evolves = evolveList[i]["field_evolutions"].toLowerCase().split(", ");
 					for (var j=0; j< evolves.length; j++) {
-						prevEvolve[evolves[i]] = evolveList[i]["title_1"].toLowerCase();
+						prevEvolve[evolves[j]] = evolveList[i]["title_1"].toLowerCase();
 					}
 				}
 			}
@@ -231,9 +231,9 @@ function grabGamepressPokemonList(evolveList){
 				 "fleeRate":fleeRate
 			 };
 			 if (evolveTo[0]!="") convertedJSON[key]["evolveTo"] = evolveTo;
-			 if (evolveFrom != null) convertedJSON[key]["evolveFrom"] = evolveFrom;
+			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
-		 console.log(convertedJSON);
+		 //console.log(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
@@ -281,6 +281,8 @@ function getQuickCharge(quickMove, chargeMove){
 }
 
 function getEvolveFrom(prevEvolve, key){
+	console.log(prevEvolve);
+	console.log(key);
 	if (key in prevEvolve) {
 		return prevEvolve[key];
 	}
