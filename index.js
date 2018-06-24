@@ -269,8 +269,8 @@ function getQuickCharge(quickMove, chargeMove){
 		toReturn["chargeMoves"][val]["power"] = "-1";
 		toReturn["chargeMoves"][val]["dps"] = "-1";
 	});
-	return toReturn;
 	console.log(toReturn);
+	return toReturn;
 }
 
 //actually runs every 15 minutes
