@@ -234,6 +234,7 @@ function grabGamepressPokemonList(evolveList){
 			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
 		 console.log(convertedJSON);
+		 pokedex.updatePokemonData(convertedJSON);
 		 grabGamepressRaidList();
 	} else {
 		console.log("did not grab pokemon successfully");
@@ -242,9 +243,10 @@ function grabGamepressPokemonList(evolveList){
 }
 
 function getWeaknessResist(typeArray){
-	//currently only supports pokemon with two types
+	//currently only supports pokemon with two types or one type
 	var test1 = typeArray[0]+"/"+typeArray[1];
 	var test2 = typeArray[1]+"/"+typeArray[0];
+	var test3 = typeArray[0];
 	toReturn = {};
 	if(types.hasOwnProperty(test1))
 	{
@@ -255,6 +257,11 @@ function getWeaknessResist(typeArray){
 	{
 		toReturn["weak"] = types[test2]["weak"];
 		toReturn["resist"] = types[test2]["resist"];
+	}
+	else if(types.hasOwnProperty(test3) && typeArray.length == 1)
+	{
+		toReturn["weak"] = types[test3]["weak"];
+		toReturn["resist"] = types[test3]["resist"];
 	}
 	return toReturn;
 }
@@ -267,15 +274,15 @@ function getQuickCharge(quickMove, chargeMove){
 	quickVal.forEach(function(val){
 		val = val.replace(" ","-");
 		toReturn["quickMoves"][val] = {};
-		toReturn["quickMoves"][val]["power"]= -1;
-		toReturn["quickMoves"][val]["dps"]= -1;
+		toReturn["quickMoves"][val]["power"]= null;
+		toReturn["quickMoves"][val]["dps"]= null;
 	});
 	chargeVal = chargeMove.toLowerCase().split(", ");
 	chargeVal.forEach(function(val){
 		val = val.replace(" ","-");
 		toReturn["chargeMoves"][val] = {};
-		toReturn["chargeMoves"][val]["power"] = -1;
-		toReturn["chargeMoves"][val]["dps"] = -1;
+		toReturn["chargeMoves"][val]["power"] = null;
+		toReturn["chargeMoves"][val]["dps"] = null;
 	});
 	return toReturn;
 }
