@@ -132,6 +132,7 @@ function grabGamepressRaidList(){
 		 if (convertedJSON.length != 0) {
 		 	console.log("grabbed raid list successfully");
 			console.log(convertedJSON);
+			raidBosses = convertedJSON;
 	 	 }
   } else {
 		console.log("did not grab raid list successfully");
