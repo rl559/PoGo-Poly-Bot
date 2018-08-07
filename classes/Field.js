@@ -30,21 +30,29 @@ module.exports = class Field
         {
           reward = "Dratini Encounter";
         }
-        else if (challenge.toLowerCase() == "catch 3 grass, water, or fire type pokemon")
-        {
-          reward = "Pikachu Encounter";
-        }
-        else if (challenge.toLowerCase() == "catch 5 weather boosted pokemon")
-        {
-          reward = "Vulpix/Poliwag Encounter";
-        }
         else if (challenge.toLowerCase() == "catch 10 pokemon")
         {
           reward = "Magikarp Encounter";
         }
         else if (challenge.toLowerCase() == "use 5 berries to help catch pokemon")
         {
-          reward = "Lickitung Encounter";
+          reward = "Girafarig Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 5 electric type pokemon")
+        {
+          reward = "Mareep Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch a meowth or growlithe")
+        {
+          reward = "Electrike Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch a skitty or poochyena")
+        {
+          reward = "Snubbull Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 5 pokemon with weather boost")
+        {
+          reward = "Vulpix/Poliwag Encounter";
         }
         //Throw challenge encounters
         else if (challenge.toLowerCase() == "make 5 nice throws")
@@ -55,9 +63,9 @@ module.exports = class Field
         {
           reward = "Ghastly Encounter";
         }
-        else if (challenge.toLowerCase() == "land a nice curveball throw")
+        else if (challenge.toLowerCase() == "land 3 curveball throws in a row")
         {
-          reward = "Ghastly Encounter";
+          reward = "Spinda Encounter";
         }
         else if (challenge.toLowerCase() == "make 3 great throws in a row")
         {
@@ -72,25 +80,22 @@ module.exports = class Field
         {
           reward = "Eevee Encounter";
         }
-        else if (challenge.toLowerCase() == "evolve a fire type pokemon")
+        else if (challenge.toLowerCase() == "evolve a meowth")
         {
-          reward = "Charmander Encounter";
+          reward = "Houndour Encounter";
         }
-        else if (challenge.toLowerCase() == "evolve a water type pokemon")
+        else if (challenge.toLowerCase() == "power up a pokemon 5 times")
         {
-          reward = "Squirtle Encounter"
+          reward = "Bulbasaur/Squirtle/Charmander Encounter"
         }
-        else if (challenge.toLowerCase() == "evolve a grass type pokemon")
+        else if (challenge.toLowerCase() == "transfer 10 pokemon")
         {
-          reward = "Bulbasaur Encounter"
+          reward = "Misdreavus Encounter"
         }
-        else if (challenge.toLowerCase() == "evolve 1 electric, water, or fire type pokemon")
-        {
-          reward = "Eevee Encounter"
         //Hatch challenge encounters
         else if (challenge.toLowerCase() == "hatch an egg")
         {
-          reward = "Exeggcute Encounter";
+          reward = "Exeggcute/Lanturn Encounter";
         }
         else if (challenge.toLowerCase() == "hatch 3 eggs")
         {
@@ -109,10 +114,6 @@ module.exports = class Field
         {
           reward = "Machop Encounter";
         }
-        else if (challenge.toLowerCase() == "win a gym battle")
-        {
-          reward = "Bulbasaur/Squirtle/Charmander Encounter";
-        }
         else if (challenge.toLowerCase() == "win 3 gym battles")
         {
           reward = "Jynx Encounter";
@@ -120,10 +121,6 @@ module.exports = class Field
         else if (challenge.toLowerCase() == "win a level 3 or higher raid")
         {
           reward = "Dratini Encounter";
-        }
-        else if (challenge.toLowerCase() == "power up pokemon 5 times")
-        {
-          reward = "Bulbasaur/Squirtle/Charmander Encounter";
         }
         else if (challenge.toLowerCase() == "use a suppereffective charge attack in 7 gym battles")
         {
