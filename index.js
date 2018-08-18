@@ -199,7 +199,7 @@ function grabGamepressPokemonList(evolveList){
 		 
 		 for (var i = 0; i<Math.min(pokemonLength, evolveLen); i++)
 		 {
-				console.log(evolveList)
+				console.log(evolveList[i])
 				console.log(i)
 			 var idStr = evolveList[i]['number'];
 			 idStr = idStr.replace(/[a-zA-Z]+/, '');
