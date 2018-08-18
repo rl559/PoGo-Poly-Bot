@@ -119,7 +119,7 @@ function grabGamepressRaidList(){
 	        		str = padString + str;
 	    			return str;
 					}
-				 
+
 				 convertedJSON[name.toLowerCase()] = 
 				 {
 					 "level": "Level "+level,
@@ -171,9 +171,11 @@ function grabGamepressPokemonList(evolveList){
 			prevEvolve = {};
 			
 			var evolveLen = evolveList.length;
+			var deleted = 0
 			for (var i = 0; i<evolveLen; i++)
 			{
 				if (evolveList[i]['field_primary_moves'] === "") {
+					deleted++
 					delete evolveList[i];
 				}
 				else if (evolveList[i]["field_evolutions"] != "") {
@@ -183,6 +185,7 @@ function grabGamepressPokemonList(evolveList){
 					}
 				}
 			}
+			evolveLen = evolveLen - deleted
 			console.log(evolveList.length);
 			console.log(importedJSON.length);
 
@@ -199,9 +202,6 @@ function grabGamepressPokemonList(evolveList){
 		 
 		 for (var i = 0; i<Math.min(pokemonLength, evolveLen); i++)
 		 {
-				//console.log(evolveList[i])
-				console.log(i)
-				console.log(len(evolveList))
 			 var idStr = evolveList[i]['number'];
 			 idStr = idStr.replace(/[a-zA-Z]+/, '');
 			 var id = parseInt(idStr);

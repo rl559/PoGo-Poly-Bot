@@ -12,6 +12,9 @@ var pokemonData = require('./data/pokemon.json'),
 	else if( pokemonData[search] !== undefined ){
 		return pokemonData[search];
 	}
+	else if( pokemonData[search.replace(/ /g,"-")] !== undefined ){
+		return pokemonData[search.replace(/ /g,"-")];
+	}
 	else{
 		for(var pokemon in pokemonData)
 		{
