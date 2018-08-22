@@ -45,6 +45,8 @@ const Discord = require("discord.js"),
 	Field = require("./classes/Field.js"),
 	FieldObj = new Field(),
 	pokedex = require('./pokedex.js');
+	rp = require('request-promise');
+	cheerio = require('cheerio');
 
 var types = require('./data/types.json');
 raidBosses = require('./data/raidboss.json');
@@ -387,18 +389,18 @@ client.on("message", (message) => {
 		console.log(Date.now()+" current timestamp, GymNotice triggered");
 	}
 	
-	if(message.member.id === process.env.frogman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.frogman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🐸');
 	}
 	
-	if(message.member.id === process.env.bagel && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.bagel && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		let bagel = client.emojis.find("name", "bagel");
 		message.react(bagel);
 	}
 	
-	if(message.member.id === process.env.treeman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.treeman && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🌲');
 		message.react('🌳');
@@ -407,19 +409,19 @@ client.on("message", (message) => {
 		message.react('🌴');
 		message.react('🌱');
 	}
-	if(message.member.id === process.env.potato && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.potato && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		//message.react('🥔');
 		let party2 = client.emojis.find("name", "partywurmple2");
 		message.react(party2).then(function (emoji){message.react('🥔').then(function (emoji){let party = client.emojis.find("name", "partywurmple");message.react(party);});});
 	}
 	
-	if(message.member.id === process.env.cool && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.cool && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🔥').then(function (emoji){message.react('😎').then(function (emoji){let fire = client.emojis.find("name", "typefire");message.react(fire);});});
 	}
 	
-	if(message.member.id === process.env.eggplant && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
+	if(message.member !== null && message.member.id === process.env.eggplant && (message.channel.name === "m-e-m-e-s" || message.channel.name === "commands"))
 	{
 		message.react('🍆');
 	}
