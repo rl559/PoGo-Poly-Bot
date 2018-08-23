@@ -47,10 +47,23 @@ const Discord = require("discord.js"),
 	pokedex = require('./pokedex.js');
 	rp = require('request-promise');
 	cheerio = require('cheerio');
+	cron = require('cron');
+	
+	const job = new cron.CronJob('00 00 10 * * *', function() {
+		console.log('cron job triggered');
+		client.guilds.forEach((item, index)=>{
+			commands = item.channels.find('name', 'commands');
+			if ( commands ) {
+				commands.send( ".update" );
+			}
+		});
+	});
+	job.start();
 
 var types = require('./data/types.json');
 raidBosses = require('./data/raidboss.json');
 var timesAnHour = 0;
+
 
 
 client.login(process.env.clientlogin);
@@ -58,7 +71,7 @@ client.login(process.env.clientlogin);
 client.on("ready", () => {
 	console.log("I am ready!");
 	client.setInterval( everyHour, 900000 );//3600000 1800000 1200000 900000 60000
-	grabGamepressEvolveList();
+	grabGamepressEvolveList(null);
 });
 
 //start tweet messaging service
@@ -100,7 +113,7 @@ client.on("guildMemberRemove", (member) => {
   }
 });
 
-function grabGamepressRaidList(){
+function grabGamepressRaidList(messageInfo){
 	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/raid-boss-list.json?v100', function (error, response, body) {
   if (!error && response.statusCode == 200) {
      var importedJSON = JSON.parse(body);
@@ -134,7 +147,14 @@ function grabGamepressRaidList(){
 		 if (convertedJSON.length != 0) {
 		 	console.log("grabbed raid list successfully");
 			console.log(convertedJSON);
-			raidBosses = convertedJSON;
+			if (JSON.stringify(raidBosses) !== JSON.stringify(convertedJSON)) {
+				raidBosses = convertedJSON;
+				if (messageInfo !== null) {
+					messageInfo.channel.send("`Raid bosses updated!``")
+				}
+			} else if (messageInfo !== null) {
+					messageInfo.channel.send("`No raidboss updates`")
+			}
 	 	 }
   } else {
 		console.log("did not grab raid list successfully");
@@ -142,20 +162,20 @@ function grabGamepressRaidList(){
 })
 }
 
-function grabGamepressEvolveList(){
+function grabGamepressEvolveList(messageInfo){
 	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/move-en.json', function (error, response, body) {
 	if (!error && response.statusCode == 200) {
 		 var importedJSON = JSON.parse(body);
 		 var len = importedJSON.length;
 		console.log("grabbed pokemon move list successfully");
-		grabGamepressPokemonList(importedJSON);
+		grabGamepressPokemonList(importedJSON, messageInfo);
 	} else {
 		console.log("did not grab pokemon move list successfully");
 	}
 })
 }
 
-function grabGamepressPokemonList(evolveList){
+function grabGamepressPokemonList(evolveList, messageInfo){
 	request('https://pokemongo.gamepress.gg/sites/pokemongo/files/pogo-jsons/list-en.json', function (error, response, body) {
 	if (!error && response.statusCode == 200) {
 		 var importedJSON = JSON.parse(body);
@@ -241,8 +261,8 @@ function grabGamepressPokemonList(evolveList){
 			 if (evolveFrom != false) convertedJSON[key]["evolveFrom"] = evolveFrom;
 		 }
 		 console.log(convertedJSON);
-		 pokedex(convertedJSON);
-		 grabGamepressRaidList();
+		 pokedex(convertedJSON, messageInfo);
+		 grabGamepressRaidList(messageInfo);
 	} else {
 		console.log("did not grab pokemon successfully");
 	}
@@ -426,6 +446,13 @@ client.on("message", (message) => {
 		message.react('🍆');
 	}
 	
+	/*
+	* pokedex, raid updater
+	*/
+	if(message.content.startsWith(prefix + "update")) {
+			grabGamepressEvolveList(message);
+			console.log(Date.now()+" current timestamp, update triggered");
+	 }
 	
 	if (message.author.bot) return;
 	
