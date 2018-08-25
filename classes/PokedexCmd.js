@@ -1,4 +1,26 @@
 pokedex = require('../pokedex.js');
+rp = require('request-promise');
+cheerio = require('cheerio');
+
+function getPower(moveToGet)
+{
+  if ( typeof moveToGet == 'undefined' && !moveToGet ) return ""
+  options = {
+  uri: `https://pokemongo.gamepress.gg/pokemon-move/`+moveToGet.replace(/ /g,"-"),
+  transform: function (body) {
+    return cheerio.load(body);
+  }
+  };
+  rp(options)
+  .then(($) => {
+    toReturn = $('div.field--name-field-move-damage').text()
+    console.log(toReturn)
+  return toReturn;
+  })
+  .catch((err) => {
+    return "";
+  });
+}
 
 function cap(string) 
 {
@@ -52,8 +74,11 @@ display(prefix, message){
       //console.log(emojiId);
       resistanceValue += '<:type' + itemValue + ':' + emojiId + '> (' + amount + ')';
     });
+    
+    var asyncCallsToMake = []
+    
     Object.keys(pokemon.chargeMoves).forEach(function (key) {
-      chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ((pokemon.chargeMoves[key].power != null) ? (": " + pokemon.chargeMoves[key].power) : "");
+      chargedMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ((pokemon.chargeMoves[key].power != null) ? (": " + pokemon.chargeMoves[key].power) : ": "+(function(key){asyncCallsToMake.push(key); return key;})(key));
       if (pokemon.chargeMoves[key].dps !== null && typeof pokemon.chargeMoves[key].dps !== 'undefined') {
         chargedMoves += " | DPS " + pokemon.chargeMoves[key].dps + "\n";
       } else {
@@ -62,13 +87,15 @@ display(prefix, message){
     });
 
     Object.keys(pokemon.quickMoves).forEach(function (key) {
-      quickMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ((pokemon.quickMoves[key].power != null) ? (": " + pokemon.quickMoves[key].power) : "");
+      quickMoves += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ((pokemon.quickMoves[key].power != null) ? (": " + pokemon.quickMoves[key].power) : ": "+(function(key){asyncCallsToMake.push(key); return key;})(key));
       if (pokemon.quickMoves[key].dps !== null && typeof pokemon.quickMoves[key].dps !== 'undefined') {
         quickMoves += " | DPS " + pokemon.quickMoves[key].dps + "\n";
       } else {
         quickMoves += "\n";
       }
     });
+    
+    //if asyncCallsToMake not empty, do async stuff and call following, otherwise just call following
 
     Object.keys(pokemon.stats).forEach(function (key) {
       statsValue += key.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) + ": " + pokemon.stats[key] + "\n";

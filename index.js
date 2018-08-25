@@ -45,8 +45,6 @@ const Discord = require("discord.js"),
 	Field = require("./classes/Field.js"),
 	FieldObj = new Field(),
 	pokedex = require('./pokedex.js');
-	rp = require('request-promise');
-	cheerio = require('cheerio');
 	cron = require('cron');
 	
 	const job = new cron.CronJob('00 00 10 * * *', function() {
