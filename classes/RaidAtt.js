@@ -18,20 +18,28 @@ const Moment = require('moment-timezone'),
 
 var hereList = "";
 var comingList = "";
+var startTime = "";
+var mystCount = 0;
+var valCount = 0;
+var instCount = 0;
 
 module.exports = class RaidAtt
 {
-  createChannel(message) //I am really unsure if this works
+  makeChannel(message) //I am really unsure if this works
   {
       var server = message.guild;
       var name = message;
       
-      server.createChannel(name, "text")
+      server.createChannel(name, "text");
   }
   
-  deleteChannel(message)
+  deleteChannel(message) //Somehow even more unsure about this one
   {
       //Delete the raid channel at completion
+      var server = message.guild;
+      var name = message;
+      
+      server.deleteChannel(name, "text");
   }
   
   egg(prefix, message)
@@ -115,6 +123,10 @@ module.exports = class RaidAtt
   newGroup(prefix, message)
   {
       //Allow for the bot to start over in the same channel to coordinate a later group
+      hereList = "";
+      comingList = "";
+      startTime = "";
+      message.channel.send("A new group has been started! Make sure to post if you're here again if you were at the first group.");
   }
   
   startTime(prefix, message)
