@@ -6,3 +6,14 @@
 * Cancel command
 * Delete channel
 */
+
+const Moment = require('moment-timezone'),
+	moment = require('moment');
+
+module.exports = class RaidAtt
+{
+  display(prefix, message)
+  {
+    //Do something
+  }
+}
