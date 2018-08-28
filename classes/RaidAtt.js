@@ -5,15 +5,29 @@
 * Coming command
 * Cancel command
 * Delete channel
+* Start time? Should it be based on votes or set by the coordinator?
 */
-
+const timePattern = new RegExp(/^\d?\d$/g);
 const Moment = require('moment-timezone'),
-	moment = require('moment');
+    moment = require('moment');
 
 module.exports = class RaidAtt
 {
-  display(prefix, message)
+  egg(prefix, message)
   {
-    //Do something
+    var msg = message.content;
+    msg = msg.replace(prefix + "egg ", "");
+    var msgArgs = msg.split(" ");
+    if (msgArgs != 2)
+    {
+      console.log("argError on field command");
+      message.channel.send("Please try again. You entered in too many or too few arguments. Try .egg **Egg level** **Hatch Time**");
+    }
+    else
+    {
+      console.log(msgArgs);
+      var eggLevel = msgArgs[0];
+      var startTime = msgArgs[1];
+    }
   }
 }
