@@ -1,12 +1,17 @@
 /*To do:
-* Egg command
+* Raidmon command
 * Create channel
+* Delete channel
 * Here commmand
 * Coming command
 * Cancel command
-* Delete channel
-* Start time? Should it be based on votes or set by the coordinator?
+* New group command
+* Start time command
+* Starting commmand
+* End raid command
 */
+
+//Might not actually be using these
 const timePattern = new RegExp(/^\d?\d$/g);
 const Moment = require('moment-timezone'),
     moment = require('moment');
@@ -22,6 +27,11 @@ module.exports = class RaidAtt
       var name = message;
       
       server.createChannel(name, "text")
+  }
+  
+  deleteChannel(message)
+  {
+      //Delete the raid channel at completion
   }
   
   egg(prefix, message)
@@ -78,5 +88,47 @@ module.exports = class RaidAtt
           }
       }
     }
+  }
+  
+  raidMon(prefix, message)
+  {
+      //Sets the mon for the raid. Very similar to rraid. May be able to alter rraid to fill this role
+      //Rename the channel with the pokemon name
+  }
+  
+  here(prefix, message)
+  {
+      //Mark a users group as here
+  }
+  
+  coming(prefix, message)
+  {
+      //Mark as coming. Needs to take in input like '2' for 2 people or 'm1 v1' for one mystic one valor
+      //Count the number of people per team
+  }
+  
+  cancel(prefix, message)
+  {
+      //Cancel the reservation
+  }
+  
+  newGroup(prefix, message)
+  {
+      //Allow for the bot to start over in the same channel to coordinate a later group
+  }
+  
+  startTime(prefix, message)
+  {
+      //Sets the start time for the group
+  }
+  
+  starting(prefix, message)
+  {
+      //Notifies those at the raid and on the way that they are starting the lobby
+  }
+  
+  endRaid(prefix, message)
+  {
+      //Start the channel delete process
   }
 }
