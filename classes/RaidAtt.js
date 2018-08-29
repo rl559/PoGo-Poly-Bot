@@ -96,7 +96,7 @@ module.exports = class RaidAtt
       //Mark a users group as here
       var msg = message.content;
       msg = msg.replace(prefix + "here ", "");
-      if (msg == "")
+      if (msg == "" || msg == " ")
       {
           hereList = hereList + message.author;
           message.channel.send(`$message.author} is at the raid!`);
@@ -118,6 +118,10 @@ module.exports = class RaidAtt
               console.log("Team count error");
               message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
           }
+      }
+      else
+      {
+          //Maybe allow here for multiple members? Or just throw error
       }
   }
   
