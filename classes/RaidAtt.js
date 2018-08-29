@@ -27,19 +27,8 @@ module.exports = class RaidAtt
 {
   makeChannel(message) //I am really unsure if this works
   {
-      var server = message.guild;
       var name = message;
-      
-      server.createChannel(name, "text");
-  }
-  
-  deleteChannel(message) //Somehow even more unsure about this one
-  {
-      //Delete the raid channel at completion
-      var server = message.guild;
-      var name = message;
-      
-      server.deleteChannel(name, "text");
+      guild.createChannel(name, "text");
   }
   
   egg(prefix, message)
@@ -142,5 +131,6 @@ module.exports = class RaidAtt
   endRaid(prefix, message)
   {
       //Start the channel delete process
+      //channel.delete();
   }
 }
