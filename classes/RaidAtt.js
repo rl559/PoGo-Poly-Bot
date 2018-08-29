@@ -1,11 +1,8 @@
 /*To do:
 * Raidmon command
-* Create channel
-* Delete channel
 * Here commmand
 * Coming command
 * Cancel command
-* New group command
 * Start time command
 * Starting commmand
 * End raid command
@@ -25,11 +22,6 @@ var instCount = 0;
 
 module.exports = class RaidAtt
 {
-  makeChannel(message) //I am really unsure if this works
-  {
-      var name = message;
-      guild.createChannel(name, "text");
-  }
   
   egg(prefix, message)
   {
@@ -81,7 +73,7 @@ module.exports = class RaidAtt
               //A channel needs made at this point. The name of the channel will be "level-#-egg-raid"
               //After egg hatch and someone reports the pokemon, channl is renamed to "pokemon-raid"
               var channelName = "level-" + eggLevel + "-egg-raid";
-              createChannel(channelName);
+              guild.createChannel(channelName, "text");
           }
       }
     }
@@ -93,20 +85,50 @@ module.exports = class RaidAtt
       //Rename the channel with the pokemon name
   }
   
-  here(prefix, message)
-  {
-      //Mark a users group as here
-  }
-  
   coming(prefix, message)
   {
       //Mark as coming. Needs to take in input like '2' for 2 people or 'm1 v1' for one mystic one valor
       //Count the number of people per team
   }
   
+  here(prefix, message)
+  {
+      //Mark a users group as here
+      var msg = message.content;
+      msg = msg.replace(prefix + "here ", "");
+      if (msg == "")
+      {
+          hereList = hereList + message.author;
+          message.channel.send(`$message.author} is at the raid!`);
+          if (message.member.roles.find("name", "Mystic"))
+          {
+              mystCount++;
+          }
+          else if (message.member.roles.find("name", "Instinct"))
+          {
+              instCount++;
+          }
+          
+          else if (message.member.roles.find("name", "Valor"))
+          {
+              valCount++;
+          }
+          else
+          {
+              console.log("Team count error");
+              message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+          }
+      }
+  }
+  
   cancel(prefix, message)
   {
       //Cancel the reservation
+  }
+  
+  list(prefix, message)
+  {
+      //Lists all members currently coming and at the raid
   }
   
   newGroup(prefix, message)
@@ -115,6 +137,9 @@ module.exports = class RaidAtt
       hereList = "";
       comingList = "";
       startTime = "";
+      mystCount = 0;
+      instCount = 0;
+      valCount = 0;
       message.channel.send("A new group has been started! Make sure to post if you're here again if you were at the first group.");
   }
   
