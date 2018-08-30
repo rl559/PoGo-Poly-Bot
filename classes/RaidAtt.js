@@ -1,6 +1,5 @@
 /*To do:
 * Raidmon command
-* Cancel command
 * Start time command
 * Starting commmand
 * End raid command
@@ -212,7 +211,35 @@ module.exports = class RaidAtt
   
   cancel(prefix, message)
   {
-      //Cancel the reservation
+      var msg = message.content;
+      msg = msg.replace(prefix + "cancel");
+      if (msg == "" || msg == " ")
+      {
+          if (comingList.search("**" + message.author + "**, ") !=  -1)
+          {
+              comingList = comingList.replace("**" + message.author + "**, ", "");
+          }
+          else if (comingList.search("**" + message.author + "**") != -1)
+          {
+              comingList = comingList.replace("**" + message.author + "**", "");
+          }
+          else
+          {
+              if (hereList.search("**" + message.author + "**, ") != -1)
+              {
+                  hereList = hereList.replace("**" + message.author + "**, ", "");
+              }
+              else if (hereList.search("**" + message.author + "**") != -1)
+              {
+                  hereList = hereList.replace("**" + message.author + "**", "");
+              }
+          }
+      }
+      else
+      {
+          console.log("argError on cancel command");
+          message.channel.send("You entered too manyy arguments. Please try again with just **.cancel**");
+      }
   }
   
   list(prefix, message)
@@ -238,6 +265,11 @@ module.exports = class RaidAtt
           {
               message.channel.send("No one is currently at the raid");
           }
+      }
+      else
+      {
+          console.log("argError on list command");
+          message.channel.send("You entered too many arguments. Please try again with just **.list**");
       }
   }
   
