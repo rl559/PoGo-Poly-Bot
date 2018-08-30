@@ -1,7 +1,5 @@
 /*To do:
 * Raidmon command
-* Here commmand
-* Coming command
 * Cancel command
 * Start time command
 * Starting commmand
@@ -70,10 +68,30 @@ module.exports = class RaidAtt
                   }
               }
               var raidEnd = hatchHour + ":" + hatchMinute;
-              //A channel needs made at this point. The name of the channel will be "level-#-egg-raid"
               //After egg hatch and someone reports the pokemon, channl is renamed to "pokemon-raid"
               var channelName = "level-" + eggLevel + "-egg-raid";
               guild.createChannel(channelName, "text");
+              var newChannel = guild.channel.find("name", channelName); //might be .channel or .channels must test to find out
+              if (eggLevel === 1)
+              {
+                  newChannel.send("A @T1 raid has been reported!");
+              }
+              else if (eggLevel === 2)
+              {
+                  newChannel.send("A @T2 raid has been reported!");
+              }
+              if (eggLevel === 3)
+              {
+                  newChannel.send("A @T3 raid has been reported!");
+              }
+              if (eggLevel === 4)
+              {
+                  newChannel.send("A @T4 raid has been reported!");
+              }
+              if (eggLevel === 5)
+              {
+                  newChannel.send("A @T5 raid has been reported!");
+              }
           }
       }
     }
@@ -83,45 +101,86 @@ module.exports = class RaidAtt
   {
       //Sets the mon for the raid. Very similar to rraid. May be able to alter rraid to fill this role
       //Rename the channel with the pokemon name
+      //channel.setName(newName, "The egg has hatched")
   }
   
   coming(prefix, message)
   {
-      //Mark as coming. Needs to take in input like '2' for 2 people or 'm1 v1' for one mystic one valor
-      //Count the number of people per team
-  }
-  
-  here(prefix, message)
-  {
-      //Mark a users group as here
       var msg = message.content;
-      msg = msg.replace(prefix + "here ", "");
+      msg = msg.replace(prefix + "coming ", "");
       if (msg == "" || msg == " ")
       {
-          hereList = hereList + message.author;
-          message.channel.send(`$message.author} is at the raid!`);
-          if (message.member.roles.find("name", "Mystic"))
+          message.channel.send(`{$message.author} is on the way!`);
+          if (comingList == "")
           {
-              mystCount++;
-          }
-          else if (message.member.roles.find("name", "Instinct"))
-          {
-              instCount++;
-          }
-          
-          else if (message.member.roles.find("name", "Valor"))
-          {
-              valCount++;
+              comingList = "**" + message.author + "**";
+              if (message.member.roles.find("name", "Mystic"))
+              {
+                  msytCount++;
+              }
+              else if (message.member.roles.find("name", "Instinct"))
+              {
+                  instCount++;
+              }
+              else if (message.member.roles.find("name", "Valor"))
+              {
+                  valCount++;
+              }
+              else
+              {
+                  console.log("Team count error");
+                  message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+              }
           }
           else
           {
-              console.log("Team count error");
-              message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+              comingList = comingList + ", **" + message.author + "**";
+              if (message.member.roles.find("name", "Mystic"))
+              {
+                  msytCount++;
+              }
+              else if (message.member.roles.find("name", "Instinct"))
+              {
+                  instCount++;
+              }
+              else if (message.member.roles.find("name", "Valor"))
+              {
+                  valCount++;
+              }
+              else
+              {
+                  console.log("Team count error");
+                  message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+              }
           }
       }
       else
       {
-          //Maybe allow here for multiple members? Or just throw error
+          console.log("Coming argument error");
+          message.channel.send("You have entered too many arguments. Try again by just sending **.coming** with no space");
+      }
+  }
+  
+  here(prefix, message)
+  {
+      var msg = message.content;
+      msg = msg.replace(prefix + "here ", "");
+      if (msg == "" || msg == " ")
+      {
+          message.channel.send(`{$message.author} is at the raid!`);
+          if (hereList == "")
+          {
+              hereList = "**" + message.author + "**";
+          }
+          else
+          {
+              hereList = hereList + ", **" + message.author + "**";
+          }
+      }
+      else
+      {
+          console.log("Here argument error");
+          message.channel.send("You have entered too many arguments. Try again by just sending **.here** with no space");
       }
   }
   
@@ -144,7 +203,7 @@ module.exports = class RaidAtt
       mystCount = 0;
       instCount = 0;
       valCount = 0;
-      message.channel.send("A new group has been started! Make sure to post if you're here again if you were at the first group.");
+      message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
   }
   
   startTime(prefix, message)
@@ -161,5 +220,11 @@ module.exports = class RaidAtt
   {
       //Start the channel delete process
       //channel.delete();
+      hereList = "";
+      comingList = "";
+      startTime = "";
+      mystCount = 0;
+      instCount = 0;
+      valCount = 0;
   }
 }
