@@ -7,9 +7,9 @@
 */
 
 //Might not actually be using these
-const timePattern = new RegExp(/^\d?\d$/g);
-const Moment = require('moment-timezone'),
-    moment = require('moment');
+//const timePattern = new RegExp(/^\d?\d$/g);
+//const Moment = require('moment-timezone'),
+//    moment = require('moment');
 
 var hereList = "";
 var comingList = "";
@@ -28,7 +28,7 @@ module.exports = class RaidAtt
     var msgArgs = msg.split(" ");
     if (msgArgs != 2)
     {
-      console.log("argError on field command");
+      console.log("argError on egg command");
       message.channel.send("Please try again. You entered in too many or too few arguments. Try .egg **Egg level** **Hatch Time**");
     }
     else
@@ -49,7 +49,7 @@ module.exports = class RaidAtt
           if (hatchHour > 24 || hatchMinute > 60)
           {
               console.log("Raid egg time error");
-              message.channel.send("Please try again. You entered an incorrect time. Please keep the hours between 1-24 and minutes from 0-59.");
+              message.channel.send("Please try again. You entered an incorrect time. Please keep the hours between 1-12 and minutes from 0-59.");
           }
           else
           {
@@ -107,7 +107,7 @@ module.exports = class RaidAtt
   coming(prefix, message)
   {
       var msg = message.content;
-      msg = msg.replace(prefix + "coming ", "");
+      msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
           message.channel.send(`{$message.author} is on the way!`);
@@ -156,7 +156,7 @@ module.exports = class RaidAtt
       }
       else
       {
-          console.log("Coming argument error");
+          console.log("argError in coming command");
           message.channel.send("You have entered too many arguments. Try again by just sending **.coming** with no space");
       }
   }
@@ -164,22 +164,48 @@ module.exports = class RaidAtt
   here(prefix, message)
   {
       var msg = message.content;
-      msg = msg.replace(prefix + "here ", "");
+      msg = msg.replace(prefix + "here", "");
       if (msg == "" || msg == " ")
       {
           message.channel.send(`{$message.author} is at the raid!`);
           if (hereList == "")
           {
-              hereList = "**" + message.author + "**";
+              if (comingList.search("**" + message.author + "**, ") != -1)
+              {
+                  comingList = comingList.replace("**" + message.author + "**, ", "");
+                  hereList = "**" + message.author + "**";
+              }
+              else if (comingList.search("**" + message.author + "**") != -1)
+              {
+                  comingList = comingList.replace("**" + message.author + "**", "");
+                  hereList = "**" + message.author + "**";
+              }
+              else
+              {
+                  hereList = "**" + message.author + "**";
+              }
           }
           else
           {
-              hereList = hereList + ", **" + message.author + "**";
+              if (comingList.search("**" + message.author + "**, ") != -1)
+              {
+                  comingList = comingList.replace("**" + message.author + "**, ", "");
+                  hereList = hereList + ", **" + message.author + "**";
+              }
+              else if (comingList.search("**" + message.author + "**") != -1)
+              {
+                  comingList = comingList.replace("**" + message.author + "**", "");
+                  hereList = hereList + ", **" + message.author + "**";
+              }
+              else
+              {
+                  hereList = hereList + ", **" + message.author + "**";
+              }
           }
       }
       else
       {
-          console.log("Here argument error");
+          console.log("argError in here command");
           message.channel.send("You have entered too many arguments. Try again by just sending **.here** with no space");
       }
   }
@@ -192,6 +218,27 @@ module.exports = class RaidAtt
   list(prefix, message)
   {
       //Lists all members currently coming and at the raid
+      var msg = message.content;
+      msg = msg.replace(prefix + "list", "");
+      if (msg == "" || msg == " ")
+      {
+          if (comingList != "")
+          {
+              message.channel.send(comingList + " are on their way");
+          }
+          else
+          {
+              message.channel.send("No one is currently on the way.");
+          }
+          if (hereList != "")
+          {
+              message.channel.send(hereList + " are waiting at the raid");
+          }
+          else
+          {
+              message.channel.send("No one is currently at the raid");
+          }
+      }
   }
   
   newGroup(prefix, message)
