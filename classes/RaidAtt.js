@@ -1,7 +1,5 @@
 /*To do:
 * Raidmon command
-* Start time command
-* Starting commmand
 * End raid command
 */
 
@@ -12,7 +10,7 @@
 
 var hereList = "";
 var comingList = "";
-var startTime = "";
+var raidStartTime = "";
 var mystCount = 0;
 var valCount = 0;
 var instCount = 0;
@@ -244,14 +242,16 @@ module.exports = class RaidAtt
   
   list(prefix, message)
   {
-      //Lists all members currently coming and at the raid
       var msg = message.content;
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
+          message.channel.send("There are " + mystCount + " mystic players.");
+          message.channel.send("There are " + instCount + " instinct players.");
+          message.channel.send("There are " + valCount + " valor players.");
           if (comingList != "")
           {
-              message.channel.send(comingList + " are on their way");
+              message.channel.send(comingList + " are on their way.");
           }
           else
           {
@@ -259,11 +259,11 @@ module.exports = class RaidAtt
           }
           if (hereList != "")
           {
-              message.channel.send(hereList + " are waiting at the raid");
+              message.channel.send(hereList + " are waiting at the raid.");
           }
           else
           {
-              message.channel.send("No one is currently at the raid");
+              message.channel.send("No one is currently at the raid.");
           }
       }
       else
@@ -275,24 +275,54 @@ module.exports = class RaidAtt
   
   newGroup(prefix, message)
   {
-      //Allow for the bot to start over in the same channel to coordinate a later group
-      hereList = "";
-      comingList = "";
-      startTime = "";
-      mystCount = 0;
-      instCount = 0;
-      valCount = 0;
-      message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
+      var msg = message.content;
+      msg = msg.replace(prefix + "newGroup", "");
+      if (msg == "" || msg == " ")
+      {
+          hereList = "";
+          comingList = "";
+          startTime = "";
+          mystCount = 0;
+          instCount = 0;
+          valCount = 0;
+          message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
+      }
+      else
+      {
+          console.log("argError on newGroup command");
+          message.channel.send("You have entered too many arguements. Please try again with just **.newGroup**");
+      }
   }
   
   startTime(prefix, message)
   {
-      //Sets the start time for the group
+      var msg = message.content;
+      msg = msg.replace(prefix + "startTime ", "");
+      if (msg.search(" ") != -1)
+      {
+          console.log("argError on startTime command");
+          message.channel.send("You have entered too many arguments. Please try again with **.startTime hours:minutes** with no space after the minutes");
+      }
+      else
+      {
+          raidStartTime = msg;
+          message.channel.send("The start time has been set to " + msg);
+      }
   }
   
-  starting(prefix, message)
+  getStartTime(prefix, message)
   {
-      //Notifies those at the raid and on the way that they are starting the lobby
+      var msg = message.content;
+      msg = msg.replace(prefix + "getStartTime", "");
+      if (msg == "" || msg == " ")
+      {
+          message.channel.send("The start time of the raid is " + raidStartTime);
+      }
+      else
+      {
+          console.log("argError on getStartTime command");
+          message.channel.send("You have entered too many arguments. Please try again with just **.getStartTime**");
+      }
   }
   
   endRaid(prefix, message)
