@@ -1,6 +1,7 @@
 var wellnessSummary = '**Wellness:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
 var istSummary = '**IST:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
 var farstopSummary = '**Far Stop:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
+var sdcSummary = '**SDC:**\n' + 'None' + '\n' + 'None' + '\n' + 'None';
 
 module.exports = class Field
 {
@@ -139,7 +140,7 @@ module.exports = class Field
           {
           "color": 3447003,
           "title": "Field Research",
-          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          "description": wellnessSummary + '\n' + istSummary + '\n' + sdcSummary + '\n' + farstopSummary
           }
         });
       }
@@ -154,7 +155,7 @@ module.exports = class Field
           {
           "color": 3447003,
           "title": "Field Research",
-          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          "description": wellnessSummary + '\n' + istSummary + '\n' + sdcSummary + '\n' + farstopSummary
           }
         });
       }
@@ -169,14 +170,29 @@ module.exports = class Field
           {
           "color": 3447003,
           "title": "Field Research",
-          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          "description": wellnessSummary + '\n' + istSummary + '\n' + sdcSummary + '\n' + farstopSummary
+          }
+        });
+      }
+      else if (stopName == 'sdc')
+      {
+        sdcSummary = '**SDC:**\n' + date + '\n' + challenge + '\n' + reward;
+        console.log("SDC research updated");
+        message.channel.send("SDC Research Updated!");
+        message.channel.send
+        ({
+        "embed":
+          {
+          "color": 3447003,
+          "title": "Field Research",
+          "description": wellnessSummary + '\n' + istSummary + '\n' + sdcSummary + '\n' + farstopSummary
           }
         });
       }
       else
       {
         console.log("stopError on field command");
-        message.channel.send("Please try again. You have mispelled the Pokestop name. Please try \'wellness\', \'ist\', or \'far stop\'");
+        message.channel.send("Please try again. You have mispelled the Pokestop name. Please try \'wellness\', \'ist\', \'sdc\', or \'far stop\'");
       }
     }
   }
@@ -187,7 +203,7 @@ module.exports = class Field
         "embed": {
           "color": 3447003,
           "title": "Field Research",
-          "description": wellnessSummary + '\n' + istSummary + '\n' + farstopSummary
+          "description": wellnessSummary + '\n' + istSummary + '\n' + sdcSummary + '\n' + farstopSummary
           }
        });
   }
