@@ -5,7 +5,7 @@
 var pokemonData = require('./data/pokemon.json'),
 	pokedex = function( search, messageInfo = null ) {
 		console.log(search);
-		console.log(pokemonData);
+		//console.log(pokemonData);
 	if (typeof search === "object")
 	{
 		if (JSON.stringify(pokemonData) !== JSON.stringify(search)) {
@@ -17,7 +17,7 @@ var pokemonData = require('./data/pokemon.json'),
 				messageInfo.channel.send("`No pokedex updates`");
 		}
 	}
-	//console.log(pokemonData[search]);
+	console.log(pokemonData[search]);
 	else if( pokemonData[search] !== undefined ){
 		return pokemonData[search];
 	}
