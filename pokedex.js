@@ -5,7 +5,7 @@
 var pokemonData = require('./data/pokemon.json'),
 	pokedex = function( search, messageInfo = null ) {
 		console.log(search);
-		//console.log(pokemonData);
+		console.log(pokemonData);
 	if (typeof search === "object")
 	{
 		if (JSON.stringify(pokemonData) !== JSON.stringify(search)) {
