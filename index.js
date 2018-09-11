@@ -40,6 +40,8 @@ const Discord = require("discord.js"),
 	Rraid = require("./classes/Rraid.js"),
 	RraidObj = new Rraid(),
 	raidChannelPattern = new RegExp(/raids/),
+        RaidAtt = require("./classes/RaidAtt.js"),
+        RaidAttObj = new RaidAtt(),
 	Btext = require("./classes/Btext.js"),
 	BTextObj = new Btext(),
 	Field = require("./classes/Field.js"),
@@ -523,11 +525,55 @@ client.on("message", (message) => {
 	*/
 	if(message.content.startsWith(prefix + "field")) {
 		FieldObj.field(prefix, message);
-		console.log(Date.now() + "current timestamp, userinfo triggered");
+		console.log(Date.now() + "current timestamp, field triggered");
 	}
 	if(message.content.startsWith(prefix + "rsummary")) {
 		FieldObj.rsummary(prefix, message);
-		console.log(Date.now() + "current timestamp, userinfo triggered");
+		console.log(Date.now() + "current timestamp, rsummary triggered");
+	}
+	
+	/*
+	* RaidAtt commands
+	*/
+	if(message.content.startsWith(prefix +"egg")) {
+		RaidAttObj.egg(prefix, message);
+		console.log(Date.now() + "current timestamp, egg triggered");
+	}
+	if(message.content.startsWith(prefix +"raidMon")) {
+		RaidAttObj.raidMon(prefix, message);
+		console.log(Date.now() + "current timestamp, raidMon triggered");
+	}
+	if(message.content.startsWith(prefix +"coming")) {
+		RaidAttObj.coming(prefix, message);
+		console.log(Date.now() + "current timestamp, coming triggered");
+	}
+	if(message.content.startsWith(prefix +"here")) {
+		RaidAttObj.here(prefix, message);
+		console.log(Date.now() + "current timestamp, here triggered");
+	}
+	if(message.content.startsWith(prefix +"cancel")) {
+		RaidAttObj.cancel(prefix, message);
+		console.log(Date.now() + "current timestamp, cancel triggered");
+	}
+	if(message.content.startsWith(prefix +"list")) {
+		RaidAttObj.list(prefix, message);
+		console.log(Date.now() + "current timestamp, list triggered");
+	}
+	if(message.content.startsWith(prefix +"newGroup")) {
+		RaidAttObj.newGroup(prefix, message);
+		console.log(Date.now() + "current timestamp, newGroup triggered");
+	}
+	if(message.content.startsWith(prefix +"startTime")) {
+		RaidAttObj.startTime(prefix, message);
+		console.log(Date.now() + "current timestamp, startTime triggered");
+	}
+	if(message.content.startsWith(prefix +"getStartTime")) {
+		RaidAttObj.getStartTime(prefix, message);
+		console.log(Date.now() + "current timestamp, getStartTime triggered");
+	}
+	if(message.content.startsWith(prefix +"endRaid")) {
+		RaidAttObj.endRaid(prefix, message);
+		console.log(Date.now() + "current timestamp, endRaid triggered");
 	}
 	
 	/*
