@@ -1,7 +1,3 @@
-/*To do:
-* Raidmon command
-*/
-
 var hereList = "";
 var comingList = "";
 var raidStartTime = "";
@@ -61,7 +57,6 @@ module.exports = class RaidAtt
                   }
               }
               var raidEnd = hatchHour + ":" + hatchMinute;
-              //After egg hatch and someone reports the pokemon, channl is renamed to "pokemon-raid"
               var channelName = "level-" + eggLevel + "-egg-raid";
               guild.createChannel(channelName, "text");
               var newChannel = guild.channel.find("name", channelName); //might be .channel or .channels must test to find out
@@ -92,9 +87,33 @@ module.exports = class RaidAtt
   
   raidMon(prefix, message)
   {
-      //Sets the mon for the raid. Very similar to rraid. May be able to alter rraid to fill this role
-      //Rename the channel with the pokemon name
-      //channel.setName(newName, "The egg has hatched")
+      var msg = message.content;
+      msg = msg.replace(prefix + "raidMon ", "");
+      if (msg.search(" ") != -1 || msg == "")
+      {
+          console.log("argError on raidMon command");
+          message.channel.send("You have entered too many or too few arguments. Please try again with **.raidMon PokemonName**. If you are reporting a pokemon with a space in the name use a dash (-) instead.");
+      }
+      else
+      {
+          if (message.author == mainCoord)
+          {
+              //do something
+              var newName = msg + "-raid";
+              message.channel.send("The egg has hatched, new name set.");
+              channel.setName(newName, "The egg has hatched");
+              console.log("Egg channel renamed");
+              
+          }
+          else if (mainCoord == "")
+          {
+              message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + `{$message.author}`);
+          }
+          else
+          {
+              message.channel.send("Only the raid coordinator @" + mainCoord + " can rename this channel.");
+          }
+      }
   }
   
   coming(prefix, message)
