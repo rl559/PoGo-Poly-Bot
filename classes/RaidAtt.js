@@ -323,15 +323,12 @@ module.exports = class RaidAtt
   
   endRaid(prefix, message)
   {
-      //Start the channel delete process
       var msg = message.content;
       msg = msg.replace(prefix + "endRaid", "");
       if (msg == "" || msg == " ")
       {
-          //Do something
           if (mainCoord == message.author)
           {
-              //Do something
               hereList = "";
               comingList = "";
               startTime = "";
@@ -341,6 +338,10 @@ module.exports = class RaidAtt
               valCount = 0;
               channel.delete();
               guild.channel.find("name", raids).send("The raid room was closed by @" + mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+          }
+          else if (mainCoord == "")
+          {
+              message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + `{$message.author}`);
           }
           else
           {
