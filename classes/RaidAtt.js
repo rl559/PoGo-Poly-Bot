@@ -1,16 +1,11 @@
 /*To do:
 * Raidmon command
-* End raid command
 */
-
-//Might not actually be using these
-//const timePattern = new RegExp(/^\d?\d$/g);
-//const Moment = require('moment-timezone'),
-//    moment = require('moment');
 
 var hereList = "";
 var comingList = "";
 var raidStartTime = "";
+var mainCoord = "";
 var mystCount = 0;
 var valCount = 0;
 var instCount = 0;
@@ -20,6 +15,7 @@ module.exports = class RaidAtt
   
   egg(prefix, message)
   {
+    mainCoord = message.author;
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
@@ -71,23 +67,23 @@ module.exports = class RaidAtt
               var newChannel = guild.channel.find("name", channelName); //might be .channel or .channels must test to find out
               if (eggLevel === 1)
               {
-                  newChannel.send("A @T1 raid has been reported!");
+                  newChannel.send("A @T1 raid has been reported by @" + mainCoord + "!");
               }
               else if (eggLevel === 2)
               {
-                  newChannel.send("A @T2 raid has been reported!");
+                  newChannel.send("A @T2 raid has been reported by @" + mainCoord + "!");
               }
               if (eggLevel === 3)
               {
-                  newChannel.send("A @T3 raid has been reported!");
+                  newChannel.send("A @T3 raid has been reported by @" + mainCoord + "!");
               }
               if (eggLevel === 4)
               {
-                  newChannel.send("A @T4 raid has been reported!");
+                  newChannel.send("A @T4 raid has been reported by @" + mainCoord + "!");
               }
               if (eggLevel === 5)
               {
-                  newChannel.send("A @T5 raid has been reported!");
+                  newChannel.send("A @T5 raid has been reported by @" + mainCoord + "!");
               }
           }
       }
@@ -328,12 +324,33 @@ module.exports = class RaidAtt
   endRaid(prefix, message)
   {
       //Start the channel delete process
-      //channel.delete();
-      hereList = "";
-      comingList = "";
-      startTime = "";
-      mystCount = 0;
-      instCount = 0;
-      valCount = 0;
+      var msg = message.content;
+      msg = msg.replace(prefix + "endRaid", "");
+      if (msg == "" || msg == " ")
+      {
+          //Do something
+          if (mainCoord == message.author)
+          {
+              //Do something
+              hereList = "";
+              comingList = "";
+              startTime = "";
+              mainCoord = "";
+              mystCount = 0;
+              instCount = 0;
+              valCount = 0;
+              channel.delete();
+              guild.channel.find("name", raids).send("The raid room was closed by @" + mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+          }
+          else
+          {
+              message.channel.send("Only the raid coordinator @" + mainCoord + " can close this channel.");
+          }
+      }
+      else
+      {
+          console.log("argError on endRaid command");
+          message.channel.send("You have entered too many arguments. Please try again with just **.endRaid**");
+      }
   }
 }
