@@ -35,26 +35,19 @@ module.exports = class Field
         {
           reward = "Magikarp Encounter";
         }
-        else if (challenge.toLowerCase() == "use 5 berries to help catch pokemon")
+        else if (challenge.toLowerCase() == "use 10 berries to help catch pokemon")
         {
-          reward = "Girafarig Encounter";
+          reward = "Growlithe Encounter";
         }
-        else if (challenge.toLowerCase() == "catch 5 electric type pokemon")
+        else if (challenge.toLowerCase() == "catch a rattata or pikachu")
         {
-          reward = "Mareep Encounter";
-        }
-        else if (challenge.toLowerCase() == "catch a meowth or growlithe")
-        {
-          reward = "Electrike Encounter";
-        }
-        else if (challenge.toLowerCase() == "catch a skitty or poochyena")
-        {
-          reward = "Snubbull Encounter";
+          reward = "Phanpy Encounter";
         }
         else if (challenge.toLowerCase() == "catch 5 pokemon with weather boost")
         {
           reward = "Vulpix/Poliwag Encounter";
         }
+        
         //Throw challenge encounters
         else if (challenge.toLowerCase() == "make 5 nice throws")
         {
@@ -64,39 +57,29 @@ module.exports = class Field
         {
           reward = "Ghastly Encounter";
         }
-        else if (challenge.toLowerCase() == "land 3 curveball throws in a row")
+        else if (challenge.toLowerCase() == "make a great curveball throw")
         {
           reward = "Spinda Encounter";
-        }
-        else if (challenge.toLowerCase() == "make 3 great throws in a row")
-        {
-          reward = "Onyx Encounter";
         }
         else if (challenge.toLowerCase() == "make 3 excellent throws in a row")
         {
           reward = "Larvitar Encounter";
         }
+        
         //Evolve challenge encounters
         else if (challenge.toLowerCase() == "evolve a pokemon")
         {
           reward = "Eevee Encounter";
         }
-        else if (challenge.toLowerCase() == "evolve a meowth")
+        else if (challenge.toLowerCase() == "evolve 5 fire type pokemon")
         {
-          reward = "Houndour Encounter";
+          reward = "Ninetales Encounter";
         }
-        else if (challenge.toLowerCase() == "power up a pokemon 5 times")
-        {
-          reward = "Bulbasaur/Squirtle/Charmander Encounter"
-        }
-        else if (challenge.toLowerCase() == "transfer 10 pokemon")
-        {
-          reward = "Misdreavus Encounter"
-        }
+        
         //Hatch challenge encounters
         else if (challenge.toLowerCase() == "hatch an egg")
         {
-          reward = "Exeggcute/Lanturn Encounter";
+          reward = "Exeggcute Encounter";
         }
         else if (challenge.toLowerCase() == "hatch 3 eggs")
         {
@@ -106,12 +89,13 @@ module.exports = class Field
         {
           reward = "Chansey Encounter";
         }
+        
         //Combat challenge encounters
         else if (challenge.toLowerCase() == "battle in a gym")
         {
           reward = "Mankey Encounter";
         }
-        else if (challenge.toLowerCase() == "battle in a gym 5 times")
+        else if (challenge.toLowerCase() == "win 5 gym battles")
         {
           reward = "Machop Encounter";
         }
@@ -119,13 +103,23 @@ module.exports = class Field
         {
           reward = "Jynx Encounter";
         }
-        else if (challenge.toLowerCase() == "win a level 3 or higher raid")
+        else if (challenge.toLowerCase() == "win a gym battle")
         {
-          reward = "Dratini Encounter";
+          reward = "Squirtle/Charmander/Bulbasaur Encounter";
         }
         else if (challenge.toLowerCase() == "use a suppereffective charge attack in 7 gym battles")
         {
           reward = "Electabuzz Encounter";
+        }
+        
+        //Misc
+        else if (challenge.toLowerCase() == "send 5 gifts")
+        {
+          reward = "Roselia Encounter";
+        }
+        else if (challenge.toLowerCase() == "earn 1 buddy candy")
+        {
+          reward = "Numel Encounter";
         }
       }
 
