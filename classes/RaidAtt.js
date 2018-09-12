@@ -62,7 +62,7 @@ module.exports = class RaidAtt
               var raidEnd = hatchHour + ":" + hatchMinute;
               var channelName = "level-" + eggLevel + "-egg-raid";
               guild.createChannel(channelName, "text");
-              var newChannel = guild.channel.find("name", channelName); //might be .channel or .channels must test to find out
+              var newChannel = guilds.channel.find("name", channelName); //might be .channel or .channels must test to find out
               if (eggLevel === 1)
               {
                   newChannel.send("A @T1 raid has been reported by @" + mainCoord + "!");
