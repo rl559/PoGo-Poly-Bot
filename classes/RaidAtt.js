@@ -260,7 +260,6 @@ module.exports = class RaidAtt
   list(prefix, message)
   {
       var msg = message.content;
-      this.mystCount;
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
