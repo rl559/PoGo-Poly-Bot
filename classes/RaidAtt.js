@@ -97,6 +97,7 @@ module.exports = class RaidAtt
       }
       console.log(newChannel);
     }
+    console.log(newChannel);
   }
   
   raidMon(prefix, message)
