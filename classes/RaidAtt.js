@@ -1,10 +1,11 @@
+//These are not setting correctly but they hold things if set
 var hereList = "";
-var comingList = '';
+var comingList = "";
 var raidStartTime = "";
 var mainCoord = "";
-var mystCount = '0';
-var valCount = "0";
-var instCount = "0";
+var mystCount = 0;
+var valCount = 0;
+var instCount = 0;
 
 module.exports = class RaidAtt
 {
@@ -12,6 +13,13 @@ module.exports = class RaidAtt
   egg(prefix, message)
   {
     this.mainCoord = message.author;
+    var hereList = "";
+    var comingList = '';
+    var raidStartTime = "";
+    var mystCount = '0';
+    var valCount = "0";
+    var instCount = "0";
+    
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
@@ -124,7 +132,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(`{$message.author} is on the way!`);
+          message.channel.send(`{$message.author}` + " is on the way!`);
           if (this.comingList == "")
           {
               this.comingList = "**" + message.author + "**";
