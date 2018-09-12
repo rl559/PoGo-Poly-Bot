@@ -14,11 +14,11 @@ module.exports = class RaidAtt
   {
     this.mainCoord = message.author;
     this.hereList = "";
-    this.comingList = '';
+    this.comingList = "";
     this.raidStartTime = "";
-    this.mystCount = '0';
-    this.valCount = "0";
-    this.instCount = "0";
+    this.mystCount = 0;
+    this.valCount = 0;
+    this.instCount = 0;
     
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
@@ -30,7 +30,6 @@ module.exports = class RaidAtt
     }
     else
     {
-      console.log(msgArgs);
       var eggLevel = msgArgs[0];
       var hatchTime = msgArgs[1];
       if (eggLevel != 1 && eggLevel != 2 && eggLevel != 3 && eggLevel != 4 && eggLevel != 5)
@@ -64,40 +63,34 @@ module.exports = class RaidAtt
                       hatchHour = hatchHour - 12;
                   }
               }
-              var raidEnd = hatchHour + ":" + hatchMinute;
+              var raidEndTime = hatchHour + ":" + hatchMinute;
               var channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
               chnl.guild.createChannel(channelName, "text");
-              console.log(channelName);
               var newChannel = chnl.guild.channels.find("name", channelName);
               if (eggLevel == 1)
               {
-                  console.log("Found it 1");
-                  newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "!");
+                  chnl.guild.newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else if (eggLevel == 2)
               {
-                  console.log("Found it 2");
-                  newChannel.send("A @T2 raid has been reported by @" + this.mainCoord + "!");
+                  newChannel.send("A @T2 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else if (eggLevel == 3)
               {
-                  console.log("Found it 3");
-                  newChannel.send("A @T3 raid has been reported by @" + this.mainCoord + "!");
+                  newChannel.send("A @T3 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else if (eggLevel == 4)
               {
-                  console.log("Found it 4");
-                  newChannel.send("A @T4 raid has been reported by @" + this.mainCoord + "!");
+                  newChannel.send("A @T4 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else if (eggLevel == 5)
               {
-                  console.log("Found it 5");
-                  newChannel.send("A @T5 raid has been reported by @" + this.mainCoord + "!");
+                  newChannel.send("A @T5 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else
               {
-                console.log("Failed to send message to new channel");
+                  console.log("Failed to send message to new channel");
               }
           }
       }
@@ -141,7 +134,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send("@" + message.author + " is on the way!");
+          message.channel.send(message.author + " is on the way!");
           if (this.comingList == "")
           {
               this.comingList = "**" + message.author + "**";
@@ -198,7 +191,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "here", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(`{$message.author} is at the raid!`);
+          message.channel.send(message.author + " is at the raid!");
           if (this.hereList == "")
           {
               if (this.comingList.search("**" + message.author + "**, ") != -1)
@@ -374,8 +367,11 @@ module.exports = class RaidAtt
               this.mystCount = 0;
               this.instCount = 0;
               this.valCount = 0;
-              this.channel.delete();
+              var chnl = message.channel;
+              message.channel.delete();
+              //chnl.guild.channel.delete(); ???
               guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+              //chnl.guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
           }
           else if (this.mainCoord == "")
           {
