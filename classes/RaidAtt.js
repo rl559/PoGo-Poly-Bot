@@ -69,7 +69,7 @@ module.exports = class RaidAtt
               chnl.guild.createChannel(channelName, "text");
               var newChannel = chnl.guild.channels.find("name", channelName);
               console.log(newChannel);
-              if (eggLevel == 1)
+/*              if (eggLevel == 1)
               {
                   newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
@@ -93,8 +93,9 @@ module.exports = class RaidAtt
               {
                   console.log("Failed to send message to new channel");
               }
-          }
+*/          }
       }
+      console.log(newChannel);
     }
   }
   
