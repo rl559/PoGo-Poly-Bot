@@ -2,7 +2,7 @@ var hereList = "";
 var comingList = "";
 var raidStartTime = "";
 var mainCoord = "";
-var mystCount = -1;
+var mystCount = 0;
 var valCount = 0;
 var instCount = 0;
 
@@ -260,6 +260,7 @@ module.exports = class RaidAtt
   list(prefix, message)
   {
       var msg = message.content;
+      var this.mystCount;
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
