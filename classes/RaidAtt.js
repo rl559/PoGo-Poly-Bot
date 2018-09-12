@@ -67,37 +67,35 @@ module.exports = class RaidAtt
               var channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
               chnl.guild.createChannel(channelName, "text");
-              var newChannel = chnl.guild.channels.find("name", channelName);
+ /*             var newChannel = chnl.guild.channels.find("name", channelName);
               console.log(newChannel);
-/*              if (eggLevel == 1)
+ */             if (eggLevel == 1)
               {
-                  newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  chnl.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
               {
-                  newChannel.send("A @T2 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  chnl.send("A @T2 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 3)
               {
-                  newChannel.send("A @T3 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  chnl.send("A @T3 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 4)
               {
-                  newChannel.send("A @T4 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  chnl.send("A @T4 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 5)
               {
-                  newChannel.send("A @T5 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  chnl.send("A @T5 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else
               {
                   console.log("Failed to send message to new channel");
               }
-*/          }
+          }
       }
-      console.log(newChannel);
     }
-    console.log(newChannel);
   }
   
   raidMon(prefix, message)
