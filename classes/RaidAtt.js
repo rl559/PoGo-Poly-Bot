@@ -18,7 +18,7 @@ module.exports = class RaidAtt
     console.log(msgArgs[0]);
     console.log(msgArgs[1]);
     console.log(msgArgs[2]);
-    if (msgArgs[1] == "" || msgArgs[2] != undefined)
+    if (msgArgs[1] == undefined || msgArgs[2] != undefined)
     {
       console.log("argError on egg command");
       message.channel.send("Please try again. You entered in too many or too few arguments. Try .egg **Egg level** **Hatch Time**");
