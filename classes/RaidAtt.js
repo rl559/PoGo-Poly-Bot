@@ -66,6 +66,7 @@ module.exports = class RaidAtt
               var raidEndTime = hatchHour + ":" + hatchMinute;
               var channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
+              //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               chnl.guild.createChannel(channelName, "text");
  /*             var newChannel = chnl.guild.channels.find("name", channelName);
               console.log(newChannel);
@@ -371,7 +372,9 @@ module.exports = class RaidAtt
               var chnl = message.channel;
               message.channel.delete();
               //chnl.guild.channel.delete(); ???
-              guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+
+              //This line is currently not working
+              //guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
               //chnl.guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
           }
           else if (this.mainCoord == "")
