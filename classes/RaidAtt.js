@@ -13,12 +13,12 @@ module.exports = class RaidAtt
   egg(prefix, message)
   {
     this.mainCoord = message.author;
-    var hereList = "";
-    var comingList = '';
-    var raidStartTime = "";
-    var mystCount = '0';
-    var valCount = "0";
-    var instCount = "0";
+    this.hereList = "";
+    this.comingList = '';
+    this.raidStartTime = "";
+    this.mystCount = '0';
+    this.valCount = "0";
+    this.instCount = "0";
     
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
@@ -72,23 +72,32 @@ module.exports = class RaidAtt
               var newChannel = chnl.guild.channels.find("name", channelName);
               if (eggLevel === 1)
               {
+                  console.log("Found it 1");
                   newChannel.send("A @T1 raid has been reported by @" + mainCoord + "!");
               }
               else if (eggLevel === 2)
               {
+                  console.log("Found it 2");
                   newChannel.send("A @T2 raid has been reported by @" + mainCoord + "!");
               }
-              if (eggLevel === 3)
+              else if (eggLevel === 3)
               {
+                  console.log("Found it 3");
                   newChannel.send("A @T3 raid has been reported by @" + mainCoord + "!");
               }
-              if (eggLevel === 4)
+              else if (eggLevel === 4)
               {
+                  console.log("Found it 4");
                   newChannel.send("A @T4 raid has been reported by @" + mainCoord + "!");
               }
-              if (eggLevel === 5)
+              else if (eggLevel === 5)
               {
+                  console.log("Found it 5");
                   newChannel.send("A @T5 raid has been reported by @" + mainCoord + "!");
+              }
+              else
+              {
+                console.log("Failed to send message to new channel");
               }
           }
       }
