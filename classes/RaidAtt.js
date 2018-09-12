@@ -33,7 +33,7 @@ module.exports = class RaidAtt
       console.log(msgArgs);
       var eggLevel = msgArgs[0];
       var hatchTime = msgArgs[1];
-      if (eggLevel < 1 || eggLevel > 5)
+      if (eggLevel != 1 && eggLevel != 2 && eggLevel != 3 && eggLevel != 4 && eggLevel != 5)
       {
           console.log("Egg level error");
           message.channel.send("Please try again. You entered an incorrect egg level. Egg levels must be between 1-5.");
@@ -70,30 +70,30 @@ module.exports = class RaidAtt
               chnl.guild.createChannel(channelName, "text");
               console.log(channelName);
               var newChannel = chnl.guild.channels.find("name", channelName);
-              if (eggLevel === 1)
+              if (eggLevel == 1)
               {
                   console.log("Found it 1");
-                  newChannel.send("A @T1 raid has been reported by @" + mainCoord + "!");
+                  newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "!");
               }
-              else if (eggLevel === 2)
+              else if (eggLevel == 2)
               {
                   console.log("Found it 2");
-                  newChannel.send("A @T2 raid has been reported by @" + mainCoord + "!");
+                  newChannel.send("A @T2 raid has been reported by @" + this.mainCoord + "!");
               }
-              else if (eggLevel === 3)
+              else if (eggLevel == 3)
               {
                   console.log("Found it 3");
-                  newChannel.send("A @T3 raid has been reported by @" + mainCoord + "!");
+                  newChannel.send("A @T3 raid has been reported by @" + this.mainCoord + "!");
               }
-              else if (eggLevel === 4)
+              else if (eggLevel == 4)
               {
                   console.log("Found it 4");
-                  newChannel.send("A @T4 raid has been reported by @" + mainCoord + "!");
+                  newChannel.send("A @T4 raid has been reported by @" + this.mainCoord + "!");
               }
-              else if (eggLevel === 5)
+              else if (eggLevel == 5)
               {
                   console.log("Found it 5");
-                  newChannel.send("A @T5 raid has been reported by @" + mainCoord + "!");
+                  newChannel.send("A @T5 raid has been reported by @" + this.mainCoord + "!");
               }
               else
               {
@@ -141,7 +141,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(`{$message.author}` + " is on the way!");
+          message.channel.send("@" + message.author + " is on the way!");
           if (this.comingList == "")
           {
               this.comingList = "**" + message.author + "**";
