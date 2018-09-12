@@ -112,7 +112,7 @@ module.exports = class RaidAtt
       {
           if (message.author == this.mainCoord)
           {
-              //do something
+              //maybe have it check the name of the room first. Raid coord can change any name while it's active right now
               var newName = msg + "-raid";
               message.channel.send("The egg has hatched, new name set.");
               channel.setName(newName, "The egg has hatched");
@@ -121,7 +121,7 @@ module.exports = class RaidAtt
           }
           else if (this.mainCoord == "")
           {
-              message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + `{$message.author}`);
+              message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + message.author);
           }
           else
           {
@@ -379,7 +379,7 @@ module.exports = class RaidAtt
           }
           else if (this.mainCoord == "")
           {
-              message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + `{$message.author}`);
+              message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + message.author);
           }
           else
           {
