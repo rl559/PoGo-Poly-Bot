@@ -11,7 +11,7 @@ module.exports = class RaidAtt
   
   egg(prefix, message)
   {
-    mainCoord = message.author;
+    this.mainCoord = message.author;
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
@@ -98,7 +98,7 @@ module.exports = class RaidAtt
       }
       else
       {
-          if (message.author == mainCoord)
+          if (message.author == this.mainCoord)
           {
               //do something
               var newName = msg + "-raid";
@@ -107,13 +107,13 @@ module.exports = class RaidAtt
               console.log("Egg channel renamed");
               
           }
-          else if (mainCoord == "")
+          else if (this.mainCoord == "")
           {
               message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + `{$message.author}`);
           }
           else
           {
-              message.channel.send("Only the raid coordinator @" + mainCoord + " can rename this channel.");
+              message.channel.send("Only the raid coordinator @" + this.mainCoord + " can rename this channel.");
           }
       }
   }
@@ -125,20 +125,20 @@ module.exports = class RaidAtt
       if (msg == "" || msg == " ")
       {
           message.channel.send(`{$message.author} is on the way!`);
-          if (comingList == "")
+          if (this.comingList == "")
           {
-              comingList = "**" + message.author + "**";
+              this.comingList = "**" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
-                  msytCount++;
+                  this.msytCount++;
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
-                  instCount++;
+                  this.instCount++;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
-                  valCount++;
+                  this.valCount++;
               }
               else
               {
@@ -148,18 +148,18 @@ module.exports = class RaidAtt
           }
           else
           {
-              comingList = comingList + ", **" + message.author + "**";
+              this.comingList = this.comingList + ", **" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
-                  msytCount++;
+                  this.msytCount++;
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
-                  instCount++;
+                  this.instCount++;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
-                  valCount++;
+                  this.valCount++;
               }
               else
               {
@@ -182,38 +182,38 @@ module.exports = class RaidAtt
       if (msg == "" || msg == " ")
       {
           message.channel.send(`{$message.author} is at the raid!`);
-          if (hereList == "")
+          if (this.hereList == "")
           {
-              if (comingList.search("**" + message.author + "**, ") != -1)
+              if (this.comingList.search("**" + message.author + "**, ") != -1)
               {
-                  comingList = comingList.replace("**" + message.author + "**, ", "");
-                  hereList = "**" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
+                  this.hereList = "**" + message.author + "**";
               }
-              else if (comingList.search("**" + message.author + "**") != -1)
+              else if (this.comingList.search("**" + message.author + "**") != -1)
               {
-                  comingList = comingList.replace("**" + message.author + "**", "");
-                  hereList = "**" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.author + "**", "");
+                  this.hereList = "**" + message.author + "**";
               }
               else
               {
-                  hereList = "**" + message.author + "**";
+                  this.hereList = "**" + message.author + "**";
               }
           }
           else
           {
-              if (comingList.search("**" + message.author + "**, ") != -1)
+              if (this.comingList.search("**" + message.author + "**, ") != -1)
               {
-                  comingList = comingList.replace("**" + message.author + "**, ", "");
-                  hereList = hereList + ", **" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
+                  this.hereList = this.hereList + ", **" + message.author + "**";
               }
-              else if (comingList.search("**" + message.author + "**") != -1)
+              else if (this.comingList.search("**" + message.author + "**") != -1)
               {
-                  comingList = comingList.replace("**" + message.author + "**", "");
-                  hereList = hereList + ", **" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.author + "**", "");
+                  this.hereList = this.hereList + ", **" + message.author + "**";
               }
               else
               {
-                  hereList = hereList + ", **" + message.author + "**";
+                  this.hereList = this.hereList + ", **" + message.author + "**";
               }
           }
       }
@@ -230,23 +230,23 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "cancel");
       if (msg == "" || msg == " ")
       {
-          if (comingList.search("**" + message.author + "**, ") !=  -1)
+          if (this.comingList.search("**" + message.author + "**, ") !=  -1)
           {
-              comingList = comingList.replace("**" + message.author + "**, ", "");
+              this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
           }
-          else if (comingList.search("**" + message.author + "**") != -1)
+          else if (this.comingList.search("**" + message.author + "**") != -1)
           {
-              comingList = comingList.replace("**" + message.author + "**", "");
+              this.comingList = this.comingList.replace("**" + message.author + "**", "");
           }
           else
           {
-              if (hereList.search("**" + message.author + "**, ") != -1)
+              if (this.hereList.search("**" + message.author + "**, ") != -1)
               {
-                  hereList = hereList.replace("**" + message.author + "**, ", "");
+                  this.hereList = this.hereList.replace("**" + message.author + "**, ", "");
               }
-              else if (hereList.search("**" + message.author + "**") != -1)
+              else if (this.hereList.search("**" + message.author + "**") != -1)
               {
-                  hereList = hereList.replace("**" + message.author + "**", "");
+                  this.hereList = this.hereList.replace("**" + message.author + "**", "");
               }
           }
       }
@@ -263,20 +263,20 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send("There are " + mystCount + " mystic players.");
-          message.channel.send("There are " + instCount + " instinct players.");
-          message.channel.send("There are " + valCount + " valor players.");
-          if (comingList != "")
+          message.channel.send("There are " + this.mystCount + " mystic players.");
+          message.channel.send("There are " + this.instCount + " instinct players.");
+          message.channel.send("There are " + this.valCount + " valor players.");
+          if (this.comingList != "")
           {
-              message.channel.send(comingList + " are on their way.");
+              message.channel.send(this.comingList + " are on their way.");
           }
           else
           {
               message.channel.send("No one is currently on the way.");
           }
-          if (hereList != "")
+          if (this.hereList != "")
           {
-              message.channel.send(hereList + " are waiting at the raid.");
+              message.channel.send(this.hereList + " are waiting at the raid.");
           }
           else
           {
@@ -296,12 +296,12 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "newGroup", "");
       if (msg == "" || msg == " ")
       {
-          hereList = "";
-          comingList = "";
-          startTime = "";
-          mystCount = 0;
-          instCount = 0;
-          valCount = 0;
+          this.hereList = "";
+          this.comingList = "";
+          this.startTime = "";
+          this.mystCount = 0;
+          this.instCount = 0;
+          this.valCount = 0;
           message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
       }
       else
@@ -322,7 +322,7 @@ module.exports = class RaidAtt
       }
       else
       {
-          raidStartTime = msg;
+          this.raidStartTime = msg;
           message.channel.send("The start time has been set to " + msg);
       }
   }
@@ -333,7 +333,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "getStartTime", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send("The start time of the raid is " + raidStartTime);
+          message.channel.send("The start time of the raid is " + this.raidStartTime);
       }
       else
       {
@@ -348,25 +348,25 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "endRaid", "");
       if (msg == "" || msg == " ")
       {
-          if (mainCoord == message.author)
+          if (this.mainCoord == message.author)
           {
-              hereList = "";
-              comingList = "";
-              startTime = "";
-              mainCoord = "";
-              mystCount = 0;
-              instCount = 0;
-              valCount = 0;
-              channel.delete();
-              guild.channel.find("name", raids).send("The raid room was closed by @" + mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+              this.hereList = "";
+              this.comingList = "";
+              this.startTime = "";
+              this.mainCoord = "";
+              this.mystCount = 0;
+              this.instCount = 0;
+              this.valCount = 0;
+              this.channel.delete();
+              guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
           }
-          else if (mainCoord == "")
+          else if (this.mainCoord == "")
           {
               message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + `{$message.author}`);
           }
           else
           {
-              message.channel.send("Only the raid coordinator @" + mainCoord + " can close this channel.");
+              message.channel.send("Only the raid coordinator @" + this.mainCoord + " can close this channel.");
           }
       }
       else
