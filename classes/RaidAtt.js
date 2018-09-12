@@ -239,7 +239,7 @@ module.exports = class RaidAtt
   cancel(prefix, message)
   {
       var msg = message.content;
-      msg = msg.replace(prefix + "cancel");
+      msg = msg.replace(prefix + "cancel", "");
       if (msg == "" || msg == " ")
       {
           if (this.comingList.search("**" + message.author + "**, ") !=  -1)
@@ -275,6 +275,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
+          message.channel.send("This raid starts at: " + this.raidStartTime);
           message.channel.send("There are " + this.mystCount + " mystic players.");
           message.channel.send("There are " + this.instCount + " instinct players.");
           message.channel.send("There are " + this.valCount + " valor players.");
@@ -362,6 +363,7 @@ module.exports = class RaidAtt
       {
           if (this.mainCoord == message.author)
           {
+              //INSERT CHECK TO MAKE SURE IT IS ONLY IN RAID ROOM!!!!!!!!!!!
               this.hereList = "";
               this.comingList = "";
               this.startTime = "";
