@@ -70,7 +70,7 @@ module.exports = class RaidAtt
               var newChannel = chnl.guild.channels.find("name", channelName);
               if (eggLevel == 1)
               {
-                  chnl.guild.newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
+                  newChannel.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime);
               }
               else if (eggLevel == 2)
               {
