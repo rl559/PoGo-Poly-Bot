@@ -15,7 +15,7 @@ module.exports = class RaidAtt
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
-    if (msgArgs != 2)
+    if (msgArgs[1] == "" || msgArgs[2] != "")
     {
       console.log("argError on egg command");
       message.channel.send("Please try again. You entered in too many or too few arguments. Try .egg **Egg level** **Hatch Time**");
