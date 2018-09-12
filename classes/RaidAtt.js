@@ -15,9 +15,6 @@ module.exports = class RaidAtt
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
-    console.log(msgArgs[0]);
-    console.log(msgArgs[1]);
-    console.log(msgArgs[2]);
     if (msgArgs[1] == undefined || msgArgs[2] != undefined)
     {
       console.log("argError on egg command");
@@ -63,6 +60,7 @@ module.exports = class RaidAtt
               var channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
               chnl.guild.createChannel(channelName, "text");
+              console.log(channelName);
               var newChannel = chnl.guild.channel.find("name", channelName);
               if (eggLevel === 1)
               {
