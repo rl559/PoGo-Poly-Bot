@@ -61,7 +61,7 @@ module.exports = class RaidAtt
               }
               var raidEnd = hatchHour + ":" + hatchMinute;
               var channelName = "level-" + eggLevel + "-egg-raid";
-              var guildID = client.guild.get("the guild ID");
+              var guildID = client.guild.get(); //Test
               guilds.createChannel(channelName, "text");
               var newChannel = guilds.channel.find("name", channelName); //might be .channel or .channels must test to find out
               if (eggLevel === 1)
