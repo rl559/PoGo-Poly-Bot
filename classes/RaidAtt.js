@@ -15,6 +15,9 @@ module.exports = class RaidAtt
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
+    console.log(msgArgs[0]);
+    console.log(msgArgs[1]);
+    console.log(msgArgs[2]);
     if (msgArgs[1] == "" || msgArgs[2] != "")
     {
       console.log("argError on egg command");
