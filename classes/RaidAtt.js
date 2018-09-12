@@ -2,7 +2,7 @@ var hereList = "";
 var comingList = "";
 var raidStartTime = "";
 var mainCoord = "";
-var mystCount = 0;
+var mystCount = -1;
 var valCount = 0;
 var instCount = 0;
 
