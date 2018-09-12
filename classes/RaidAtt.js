@@ -2,9 +2,9 @@ var hereList = "";
 var comingList = "";
 var raidStartTime = "";
 var mainCoord = "";
-var mystCount = 0;
-var valCount = 0;
-var instCount = 0;
+var mystCount = "0";
+var valCount = "0";
+var instCount = "0";
 
 module.exports = class RaidAtt
 {
