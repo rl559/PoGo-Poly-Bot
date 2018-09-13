@@ -2,6 +2,7 @@
 var hereList = "";
 var comingList = "";
 var raidStartTime = "";
+var channelName = "";
 var mainCoord = "";
 var mystCount = 0;
 var valCount = 0;
@@ -70,7 +71,7 @@ module.exports = class RaidAtt
                   }
               }
               var raidEndTime = hatchHour + ":" + hatchMinute;
-              var channelName = "level-" + eggLevel + "-egg-raid";
+              this.channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               chnl.guild.createChannel(channelName, "text");
@@ -122,6 +123,17 @@ module.exports = class RaidAtt
           if (message.author == this.mainCoord)
           {
               //maybe have it check the name of the room first. Raid coord can change any name while it's active right now
+              if (message.channel == this.channelName)
+              {
+                  var newName = msg + "-raid";
+                  message.channel.send("The egg has hatched, new name set.");
+                  message.channel.setName(newName, "The egg has hatched");
+                  console.log("Egg channel renamed");
+              }
+              else
+              {
+                  message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + message.author);
+              }
               var newName = msg + "-raid";
               message.channel.send("The egg has hatched, new name set.");
               message.channel.setName(newName, "The egg has hatched");
