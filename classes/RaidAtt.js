@@ -349,7 +349,7 @@ module.exports = class RaidAtt
       {
           this.hereList = "";
           this.comingList = "";
-          this.startTime = "";
+          this.raidStartTime = "";
           this.mystCount = 0;
           this.instCount = 0;
           this.valCount = 0;
@@ -404,7 +404,7 @@ module.exports = class RaidAtt
               //INSERT CHECK TO MAKE SURE IT IS ONLY IN RAID ROOM!!!!!!!!!!!
               this.hereList = "";
               this.comingList = "";
-              this.startTime = "";
+              this.raidStartTime = "";
               this.mainCoord = "";
               this.mystCount = 0;
               this.instCount = 0;
