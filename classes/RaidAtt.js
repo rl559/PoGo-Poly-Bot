@@ -127,7 +127,7 @@ module.exports = class RaidAtt
               //maybe have it check the name of the room first. Raid coord can change any name while it's active right now
               var newName = msg + "-raid";
               message.channel.send("The egg has hatched, new name set.");
-              channel.setName(newName, "The egg has hatched");
+              message.channel.setName(newName, "The egg has hatched");
               console.log("Egg channel renamed");
               
           }
