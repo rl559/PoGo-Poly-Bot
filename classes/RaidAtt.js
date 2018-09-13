@@ -74,7 +74,7 @@ module.exports = class RaidAtt
               this.channelName = "level-" + eggLevel + "-egg-raid";
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
-              chnl.guild.createChannel(channelName, "text");
+              chnl.guild.createChannel(this.channelName, "text");
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
