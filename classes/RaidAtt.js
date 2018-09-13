@@ -362,14 +362,14 @@ module.exports = class RaidAtt
       }
   }
   
-  startTime(prefix, message)
+  setStartTime(prefix, message)
   {
       var msg = message.content;
-      msg = msg.replace(prefix + "startTime ", "");
+      msg = msg.replace(prefix + "setStartTime ", "");
       if (msg.indexOf(" ") != -1)
       {
-          console.log("argError on startTime command");
-          message.channel.send("You have entered too many arguments. Please try again with **.startTime hours:minutes** with no space after the minutes");
+          console.log("argError on setStartTime command");
+          message.channel.send("You have entered too many arguments. Please try again with **.setStartTime hours:minutes** with no space after the minutes");
       }
       else
       {
