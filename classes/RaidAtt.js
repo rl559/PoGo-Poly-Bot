@@ -3,6 +3,7 @@ var hereList = "";
 var comingList = "";
 var raidStartTime = "";
 var channelName = "";
+var newName = "";
 var mainCoord = "";
 var mystCount = 0;
 var valCount = 0;
@@ -122,27 +123,21 @@ module.exports = class RaidAtt
       {
           if (message.author == this.mainCoord)
           {
-              //maybe have it check the name of the room first. Raid coord can change any name while it's active right now
               if (message.channel == this.channelName)
               {
-                  var newName = msg + "-raid";
+                  this.newName = msg + "-raid";
                   message.channel.send("The egg has hatched, new name set.");
-                  message.channel.setName(newName, "The egg has hatched");
+                  message.channel.setName(this.newName, "The egg has hatched into " + msg + "!);
                   console.log("Egg channel renamed");
               }
               else
               {
                   message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + message.author);
               }
-              var newName = msg + "-raid";
-              message.channel.send("The egg has hatched, new name set.");
-              message.channel.setName(newName, "The egg has hatched");
-              console.log("Egg channel renamed");
-              
           }
           else if (this.mainCoord == "")
           {
-              message.channel.send("This channel is not a raid room and should not be renamed. Shame on you " + message.author);
+              message.channel.send("You are not the coordinator, shame on you " + message.author);
           }
           else
           {
@@ -413,25 +408,27 @@ module.exports = class RaidAtt
       {
           if (this.mainCoord == message.author)
           {
-              //INSERT CHECK TO MAKE SURE IT IS ONLY IN RAID ROOM!!!!!!!!!!!
-              this.hereList = "";
-              this.comingList = "";
-              this.raidStartTime = "";
-              this.mainCoord = "";
-              this.mystCount = 0;
-              this.instCount = 0;
-              this.valCount = 0;
-              var chnl = message.channel;
-              message.channel.delete();
-              //chnl.guild.channel.delete(); ???
-
-              //This line is currently not working
-              //guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
-              //chnl.guild.channel.find("name", "raids").send("The raid room was closed by @" + this.mainCoord + ". Just report the raid egg again to reopen a room for the raid.");
+              if (message.channel == this.newName || message.channel == this.channelName)
+              {
+                  this.hereList = "";
+                  this.comingList = "";
+                  this.raidStartTime = "";
+                  this.channelName = "";
+                  this.newName = "";
+                  this.mainCoord = "";
+                  this.mystCount = 0;
+                  this.instCount = 0;
+                  this.valCount = 0;
+                  message.channel.delete();
+              }
+              else
+              {
+                  message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + message.author);
+              }
           }
           else if (this.mainCoord == "")
           {
-              message.channel.send("This channel is not a raid room and should not be deleted. Shame on you " + message.author);
+              message.channel.send("You are not the raid coordinator, shame on you " + message.author);
           }
           else
           {
