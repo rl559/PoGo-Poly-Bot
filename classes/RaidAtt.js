@@ -59,7 +59,8 @@ module.exports = class RaidAtt
               if (hatchMinute > 59)
               {
                   hatchMinute = hatchMinute - 60;
-                  hatchHour++;
+                  console.log(hatchMinute);
+                  hatchHour = hatchHour + 1;
                   if (hatchHour > 12)
                   {
                       hatchHour = hatchHour - 12;
@@ -74,7 +75,7 @@ module.exports = class RaidAtt
               console.log(newChannel);
  */             if (eggLevel == 1)
               {
-                  var callRole = message.server.roles.get('name', 'T1');
+                  var callRole = chnl.roles.get('name', 'T1');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
