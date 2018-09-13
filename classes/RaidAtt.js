@@ -75,9 +75,7 @@ module.exports = class RaidAtt
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               chnl.guild.createChannel(channelName, "text");
- /*             var newChannel = chnl.guild.channels.find("name", channelName);
-              console.log(newChannel);
- */             if (eggLevel == 1)
+              if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
                   chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
@@ -115,7 +113,7 @@ module.exports = class RaidAtt
   {
       var msg = message.content;
       msg = msg.replace(prefix + "raidMon ", "");
-      if (msg.search(" ") != -1 || msg == "")
+      if (msg.indexOf(" ") != -1 || msg == "")
       {
           console.log("argError on raidMon command");
           message.channel.send("You have entered too many or too few arguments. Please try again with **.raidMon PokemonName**. If you are reporting a pokemon with a space in the name use a dash (-) instead.");
@@ -214,12 +212,12 @@ module.exports = class RaidAtt
           message.channel.send(message.author + " is at the raid!");
           if (this.hereList == "")
           {
-              if (this.comingList.search("**" + message.author + "**, ") != -1)
+              if (this.comingList.indexOf("**" + message.author + "**, ") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
                   this.hereList = "**" + message.author + "**";
               }
-              else if (this.comingList.search("**" + message.author + "**") != -1)
+              else if (this.comingList.indexOf("**" + message.author + "**") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**", "");
                   this.hereList = "**" + message.author + "**";
@@ -231,12 +229,12 @@ module.exports = class RaidAtt
           }
           else
           {
-              if (this.comingList.search("**" + message.author + "**, ") != -1)
+              if (this.comingList.indexOf("**" + message.author + "**, ") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
                   this.hereList = this.hereList + ", **" + message.author + "**";
               }
-              else if (this.comingList.search("**" + message.author + "**") != -1)
+              else if (this.comingList.indexOf("**" + message.author + "**") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**", "");
                   this.hereList = this.hereList + ", **" + message.author + "**";
@@ -260,21 +258,21 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "cancel", "");
       if (msg == "" || msg == " ")
       {
-          if (this.comingList.search("**" + message.author + "**, ") !=  -1)
+          if (this.comingList.indexOf("**" + message.author + "**, ") !=  -1)
           {
               this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
           }
-          else if (this.comingList.search("**" + message.author + "**") != -1)
+          else if (this.comingList.indexOf("**" + message.author + "**") != -1)
           {
               this.comingList = this.comingList.replace("**" + message.author + "**", "");
           }
           else
           {
-              if (this.hereList.search("**" + message.author + "**, ") != -1)
+              if (this.hereList.indexOf("**" + message.author + "**, ") != -1)
               {
                   this.hereList = this.hereList.replace("**" + message.author + "**, ", "");
               }
-              else if (this.hereList.search("**" + message.author + "**") != -1)
+              else if (this.hereList.indexOf("**" + message.author + "**") != -1)
               {
                   this.hereList = this.hereList.replace("**" + message.author + "**", "");
               }
@@ -346,7 +344,7 @@ module.exports = class RaidAtt
   {
       var msg = message.content;
       msg = msg.replace(prefix + "startTime ", "");
-      if (msg.search(" ") != -1)
+      if (msg.indexOf(" ") != -1)
       {
           console.log("argError on startTime command");
           message.channel.send("You have entered too many arguments. Please try again with **.startTime hours:minutes** with no space after the minutes");
