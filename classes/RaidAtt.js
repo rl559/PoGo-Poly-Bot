@@ -63,7 +63,6 @@ module.exports = class RaidAtt
                   {
                       hatchMinute = "00";
                   }
-                  console.log(hatchMinute);
                   hatchHour = hatchHour + 1;
                   if (hatchHour > 12)
                   {
@@ -258,6 +257,29 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "cancel", "");
       if (msg == "" || msg == " ")
       {
+          message.channel.send(message.author + " has canceled.");
+          
+          if (message.member.roles.find("name", "Mystic"))
+          {
+              this.mystCount = parseInt(this.mystCount);
+              this.mystCount = this.mystCount - 1;
+          }
+          else if (message.member.roles.find("name", "Instinct"))
+          {
+              this.instCount = parseInt(this.instCount);
+              this.instCount = this.instCount - 1;
+          }
+          else if (message.member.roles.find("name", "Valor"))
+          {
+              this.valCount = parseInt(this.valCount);
+              this.valCount = this.valCount - 1;
+          }
+          else
+          {
+              console.log("Team count error");
+              message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+          }
+          
           if (this.comingList.indexOf("**" + message.author + "**, ") !=  -1)
           {
               this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
