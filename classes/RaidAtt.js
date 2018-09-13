@@ -125,7 +125,7 @@ module.exports = class RaidAtt
           {
             console.log("message.channel: " + message.channel);
             console.log("this.channelName: " + this.channelName);
-            var raidChanID = message.channel.find("name", this.channelName);
+            var raidChanID = message.channel.guild.channels.find("name", this.channelName);
             console.log("raidChanID:" + raidChanID);
               if (message.channel == this.channelName)
               {
