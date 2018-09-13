@@ -223,6 +223,11 @@ module.exports = class RaidAtt
                   this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
                   this.hereList = "**" + message.author + "**";
               }
+              else if (this.comingList.indexOf(", **" + message.author + "**") != -1)
+              {
+                  this.comingList = this.comingList.replace(", **" + message.author + "**", "");
+                  this.hereList = "**" + message.author + "**";
+              }
               else if (this.comingList.indexOf("**" + message.author + "**") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**", "");
@@ -238,6 +243,11 @@ module.exports = class RaidAtt
               if (this.comingList.indexOf("**" + message.author + "**, ") != -1)
               {
                   this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
+                  this.hereList = this.hereList + ", **" + message.author + "**";
+              }
+              else if (this.comingList.indexOf(", **" + message.author + "**") != -1)
+              {
+                  this.comingList = this.comingList.replace(", **" + message.author + "**", "");
                   this.hereList = this.hereList + ", **" + message.author + "**";
               }
               else if (this.comingList.indexOf("**" + message.author + "**") != -1)
@@ -291,6 +301,10 @@ module.exports = class RaidAtt
           {
               this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
           }
+          else if (this.comingList.indexOf(", **" + message.author + "**") !=  -1)
+          {
+              this.comingList = this.comingList.replace(", **" + message.author + "**");
+          }
           else if (this.comingList.indexOf("**" + message.author + "**") != -1)
           {
               this.comingList = this.comingList.replace("**" + message.author + "**", "");
@@ -300,6 +314,10 @@ module.exports = class RaidAtt
               if (this.hereList.indexOf("**" + message.author + "**, ") != -1)
               {
                   this.hereList = this.hereList.replace("**" + message.author + "**, ", "");
+              }
+              else if (this.hereList.indexOf(", **" + message.author + "**") !=  -1)
+              {
+                  this.hereList = this.hereList.replace(", **" + message.author + "**");
               }
               else if (this.hereList.indexOf("**" + message.author + "**") != -1)
               {
