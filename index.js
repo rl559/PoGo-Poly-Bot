@@ -563,9 +563,9 @@ client.on("message", (message) => {
 		RaidAttObj.newGroup(prefix, message);
 		console.log(Date.now() + "current timestamp, newGroup triggered");
 	}
-	if(message.content.startsWith(prefix +"startTime")) {
-		RaidAttObj.startTime(prefix, message);
-		console.log(Date.now() + "current timestamp, startTime triggered");
+	if(message.content.startsWith(prefix +"setStartTime")) {
+		RaidAttObj.setStartTime(prefix, message);
+		console.log(Date.now() + "current timestamp, setStartTime triggered");
 	}
 	if(message.content.startsWith(prefix +"getStartTime")) {
 		RaidAttObj.getStartTime(prefix, message);
