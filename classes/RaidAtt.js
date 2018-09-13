@@ -74,7 +74,7 @@ module.exports = class RaidAtt
               console.log(newChannel);
  */             if (eggLevel == 1)
               {
-                  var callRole = chnl.server.roles.get('name', 'T1');
+                  var callRole = message.server.roles.get('name', 'T1');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
@@ -149,19 +149,15 @@ module.exports = class RaidAtt
               this.comingList = "**" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
-                  console.log("I see mystic");
-                  this.msytCount++;
-                  console.log(this.mystCount);
                   this.mystCount = this.mystCount + 1;
-                  console.log(this.mystCount);
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
-                  this.instCount++;
+                  this.instCount = this.instCount + 1;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
-                  this.valCount++;
+                  this.valCount = this.valCount + 1;
               }
               else
               {
@@ -174,15 +170,15 @@ module.exports = class RaidAtt
               this.comingList = this.comingList + ", **" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
-                  this.msytCount++;
+                  this.mystCount = this.mystCount + 1;
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
-                  this.instCount++;
+                  this.instCount = this.instCount + 1;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
-                  this.valCount++;
+                  this.valCount = this.valCount + 1;
               }
               else
               {
@@ -276,7 +272,7 @@ module.exports = class RaidAtt
       else
       {
           console.log("argError on cancel command");
-          message.channel.send("You entered too manyy arguments. Please try again with just **.cancel**");
+          message.channel.send("You entered too many arguments. Please try again with just **.cancel**");
       }
   }
   
