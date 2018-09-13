@@ -80,7 +80,7 @@ module.exports = class RaidAtt
  */             if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.get('name', 'T1');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole.toString() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
               {
