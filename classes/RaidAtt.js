@@ -123,11 +123,7 @@ module.exports = class RaidAtt
       {
           if (message.author == this.mainCoord)
           {
-            console.log("message.channel: " + message.channel);
-            console.log("this.channelName: " + this.channelName);
-            var raidChanID = message.channel.guild.channels.find("name", this.channelName);
-            console.log("raidChanID:" + raidChanID);
-              if (message.channel == this.channelName)
+              if (message.channel == message.channel.guild.channels.find("name", this.channelName))
               {
                   this.newName = msg + "-raid";
                   message.channel.send("The egg has hatched, new name set.");
@@ -412,7 +408,7 @@ module.exports = class RaidAtt
       {
           if (this.mainCoord == message.author)
           {
-              if (message.channel == this.newName || message.channel == this.channelName)
+              if (message.channel == message.channel.guild.channels.find("name", this.newName) || message.channel == message.channel.guild.channels.find("name", this.channelName))
               {
                   this.hereList = "";
                   this.comingList = "";
