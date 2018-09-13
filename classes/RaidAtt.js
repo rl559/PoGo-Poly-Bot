@@ -79,27 +79,27 @@ module.exports = class RaidAtt
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else if (eggLevel == 2)
               {
                   var callRole = chnl.guild.roles.find('name', 'T2');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else if (eggLevel == 3)
               {
                   var callRole = chnl.guild.roles.find('name', 'T3');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else if (eggLevel == 4)
               {
                   var callRole = chnl.guild.roles.find('name', 'T4');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else if (eggLevel == 5)
               {
                   var callRole = chnl.guild.roles.find('name', 'T5');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else
               {
@@ -123,6 +123,8 @@ module.exports = class RaidAtt
       {
           if (message.author == this.mainCoord)
           {
+            console.log("message.channel: " + message.channel);
+            console.log("this.channelName: " + this.channelName);
               if (message.channel == this.channelName)
               {
                   this.newName = msg + "-raid";
