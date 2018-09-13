@@ -44,8 +44,6 @@ module.exports = class RaidAtt
           var hatchMinute = hatchClock[1];
           hatchHour = parseInt(hatchHour);
           hatchMinute = parseInt(hatchMinute);
-        console.log(hatchHour);
-        console.log(hatchMinute);
           if (hatchHour > 24 || hatchMinute > 60)
           {
               console.log("Raid egg time error");
@@ -61,6 +59,10 @@ module.exports = class RaidAtt
               if (hatchMinute > 59)
               {
                   hatchMinute = hatchMinute - 60;
+                  if (hatchMinute == 0)
+                  {
+                      hatchMinute = "00";
+                  }
                   console.log(hatchMinute);
                   hatchHour = hatchHour + 1;
                   if (hatchHour > 12)
@@ -78,26 +80,26 @@ module.exports = class RaidAtt
  */             if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.get('name', 'T1');
-                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
               {
-                  var callRole = chnl.server.roles.get('name', 'T2');
+                  var callRole = chnl.guild.roles.get('name', 'T2');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 3)
               {
-                  var callRole = chnl.server.roles.get('name', 'T3');
+                  var callRole = chnl.guild.roles.get('name', 'T3');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 4)
               {
-                  var callRole = chnl.server.roles.get('name', 'T4');
+                  var callRole = chnl.guild.roles.get('name', 'T4');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 5)
               {
-                  var callRole = chnl.server.roles.get('name', 'T5');
+                  var callRole = chnl.guild.roles.get('name', 'T5');
                   chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else
@@ -152,14 +154,17 @@ module.exports = class RaidAtt
               this.comingList = "**" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
+                  this.mystCount = parseInt(this.mystCount);
                   this.mystCount = this.mystCount + 1;
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
+                  this.instCount = parseInt(this.instCount);
                   this.instCount = this.instCount + 1;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
+                  this.valCount = parseInt(this.valCount);
                   this.valCount = this.valCount + 1;
               }
               else
@@ -173,14 +178,17 @@ module.exports = class RaidAtt
               this.comingList = this.comingList + ", **" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
+                  this.mystCount = parseInt(this.mystCount);
                   this.mystCount = this.mystCount + 1;
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
+                  this.instCount = parseInt(this.instCount);
                   this.instCount = this.instCount + 1;
               }
               else if (message.member.roles.find("name", "Valor"))
               {
+                  this.valCount = parseInt(this.valCount);
                   this.valCount = this.valCount + 1;
               }
               else
