@@ -42,6 +42,8 @@ module.exports = class RaidAtt
           var hatchClock = hatchTime.split(":");
           var hatchHour = hatchClock[0];
           var hatchMinute = hatchClock[1];
+        console.log(hatchHour);
+        console.log(hatchMinute);
           if (hatchHour > 24 || hatchMinute > 60)
           {
               console.log("Raid egg time error");
@@ -72,23 +74,28 @@ module.exports = class RaidAtt
               console.log(newChannel);
  */             if (eggLevel == 1)
               {
-                  chnl.send("A @T1 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  var callRole = chnl.server.roles.get('name', 'T1');
+                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 2)
               {
-                  chnl.send("A @T2 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  var callRole = chnl.server.roles.get('name', 'T2');
+                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 3)
               {
-                  chnl.send("A @T3 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  var callRole = chnl.server.roles.get('name', 'T3');
+                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 4)
               {
-                  chnl.send("A @T4 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  var callRole = chnl.server.roles.get('name', 'T4');
+                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else if (eggLevel == 5)
               {
-                  chnl.send("A @T5 raid has been reported by @" + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
+                  var callRole = chnl.server.roles.get('name', 'T5');
+                  chnl.send("A " + callRole.mention() + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + channelName);
               }
               else
               {
@@ -142,7 +149,11 @@ module.exports = class RaidAtt
               this.comingList = "**" + message.author + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
+                  console.log("I see mystic");
                   this.msytCount++;
+                  console.log(this.mystCount);
+                  this.mystCount = this.mystCount + 1;
+                  console.log(this.mystCount);
               }
               else if (message.member.roles.find("name", "Instinct"))
               {
