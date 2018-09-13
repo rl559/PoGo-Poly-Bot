@@ -127,7 +127,7 @@ module.exports = class RaidAtt
               {
                   this.newName = msg + "-raid";
                   message.channel.send("The egg has hatched, new name set.");
-                  message.channel.setName(this.newName, "The egg has hatched into " + msg + "!);
+                  message.channel.setName(this.newName, "The egg has hatched into " + msg + "!");
                   console.log("Egg channel renamed");
               }
               else
