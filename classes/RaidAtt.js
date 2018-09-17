@@ -3,7 +3,7 @@ var hereList = "";
 var comingList = "";
 var raidStartTime = "";
 var channelName = "";
-var newName = "";
+var raidMonName = "";
 var startTimeName = "";
 var mainCoord = "";
 var mystCount = 0;
@@ -73,8 +73,7 @@ module.exports = class RaidAtt
                   //This was Casey Dixon's idea
                   if (hatchMinute < 10)
                   {
-                      var testHatchMinute = "";
-                      testHatchMinute = "0" + hatchMinute;
+                      hatchMinute = "0" + hatchMinute;
                   }
                   
                   hatchHour = hatchHour + 1;
@@ -141,9 +140,9 @@ module.exports = class RaidAtt
           {
               if (message.channel == message.channel.guild.channels.find("name", this.channelName))
               {
-                  this.newName = msg + "-raid";
+                  this.raidMonName = msg + "-raid";
                   message.channel.send("The egg has hatched, new name set.");
-                  message.channel.setName(this.newName, "The egg has hatched into " + msg + "!");
+                  message.channel.setName(this.raidMonName, "The egg has hatched into " + msg + "!");
                   console.log("Egg channel renamed");
               }
               else
@@ -395,6 +394,7 @@ module.exports = class RaidAtt
           this.instCount = 0;
           this.valCount = 0;
           message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
+          message.channel.setName(this.raidMonName, "A new group has been started");
       }
       else
       {
@@ -416,7 +416,7 @@ module.exports = class RaidAtt
       {
           this.raidStartTime = msg;
           message.channel.send("The start time has been set to " + msg);
-          this.startTimeName = this.newName + "-start-time-" + this.raidStartTime;
+          this.startTimeName = this.raidMonName + "-start-time-" + this.raidStartTime;
           message.channel.setName(this.startTimeName, "The start time has been set to " + this.raidStartTime + "!");
       }
   }
@@ -444,13 +444,14 @@ module.exports = class RaidAtt
       {
           if (this.mainCoord == message.author)
           {
-              if (message.channel == message.channel.guild.channels.find("name", this.newName) || message.channel == message.channel.guild.channels.find("name", this.channelName) || message.channel == message.channel.guild.channels.fin("name", this.startTimeName))
+              if (message.channel == message.channel.guild.channels.find("name", this.raidMonName) || message.channel == message.channel.guild.channels.find("name", this.channelName) || message.channel == message.channel.guild.channels.find("name", this.startTimeName))
               {
                   this.hereList = "";
                   this.comingList = "";
                   this.raidStartTime = "";
                   this.channelName = "";
-                  this.newName = "";
+                  this.raidMonName = "";
+                  this.startTimeName = "";
                   this.mainCoord = "";
                   this.mystCount = 0;
                   this.instCount = 0;
