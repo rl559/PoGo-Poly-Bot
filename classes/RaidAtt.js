@@ -88,7 +88,7 @@ module.exports = class RaidAtt
               
               //This command should run another function to create the room and allow it to be called
               this.createTheRoom(chnl);
-              var roomID = chnl.guild.channels.get(this.channelName, "name").id;
+              var roomID = chnl.guild.channels.get(this.channelName);
               console.log(roomID);
               //chnl.guild.createChannel(this.channelName, "text");
               
