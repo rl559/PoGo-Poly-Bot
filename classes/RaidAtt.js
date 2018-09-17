@@ -87,7 +87,7 @@ module.exports = class RaidAtt
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               
               //This command should run another function to create the room and allow it to be called
-              createTheRoom();
+              this.createTheRoom();
               var roomID = chnl.guild.channels.get(this.channelName, "name").id;
               console.log(roomID);
               //chnl.guild.createChannel(this.channelName, "text");
