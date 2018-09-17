@@ -12,6 +12,12 @@ var instCount = 0;
 module.exports = class RaidAtt
 {
   
+  createTheRoom()
+  {
+      chnl.guild.createChannel(this.channelName, "text");
+      var roomID = chnl.guild.channels.find(this.channelName, "name").id;
+  }
+  
   egg(prefix, message)
   {
     this.mainCoord = message.author;
@@ -61,10 +67,57 @@ module.exports = class RaidAtt
               if (hatchMinute > 59)
               {
                   hatchMinute = hatchMinute - 60;
+                  
+                  //This was Casey Dixon's idea
+                  if (hatchMinute < 10)
+                  {
+                      var testHatchMinute = "";
+                      testHatchMinute = "0" + hatchMinute;
+                      console.log(testHatchMinute)
+                  }
+                  
+                  //Corrects single didget results. Should look into switch statements but am unsure since they are parsedInts
                   if (hatchMinute == 0)
                   {
                       hatchMinute = "00";
                   }
+                  if (hatchMinute == 1)
+                  {
+                      hatchMinute = "01";
+                  }
+                  if (hatchMinute == 2)
+                  {
+                      hatchMinute = "02";
+                  }
+                  if (hatchMinute == 3)
+                  {
+                      hatchMinute = "03";
+                  }
+                  if (hatchMinute == 4)
+                  {
+                      hatchMinute = "04";
+                  }
+                  if (hatchMinute == 5)
+                  {
+                      hatchMinute = "05";
+                  }
+                  if (hatchMinute == 6)
+                  {
+                      hatchMinute = "06";
+                  }
+                  if (hatchMinute == 7)
+                  {
+                      hatchMinute = "07";
+                  }
+                  if (hatchMinute == 8)
+                  {
+                      hatchMinute = "08";
+                  }
+                  if (hatchMinute == 9)
+                  {
+                      hatchMinute = "09";
+                  }
+                  
                   hatchHour = hatchHour + 1;
                   if (hatchHour > 12)
                   {
@@ -72,10 +125,14 @@ module.exports = class RaidAtt
                   }
               }
               var raidEndTime = hatchHour + ":" + hatchMinute;
-              this.channelName = "level-" + eggLevel + "-egg-raid";
+              this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchHour + "-" + hatchMinute;
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
+              
+              //This command should run another function to create the room and allow it to be called
+              //makeTheRoom();
               chnl.guild.createChannel(this.channelName, "text");
+              
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
@@ -400,6 +457,8 @@ module.exports = class RaidAtt
       {
           this.raidStartTime = msg;
           message.channel.send("The start time has been set to " + msg);
+          var startTimeName = this.newName + "-start-time-" + this.raidStartTime;
+          message.channel.setName(startTimeName, "The start time has been set to " + this.raidStartTime + "!");
       }
   }
   
