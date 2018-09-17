@@ -16,7 +16,6 @@ module.exports = class RaidAtt
   createTheRoom()
   {
       chnl.guild.createChannel(this.channelName, "text");
-      var roomID = chnl.guild.channels.find(this.channelName, "name").id;
   }
   
   egg(prefix, message)
@@ -88,8 +87,10 @@ module.exports = class RaidAtt
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               
               //This command should run another function to create the room and allow it to be called
-              //createTheRoom();
-              chnl.guild.createChannel(this.channelName, "text");
+              createTheRoom();
+              var roomID = chnl.guild.channels.get(this.channelName, "name").id;
+              console.log(roomID);
+              //chnl.guild.createChannel(this.channelName, "text");
               
               if (eggLevel == 1)
               {
@@ -440,6 +441,7 @@ module.exports = class RaidAtt
   {
       var msg = message.content;
       msg = msg.replace(prefix + "endRaid", "");
+    console.log("Start of endRaid mainCoord: " + this.mainCoord);
       if (msg == "" || msg == " ")
       {
           if (this.mainCoord == message.author)
@@ -477,5 +479,6 @@ module.exports = class RaidAtt
           console.log("argError on endRaid command");
           message.channel.send("You have entered too many arguments. Please try again with just **.endRaid**");
       }
+    console.log("End of endRaid mainCoord: " + this.mainCoord);
   }
 }
