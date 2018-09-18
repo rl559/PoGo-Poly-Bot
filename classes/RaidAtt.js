@@ -89,12 +89,12 @@ module.exports = class RaidAtt
               //This command runs another function to create the room but still does not allow it to be called
               //this.createTheRoom(chnl);
               
-              var newChannelNumber = chnl.guild.createChannel(this.channelName, "text");
+              chnl.guild.createChannel(this.channelName, "text");
               
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to " + newChannelNumber.mention);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to \#" + this.channelName);
               }
               else if (eggLevel == 2)
               {
