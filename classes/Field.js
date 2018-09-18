@@ -113,7 +113,7 @@ module.exports = class Field
         }
         
         //Misc
-        else if (challenge.toLowerCase() == "send 5 gifts")
+        else if (challenge.toLowerCase() == "send 5 gifts to friends")
         {
           reward = "Roselia Encounter";
         }
