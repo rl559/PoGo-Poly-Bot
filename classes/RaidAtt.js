@@ -86,11 +86,10 @@ module.exports = class RaidAtt
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               
-              //This command should run another function to create the room and allow it to be called
-              this.createTheRoom(chnl);
-              var roomID = chnl.guild.channels.get(this.channelName);
-              console.log(roomID);
-              //chnl.guild.createChannel(this.channelName, "text");
+              //This command runs another function to create the room but still does not allow it to be called
+              //this.createTheRoom(chnl);
+              
+              chnl.guild.createChannel(this.channelName, "text");
               
               if (eggLevel == 1)
               {
@@ -168,7 +167,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(message.author + " is on the way!");
+          message.channel.send(message.author.displayName + " is on the way!");
           if (this.comingList == "")
           {
               this.comingList = "**" + message.author + "**";
