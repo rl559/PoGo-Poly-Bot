@@ -414,8 +414,9 @@ module.exports = class RaidAtt
       }
       else
       {
-          this.raidStartTime = msg;
           message.channel.send("The start time has been set to " + msg);
+          msg = msg.replace(":", "");
+          this.raidStartTime = msg;
           this.startTimeName = this.raidMonName + "-start-time-" + this.raidStartTime;
           message.channel.setName(this.startTimeName, "The start time has been set to " + this.raidStartTime + "!");
       }
