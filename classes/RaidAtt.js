@@ -167,7 +167,7 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(message.author.displayName + " is on the way!");
+          message.channel.send(message.member.displayName + " is on the way!");
           if (this.comingList == "")
           {
               this.comingList = "**" + message.author + "**";
