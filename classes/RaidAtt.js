@@ -472,7 +472,7 @@ module.exports = class RaidAtt
           }
           else
           {
-              message.channel.send("Only the raid coordinator @" + this.mainCoord + " can close this channel.");
+              message.channel.send("Only the raid coordinator " + this.mainCoord + " can close this channel.");
           }
       }
       else
