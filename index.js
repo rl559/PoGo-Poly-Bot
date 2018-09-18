@@ -540,6 +540,7 @@ client.on("message", (message) => {
 		console.log(Date.now() + "current timestamp, egg triggered");
 		//The following is an experiment to see if I can actually link the channel .egg creates
 		var callRole = message.channel.guild.roles.find('name', 'T1');
+		var newChannel = message.channel.guild.channels.find("name", "level-1-raid-hatchtime-1100");
                 message.channel.send("A " + callRole + " raid has been reported by " + message.author + "!");
 		
 		//Test 2 (maybe)
