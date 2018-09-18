@@ -441,6 +441,7 @@ module.exports = class RaidAtt
       var msg = message.content;
       msg = msg.replace(prefix + "endRaid", "");
     console.log("Start of endRaid mainCoord: " + this.mainCoord);
+    console.log("startTimeName: " + this.startTimeName);
       if (msg == "" || msg == " ")
       {
           if (this.mainCoord == message.author)
