@@ -84,7 +84,7 @@ module.exports = class RaidAtt
                   }
               }
               var raidEndTime = hatchHour + ":" + hatchMinute;
-              this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchHour + hatchMinute;
+              this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchClock[0] + hatchClock[1];
               var chnl = message.channel;
               //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               
