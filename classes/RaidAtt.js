@@ -167,10 +167,10 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(message.member.displayName + " is on the way!");
+          message.channel.send(message.author + " is on the way!");
           if (this.comingList == "")
           {
-              this.comingList = "**" + message.author + "**";
+              this.comingList = "**" + message.member.displayName + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
                   this.mystCount = parseInt(this.mystCount);
@@ -194,7 +194,7 @@ module.exports = class RaidAtt
           }
           else
           {
-              this.comingList = this.comingList + ", **" + message.author + "**";
+              this.comingList = this.comingList + ", **" + message.member.displayName + "**";
               if (message.member.roles.find("name", "Mystic"))
               {
                   this.mystCount = parseInt(this.mystCount);
@@ -233,46 +233,46 @@ module.exports = class RaidAtt
           message.channel.send(message.author + " is at the raid!");
           if (this.hereList == "")
           {
-              if (this.comingList.indexOf("**" + message.author + "**, ") != -1)
+              if (this.comingList.indexOf("**" + message.member.displayName + "**, ") != -1)
               {
-                  this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
-                  this.hereList = "**" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**, ", "");
+                  this.hereList = "**" + message.member.displayName + "**";
               }
-              else if (this.comingList.indexOf(", **" + message.author + "**") != -1)
+              else if (this.comingList.indexOf(", **" + message.member.displayName + "**") != -1)
               {
-                  this.comingList = this.comingList.replace(", **" + message.author + "**", "");
-                  this.hereList = "**" + message.author + "**";
+                  this.comingList = this.comingList.replace(", **" + message.member.displayName + "**", "");
+                  this.hereList = "**" + message.member.displayName + "**";
               }
-              else if (this.comingList.indexOf("**" + message.author + "**") != -1)
+              else if (this.comingList.indexOf("**" + message.member.displayName + "**") != -1)
               {
-                  this.comingList = this.comingList.replace("**" + message.author + "**", "");
-                  this.hereList = "**" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
+                  this.hereList = "**" + message.member.displayName + "**";
               }
               else
               {
-                  this.hereList = "**" + message.author + "**";
+                  this.hereList = "**" + message.member.displayName + "**";
               }
           }
           else
           {
-              if (this.comingList.indexOf("**" + message.author + "**, ") != -1)
+              if (this.comingList.indexOf("**" + message.member.displayName + "**, ") != -1)
               {
-                  this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
-                  this.hereList = this.hereList + ", **" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**, ", "");
+                  this.hereList = this.hereList + ", **" + message.member.displayName + "**";
               }
-              else if (this.comingList.indexOf(", **" + message.author + "**") != -1)
+              else if (this.comingList.indexOf(", **" + message.member.displayName + "**") != -1)
               {
-                  this.comingList = this.comingList.replace(", **" + message.author + "**", "");
-                  this.hereList = this.hereList + ", **" + message.author + "**";
+                  this.comingList = this.comingList.replace(", **" + message.member.displayName + "**", "");
+                  this.hereList = this.hereList + ", **" + message.member.displayName + "**";
               }
-              else if (this.comingList.indexOf("**" + message.author + "**") != -1)
+              else if (this.comingList.indexOf("**" + message.member.displayName + "**") != -1)
               {
-                  this.comingList = this.comingList.replace("**" + message.author + "**", "");
-                  this.hereList = this.hereList + ", **" + message.author + "**";
+                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
+                  this.hereList = this.hereList + ", **" + message.member.displayName + "**";
               }
               else
               {
-                  this.hereList = this.hereList + ", **" + message.author + "**";
+                  this.hereList = this.hereList + ", **" + message.member.displayName + "**";
               }
           }
       }
@@ -312,31 +312,31 @@ module.exports = class RaidAtt
               message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
           }
           
-          if (this.comingList.indexOf("**" + message.author + "**, ") !=  -1)
+          if (this.comingList.indexOf("**" + message.member.displayName + "**, ") !=  -1)
           {
-              this.comingList = this.comingList.replace("**" + message.author + "**, ", "");
+              this.comingList = this.comingList.replace("**" + message.member.displayName + "**, ", "");
           }
-          else if (this.comingList.indexOf(", **" + message.author + "**") !=  -1)
+          else if (this.comingList.indexOf(", **" + message.member.displayName + "**") !=  -1)
           {
-              this.comingList = this.comingList.replace(", **" + message.author + "**");
+              this.comingList = this.comingList.replace(", **" + message.member.displayName + "**");
           }
-          else if (this.comingList.indexOf("**" + message.author + "**") != -1)
+          else if (this.comingList.indexOf("**" + message.member.displayName + "**") != -1)
           {
-              this.comingList = this.comingList.replace("**" + message.author + "**", "");
+              this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
           }
           else
           {
-              if (this.hereList.indexOf("**" + message.author + "**, ") != -1)
+              if (this.hereList.indexOf("**" + message.member.displayName + "**, ") != -1)
               {
-                  this.hereList = this.hereList.replace("**" + message.author + "**, ", "");
+                  this.hereList = this.hereList.replace("**" + message.member.displayName + "**, ", "");
               }
-              else if (this.hereList.indexOf(", **" + message.author + "**") !=  -1)
+              else if (this.hereList.indexOf(", **" + message.member.displayName + "**") !=  -1)
               {
-                  this.hereList = this.hereList.replace(", **" + message.author + "**");
+                  this.hereList = this.hereList.replace(", **" + message.member.displayName + "**");
               }
-              else if (this.hereList.indexOf("**" + message.author + "**") != -1)
+              else if (this.hereList.indexOf("**" + message.member.displayName + "**") != -1)
               {
-                  this.hereList = this.hereList.replace("**" + message.author + "**", "");
+                  this.hereList = this.hereList.replace("**" + message.member.displayName + "**", "");
               }
           }
       }
