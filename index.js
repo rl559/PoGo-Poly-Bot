@@ -538,31 +538,6 @@ client.on("message", (message) => {
 	if(message.content.startsWith(prefix +"egg")) {
 		RaidAttObj.egg(prefix, message);
 		console.log(Date.now() + "current timestamp, egg triggered");
-		//The following is an experiment to see if I can actually link the channel .egg creates
-		var callRole = message.channel.guild.roles.find('name', 'T1');
-		var newChannel = message.channel.guild.channels.find("name", "level-1-raid-hatchtime-1100");
-                message.channel.send("A " + callRole + " raid has been reported by " + message.author + "! Go to " + newChannel);
-		
-		//Test 2 (maybe)
-		/*
-		var msg = message.content;
-    msg = msg.replace(prefix + "egg ", "");
-    var msgArgs = msg.split(" ");
-    if (msgArgs[1] == undefined || msgArgs[2] != undefined)
-    {
-      console.log("argError on egg command");
-      message.channel.send("Please try again. You entered in too many or too few arguments. Try .egg **Egg level** **Hatch Time**");
-    }
-    else
-    {
-      var eggLevel = msgArgs[0];
-      var hatchTime = msgArgs[1];
-      if (eggLevel != 1 && eggLevel != 2 && eggLevel != 3 && eggLevel != 4 && eggLevel != 5)
-      {
-          console.log("Egg level error");
-          message.channel.send("Please try again. You entered an incorrect egg level. Egg levels must be between 1-5.");
-      }
-      */
 	}
 	if(message.content.startsWith(prefix +"raidMon")) {
 		RaidAttObj.raidMon(prefix, message);
