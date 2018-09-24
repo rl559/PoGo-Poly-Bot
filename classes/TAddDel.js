@@ -3,6 +3,7 @@ raid2Pattern = new RegExp(/L2|level 2|L2|tier 2|Tier 2|T2/i),
 raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
 raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
 raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
+sighting100 = new RegExp(/100|100%|one hundred|perfect/i),
 adminPattern = new RegExp(/admin|bot|mod/i);
 
 module.exports = class TAddDel
@@ -34,6 +35,10 @@ tadd(prefix, message)
       else if(raid5Pattern.test(theRole))
       {
         theRole = "T5";
+      }
+      else if(sighting100.test(theRole))
+      {
+        theRole = "100%";
       }
       else {
         if(theRole !=="all") theRole = 'undefined';
@@ -103,6 +108,10 @@ tdel(prefix, message)
     else if(raid5Pattern.test(theRole))
     {
       theRole = "T5";
+    }
+    else if(sighting100.test(theRole))
+    {
+      theRole = "100%";
     }
     else{
       if(theRole !=="all")
