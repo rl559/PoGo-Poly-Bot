@@ -12,7 +12,7 @@ var instCount = 0;
 
 module.exports = class RaidAtt
 {
-  /*
+  
   createTheRoom(chnl)
   {
       chnl.guild.createChannel(this.channelName, "text");
@@ -162,7 +162,7 @@ module.exports = class RaidAtt
           }
       }
   }
-  */
+  
   coming(prefix, message)
   {
       var msg = message.content;
@@ -404,7 +404,7 @@ module.exports = class RaidAtt
           message.channel.send("You have entered too many arguements. Please try again with just **.newGroup**");
       }
   }
-  /*
+  
   setStartTime(prefix, message)
   {
       var msg = message.content;
@@ -484,5 +484,5 @@ module.exports = class RaidAtt
       }
     console.log("End of endRaid mainCoord: " + this.mainCoord);
   }
-  */
+  
 }
