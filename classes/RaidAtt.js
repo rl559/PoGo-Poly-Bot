@@ -355,10 +355,10 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send("This raid starts at: " + this.raidStartTime);
-          message.channel.send("There are " + this.mystCount + " mystic players.");
-          message.channel.send("There are " + this.instCount + " instinct players.");
-          message.channel.send("There are " + this.valCount + " valor players.");
+          message.channel.send("This raid starts at: " + this.raidStartTime + "\nThere are " + this.mystCount + " mystic players." + "\nThere are " + this.instCount + " instinct players." + "\nThere are " + this.valCount + " valor players.");
+          //message.channel.send("There are " + this.mystCount + " mystic players.");
+          //message.channel.send("There are " + this.instCount + " instinct players.");
+          //message.channel.send("There are " + this.valCount + " valor players.");
           if (this.comingList != "")
           {
               message.channel.send(this.comingList + " are on their way.");
