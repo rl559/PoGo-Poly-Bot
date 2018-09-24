@@ -10,6 +10,9 @@ var mystCount = 0;
 var valCount = 0;
 var instCount = 0;
 
+//This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
+var parentCategoryID = 490253671763017739;
+
 module.exports = class RaidAtt
 {
   
