@@ -98,17 +98,17 @@ module.exports = class RaidAtt
               let raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               raidRoom = await raidRoom.setParent('494142635812978688');
               console.log(raidRoom.parentID);
-              raidRoom.send("This is a test broadcast. If this message works it means the shorter code works.");
+              //raidRoom.send("This is a test broadcast. If this message works it means the shorter code works.");
               
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to \#" + this.channelName);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to " + raidRoom);
               }
               else if (eggLevel == 2)
               {
                   var callRole = chnl.guild.roles.find('name', 'T2');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
+                  raidRoom.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! It will end at " + raidEndTime + ". Go to #" + this.channelName);
               }
               else if (eggLevel == 3)
               {
