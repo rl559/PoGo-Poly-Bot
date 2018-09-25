@@ -103,7 +103,7 @@ module.exports = class RaidAtt
               
               this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               //Test server parent category
-              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              this.raidRoom = await this.raidRoom.setParent(this.TESTparentCategotyID);
               
               //Live server parent category
               //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
@@ -112,31 +112,31 @@ module.exports = class RaidAtt
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + this.raidRoom);
                   this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 2)
               {
                   var callRole = chnl.guild.roles.find('name', 'T2');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + this.raidRoom);
                   this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 3)
               {
                   var callRole = chnl.guild.roles.find('name', 'T3');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + this.raidRoom);
                   this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 4)
               {
                   var callRole = chnl.guild.roles.find('name', 'T4');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + this.raidRoom);
                   this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 5)
               {
                   var callRole = chnl.guild.roles.find('name', 'T5');
-                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + this.raidRoom);
                   this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else
