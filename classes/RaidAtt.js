@@ -16,12 +16,7 @@ const TESTparentCategotyID = '494142635812978688';
 
 module.exports = class RaidAtt
 {
-  
-  createTheRoom(chnl)
-  {
-      chnl.guild.createChannel(this.channelName, "text");
-  }
-  
+    
   async egg(prefix, message)
   {
     this.mainCoord = message.author;
@@ -56,6 +51,7 @@ module.exports = class RaidAtt
           }
           else
           {
+              /* This is not currently being used but if we need to calculate the despawn time later this is how
               if (hatchHour > 12)
               {
                   hatchHour = hatchHour - 12;
@@ -78,6 +74,7 @@ module.exports = class RaidAtt
                   }
               }
               var raidEndTime = hatchHour + ":" + hatchMinute;
+              */
               this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchClock[0] + hatchClock[1];
               var chnl = message.channel;
               
@@ -197,6 +194,7 @@ module.exports = class RaidAtt
               {
                   console.log("Team count error");
                   message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
               }
           }
           else
@@ -221,6 +219,7 @@ module.exports = class RaidAtt
               {
                   console.log("Team count error");
                   message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+                  this.comingList = this.comingList.replace(", **" + message.member.displayName + "**", "");
               }
           }
       }
@@ -360,10 +359,10 @@ module.exports = class RaidAtt
       msg = msg.replace(prefix + "list", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send("This raid starts at: " + this.raidStartTime + "\nThere are " + this.mystCount + " mystic players." + "\nThere are " + this.instCount + " instinct players." + "\nThere are " + this.valCount + " valor players.");
-          //message.channel.send("There are " + this.mystCount + " mystic players.");
-          //message.channel.send("There are " + this.instCount + " instinct players.");
-          //message.channel.send("There are " + this.valCount + " valor players.");
+          message.channel.send("This raid starts at: " + this.raidStartTime + 
+                               "\nThere are " + this.mystCount + " mystic players." + 
+                               "\nThere are " + this.instCount + " instinct players." + 
+                               "\nThere are " + this.valCount + " valor players.");
           if (this.comingList != "")
           {
               message.channel.send(this.comingList + " are on their way.");
@@ -455,8 +454,6 @@ module.exports = class RaidAtt
   {
       var msg = message.content;
       msg = msg.replace(prefix + "endRaid", "");
-    console.log("Start of endRaid mainCoord: " + this.mainCoord);
-    console.log("startTimeName: " + this.startTimeName);
       if (msg == "" || msg == " ")
       {
           if (this.mainCoord == message.author)
@@ -494,7 +491,6 @@ module.exports = class RaidAtt
           console.log("argError on endRaid command");
           message.channel.send("You have entered too many arguments. Please try again with just **.endRaid**");
       }
-    console.log("End of endRaid mainCoord: " + this.mainCoord);
   }
   
 }
