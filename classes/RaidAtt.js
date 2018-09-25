@@ -101,9 +101,9 @@ module.exports = class RaidAtt
               //This command runs another function to create the room but still does not allow it to be called
               //this.createTheRoom(chnl);
               
-              raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+              this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               //Test server parent category
-              raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               
               //Live server parent category
               //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
