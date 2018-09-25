@@ -143,7 +143,7 @@ module.exports = class RaidAtt
       {
           if (message.author == this.mainCoord)
           {
-              if (message.channel == message.channel.guild.channels.find("name", this.channelName))
+              if (message.channel == this.raidRoom)
               {
                   this.raidMonName = msg + "-raid";
                   //Test this line later
@@ -163,7 +163,7 @@ module.exports = class RaidAtt
           }
           else
           {
-              message.channel.send("Only the raid coordinator @" + this.mainCoord + " can rename this channel.");
+              message.channel.send("Only the raid coordinator " + this.mainCoord + " can rename this channel.");
           }
       }
   }
@@ -421,11 +421,18 @@ module.exports = class RaidAtt
       }
       else
       {
-          message.channel.send("The start time has been set to " + msg);
-          msg = msg.replace(":", "");
-          this.raidStartTime = msg;
-          this.startTimeName = this.raidMonName + "-start-time-" + this.raidStartTime;
-          message.channel.setName(this.startTimeName, "The start time has been set to " + this.raidStartTime + "!");
+          if (message.channel == this.raidRoom)
+          {
+              message.channel.send("The start time has been set to " + msg);
+              msg = msg.replace(":", "");
+              this.raidStartTime = msg;
+              this.startTimeName = this.raidMonName + "-start-time-" + this.raidStartTime;
+              message.channel.setName(this.startTimeName, "The start time has been set to " + this.raidStartTime + "!");
+          }
+          else
+          {
+              message.channel.send("This is not a raid room and should not be renamed.");
+          }
       }
   }
   
