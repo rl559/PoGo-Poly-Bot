@@ -81,11 +81,11 @@ module.exports = class RaidAtt
               //Created the channel
               this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               
-              //Test server parent category
-              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              //Test server parent category (comment out whichever you are not using)
+              //this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               
-              //Live server parent category
-              //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
+              //Live server parent category (comment out whichever you are not using)
+              this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
               
               
               if (eggLevel == 1)
