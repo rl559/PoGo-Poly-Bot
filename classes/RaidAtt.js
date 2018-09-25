@@ -22,7 +22,7 @@ module.exports = class RaidAtt
       chnl.guild.createChannel(this.channelName, "text");
   }
   
-  egg(prefix, message)
+  async egg(prefix, message)
   {
     this.mainCoord = message.author;
     this.hereList = "";
