@@ -1,4 +1,3 @@
-//These are not setting correctly but they hold things if set
 let hereList = "";
 let comingList = "";
 let raidStartTime = "";
@@ -26,21 +25,6 @@ module.exports = class RaidAtt
   async egg(prefix, message)
   {
     this.mainCoord = message.author;
-    /*
-    this.hereList = "";
-    this.comingList = "";
-    this.raidStartTime = "";
-    this.channelName = "";
-    this.raidMonName = "";
-    this.startTimeName = "";
-    this.mystCount = 0;
-    this.valCount = 0;
-    this.instCount = 0;
-    
-    //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
-    var LIVEparentCategoryID = '490253671763017739';
-    var TESTparentCategotyID = '494142635812978688';
-    */
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
@@ -96,12 +80,10 @@ module.exports = class RaidAtt
               var raidEndTime = hatchHour + ":" + hatchMinute;
               this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchClock[0] + hatchClock[1];
               var chnl = message.channel;
-              //If we put the creation in a seperate function and call it here it SHOULD create at the end of the extra function and then allow calls to the channel
               
-              //This command runs another function to create the room but still does not allow it to be called
-              //this.createTheRoom(chnl);
-              
+              //Created the channel
               this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+              
               //Test server parent category
               this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               
@@ -472,7 +454,7 @@ module.exports = class RaidAtt
       {
           if (this.mainCoord == message.author)
           {
-              if (message.channel == message.channel.guild.channels.find("name", this.raidMonName) || message.channel == message.channel.guild.channels.find("name", this.channelName) || message.channel == message.channel.guild.channels.find("name", this.startTimeName))
+              if (message.channel == this.raidRoom)
               {
                   this.hereList = "";
                   this.comingList = "";
