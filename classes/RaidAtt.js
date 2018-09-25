@@ -10,9 +10,11 @@ let valCount = 0;
 let instCount = 0;
 let raidRoom = "";
 
-//This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
+//This is the ID of the "Active Raids" category in each server and the server IDs. Use this to create/move the channel into this category
 const LIVEparentCategoryID = '490253671763017739';
 const TESTparentCategotyID = '494142635812978688';
+const LIVEguildID = '348982315537661952';
+const TESTguildID = '394131908516380674';
 
 module.exports = class RaidAtt
 {
@@ -78,15 +80,22 @@ module.exports = class RaidAtt
               this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchClock[0] + hatchClock[1];
               var chnl = message.channel;
               
-              //Created the channel
-              this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
-              
-              //Test server parent category (comment out whichever you are not using)
-              //this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
-              
-              //Live server parent category (comment out whichever you are not using)
-              this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
-              
+              if (chnl.guild == LIVEguildID)
+              {
+                  //Created the channel
+                  this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+                  
+                  //Live server parent category (comment out whichever you are not using)
+                  this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
+              }
+              if (chnl.guild == TESTguildID)
+              {
+                  //Created the channel
+                  this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+                  
+                  //Test server parent category (comment out whichever you are not using)
+                  this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              }
               
               if (eggLevel == 1)
               {
@@ -143,8 +152,6 @@ module.exports = class RaidAtt
               if (message.channel == this.raidRoom)
               {
                   this.raidMonName = msg + "-raid";
-                  //Test this line later
-                  //this.raidMonName = this.raidMonName.toLowerCase();
                   message.channel.send("The egg has hatched, new name set.");
                   message.channel.setName(this.raidMonName, "The egg has hatched into " + msg + "!");
                   console.log("Egg channel renamed");
