@@ -9,6 +9,7 @@ var mainCoord = "";
 var mystCount = 0;
 var valCount = 0;
 var instCount = 0;
+var raidRoom = "";
 
 //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
 var LIVEparentCategoryID = '490253671763017739';
@@ -34,6 +35,10 @@ module.exports = class RaidAtt
     this.mystCount = 0;
     this.valCount = 0;
     this.instCount = 0;
+    
+    //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
+    var LIVEparentCategoryID = '490253671763017739';
+    var TESTparentCategotyID = '494142635812978688';
     
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
@@ -95,40 +100,43 @@ module.exports = class RaidAtt
               //This command runs another function to create the room but still does not allow it to be called
               //this.createTheRoom(chnl);
               
-              let raidRoom = await chnl.guild.createChannel(this.channelName, "text");
-              raidRoom = await raidRoom.setParent('494142635812978688');
-              console.log(raidRoom.parentID);
-              //raidRoom.send("This is a test broadcast. If this message works it means the shorter code works.");
+              let this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+              //Test server parent category
+              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              
+              //Live server parent category
+              //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
+              
               
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
                   chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
-                  raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
+                  this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 2)
               {
                   var callRole = chnl.guild.roles.find('name', 'T2');
-                  raidRoom.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
-                  raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
+                  chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
+                  this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 3)
               {
                   var callRole = chnl.guild.roles.find('name', 'T3');
                   chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
-                  raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
+                  this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 4)
               {
                   var callRole = chnl.guild.roles.find('name', 'T4');
                   chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
-                  raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
+                  this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else if (eggLevel == 5)
               {
                   var callRole = chnl.guild.roles.find('name', 'T5');
                   chnl.send("A " + callRole + " raid has been reported by " + this.mainCoord + "! Go to " + raidRoom);
-                  raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
+                  this.raidRoom.send("A " + callRole + " raid has been reported! Coordinate here using .coming and .here");
               }
               else
               {
