@@ -98,7 +98,7 @@ module.exports = class RaidAtt
               let raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               raidRoom = await raidRoom.setParent('494142635812978688');
               console.log(raidRoom.parentID);
-              chnl.guild.channels.find("name", this.channelName).send("This is a test broadcast. If this message works please alert <@306930141764911107> that I fixed the parent category issue.");
+              raidRoom.send("This is a test broadcast. If this message works it means the shorter code works.");
               
               if (eggLevel == 1)
               {
