@@ -12,8 +12,8 @@ let instCount = 0;
 let raidRoom = "";
 
 //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
-let LIVEparentCategoryID = '490253671763017739';
-let TESTparentCategotyID = '494142635812978688';
+const LIVEparentCategoryID = '490253671763017739';
+const TESTparentCategotyID = '494142635812978688';
 
 module.exports = class RaidAtt
 {
@@ -103,7 +103,7 @@ module.exports = class RaidAtt
               
               this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               //Test server parent category
-              this.raidRoom = await this.raidRoom.setParent(this.TESTparentCategotyID);
+              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               
               //Live server parent category
               //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
