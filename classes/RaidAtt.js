@@ -11,7 +11,8 @@ var valCount = 0;
 var instCount = 0;
 
 //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
-var parentCategoryID = 490253671763017739;
+var LIVEparentCategoryID = '490253671763017739';
+var TESTparentCategotyID = '494142635812978688';
 
 module.exports = class RaidAtt
 {
@@ -94,7 +95,10 @@ module.exports = class RaidAtt
               //This command runs another function to create the room but still does not allow it to be called
               //this.createTheRoom(chnl);
               
-              chnl.guild.createChannel(this.channelName, "text");
+              let raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+              raidRoom = await raidRoom.setParent('494142635812978688');
+              console.log(raidRoom.parentID);
+              chnl.guild.channels.find("name", this.channelName).send("This is a test broadcast. If this message works please alert <@306930141764911107> that I fixed the parent category issue.");
               
               if (eggLevel == 1)
               {
@@ -146,6 +150,8 @@ module.exports = class RaidAtt
               if (message.channel == message.channel.guild.channels.find("name", this.channelName))
               {
                   this.raidMonName = msg + "-raid";
+                  //Test this line later
+                  //this.raidMonName = this.raidMonName.toLowerCase();
                   message.channel.send("The egg has hatched, new name set.");
                   message.channel.setName(this.raidMonName, "The egg has hatched into " + msg + "!");
                   console.log("Egg channel renamed");
