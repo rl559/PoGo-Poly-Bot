@@ -1,19 +1,19 @@
 //These are not setting correctly but they hold things if set
-var hereList = "";
-var comingList = "";
-var raidStartTime = "";
-var channelName = "";
-var raidMonName = "";
-var startTimeName = "";
-var mainCoord = "";
-var mystCount = 0;
-var valCount = 0;
-var instCount = 0;
-var raidRoom = "";
+let hereList = "";
+let comingList = "";
+let raidStartTime = "";
+let channelName = "";
+let raidMonName = "";
+let startTimeName = "";
+let mainCoord = "";
+let mystCount = 0;
+let valCount = 0;
+let instCount = 0;
+let raidRoom = "";
 
 //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
-var LIVEparentCategoryID = '490253671763017739';
-var TESTparentCategotyID = '494142635812978688';
+let LIVEparentCategoryID = '490253671763017739';
+let TESTparentCategotyID = '494142635812978688';
 
 module.exports = class RaidAtt
 {
@@ -26,6 +26,7 @@ module.exports = class RaidAtt
   async egg(prefix, message)
   {
     this.mainCoord = message.author;
+    /*
     this.hereList = "";
     this.comingList = "";
     this.raidStartTime = "";
@@ -39,7 +40,7 @@ module.exports = class RaidAtt
     //This is the ID of the "Active Raids" category. Use this to create/move the channel into this category somehow
     var LIVEparentCategoryID = '490253671763017739';
     var TESTparentCategotyID = '494142635812978688';
-    
+    */
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
@@ -100,9 +101,9 @@ module.exports = class RaidAtt
               //This command runs another function to create the room but still does not allow it to be called
               //this.createTheRoom(chnl);
               
-              let this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
+              raidRoom = await chnl.guild.createChannel(this.channelName, "text");
               //Test server parent category
-              this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
+              raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               
               //Live server parent category
               //this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
