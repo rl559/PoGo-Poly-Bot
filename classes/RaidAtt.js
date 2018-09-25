@@ -80,7 +80,7 @@ module.exports = class RaidAtt
               this.channelName = "level-" + eggLevel + "-raid-hatch-time-" + hatchClock[0] + hatchClock[1];
               var chnl = message.channel;
               
-              if (chnl.guild == LIVEguildID)
+              if (chnl.guild.id == LIVEguildID)
               {
                   //Created the channel
                   this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
@@ -88,7 +88,7 @@ module.exports = class RaidAtt
                   //Live server parent category (comment out whichever you are not using)
                   this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
               }
-              if (chnl.guild == TESTguildID)
+              if (chnl.guild.id == TESTguildID)
               {
                   //Created the channel
                   this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
