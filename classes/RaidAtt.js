@@ -22,6 +22,17 @@ module.exports = class RaidAtt
   async egg(prefix, message)
   {
     this.mainCoord = message.author;
+    let hereList = "";
+    this.comingList = "";
+    this.raidStartTime = "";
+    this.channelName = "";
+    this.raidMonName = "";
+    this.startTimeName = "";
+    this.mystCount = 0;
+    this.valCount = 0;
+    this.instCount = 0;
+    this.raidRoom = "";
+    
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
     var msgArgs = msg.split(" ");
