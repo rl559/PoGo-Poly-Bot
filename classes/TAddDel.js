@@ -110,7 +110,7 @@ tadd(prefix, message)
       rolesFound.push(tier5);
       rolesFoundNames.push("Off Campus T5");
     }
-       
+       console.log(theRole);
   });
   message.member.addRoles(rolesFound).then(member => {
     let rolesAdded = rolesFoundNames.join();
