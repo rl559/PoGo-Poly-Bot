@@ -3,7 +3,7 @@ raid2Pattern = new RegExp(/L2|level 2|L2|tier 2|Tier 2|T2/i),
 raid3Pattern = new RegExp(/L3|level 3|L3|tier 3|Tier 3|T3/i),
 raid4Pattern = new RegExp(/L4|level 4|L4|tier 4|Tier 4|T4/i),
 raid5Pattern = new RegExp(/L5|level 5|L5|tier 5|Tier 5|T5/i),
-sighting100 = new RegExp(/100|100%|one hundred|perfect/i),
+sighting100 = new RegExp(/100|100%|one hundred|perfect/i), //The Off Campus patterns are being accepted by the normal patterns so there is a hard coded if statement in the theRole set to handle it for now
 ocRaid1Pattern = new RegExp(/ocL1|off campus level 1|ocL1|off campus tier 1|ocT1|oc T1|Off Campus T1| off campus T1/i),
 ocRaid2Pattern = new RegExp(/ocL2|off campus level 2|ocL2|off campus tier 2|ocT2|oc T2|Off Campus T2| off campus T2/i),
 ocRaid3Pattern = new RegExp(/ocL3|off campus level 3|ocL3|off campus tier 3|ocT3|oc T3|Off Campus T3| off campus T3/i),
@@ -23,7 +23,14 @@ tadd(prefix, message)
     let theRole = item.trim();
       if(raid1Pattern.test(theRole))
       {
-        theRole = "T1";
+        if(theRole == "off campus T1")
+        {
+          theRole = "Off Campus T1";
+        }
+        else
+        {
+          theRole = "T1";
+        }
       }
       else if(raid2Pattern.test(theRole))
       {
