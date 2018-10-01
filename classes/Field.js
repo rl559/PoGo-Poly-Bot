@@ -35,13 +35,21 @@ module.exports = class Field
         {
           reward = "Magikarp Encounter";
         }
-        else if (challenge.toLowerCase() == "use 10 berries to help catch pokemon")
+        /*else if (challenge.toLowerCase() == "use 10 berries to help catch pokemon")
         {
           reward = "Growlithe Encounter";
         }
         else if (challenge.toLowerCase() == "catch a rattata or pikachu")
         {
           reward = "Phanpy Encounter";
+        }*/
+        else if (challenge.toLowerCase() == "catch 5 pokemon")
+        {
+          reward = "Krabby Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 5 water type pokemon")
+        {
+          reward = "Krabby Encounter";
         }
         else if (challenge.toLowerCase() == "catch 5 pokemon with weather boost")
         {
@@ -57,29 +65,53 @@ module.exports = class Field
         {
           reward = "Ghastly Encounter";
         }
-        else if (challenge.toLowerCase() == "make a great curveball throw")
+        /*else if (challenge.toLowerCase() == "make a great curveball throw")
         {
-          reward = "Spinda Encounter";
+          reward = "Spinda #3 Encounter";
+        }*/
+        else if (challenge.toLowerCase() == "make 2 great curveball throws")
+        {
+          reward = "Spinda #1 Encounter";
+        }
+        else if (challenge.toLowerCase() == "make 3 great throws in a row")
+        {
+          reward = "Onyx Encounter";
         }
         else if (challenge.toLowerCase() == "make 3 excellent throws in a row")
         {
           reward = "Larvitar Encounter";
         }
         
-        //Evolve challenge encounters
+        //Evolve and Power Uo challenge encounters
         else if (challenge.toLowerCase() == "evolve a pokemon")
         {
           reward = "Eevee Encounter";
         }
-        else if (challenge.toLowerCase() == "evolve 5 fire type pokemon")
+        /*else if (challenge.toLowerCase() == "evolve 5 fire type pokemon")
         {
           reward = "Ninetales Encounter";
+        }*/
+        else if (challenge.toLowerCase() == "evolve 10 water type pokemon")
+        {
+          reward = "Dratini Encounter";
+        }
+        else if (challenge.toLowerCase() == "power up pokemon 3 times")
+        {
+          reward = "Koffing Encounter";
+        }
+        else if (challenge.toLowerCase() == "power up pokemon 5 times")
+        {
+          reward = "Squirtle/Charmander/Bulbasaur Encounter";
         }
         
         //Hatch challenge encounters
         else if (challenge.toLowerCase() == "hatch an egg")
         {
           reward = "Exeggcute Encounter";
+        }
+        else if (challenge.toLowerCase() == "hatch 2 eggs")
+        {
+          reward = "Wailmer Encounter";
         }
         else if (challenge.toLowerCase() == "hatch 3 eggs")
         {
@@ -95,7 +127,7 @@ module.exports = class Field
         {
           reward = "Mankey Encounter";
         }
-        else if (challenge.toLowerCase() == "win 5 gym battles")
+        else if (challenge.toLowerCase() == "battle in a gym 5 times")
         {
           reward = "Machop Encounter";
         }
@@ -117,9 +149,13 @@ module.exports = class Field
         {
           reward = "Roselia Encounter";
         }
-        else if (challenge.toLowerCase() == "earn 1 buddy candy")
+        else if (challenge.toLowerCase() == "earn a candy walking with your buddy")
         {
-          reward = "Numel Encounter";
+          reward = "Octillery Encounter";
+        }
+        else if (challenge.toLowerCase() == "trade a pokemon")
+        {
+          reward = "Feebas Encounter";
         }
       }
 
