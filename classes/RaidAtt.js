@@ -24,17 +24,21 @@ let guild_dict = {};
 let trainer_dict = {};
 
 this.guild_dict_["guildID"] = this.TESTguildID;
-console.log(this.guild_dict);
+
+
 
 module.exports = class RaidAtt
 {
     
   async egg(prefix, message)
   {
+      
+this.guild_dict_["guildID"] = this.TESTguildID;
       console.log(this.guild_dict);
-      console.log(guild_dict);
+      
+      
     this.mainCoord = message.author;
-    let hereList = "";
+    this.hereList = "";
     this.comingList = "";
     this.raidStartTime = "";
     this.channelName = "";
