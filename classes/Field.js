@@ -43,10 +43,6 @@ module.exports = class Field
         {
           reward = "Phanpy Encounter";
         }*/
-        else if (challenge.toLowerCase() == "catch 5 pokemon")
-        {
-          reward = "Krabby Encounter";
-        }
         else if (challenge.toLowerCase() == "catch 5 water type pokemon")
         {
           reward = "Krabby Encounter";
@@ -69,7 +65,7 @@ module.exports = class Field
         {
           reward = "Spinda #3 Encounter";
         }*/
-        else if (challenge.toLowerCase() == "make 2 great curveball throws")
+        else if (challenge.toLowerCase() == "make 2 nice curveball throws")
         {
           reward = "Spinda #1 Encounter";
         }
