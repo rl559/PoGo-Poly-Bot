@@ -31,11 +31,8 @@ module.exports = class RaidAtt
     
   async egg(prefix, message)
   {
-      
-this.guild_dict_["guildID"] = this.TESTguildID;
+      this.guild_dict[guildID] = this.TESTguildID;
       console.log(this.guild_dict);
-      
-      
     this.mainCoord = message.author;
     this.hereList = "";
     this.comingList = "";
