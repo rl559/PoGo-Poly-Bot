@@ -34,6 +34,7 @@ module.exports = class RaidAtt
     
   async egg(prefix, message)
   {
+      /*
       //The following is the beginning of me attempting to set up a dict for unique raids
 var guild_dict = {
     FirstName: "Justin",
@@ -42,7 +43,7 @@ var guild_dict = {
       console.log(this.guild_dict);
       this.guild_dict.serverID = this.TESTguildID;
       console.log(this.guild_dict);
-    
+    */
     
     
     this.mainCoord = message.author;
