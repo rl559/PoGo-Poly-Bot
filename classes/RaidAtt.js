@@ -9,12 +9,22 @@ let mystCount = 0;
 let valCount = 0;
 let instCount = 0;
 let raidRoom = "";
+let comingListArray = [];
+let hereListArray = [];
 
 //This is the ID of the "Active Raids" category in each server and the server IDs. Use this to create/move the channel into this category
 const LIVEparentCategoryID = '490253671763017739';
 const TESTparentCategotyID = '494142635812978688';
 const LIVEguildID = '348982315537661952';
 const TESTguildID = '394131908516380674';
+
+
+//The following is the beginning of me attempting to set up a dict for unique raids
+let guild_dict = {};
+let trainer_dict = {};
+
+this.guild_dict_[guild.id] = this.TESTguildID;
+console.log(this.guild_dict);
 
 module.exports = class RaidAtt
 {
@@ -32,6 +42,8 @@ module.exports = class RaidAtt
     this.valCount = 0;
     this.instCount = 0;
     this.raidRoom = "";
+    this.comingListArray = [];
+    this.hereListArray = [];
     
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
