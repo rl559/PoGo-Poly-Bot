@@ -20,7 +20,9 @@ const TESTguildID = '394131908516380674';
 
 
 //The following is the beginning of me attempting to set up a dict for unique raids
-let guild_dict = {};
+let guild_dict = {
+    guildID: ""
+};
 let trainer_dict = {};
 
 
