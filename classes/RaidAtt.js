@@ -35,7 +35,7 @@ module.exports = class RaidAtt
   async egg(prefix, message)
   {
       //The following is the beginning of me attempting to set up a dict for unique raids
-let guild_dict = {
+var guild_dict = {
     FirstName: "Justin",
     age: 21,
 };
