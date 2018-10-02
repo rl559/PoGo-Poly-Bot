@@ -21,7 +21,8 @@ const TESTguildID = '394131908516380674';
 
 //The following is the beginning of me attempting to set up a dict for unique raids
 let guild_dict = {
-    guildID: ""
+    FirstName: "Justin",
+    age: 21,
 };
 let trainer_dict = {};
 
@@ -33,7 +34,8 @@ module.exports = class RaidAtt
     
   async egg(prefix, message)
   {
-      this.guild_dict[guildID] = this.TESTguildID;
+      console.log(this.guild_dict);
+      this.guild_dict.serverID = this.TESTguildID;
       console.log(this.guild_dict);
     this.mainCoord = message.author;
     this.hereList = "";
