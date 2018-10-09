@@ -48,7 +48,8 @@ var guild_dict = {
     //This check needs deleted once a system for multiple rooms is completed. It prevents more than one raid room being open at a time
     if (this.raidRoom == undefined || this.raidRoom == "")
     {
-        break;
+        //Do nothing thanks
+        console.log("There is no raid room already made");
     }
     else
     {
