@@ -44,7 +44,18 @@ var guild_dict = {
       this.guild_dict.serverID = this.TESTguildID;
       console.log(this.guild_dict);
     */
-    
+      
+    //This check needs deleted once a system for multiple rooms is completed. It prevents more than one raid room being open at a time
+    if (this.raidRoom == undefined || this.raidRoom == "")
+    {
+        break;
+    }
+    else
+    {
+        console.log("Raid room already created. Prevented another");
+        message.channel.send("There is already a raid room in progress, make sure it is closed before you start a second!");
+        return;
+    }
     
     this.mainCoord = message.author;
     this.hereList = "";
@@ -511,6 +522,7 @@ var guild_dict = {
                   this.channelName = "";
                   this.raidMonName = "";
                   this.startTimeName = "";
+                  this.raidRoom = "";
                   this.mainCoord = "";
                   this.mystCount = 0;
                   this.instCount = 0;
