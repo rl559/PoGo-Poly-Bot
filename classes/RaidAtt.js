@@ -513,9 +513,7 @@ var guild_dict = {
       msg = msg.replace(prefix + "endRaid", "");
       if (msg == "" || msg == " ")
       {
-          console.log(message.author);
-          console.log('155501465899761664');
-          if (this.mainCoord == message.author || message.member.roles.find("name", "Admin") || message.author.id == '155501465899761664')
+          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
           {
               if (message.channel == this.raidRoom)
               {
