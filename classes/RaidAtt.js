@@ -197,7 +197,7 @@ var guild_dict = {
       }
       else
       {
-          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
+          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Bot Manager") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
           {
               if (message.channel == this.raidRoom)
               {
@@ -513,7 +513,7 @@ var guild_dict = {
       msg = msg.replace(prefix + "endRaid", "");
       if (msg == "" || msg == " ")
       {
-          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
+          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Bot Manager") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
           {
               if (message.channel == this.raidRoom)
               {
