@@ -197,7 +197,7 @@ var guild_dict = {
       }
       else
       {
-          if (message.author == this.mainCoord)
+          if (this.mainCoord == message.author || message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248')
           {
               if (message.channel == this.raidRoom)
               {
