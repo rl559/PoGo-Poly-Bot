@@ -515,7 +515,7 @@ var guild_dict = {
       {
           console.log(message.author);
           console.log('155501465899761664');
-          if (this.mainCoord == message.author || message.member.roles.find("name", "Admin") || message.author == 155501465899761664)
+          if (this.mainCoord == message.author || message.member.roles.find("name", "Admin") || message.author.id == '155501465899761664')
           {
               if (message.channel == this.raidRoom)
               {
