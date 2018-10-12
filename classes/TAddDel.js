@@ -101,7 +101,7 @@ tadd(prefix, message)
         theRole = "Off Campus T5"
       }*/
       else {
-        if(theRole !=="all" || theRole !== "oc all" || theRole !== "off campus all") theRole = 'undefined';
+        if(theRole !=="all") theRole = 'undefined';
       }
     let role = ( typeof message.guild.roles !== 'undefined' ) ? message.guild.roles.find("name", theRole) : 'undefined';
     let isAdmin = adminPattern.test(theRole);
