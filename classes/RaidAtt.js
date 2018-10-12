@@ -228,56 +228,63 @@ var guild_dict = {
       msg = msg.replace(prefix + "coming", "");
       if (msg == "" || msg == " ")
       {
-          message.channel.send(message.author + " is on the way!");
-          if (this.comingList == "")
+          if (message.channel == this.raidRoom)
           {
-              this.comingList = "**" + message.member.displayName + "**";
-              if (message.member.roles.find("name", "Mystic"))
+              message.channel.send(message.author + " is on the way!");
+              if (this.comingList == "")
               {
-                  this.mystCount = parseInt(this.mystCount);
-                  this.mystCount = this.mystCount + 1;
-              }
-              else if (message.member.roles.find("name", "Instinct"))
-              {
-                  this.instCount = parseInt(this.instCount);
-                  this.instCount = this.instCount + 1;
-              }
-              else if (message.member.roles.find("name", "Valor"))
-              {
-                  this.valCount = parseInt(this.valCount);
-                  this.valCount = this.valCount + 1;
+                  this.comingList = "**" + message.member.displayName + "**";
+                  if (message.member.roles.find("name", "Mystic"))
+                  {
+                      this.mystCount = parseInt(this.mystCount);
+                      this.mystCount = this.mystCount + 1;
+                  }
+                  else if (message.member.roles.find("name", "Instinct"))
+                 {
+                      this.instCount = parseInt(this.instCount);
+                      this.instCount = this.instCount + 1;
+                  }
+                  else if (message.member.roles.find("name", "Valor"))
+                  {
+                      this.valCount = parseInt(this.valCount);
+                      this.valCount = this.valCount + 1;
+                  }
+                  else
+                  {
+                      console.log("Team count error");
+                      message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+                      this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
+                  }
               }
               else
               {
-                  console.log("Team count error");
-                  message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
-                  this.comingList = this.comingList.replace("**" + message.member.displayName + "**", "");
+                  this.comingList = this.comingList + ", **" + message.member.displayName + "**";
+                  if (message.member.roles.find("name", "Mystic"))
+               {
+                      this.mystCount = parseInt(this.mystCount);
+                      this.mystCount = this.mystCount + 1;
+                  }
+                  else if (message.member.roles.find("name", "Instinct"))
+                  {
+                      this.instCount = parseInt(this.instCount);
+                      this.instCount = this.instCount + 1;
+                }
+                  else if (message.member.roles.find("name", "Valor"))
+                  {
+                   this.valCount = parseInt(this.valCount);
+                      this.valCount = this.valCount + 1;
+                  }
+                  else
+                  {
+                      console.log("Team count error");
+                      message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
+                      this.comingList = this.comingList.replace(", **" + message.member.displayName + "**", "");
+                  }
               }
           }
           else
           {
-              this.comingList = this.comingList + ", **" + message.member.displayName + "**";
-              if (message.member.roles.find("name", "Mystic"))
-              {
-                  this.mystCount = parseInt(this.mystCount);
-                  this.mystCount = this.mystCount + 1;
-              }
-              else if (message.member.roles.find("name", "Instinct"))
-              {
-                  this.instCount = parseInt(this.instCount);
-                  this.instCount = this.instCount + 1;
-              }
-              else if (message.member.roles.find("name", "Valor"))
-              {
-                  this.valCount = parseInt(this.valCount);
-                  this.valCount = this.valCount + 1;
-              }
-              else
-              {
-                  console.log("Team count error");
-                  message.channel.send("It appears you don't have a team. Please message a moderator to have one assigned.");
-                  this.comingList = this.comingList.replace(", **" + message.member.displayName + "**", "");
-              }
+              message.channel.send("This is not the raid room! You can only use this command in an active raid channel. Please go here: " + this.raidRoom + " and try again.");
           }
       }
       else
