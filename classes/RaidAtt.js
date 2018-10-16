@@ -196,6 +196,7 @@ var guild_dict = {
                                  '**.endRaid** this command closes the raid room. Use this command if there are no other groups attempting the raid and it will close the channel. This should only be used by the person who created the room with .egg or the moderators usage: `.endRaid`'
                                       );
               let help = chnl.fetchMessage();
+              console.log('Help message ID:' + help);
               chnl.pin(help);
           }
       }
