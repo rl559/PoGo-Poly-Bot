@@ -181,6 +181,20 @@ var guild_dict = {
               {
                   console.log("Failed to send message to new channel");
               }
+              //This is the message copied and pasted from '.help raids' command
+              this.raidRoom.send('\n\n__**Raids**__\n\n' + 
+                                 'Based on our current field research Raids start at 6AM and end at 8PM, you may find active raids after 8PM, but no new ones will popup after 8PM. \n' + 
+                                 '**.egg** this command creates a new channel for a raid. usage: `.egg eggLevel HatchTime`\n' + 
+                                 '**.raidMon** this command renames the channel to the pokemon after it hatches. It should only be called by the person who created the room with .egg or the moderators usage: `.raidMon Pokemon`\n' + 
+                                 '**.coming** this command marks you as coming to the raid. Use this if you want to participate in the raid. usage: `.coming`\n' + 
+                                 '**.here** this command marks you as here at the raid. Use this if you are at the gym waiting for the raid to start. usage: `.here`\n' + 
+                                 '**.cancel** this command removes you from the list of people coming or here. Use this command if you no longer want to do the raid. usage: `.cancel`\n' + 
+                                 '**.list** this command prints how many of each team will be at the raid, the current start time, and the list of players coming and here. usage: `.list`\n' +
+                                 '**.newGroup** this command creates a new group if there will be more than one at the raid. Only use this command after the other group has started their raid. usage: `.newGroup`\n' +
+                                 '**.setStartTime** this command will set the start time for the raid group. usage: `.setStartTime time`\n' +
+                                 '**.getStartTime** this command displays the current set start time. usage: `.getStartTime`\n' +
+                                 '**.endRaid** this command closes the raid room. Use this command if there are no other groups attempting the raid and it will close the channel. This should only be used by the person who created the room with .egg or the moderators usage: `.endRaid`');
+              
           }
       }
     }
