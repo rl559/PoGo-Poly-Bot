@@ -194,8 +194,9 @@ var guild_dict = {
                                  '**.setStartTime** this command will set the start time for the raid group. usage: `.setStartTime time`\n' +
                                  '**.getStartTime** this command displays the current set start time. usage: `.getStartTime`\n' +
                                  '**.endRaid** this command closes the raid room. Use this command if there are no other groups attempting the raid and it will close the channel. This should only be used by the person who created the room with .egg or the moderators usage: `.endRaid`'
-                                      ).pin();
-              
+                                      );
+              let help = chnl.fetchMessage();
+              chnl.pin(help);
           }
       }
     }
