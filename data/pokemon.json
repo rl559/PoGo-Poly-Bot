@@ -19822,5 +19822,327 @@
 		"evolveTo": "",
 		"evolveFrom": "",
 		"fleeRate": 0.01
+	},
+	"turtwig": {
+		"id": 387,
+		"buddy": 5,
+		"candy": 25,
+		"name": "Turtwig",
+		"img": "https://www.serebii.net/pokemongo/pokemon/387.png",
+		"stats": {
+			"stamina": 146,
+			"attack": 119,
+			"defense": 110
+		},
+		"maxCP": 1187,
+		"type": ["grass"],
+		"weaknesses": {
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
+		"quickMoves": {
+			"tackle": {
+				"power": 5,
+				"dps": 10.00
+			},
+			"razor-leaf": {
+				"power": 13,
+				"dps": 13.00
+			}
+		},
+		"chargeMoves": {
+			"energy-ball": {
+				"power": 90,
+				"dps": 23.08
+			},
+			"seed-bomb": {
+				"power": 55,
+				"dps": 26.19
+			},
+			"body-slam": {
+				"power": 50,
+				"dps": 26.32
+			}
+		},
+		"evolveTo": "grotle",
+		"fleeRate": 0.1
+	},
+	"grotle": {
+		"id": 388,
+		"buddy": 3,
+		"candy": 100,
+		"name": "Grotle",
+		"img": "https://www.serebii.net/pokemongo/pokemon/388.png",
+		"stats": {
+			"stamina": 181,
+			"attack": 157,
+			"defense": 143
+		},
+		"maxCP": 1890,
+		"type": ["grass"],
+		"weaknesses": {
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
+		"quickMoves": {
+			"bite": {
+				"power": 6,
+				"dps": 12.00
+			},
+			"razor-leaf": {
+				"power": 13,
+				"dps": 13.00
+			}
+		},
+		"chargeMoves": {
+			"energy-ball": {
+				"power": 90,
+				"dps": 23.08
+			},
+			"solar-beam": {
+				"power": 180,
+				"dps": 36.73
+			},
+			"body-slam": {
+				"power": 50,
+				"dps": 26.32
+			}
+		},
+		"evolveTo": "torterra",
+		"evolveFrom": "turtwig",
+		"fleeRate": 0.07
+	},
+	"torterra": {
+		"id": 389,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Torterra",
+		"img": "https://www.serebii.net/pokemongo/pokemon/389.png",
+		"stats": {
+			"stamina": 216,
+			"attack": 202,
+			"defense": 188
+		},
+		"maxCP": 2934,
+		"type": ["grass"],
+		"weaknesses": {
+			"bug": 1.4,
+			"fire": 1.4,
+			"flying": 1.4,
+			"poison": 1.4,
+			"ice": 1.4
+		},
+		"resistances": {
+			"electric": 0.714,
+			"grass": 0.714,
+			"ground": 0.714,
+			"water": 0.714
+		},
+		"quickMoves": {
+			"bite": {
+				"power": 6,
+				"dps": 12.00
+			},
+			"razor-leaf": {
+				"power": 13,
+				"dps": 13.00
+			}
+		},
+		"chargeMoves": {
+			"stone-edge": {
+				"power": 100,
+				"dps": 43.48
+			},
+			"solar-beam": {
+				"power": 180,
+				"dps": 36.73
+			},
+			"earthquake": {
+				"power": 120,
+				"dps": 33.33
+			}
+		},
+		"evolveFrom": "grotle",
+		"fleeRate": 0.05
+	},
+	"chimchar": {
+		"id": 390,
+		"buddy": 3,
+		"candy": 25,
+		"name": "Chimchar",
+		"img": "https://www.serebii.net/pokemongo/pokemon/390.png",
+		"stats": {
+			"stamina": 127,
+			"attack": 113,
+			"defense": 86
+		},
+		"maxCP": 957,
+		"type": ["fire"],
+		"weaknesses": {
+			"rock": 1.4,
+			"ground": 1.4,
+			"water": 1.4,
+		},
+		"resistances": {
+			"bug": 0.714,
+			"fairy": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
+		},
+		"quickMoves": {
+			"ember": {
+				"power": 10,
+				"dps": 10.00
+			},
+			"scratch": {
+				"power": 6,
+				"dps": 12.00
+			}
+		},
+		"chargeMoves": {
+			"flame-wheel": {
+				"power": 60,
+				"dps": 22.22
+			},
+			"flamethrower": {
+				"power": 70,
+				"dps": 31.82
+			},
+			"flame-charge": {
+				"power": 70,
+				"dps": 18.42
+			}
+		},
+		"evolveTo": "monferno",
+		"fleeRate": 0.1
+	},
+	"monferno": {
+		"id": 391,
+		"buddy": 3,
+		"candy": 100,
+		"name": "Monferno",
+		"img": "https://www.serebii.net/pokemongo/pokemon/391.png",
+		"stats": {
+			"stamina": 162,
+			"attack": 158,
+			"defense": 105
+		},
+		"maxCP": 1574,
+		"type": ["fighting", "fire"],
+		"weaknesses": {
+			"flying": 1.4,
+			"ground": 1.4,
+			"psychic": 1.4,
+			"water": 1.4,
+		},
+		"resistances": {
+			"bug": 0.51,
+			"dark": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
+		},
+		"quickMoves": {
+			"ember": {
+				"power": 10,
+				"dps": 10.00
+			},
+			"rock-smash": {
+				"power": 15,
+				"dps": 11.54
+			}
+		},
+		"chargeMoves": {
+			"flame-wheel": {
+				"power": 60,
+				"dps": 22.22
+			},
+			"flamethrower": {
+				"power": 70,
+				"dps": 31.82
+			},
+			"low-sweep": {
+				"power": 40,
+				"dps": 21.05
+			}
+		},
+		"evolveTo": "infernape",
+		"evolveFrom": "chimchar",
+		"fleeRate": 0.07
+	},
+	"infernape": {
+		"id": 392,
+		"buddy": 3,
+		"candy": 0,
+		"name": "Infernape",
+		"img": "https://www.serebii.net/pokemongo/pokemon/392.png",
+		"stats": {
+			"stamina": 183,
+			"attack": 222,
+			"defense": 151
+		},
+		"maxCP": 2683,
+		"type": ["fighting", "fire"],
+		"weaknesses": {
+			"flying": 1.4,
+			"ground": 1.4,
+			"psychic": 1.4,
+			"water": 1.4,
+		},
+		"resistances": {
+			"bug": 0.51,
+			"dark": 0.714,
+			"fire": 0.714,
+			"grass": 0.714,
+			"ice": 0.714,
+			"steel": 0.714
+		},
+		"quickMoves": {
+			"fire-spin": {
+				"power": 14,
+				"dps": 12.73
+			},
+			"rock-smash": {
+				"power": 15,
+				"dps": 11.54
+			}
+		},
+		"chargeMoves": {
+			"solar-beam": {
+				"power": 180,
+				"dps": 36.73
+			},
+			"flamethrower": {
+				"power": 70,
+				"dps": 31.82
+			},
+			"close-combat": {
+				"power": 100,
+				"dps": 43.48
+			}
+		},
+		"evolveFrom": "monferno",
+		"fleeRate": 0.05
 	}
 }
