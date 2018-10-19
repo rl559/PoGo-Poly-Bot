@@ -54,8 +54,18 @@ var guild_dict = {
     else
     {
         console.log("Raid room already created. Prevented another");
-        message.channel.send("There is already a raid room in progress, make sure it is closed before you start a second!");
-        return;
+        if (message == ".egg 0 00:00" && (message.member.roles.find("name", "Moderator") || message.member.roles.find("name", "Bot Manager") || message.member.roles.find("name", "Admin") || message.author.id == '213486040931893248'))
+        {
+            console.log("Moderator raidRoom overwrite activated. Last raid was not closed correctly");
+            this.raidRoom = "";
+            message.channel.send("You are all set! Remember to use `.endRaid` to close active raid rooms before starting another. Use `.egg` again to set up a new room.");
+            return;
+        }
+        else
+        {
+            message.channel.send("There is already a raid room in progress, make sure it is closed before you start a second! If there is no raid currently active please have a moderator send `.egg 0 00:00` here.");
+            return;
+        }
     }
     
     this.mainCoord = message.author;
