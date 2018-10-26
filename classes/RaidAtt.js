@@ -487,7 +487,7 @@ var guild_dict = {
           this.mystCount = 0;
           this.instCount = 0;
           this.valCount = 0;
-          message.channel.send("A new group has been started! Make sure to post if you're here again if you are attneding this group too.");
+          message.channel.send("A new group has been started! Make sure to post if you're here again if you are attending this group too.");
           message.channel.setName(this.raidMonName, "A new group has been started");
       }
       else
