@@ -33,16 +33,44 @@ module.exports = class Field
         }
         else if (challenge.toLowerCase() == "catch 10 pokemon")
         {
+          reward = "Magikarp/Houndour Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 5 normal type or poison type pokemon")
+        {
+          reward = "Starmie Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 5 fighting type pokemon")
+        {
+          reward = "Magnimite Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 7 flying, pyschic, or dark type pokemon")
+        {
+          reward = "Anorith Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 10 ground type pokemon")
+        {
+          reward = "Sandshrew Encounter";
+        }
+        else if (challenge.toLowerCase() == "catch 10 ice type pokemon")
+        {
+          reward = "Kabuto Encounter";
+        }
+        else if (challenge.toLowerCase() == "use 5 berries to help catch pokemon")
+        {
+          reward = "Growlithe Encounter";
+        }
+        else if (challenge.toLowerCase() == "use 5 razz berries to help catch pokemon")
+        {
+          reward = "Cubone Encounter";
+        }
+        else if (challenge.toLowerCase() == "use 10 pinap berries while catching pokemon")
+        {
           reward = "Magikarp Encounter";
         }
-        else if (challenge.toLowerCase() == "catch 5 normal type pokemon")
-        {
-          reward = "Pinsir Encounter";
-        }
-        else if (challenge.toLowerCase() == "Catch 5 bug type pokemon")
+        /*else if (challenge.toLowerCase() == "Catch 5 bug type pokemon")
         {
           reward = "Nincada Encounter"
-        }
+        }*/
         /*else if (challenge.toLowerCase() == "use 10 berries to help catch pokemon")
         {
           reward = "Growlithe Encounter";
@@ -64,11 +92,11 @@ module.exports = class Field
         //Throw challenge encounters
         else if (challenge.toLowerCase() == "make 5 nice throws")
         {
-          reward = "Voltorb Encounter";
+          reward = "Voltorb/Bidoof Encounter";
         }
         else if (challenge.toLowerCase() == "make 3 great throws")
         {
-          reward = "Ghastly Encounter";
+          reward = "Ghastly/Anorith/Lileep Encounter";
         }
         /*else if (challenge.toLowerCase() == "make a great curveball throw")
         {
@@ -78,9 +106,13 @@ module.exports = class Field
         {
           reward = "Spinda #1 Encounter";
         }*/
-        else if (challenge.toLowerCase() == "make 3 nice curveball throws")
+        /*else if (challenge.toLowerCase() == "make 3 nice curveball throws")
         {
           reward = "Spinda #7 Encounter";
+        }*/
+        else if (challenge.toLowerCase() == "make 5 great curveball throws in a row")
+        {
+          reward = "Spinda #5 Encounter";
         }
         else if (challenge.toLowerCase() == "make 3 great throws in a row")
         {
@@ -90,20 +122,24 @@ module.exports = class Field
         {
           reward = "Larvitar Encounter";
         }
-        else if (challenge.toLowerCase() == "make 5 great throws in a row")
+        /*else if (challenge.toLowerCase() == "make 5 great throws in a row")
         {
           reward = "Wigglytuff Encounter";
-        }
+        }*/
         
         //Evolve and Power Uo challenge encounters
         else if (challenge.toLowerCase() == "evolve a pokemon")
         {
-          reward = "Eevee Encounter";
+          reward = "Eevee/Sunkern Encounter";
         }
-        else if (challenge.toLowerCase() == "evolve 2 pidgey")
+        else if (challenge.toLowerCase() == "evolve a pokemon using an item")
+        {
+          reward = "Aerodactyl Encounter";
+        }
+        /*else if (challenge.toLowerCase() == "evolve 2 pidgey")
         {
           reward = "Caterpie Encounter";
-        }
+        }*/
         /*else if (challenge.toLowerCase() == "evolve 5 fire type pokemon")
         {
           reward = "Ninetales Encounter";
@@ -124,7 +160,7 @@ module.exports = class Field
         //Hatch challenge encounters
         else if (challenge.toLowerCase() == "hatch an egg")
         {
-          reward = "Exeggcute Encounter";
+          reward = "Exeggcute/Snubbull Encounter";
         }
         /*else if (challenge.toLowerCase() == "hatch 2 eggs")
         {
@@ -142,11 +178,15 @@ module.exports = class Field
         //Combat challenge encounters
         else if (challenge.toLowerCase() == "battle in a gym")
         {
-          reward = "Mankey Encounter";
+          reward = "Mankey/Machop Encounter";
+        }
+        else if (challenge.toLowerCase() == "battle in a gym 5 times")
+        {
+          reward = "Machop Encounter";
         }
         else if (challenge.toLowerCase() == "win 5 gym battles")
         {
-          reward = "Machop Encounter";
+          reward = "Lapras Encounter";
         }
         else if (challenge.toLowerCase() == "win 3 gym battles")
         {
@@ -160,24 +200,36 @@ module.exports = class Field
         {
           reward = "Electabuzz Encounter";
         }
-        else if (challenge.toLowerCase() == "win a raid")
+        else if (challenge.toLowerCase() == "battle in a raid")
         {
-          reward = "Pineco Encounter";
+          reward = "Drowzee Encounter";
+        }
+        else if (challenge.toLowerCase() == "win a level 3 raid or higher")
+        {
+          reward = "Omnimite Encounter";
+        }
+        else if (challenge.toLowerCase() == "win 5 raids")
+        {
+          reward = "Aerodactyl Encounter";
         }
         
         //Misc
-        else if (challenge.toLowerCase() == "send 5 gifts to friends")
+        else if (challenge.toLowerCase() == "send 2 gifts to friends")
         {
-          reward = "Golbat Encounter";
+          reward = "Gastley Encounter";
         }
-        else if (challenge.toLowerCase() == "earn a candy walking with your buddy")
+        else if (challenge.toLowerCase() == "earn 5 candies walking with your buddy")
         {
-          reward = "Clefable Encounter";
+          reward = "Tentacruel Encounter";
         }
-        /*else if (challenge.toLowerCase() == "trade a pokemon")
+        else if (challenge.toLowerCase() == "trade a pokemon")
         {
-          reward = "Feebas Encounter";
-        }*/
+          reward = "Manectric Encounter";
+        }
+        else if (challenge.toLowerCase() == "transfer 3 pokemon")
+        {
+          reward = "Vulpix Encounter";
+        }
       }
 
       if(stopName == 'wellness')
