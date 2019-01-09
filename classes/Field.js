@@ -35,7 +35,7 @@ module.exports = class Field
         {
           reward = "Magikarp/Houndour Encounter";
         }
-        else if (challenge.toLowerCase() == "catch 5 normal type or poison type pokemon")
+        else if (challenge.toLowerCase() == "catch 5 electric, normal, or poison type pokemon")
         {
           reward = "Starmie Encounter";
         }
