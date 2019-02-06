@@ -18,33 +18,11 @@ const TESTparentCategotyID = '494142635812978688';
 const LIVEguildID = '348982315537661952';
 const TESTguildID = '394131908516380674';
 
-/*
-//The following is the beginning of me attempting to set up a dict for unique raids
-let guild_dict = {
-    FirstName: "Justin",
-    age: 21,
-};
-let trainer_dict = {};
-*/
-
-
-
 module.exports = class RaidAtt
 {
     
   async egg(prefix, message)
-  {
-      /*
-      //The following is the beginning of me attempting to set up a dict for unique raids
-var guild_dict = {
-    FirstName: "Justin",
-    age: 21,
-};
-      console.log(this.guild_dict);
-      this.guild_dict.serverID = this.TESTguildID;
-      console.log(this.guild_dict);
-    */
-      
+  {      
     //This check needs deleted once a system for multiple rooms is completed. It prevents more than one raid room being open at a time
     if (this.raidRoom == undefined || this.raidRoom == "")
     {
@@ -81,6 +59,7 @@ var guild_dict = {
     this.raidRoom = "";
     this.comingListArray = [];
     this.hereListArray = [];
+    let currentTime = new Date();
     
     var msg = message.content;
     msg = msg.replace(prefix + "egg ", "");
@@ -145,7 +124,7 @@ var guild_dict = {
                   //Created the channel
                   this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
                   
-                  //Live server parent category (comment out whichever you are not using)
+                  //Live server parent category
                   this.raidRoom = await this.raidRoom.setParent(LIVEparentCategoryID);
               }
               if (chnl.guild.id == TESTguildID)
@@ -153,10 +132,11 @@ var guild_dict = {
                   //Created the channel
                   this.raidRoom = await chnl.guild.createChannel(this.channelName, "text");
                   
-                  //Test server parent category (comment out whichever you are not using)
+                  //Test server parent category
                   this.raidRoom = await this.raidRoom.setParent(TESTparentCategotyID);
               }
               
+              //Message created depending on egg level and the appropriate tag is used
               if (eggLevel == 1)
               {
                   var callRole = chnl.guild.roles.find('name', 'T1');
