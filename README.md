@@ -10,3 +10,12 @@ To execute the script itself, run node index.js
 If everything is set up properly, the above should return "I am ready!"
 
 -Trevor H.
+
+
+# Another side-note
+Trevor was a really talented coder. He and I put a lot of time and effort into this bot.
+We soon passed it on to Justin C., who is trying his hardest to keep it all together.
+I'll be around to try and help Justin C. keep this bot together, but I don't know how long that will last.
+If you ever see this Trevor, I just wanted to say thank you for everything that you've done.
+
+-Ruben L.

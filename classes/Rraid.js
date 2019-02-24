@@ -25,12 +25,12 @@ module.exports = class Rraid
          var time = moment();
          time.add(minsLeft, "m");
          console.log(time.toString());
-         
+
          message.guild.channels.find('name', 'raids').send({
           "embed": {
             "color": 3447003,
             "title": 'Level '+raidBosses[raidName].level.replace("Level ", "")+' Raid has started!',
-            "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
+            //GymHuntr is long dead  "url": 'https://GymHuntr.com/#28.144546148580186,-81.84874534606935',
             "thumbnail": {
               "url": raidBosses[raidName].image,
             },
