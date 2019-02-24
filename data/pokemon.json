@@ -6,24 +6,24 @@
 		"name": "Bulbasaur",
 		"img": "http://www.serebii.net/pokemongo/pokemon/001.png",
 		"stats": {
-			"stamina": 90,
+			"stamina": 128,
 			"attack": 118,
-			"defense": 118
+			"defense": 111
 		},
-		"maxCP": 981,
+		"maxCP": 1115,
 		"type": ["grass", "poison"],
 		"weaknesses": {
-			"flying": 1.4,
-			"fire": 1.4,
-			"ice": 1.4,
-			"psychic": 1.4
+			"flying": 1.6,
+			"fire": 1.6,
+			"ice": 1.6,
+			"psychic": 1.6
 		},
 		"resistances": {
-			"electric": 0.714,
-			"grass": 0.51,
-			"fairy": 0.714,
-			"fighting": 0.714,
-			"water": 0.714
+			"electric": 0.625,
+			"grass": 0.391,
+			"fairy": 0.625,
+			"fighting": 0.625,
+			"water": 0.625
 		},
 		"quickMoves": {
 			"vine-whip": {
@@ -38,15 +38,15 @@
 		"chargeMoves": {
 			"power-whip": {
 				"power": 90,
-				"dps": 24.62
+				"dps": 34.62
 			},
 			"sludge-bomb": {
 				"power": 80,
-				"dps": 24.78
+				"dps": 34.78
 			},
 			"seed-bomb": {
 				"power": 55,
-				"dps": 18.57
+				"dps": 26.19
 			}
 		},
 		"evolveTo": "ivysaur",
@@ -60,24 +60,24 @@
 		"img": "http://www.serebii.net/pokemongo/pokemon/002.png",
 
 		"stats": {
-			"stamina": 120,
+			"stamina": 155,
 			"attack": 151,
-			"defense": 151
+			"defense": 143
 		},
-		"maxCP": 1552,
+		"maxCP": 1669,
 		"type": ["grass", "poison"],
 		"weaknesses": {
-			"flying": 1.4,
-			"fire": 1.4,
-			"ice": 1.4,
-			"psychic": 1.4
+			"flying": 1.6,
+			"fire": 1.6,
+			"ice": 1.6,
+			"psychic": 1.6
 		},
 		"resistances": {
-			"electric": 0.714,
-			"grass": 0.51,
-			"fairy": 0.714,
-			"fighting": 0.714,
-			"water": 0.714
+			"electric": 0.625,
+			"grass": 0.391,
+			"fairy": 0.625,
+			"fighting": 0.625,
+			"water": 0.625
 		},
 		"quickMoves": {
 			"razor-leaf": {
@@ -92,15 +92,15 @@
 		"chargeMoves": {
 			"solar-beam": {
 				"power": 180,
-				"dps": 33.47
+				"dps": 36.73
 			},
 			"power-whip": {
 				"power": 90,
-				"dps": 31.54
+				"dps": 34.62
 			},
 			"sludge-bomb": {
 				"power": 80,
-				"dps": 31.74
+				"dps": 34.78
 			}
 		},
 		"evolveFrom": "bulbasaur",
@@ -114,24 +114,24 @@
 		"name": "Venusaur",
 		"img": "http://www.serebii.net/pokemongo/pokemon/003.png",
 		"stats": {
-			"stamina": 160,
-			"attack": 198,
-			"defense": 198
+			"stamina": 190,
+			"attack": 189,
+			"defense": 189
 		},
-		"maxCP": 2568,
+		"maxCP": 2720,
 		"type": ["grass", "poison"],
 		"weaknesses": {
-			"flying": 1.4,
-			"fire": 1.4,
-			"ice": 1.4,
-			"psychic": 1.4
+			"flying": 1.6,
+			"fire": 1.6,
+			"ice": 1.6,
+			"psychic": 1.6
 		},
 		"resistances": {
-			"electric": 0.714,
-			"grass": 0.51,
-			"fairy": 0.714,
-			"fighting": 0.714,
-			"water": 0.714
+			"electric": 0.625,
+			"grass": 0.391,
+			"fairy": 0.625,
+			"fighting": 0.625,
+			"water": 0.625
 		},
 		"quickMoves": {
 			"razor-leaf": {
@@ -146,15 +146,15 @@
 		"chargeMoves": {
 			"solar-beam": {
 				"power": 180,
-				"dps": 43.67
+				"dps": 36.73
 			},
 			"petal-blizzard": {
 				"power": 110,
-				"dps": 50.38
+				"dps": 42.31
 			},
 			"sludge-bomb": {
 				"power": 80,
-				"dps": 41.74
+				"dps": 55.65
 			}
 		},
 		"evolveFrom": "ivysaur",

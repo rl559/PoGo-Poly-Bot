@@ -28,14 +28,14 @@ def is_good_response(resp):
     Returns True if the response seems to be HTML, False otherwise.
     """
     content_type = resp.headers['Content-Type'].lower()
-    return (resp.status_code == 200 
-            and content_type is not None 
+    return (resp.status_code == 200
+            and content_type is not None
             and content_type.find('html') > -1)
 
 
 def log_error(e):
     """
-    It is always a good idea to log errors. 
+    It is always a good idea to log errors.
     This function just prints them, but you can
     make it do anything.
     """
@@ -44,7 +44,7 @@ def log_error(e):
 raw_html = simple_get('https://pokemongo.gamepress.gg/pokemon-type-chart-strengths-weakness');
 html = BeautifulSoup(raw_html, 'html.parser');
 while True:
-    toSearch = raw_input("Enter your input:")
+    toSearch = input("Enter your input:")
     results = html.find("span", text=toSearch).parent.parent.find_all("div", {"class":"views-field views-field-field-type-chart"})[0].find("div").find("table").find_all("td")
 
     toJSON = {
@@ -75,5 +75,4 @@ while True:
             nameHolder = ""
     jsonResult = json.dumps(toJSON)
     jsonResult = jsonResult[1:-1]
-    print jsonResult + ","
-    
+    print (jsonResult + ",")
