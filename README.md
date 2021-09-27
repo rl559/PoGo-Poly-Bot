@@ -20,7 +20,7 @@ If you ever see this Trevor, I just wanted to say thank you for everything that 
 
 -Ruben L.
 
-#Final Update
+# Final Update
 I decided to create this update opening my GitHub for the first time in a long time.
 If you couldn't tell by the extreme lack of updates (not including the README, the last update was about 3 years ago), the bot is dead.
 I personally don't play PoGo anymore, which is why I dropped this project.
